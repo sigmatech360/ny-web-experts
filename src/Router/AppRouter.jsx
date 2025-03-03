@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "../screens/Home";
 import About from "../screens/About";
 import WebDevelopment from "../screens/WebDevelopment";
+import Portfolio from "../screens/Portfolio";
 
 const AppRouter = () => {
   return (
@@ -12,7 +13,8 @@ const AppRouter = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/web-development" element={<WebDevelopment />} />
+        <Route path="/services" element={<WebDevelopment />} />
+        <Route path="/portfolio" element={<Portfolio />} />
       </Routes>
     </Router>
   );

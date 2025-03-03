@@ -4,14 +4,6 @@ import DefaultLayout from "../../components/DefaultLayout";
 import bnnerimg from "../../assets/images/bnner-img.png";
 import premierdesignstudioimg from "../../assets/images/premier-design-studio-img.png";
 
-
-import projectsimg1 from "../../assets/images/projects-img-1.png";
-import projectsimg2 from "../../assets/images/projects-img-2.png";
-import projectsimg3 from "../../assets/images/projects-img-3.png";
-import projectsimg4 from "../../assets/images/projects-img-4.png";
-import projectsimg5 from "../../assets/images/projects-img-5.png";
-import projectsimg6 from "../../assets/images/projects-img-6.png";
-
 import designanddevimg from "../../assets/images/design-and-dev-img.png";
 
 import ContentWithIcon from "../../components/ContentWithIcon";
@@ -19,18 +11,13 @@ import { HiOutlinePhone } from "react-icons/hi";
 import { TbChecks } from "react-icons/tb";
 import ServicesCard from "../../components/ServicesCard";
 
-
-import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
-
-const containerStyle = {
-  width: "100%",
-  height: "100%",
-};
-
-const defaultCenter = {
-  lat: 34.0522, // Los Angeles latitude
-  lng: -118.2437, // Los Angeles longitude
-};
+import PricePlanCard from "../../components/PricePlanCard";
+import GetStarted from "../../components/GetStarted";
+import BlogSec from "../../components/BlogSec";
+import TestimonialSec from "../../components/TestimonialSec";
+import WebCreationSec from "../../components/WebCreationSec";
+import ProjectSec from "../../components/ProjectSec";
+import ContactUsSec from "../../components/ContactUsSec";
 
 import {
   premierDesignStudioIcon,
@@ -39,11 +26,6 @@ import {
   ourBenefitsContentIconData,
   pricingPlan,
 } from "../../data";
-import PricePlanCard from "../../components/PricePlanCard";
-import GetStarted from "../../components/GetStarted";
-import BlogSec from "../../components/BlogSec";
-import TestimonialSec from "../../components/TestimonialSec";
-import WebCreationSec from "../../components/WebCreationSec";
 
 const Home = () => {
   return (
@@ -170,7 +152,6 @@ const Home = () => {
 
       <WebCreationSec />
       
-
       <section className="services-info-sec">
         <div className="container">
           <div className="row">
@@ -210,60 +191,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="projects-sec">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12 mb-4">
-              <div className="sec-head mb-4">
-                <p className="sec-tag">Projects</p>
-                <h2>Get inspired by our finest work</h2>
-              </div>
-            </div>
-            <div className="col-md-4 mb-md-0 mb-3">
-              <div className="projects-item d-flex flex-column gap-4">
-                <img
-                  src={projectsimg1}
-                  className="img-fluid"
-                  alt="project image 1"
-                />
-                <img
-                  src={projectsimg2}
-                  className="img-fluid"
-                  alt="project image 2"
-                />
-              </div>
-            </div>
-            <div className="col-md-4 mb-md-0 mb-3">
-              <div className="projects-item d-flex flex-column gap-4">
-                <img
-                  src={projectsimg3}
-                  className="img-fluid"
-                  alt="project image 3"
-                />
-                <img
-                  src={projectsimg4}
-                  className="img-fluid"
-                  alt="project image 4"
-                />
-              </div>
-            </div>
-            <div className="col-md-4 mb-md-0 mb-3">
-              <div className="projects-item d-flex flex-column gap-4">
-                <img
-                  src={projectsimg5}
-                  className="img-fluid"
-                  alt="project image 5"
-                />
-                <img
-                  src={projectsimg6}
-                  className="img-fluid"
-                  alt="project image 6"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ProjectSec />
 
       <section className="our-benefits clipedShaped-sec bg-gradiant">
         <div className="container">
@@ -394,81 +322,8 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="contact-us-sec clipedShaped-sec bg-gradiant">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-6 mb-lg-0 mb-4">
-              <div className="web-creation-content mb-5">
-                <p className="sec-tag mb-4">Contact Us</p>
-                <h2>Drop us a Line.</h2>
-              </div>
-              <div className="contact-us-form pe-xl-5 me-xl-5 pe-0 me-0">
-                <div className="row">
-                  <div className="col-lg-6 mb-4">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Full name"
-                    />
-                  </div>
-                  <div className="col-lg-6 mb-4">
-                    <input
-                      type="email"
-                      class="form-control"
-                      placeholder="Email address"
-                    />
-                  </div>
-                  <div className="col-lg-6 mb-4">
-                    <input
-                      type="number"
-                      class="form-control"
-                      placeholder="Phone number"
-                    />
-                  </div>
-                  <div className="col-lg-6 mb-4">
-                    <select class="form-select form-control">
-                      <option selected>Select Service</option>
-                      <option value="1">Service 1</option>
-                      <option value="2">Service 2</option>
-                      <option value="3">Service 3</option>
-                    </select>
-                  </div>
-                  <div className="col-lg-12 mb-3  4">
-                    <textarea
-                      class="form-control"
-                      rows="5"
-                      placeholder="Write message"
-                      style={{ resize: "none" }}
-                    ></textarea>
-                  </div>
-                  <div className="col-lg-12">
-                    <button className="ny-btn">Send a Message</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-6">
-              <div className="contact-us-map-content">
-                <LoadScript googleMapsApiKey="YOUR_GOOGLE_MAPS_API_KEY">
-                  <GoogleMap
-                    mapContainerStyle={containerStyle}
-                    center={defaultCenter}
-                    zoom={12}
-                  >
-                    <Marker position={defaultCenter} />
-                  </GoogleMap>
-                </LoadScript>
-                <div className="contact-us-map-content-text">
-                  <h1>Call us anytime: (713) 347-2269</h1>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      <ContactUsSec />
       <BlogSec />
-
       <GetStarted />
       
     </DefaultLayout>

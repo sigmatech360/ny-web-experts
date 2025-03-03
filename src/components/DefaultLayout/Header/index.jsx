@@ -20,8 +20,8 @@ const Header = () => {
           <Nav className="mx-auto">
             <Link to={"/"} className="nav-link">Home</Link>
             <Link to={"/about"} className="nav-link">About</Link>
-            <Link to={"/"} className="nav-link">Services</Link>
-            <Link to={"/"} className="nav-link">Portfolio</Link>
+            <Link to={"/services"} className="nav-link">Services</Link>
+            <Link to={"/portfolio"} className="nav-link">Portfolio</Link>
             <Link to={"/"} className="nav-link">Testimonials</Link>
             <Link to={"/"} className="nav-link">Contact Us</Link>
           </Nav>

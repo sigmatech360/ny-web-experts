@@ -1,5 +1,12 @@
 import React from "react";
 
+import projectsimg1 from "../../assets/images/projects-img-1.png";
+import projectsimg2 from "../../assets/images/projects-img-2.png";
+import projectsimg3 from "../../assets/images/projects-img-3.png";
+import projectsimg4 from "../../assets/images/projects-img-4.png";
+import projectsimg5 from "../../assets/images/projects-img-5.png";
+import projectsimg6 from "../../assets/images/projects-img-6.png";
+
 const ProjectSec = () => {
   return (
     <section className="projects-sec">

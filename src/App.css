@@ -695,6 +695,43 @@ p {
 .inner-banner-content h1 {
   font-size: 50px;
 }
+.purple-bg-sec {
+  padding: 80px 0;
+}
+.purple-bg-sec .sec-head{
+  text-align: center;
+}
+.purple-bg-sec .sec-head p {
+  color: #fff;
+}
+
+
+.team-card {
+  background: #440370;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.team-card .team-card-body {
+  padding: 20px 19px;
+  text-align: center;
+}
+.team-card .team-card-body .header_social-icons {
+  justify-content: center !important;
+  background: transparent;
+}
+.team-card .team-card-body .header_social-icons a {
+  color: #68dcfc;
+}
+
+.team-card .team-card-body h3 {
+  font-size: 25px;
+}
+.team-card .team-card-body p {
+  font-weight: 200;
+  color: #FFFFFF;
+  margin-block: 10px;
+}
 /* Inner Pages CSS End */
 
 @media (max-width: 1399px) {

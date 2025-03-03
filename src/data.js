@@ -22,6 +22,9 @@ import testimonialimg1 from "./assets/images/testimonial-img-1.png";
 import testimonialimg2 from "./assets/images/testimonial-img-2.png";
 import testimonialimg3 from "./assets/images/testimonial-img-3.png";
 
+import teamcardimg1 from "./assets/images/team-card-img1.png";
+import teamcardimg2 from "./assets/images/team-card-img2.png";
+
 export const premierDesignStudioIcon = [
   {
     id: 1,
@@ -237,3 +240,24 @@ export const pricingPlan = [
     ],
   },
 ];
+
+export const teamData = [
+  {
+    id: 1,
+    image: teamcardimg1,
+    name: "Thomas Smith",
+    designation: "Software Engineer"
+  },
+  {
+    id: 2,
+    image: teamcardimg2,
+    name: "Angela Smith",
+    designation: "Graphics Designer"
+  },
+  {
+    id: 1,
+    image: teamcardimg1,
+    name: "Thomas Smith",
+    designation: "Software Engineer"
+  },
+]
