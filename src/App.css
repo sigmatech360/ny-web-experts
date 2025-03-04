@@ -21,7 +21,13 @@ p {
 }
 
 .purpleColor {
-  color: #440370;
+  color: #440370 !important;
+}
+.whiteColor {
+  color: #fcfbfb !important;
+}
+.grayColor {
+  color: #707070 !important;
 }
 
 .form-control {
@@ -160,7 +166,7 @@ p {
 }
 
 .premier-design-studio {
-  padding: 60px 0;
+  margin: 60px 0;
 }
 
 .premier-design-studio-title h1 {
@@ -252,7 +258,7 @@ p {
 
 .web-creation-content h2 {
   font-size: 52px;
-  line-height: 1;
+  line-height: 1.1;
 }
 .web-creation-content p {
   color: #fff;
@@ -311,8 +317,20 @@ p {
   clip-path: polygon(0% 0%, 100% 0, 100% 100%, 25% 100%);
 }
 
+.clipedShaped-sec.reverse:after {
+  left: 0 !important;
+  top: -1px;
+  clip-path: polygon(0% 0%, 100% 0, 75% 100%, 0% 100%);
+}
+.clipedShaped-sec.reverse:before {
+  right: 0px !important;
+  bottom: -1px;
+  clip-path: polygon(25% 1%, 100% 0, 100% 100%, 0% 100%);
+  left: unset;
+}
+
 .services-info-sec {
-  padding: 60px 0;
+  margin: 60px 0;
 }
 
 .services-info-sec .content-with-icon-item .content-with-icon-img img {
@@ -343,7 +361,7 @@ p {
 }
 
 .projects-sec {
-  padding: 60px 0;
+  margin: 60px 0;
   position: relative;
 }
 
@@ -392,7 +410,7 @@ p {
 }
 
 .testimonials-sec {
-  padding: 80px 0;
+  margin: 60px 0;
 }
 
 .testimonials-sec .sec-head {
@@ -433,10 +451,6 @@ p {
 }
 .testimonials-item .testimonials-name {
   font-size: 25px;
-}
-
-.pricing-plan-sec {
-  padding: 80px 0;
 }
 
 .pricing-plan-sec .sec-head {
@@ -511,7 +525,7 @@ p {
 }
 
 .blog-sec {
-  padding: 60px 0;
+  margin: 60px 0;
 }
 
 .blog-card p {
@@ -669,28 +683,27 @@ p {
   height: 100%;
   background: linear-gradient(180deg, #440370 0%, #220238 100%);
   position: absolute;
-  opacity: .8;
+  opacity: 0.8;
 }
-.inner-banner-sec .container{
+.inner-banner-sec .container {
   z-index: 1;
 }
 
-
 .inner-banner-content {
-  color: #FCFBFB;
+  color: #fcfbfb;
   text-align: center;
 }
-.inner-banner-content .breadcrumb{
+.inner-banner-content .breadcrumb {
   justify-content: center;
   font-family: "Poppins", serif;
 }
 .inner-banner-content .breadcrumb .breadcrumb-item a {
-  color: #FCFBFB;
+  color: #fcfbfb;
   text-decoration: none;
 }
 .inner-banner-content .breadcrumb-item.active,
-.inner-banner-content .breadcrumb-item+.breadcrumb-item::before{
-  color: #FCFBFB;
+.inner-banner-content .breadcrumb-item + .breadcrumb-item::before {
+  color: #fcfbfb;
 }
 .inner-banner-content h1 {
   font-size: 50px;
@@ -698,13 +711,12 @@ p {
 .purple-bg-sec {
   padding: 80px 0;
 }
-.purple-bg-sec .sec-head{
+.purple-bg-sec .sec-head {
   text-align: center;
 }
 .purple-bg-sec .sec-head p {
   color: #fff;
 }
-
 
 .team-card {
   background: #440370;
@@ -729,8 +741,80 @@ p {
 }
 .team-card .team-card-body p {
   font-weight: 200;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-block: 10px;
+}
+.about-us-sec {
+  margin: 60px 0;
+}
+
+.about-us-sec .web-creation-content p {
+  color: #707070;
+}
+
+.web-creation-content h4 {
+  font-size: 20px;
+  font-weight: 300;
+}
+.about-us-sec .web-creation-content h5 {
+  font-weight: 300;
+}
+.about-us-sec .content-with-icon-icon {
+  background: #440370;
+}
+.about-us-sec .content-with-icon-icon svg {
+  color: #fff;
+}
+
+.about-us-experience {
+  background: rgb(2, 104, 136);
+  background-image: linear-gradient(
+    180deg,
+    rgba(2, 104, 136, 1) 0%,
+    rgba(68, 3, 112, 1) 100%
+  );
+  color: #fff;
+  padding: 16px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-grow: 1;
+  justify-content: center;
+}
+.about-us-left-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  gap: 16px;
+}
+.about-us-experience p {
+  color: #fff;
+  letter-spacing: 9px;
+  font-size: 16px;
+}
+.about-us-experience * {
+  margin: 0;
+}
+.about-us-experience h3 {
+  font-size: 30px;
+}
+.digital-product .row {
+  align-items: center;
+}
+
+.digital-product h2 {
+  font-size: 52px;
+  line-height: 1;
+}
+
+.outstanding-strategy {
+  margin: 60px 0;
+}
+
+.outstanding-strategy .our_benefits-icons h5 {
+  color: #fcfbfb;
 }
 /* Inner Pages CSS End */
 
@@ -748,6 +832,16 @@ p {
   }
   .get-custom-logo-title {
     font-size: 24px;
+  }
+  .about-us-experience p {
+    font-size: 15px;
+  }
+  .digital-product h2 {
+    font-size: 41px;
+  }
+
+  .outstanding-strategy .web-creation-content h2 {
+    font-size: 40px;
   }
 }
 
@@ -801,6 +895,19 @@ p {
   }
   .web-creation-img img {
     padding-right: 40px;
+  }
+  .about-us-experience p {
+    letter-spacing: 5px;
+  }
+
+  .digital-product p {
+    font-size: 15px;
+  }
+  .digital-product h2 {
+    font-size: 37px;
+  }
+  .outstanding-strategy .sec-head h2 {
+    font-size: 35px;
   }
 }
 
@@ -869,6 +976,19 @@ p {
   .getStarted-sec {
     padding: 200px 0 100px;
   }
+
+  .digital-product .row {
+    flex-direction: column-reverse;
+  }
+  .digital-product .digital-product-content {
+    text-align: center;
+  }
+  .outstanding-strategy .web-creation-content {
+    text-align: center;
+  }
+  .outstanding-strategy .web-creation-content h2 {
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -879,6 +999,10 @@ p {
   }
   .getStarted-sec {
     padding: 110px 0 40px;
+  }
+
+  .outstanding-strategy .web-creation-content h2 {
+    font-size: 24px;
   }
 }
 
@@ -931,6 +1055,19 @@ p {
   }
   .premier-design-studio-title h1 {
     font-size: 30px;
+  }
+  .about-us-experience h3 {
+    font-size: 24px;
+  }
+  .about-us-experience p {
+    letter-spacing: 0px;
+  }
+
+  .about-us-experience {
+    gap: 0px;
+  }
+  .digital-product h2 {
+    font-size: 31px;
   }
 }
 

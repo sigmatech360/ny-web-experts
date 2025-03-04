@@ -18,6 +18,10 @@ import professionaltemicon from "./assets/images/professional-tem-icon.png";
 import trustedicon from "./assets/images/trusted-icon.png";
 import comittedicon from "./assets/images/comitted-icon.png";
 
+import startupicon from "./assets/images/startup-icon.png";
+import developmenticon from "./assets/images/development-icon.png";
+import analyticsicon from "./assets/images/analytics-icon.png";
+
 import testimonialimg1 from "./assets/images/testimonial-img-1.png";
 import testimonialimg2 from "./assets/images/testimonial-img-2.png";
 import testimonialimg3 from "./assets/images/testimonial-img-3.png";
@@ -137,6 +141,36 @@ export const ourBenefitsContentIconData = [
     id: 4,
     icon: comittedicon,
     name: "Commited to Deliver",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.",
+  },
+];
+export const outstandingStretagyContentIconData = [
+  {
+    id: 1,
+    icon: startupicon,
+    name: "Startups",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.",
+  },
+  {
+    id: 2,
+    icon: developmenticon,
+    name: "Development",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.",
+  },
+  {
+    id: 3,
+    icon: analyticsicon,
+    name: "Analytics",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.",
+  },
+  {
+    id: 4,
+    icon: comittedicon,
+    name: "Workflow",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.",
   },

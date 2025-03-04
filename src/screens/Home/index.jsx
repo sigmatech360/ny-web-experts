@@ -26,10 +26,12 @@ import {
   ourBenefitsContentIconData,
   pricingPlan,
 } from "../../data";
+import PurpleBGSec from "../../components/PurpleBGSec";
 
 const Home = () => {
   return (
     <DefaultLayout>
+
       <section className="main-banner clipedShaped-sec bg-gradiant">
         <div className="container">
           <div className="row align-items-center">
@@ -151,7 +153,7 @@ const Home = () => {
       </section>
 
       <WebCreationSec />
-      
+
       <section className="services-info-sec">
         <div className="container">
           <div className="row">
@@ -252,17 +254,13 @@ const Home = () => {
 
       <TestimonialSec />
 
-      <section className="pricing-plan-sec clipedShaped-sec bg-gradiant">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12 mb-4">
-              <div className="sec-head">
-                <p className="sec-tag">Pricing Plan</p>
-                <h2>Your Partner For Software Innovation</h2>
-              </div>
-            </div>
-
-            {pricingPlan.map((item, index) => (
+      <PurpleBGSec
+        secClass="pricing-plan-sec"
+        clipVariant="reverse"
+        tag="Pricing Plan"
+        title="Your Partner For Software Innovation"
+      >
+        {pricingPlan.map((item, index) => (
               <div className="col-lg-4 mb-4" key={index}>
                 <PricePlanCard
                   name={item.name}
@@ -272,9 +270,7 @@ const Home = () => {
                 />
               </div>
             ))}
-          </div>
-        </div>
-      </section>
+      </PurpleBGSec>
 
       <section className="premier-design-studio design_and_development_all-platforms">
         <div className="container">
@@ -325,7 +321,8 @@ const Home = () => {
       <ContactUsSec />
       <BlogSec />
       <GetStarted />
-      
+
+
     </DefaultLayout>
   );
 };
