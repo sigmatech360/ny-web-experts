@@ -27,11 +27,11 @@ import {
   pricingPlan,
 } from "../../data";
 import PurpleBGSec from "../../components/PurpleBGSec";
+import GetCustomLogo from "../../components/GetCustomLogo";
 
 const Home = () => {
   return (
     <DefaultLayout>
-
       <section className="main-banner clipedShaped-sec bg-gradiant">
         <div className="container">
           <div className="row align-items-center">
@@ -107,50 +107,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="get-custom-logo bg-gradiant mb-5">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-4 mb-3 mb-lg-0">
-              <h4 className="get-custom-logo-title">
-                Get Custom Logo from our Best Logo Design Agency in USA
-              </h4>
-            </div>
-            <div className="col-lg-8">
-              <div className="get-custom-logo-content d-flex">
-                <div className="get-custom-logo-item">
-                  <div className="get-custom-logo-item-icon">
-                    <HiOutlinePhone />
-                  </div>
-                  <div className="get-custom-logo-item-content">
-                    <p>Call Us</p>
-                    <a href="tel:(713) 347-2269">(713) 347-2269</a>
-                  </div>
-                </div>
-                <div className="get-custom-logo-item">
-                  <div className="get-custom-logo-item-icon">
-                    <HiOutlinePhone />
-                  </div>
-                  <div className="get-custom-logo-item-content">
-                    <p>Start</p>
-                    <a href="javascript:;">Live Chat</a>
-                  </div>
-                </div>
-                <div className="get-custom-logo-item">
-                  <div className="get-custom-logo-item-icon">
-                    <HiOutlinePhone />
-                  </div>
-                  <div className="get-custom-logo-item-content">
-                    <p>Start</p>
-                    <a href="mailto:support@nywebexperts.com">
-                      support@nywebexperts.com
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <GetCustomLogo className="mb-5" />
 
       <WebCreationSec />
 
@@ -261,15 +218,15 @@ const Home = () => {
         title="Your Partner For Software Innovation"
       >
         {pricingPlan.map((item, index) => (
-              <div className="col-lg-4 mb-4" key={index}>
-                <PricePlanCard
-                  name={item.name}
-                  price={item.price}
-                  description={item.description}
-                  list={item.list}
-                />
-              </div>
-            ))}
+          <div className="col-lg-4 mb-4" key={index}>
+            <PricePlanCard
+              name={item.name}
+              price={item.price}
+              description={item.description}
+              list={item.list}
+            />
+          </div>
+        ))}
       </PurpleBGSec>
 
       <section className="premier-design-studio design_and_development_all-platforms">
@@ -319,10 +276,8 @@ const Home = () => {
       </section>
 
       <ContactUsSec />
-      <BlogSec />
+      <BlogSec itemsPerPage={3} />
       <GetStarted />
-
-
     </DefaultLayout>
   );
 };

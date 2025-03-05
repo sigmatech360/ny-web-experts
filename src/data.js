@@ -91,6 +91,8 @@ export const ourServicesData = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
   },
 ];
+
+
 export const blogCardsData = [
   {
     id: 1,
@@ -108,6 +110,48 @@ export const blogCardsData = [
   },
   {
     id: 3,
+    image: blogimg3,
+    name: "Ten Ways of Lying about Your Relationship",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+  },
+  {
+    id: 4,
+    image: blogimg1,
+    name: "Ten Ways of Lying about Your Relationship",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+  },
+  {
+    id: 5,
+    image: blogimg2,
+    name: "Ten Ways of Lying about Your Relationship",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+  },
+  {
+    id: 6,
+    image: blogimg3,
+    name: "Ten Ways of Lying about Your Relationship",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+  },
+  {
+    id: 7,
+    image: blogimg1,
+    name: "Ten Ways of Lying about Your Relationship",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+  },
+  {
+    id: 8,
+    image: blogimg2,
+    name: "Ten Ways of Lying about Your Relationship",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+  },
+  {
+    id: 9,
     image: blogimg3,
     name: "Ten Ways of Lying about Your Relationship",
     description:

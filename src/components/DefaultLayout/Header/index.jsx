@@ -23,7 +23,7 @@ const Header = () => {
             <Link to={"/services"} className="nav-link">Services</Link>
             <Link to={"/portfolio"} className="nav-link">Portfolio</Link>
             <Link to={"/"} className="nav-link">Testimonials</Link>
-            <Link to={"/"} className="nav-link">Contact Us</Link>
+            <Link to={"/contact-us"} className="nav-link">Contact Us</Link>
           </Nav>
           <div className="header_social-icons">
             <a className="header_social-icon" href="javascript:;"><CiFacebook /></a>

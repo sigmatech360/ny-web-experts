@@ -12,9 +12,9 @@ const defaultCenter = {
   lng: -118.2437, // Los Angeles longitude
 };
 
-const ContactUsSec = () => {
+const ContactUsSec = (props) => {
   return (
-    <section className="contact-us-sec clipedShaped-sec bg-gradiant">
+    <section className={`contact-us-sec clipedShaped-sec bg-gradiant contact-us-sec-${props.variant} ${props.className}`}>
       <div className="container">
         <div className="row">
           <div className="col-lg-6 mb-lg-0 mb-4">

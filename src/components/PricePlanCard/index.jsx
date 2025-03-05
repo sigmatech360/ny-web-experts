@@ -2,7 +2,7 @@ import React from "react";
 
 const PricePlanCard = (props) => {
   return (
-    <div className="price_plan_card">
+    <div className={`price_plan_card price_plan_card-${props.variant}`}>
       <div className="price_plan_card_head">
         <p className="package_name">{props?.name}</p>
         <h2 className="package_price">${props?.price}/Mo</h2>
