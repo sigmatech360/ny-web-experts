@@ -10,6 +10,7 @@ import Pricing from "../screens/Pricing";
 import Blogs from "../screens/Blogs";
 import ContactUs from "../screens/ContactUs";
 import PrivacyPolicy from "../screens/PrivacyPolicy";
+import TermsConditions from "../screens/TermsConditions";
 
 const AppRouter = () => {
   return (
@@ -22,6 +23,7 @@ const AppRouter = () => {
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/terms-and-conditions" element={<TermsConditions />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
     </Router>

@@ -37,7 +37,7 @@ const footerLink = [
 ];
 
 const Footer = () => {
-  return ( 
+  return (
     <>
       <section className="main-footer bg-gradiant">
         <div className="container">
@@ -50,8 +50,8 @@ const Footer = () => {
                   </Link>
                 </div>
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting
-                  industry. Lorem Ipsum has been the industry.
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry.
                 </p>
                 <div className="header_social-icons">
                   <a className="header_social-icon" href="javascript:;">
@@ -120,7 +120,11 @@ const Footer = () => {
                 <h3 className="footer-title">Newsletter</h3>
                 <div className="footer-newsletter-content">
                   <p>Subscribe to our newsletter for daily new and updates</p>
-                  <input type="text" className="form-control mb-3" placeholder="Email address" />
+                  <input
+                    type="text"
+                    className="form-control mb-3"
+                    placeholder="Email address"
+                  />
                   <button className="ny-btn">Send</button>
                 </div>
               </div>
@@ -132,7 +136,11 @@ const Footer = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <p className="text-center m-0">Copyright © 2024 NY Web Experts. All rights reserved. | Terms & Conditions | Privacy Policy</p>
+              <p className="text-center m-0">
+                Copyright © 2024 NY Web Experts. All rights reserved. |{" "}
+                <Link to={"/terms-and-conditions"}>Terms & Conditions</Link> |{" "}
+                <Link to={"/privacy-policy"}>Privacy Policy</Link>
+              </p>
             </div>
           </div>
         </div>
