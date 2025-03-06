@@ -1,33 +1,33 @@
-import uiuxdesignicon from "./assets/images/ui-ux-design-icon.png";
-import brandicon from "./assets/images/brand-icon.png";
+import uiuxdesignicon from "./assets/images/ui-ux-design-icon.webp";
+import brandicon from "./assets/images/brand-icon.webp";
 
-import experiencedmembericon from "./assets/images/experienced-member-icon.png";
-import supportandserviceicon from "./assets/images/support-and-service-icon.png";
-import guarenteeicon from "./assets/images/guarentee-icon.png";
+import experiencedmembericon from "./assets/images/experienced-member-icon.webp";
+import supportandserviceicon from "./assets/images/support-and-service-icon.webp";
+import guarenteeicon from "./assets/images/guarentee-icon.webp";
 
-import ourserviceimg1 from "./assets/images/our-service-img-1.png";
-import ourserviceimg2 from "./assets/images/our-service-img-2.png";
-import ourserviceimg3 from "./assets/images/our-service-img-3.png";
+import ourserviceimg1 from "./assets/images/our-service-img-1.webp";
+import ourserviceimg2 from "./assets/images/our-service-img-2.webp";
+import ourserviceimg3 from "./assets/images/our-service-img-3.webp";
 
-import blogimg1 from "./assets/images/blog-img-1.png";
-import blogimg2 from "./assets/images/blog-img-2.png";
-import blogimg3 from "./assets/images/blog-img-3.png";
+import blogimg1 from "./assets/images/blog-img-1.webp";
+import blogimg2 from "./assets/images/blog-img-2.webp";
+import blogimg3 from "./assets/images/blog-img-3.webp";
 
-import qualityservicesicon from "./assets/images/quality-services-icon.png";
-import professionaltemicon from "./assets/images/professional-tem-icon.png";
-import trustedicon from "./assets/images/trusted-icon.png";
-import comittedicon from "./assets/images/comitted-icon.png";
+import qualityservicesicon from "./assets/images/quality-services-icon.webp";
+import professionaltemicon from "./assets/images/professional-tem-icon.webp";
+import trustedicon from "./assets/images/trusted-icon.webp";
+import comittedicon from "./assets/images/comitted-icon.webp";
 
-import startupicon from "./assets/images/startup-icon.png";
-import developmenticon from "./assets/images/development-icon.png";
-import analyticsicon from "./assets/images/analytics-icon.png";
+import startupicon from "./assets/images/startup-icon.webp";
+import developmenticon from "./assets/images/development-icon.webp";
+import analyticsicon from "./assets/images/analytics-icon.webp";
 
-import testimonialimg1 from "./assets/images/testimonial-img-1.png";
-import testimonialimg2 from "./assets/images/testimonial-img-2.png";
-import testimonialimg3 from "./assets/images/testimonial-img-3.png";
+import testimonialimg1 from "./assets/images/testimonial-img-1.webp";
+import testimonialimg2 from "./assets/images/testimonial-img-2.webp";
+import testimonialimg3 from "./assets/images/testimonial-img-3.webp";
 
-import teamcardimg1 from "./assets/images/team-card-img1.png";
-import teamcardimg2 from "./assets/images/team-card-img2.png";
+import teamcardimg1 from "./assets/images/team-card-img1.webp";
+import teamcardimg2 from "./assets/images/team-card-img2.webp";
 
 export const premierDesignStudioIcon = [
   {

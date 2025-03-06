@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
-import logo from "../../../assets/images/logo.png";
+import logo from "../../../assets/images/logo.webp";
 import { CiFacebook } from "react-icons/ci";
 import { FaInstagram, FaRegEnvelope, FaWhatsapp } from "react-icons/fa";
 import { RiPinterestLine } from "react-icons/ri";
@@ -12,27 +12,27 @@ const footerLink = [
   {
     id: 1,
     name: "About",
-    link: "",
+    link: "/about",
   },
   {
     id: 2,
     name: "Leadership",
-    link: "",
+    link: null,
   },
   {
     id: 3,
     name: "IT Blog",
-    link: "",
+    link: "/blogs",
   },
   {
     id: 4,
     name: "Case Studies",
-    link: "",
+    link: null,
   },
   {
     id: 5,
     name: "Locations",
-    link: "",
+    link: null,
   },
 ];
 
@@ -46,7 +46,7 @@ const Footer = () => {
               <div className="footer-about">
                 <div className="footer-logo">
                   <Link to={"/"}>
-                    <img src={logo} className="img-fluid" alt="Logo" />
+                    <img src={logo} className="img-fluid" alt="New York Web Experts Logo" />
                   </Link>
                 </div>
                 <p>
@@ -75,7 +75,7 @@ const Footer = () => {
                 <ul className="footer-links">
                   {footerLink.map((item, index) => (
                     <li key={index}>
-                      <Link to="javascript:;">{item.name}</Link>
+                      <Link to={`${item.link ? item.link : "javascript:;"}`}>{item.name}</Link>
                     </li>
                   ))}
                 </ul>

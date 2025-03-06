@@ -2,9 +2,9 @@ import React from "react";
 
 import bannerBG from "../../assets/images/about-banner-bg.webp";
 
-import aboutimg1 from "../../assets/images/about-img1.png";
-import aboutimg2 from "../../assets/images/about-img2.png";
-import digitalproductuiuximg from "../../assets/images/digital-product-uiux-img.png";
+import aboutimg1 from "../../assets/images/about-img1.webp";
+import aboutimg2 from "../../assets/images/about-img2.webp";
+import digitalproductuiuximg from "../../assets/images/digital-product-uiux-img.webp";
 
 import { TbChecks } from "react-icons/tb";
 

@@ -8,12 +8,12 @@ import GetStarted from "../../components/GetStarted";
 import BlogSec from "../../components/BlogSec";
 import ContactUsSec from "../../components/ContactUsSec";
 
-import projectsimg1 from "../../assets/images/projects-img-1.png";
-import projectsimg2 from "../../assets/images/projects-img-2.png";
-import projectsimg3 from "../../assets/images/projects-img-3.png";
-import projectsimg4 from "../../assets/images/projects-img-4.png";
-import projectsimg5 from "../../assets/images/projects-img-5.png";
-import projectsimg6 from "../../assets/images/projects-img-6.png";
+import projectsimg1 from "../../assets/images/projects-img-1.webp";
+import projectsimg2 from "../../assets/images/projects-img-2.webp";
+import projectsimg3 from "../../assets/images/projects-img-3.webp";
+import projectsimg4 from "../../assets/images/projects-img-4.webp";
+import projectsimg5 from "../../assets/images/projects-img-5.webp";
+import projectsimg6 from "../../assets/images/projects-img-6.webp";
 
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";

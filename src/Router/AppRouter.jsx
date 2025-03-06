@@ -11,6 +11,7 @@ import Blogs from "../screens/Blogs";
 import ContactUs from "../screens/ContactUs";
 import PrivacyPolicy from "../screens/PrivacyPolicy";
 import TermsConditions from "../screens/TermsConditions";
+import Testimonials from "../screens/Testimonials";
 
 const AppRouter = () => {
   return (
@@ -22,6 +23,7 @@ const AppRouter = () => {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/blogs" element={<Blogs />} />
+        <Route path="/testimonials" element={<Testimonials />} />
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/terms-and-conditions" element={<TermsConditions />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />

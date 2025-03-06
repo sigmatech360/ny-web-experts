@@ -417,7 +417,9 @@ p {
 .testimonials-sec .sec-head {
   text-align: center;
 }
-
+.testimonials-sec .sec-head .sec-tag {
+  color: #440370;
+}
 .testimonials-item {
   text-align: center;
   border: 2px solid #440370;
@@ -554,7 +556,7 @@ p {
 }
 
 .getStarted-sec {
-  background-image: url("./assets/images/get-started-img.png");
+  background-image: url("./assets/images/get-started-img.webp");
   padding: 330px 0 100px;
   background-position: top center;
   color: #fff;

@@ -1,10 +1,10 @@
 import React from "react";
 import DefaultLayout from "../../components/DefaultLayout";
 
-import bnnerimg from "../../assets/images/bnner-img.png";
-import premierdesignstudioimg from "../../assets/images/premier-design-studio-img.png";
+import bnnerimg from "../../assets/images/bnner-img.webp";
+import premierdesignstudioimg from "../../assets/images/premier-design-studio-img.webp";
 
-import designanddevimg from "../../assets/images/design-and-dev-img.png";
+import designanddevimg from "../../assets/images/design-and-dev-img.webp";
 
 import ContentWithIcon from "../../components/ContentWithIcon";
 import { HiOutlinePhone } from "react-icons/hi";
@@ -72,7 +72,7 @@ const Home = () => {
               <div className="premier-design-studio-img">
                 <img
                   src={premierdesignstudioimg}
-                  alt=""
+                  alt="A premier New York-based design studio"
                   className="img-fluid"
                 />
               </div>
@@ -245,7 +245,7 @@ const Home = () => {
             </div>
             <div className="col-lg-6 mb-lg-0 mb-4">
               <div className="premier-design-studio-img">
-                <img src={designanddevimg} alt="" className="img-fluid" />
+                <img src={designanddevimg} alt="Design and development across all platforms" className="img-fluid" />
               </div>
             </div>
             <div className="col-lg-6">

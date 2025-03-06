@@ -1,6 +1,6 @@
 import React from "react";
 
-import webcreationimg from "../../assets/images/web-creation-img.png";
+import webcreationimg from "../../assets/images/web-creation-img.webp";
 import { TbChecks } from "react-icons/tb";
 
 const WebCreationSec = () => {
