@@ -20,15 +20,26 @@ const BlogSec = ({ itemsPerPage = 3, pagination }) => {
         <div className="row">
           <div className="col-md-12 mb-4">
             <div className="sec-head text-center mb-4">
-              <p className="sec-tag purpleColor">From The Blog</p>
-              <h2>
+              <p
+                className="sec-tag purpleColor"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+              >
+                From The Blog
+              </p>
+              <h2 data-aos="fade-up" data-aos-duration="3000">
                 Latest News & <br /> Articles from the Blog.
               </h2>
             </div>
           </div>
 
           {displayedBlogs.map((item, index) => (
-            <div className="col-md-4 mb-4" key={index}>
+            <div
+              className="col-md-4 mb-4"
+              key={index}
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
               <BlogCard
                 image={item.image}
                 name={item.name}
@@ -67,33 +78,6 @@ const BlogSec = ({ itemsPerPage = 3, pagination }) => {
 };
 
 export default BlogSec;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // import React from "react";
 // import BlogCard from "../BlogCard";

@@ -7,7 +7,9 @@ const GetCustomLogo = (props) => {
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-4 mb-3 mb-lg-0">
-            <h4 className="get-custom-logo-title">
+            <h4 className="get-custom-logo-title"
+            data-aos="fade-right"
+            data-aos-duration="2000">
               Get Custom Logo from our Best Logo Design Agency in USA
             </h4>
           </div>

@@ -16,8 +16,10 @@ const TestimonialSec = () => {
           <div className="row">
             <div className="col-md-12 mb-4">
               <div className="sec-head mb-4">
-                <p className="sec-tag">Our Testimonials</p>
-                <h2>What our clients are saying about us</h2>
+                <p className="sec-tag" data-aos="fade-up"
+                    data-aos-duration="2000">Our Testimonials</p>
+                <h2 data-aos="fade-up"
+                    data-aos-duration="3000">What our clients are saying about us</h2>
               </div>
             </div>
           </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 
 import bannerBG from "../../assets/images/about-banner-bg.webp";
 
@@ -16,9 +16,13 @@ import TestimonialSec from "../../components/TestimonialSec";
 import OurTeamSec from "../../components/OurTeamSec";
 import PurpleBGSec from "../../components/PurpleBGSec";
 
+import MouseHoverImg from "../../components/MouseHoverImg";
+
 const About = () => {
+  
+
   return (
-    <DefaultLayout>
+    <DefaultLayout> 
       <InnerBanner bannerBG={bannerBG} title="About" page="About" />
 
       <section className="about-us-sec">
@@ -29,27 +33,31 @@ const About = () => {
                 <div className="row">
                   <div className="col-6">
                     <div className="about-us-left-content">
-                      <div className="about-us-left-img">
+                    <MouseHoverImg image={aboutimg1} 
+                    aosProps={{ "data-aos": "fade-right", "data-aos-duration": "2000" }}  />
+                      {/* <div className="about-us-left-img">
                         <img
                           src={aboutimg1}
                           className="img-fluid"
                           alt="About Left image 1"
                         />
-                      </div>
-                      <div className="about-us-experience">
+                      </div> */}
+                      <div className="about-us-experience" data-aos="fade-up" data-aos-duration="2000">
                         <h3>30+ Years</h3>
                         <p>OF EXPERIENCE</p>
                       </div>
                     </div>
                   </div>
                   <div className="col-6">
-                    <div className="about-us-left-img">
+                    <MouseHoverImg image={aboutimg2} aosProps={{ "data-aos": "fade-left", "data-aos-duration": "2000" }}  />
+                    {/* <div className="about-us-left-img" ref={containerRef}>
                       <img
                         src={aboutimg2}
                         className="img-fluid"
                         alt="About Image 2"
+                        ref={imageRef}
                       />
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>

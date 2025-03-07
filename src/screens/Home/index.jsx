@@ -1,13 +1,9 @@
 import React from "react";
 import DefaultLayout from "../../components/DefaultLayout";
 
-import bnnerimg from "../../assets/images/bnner-img.webp";
 import premierdesignstudioimg from "../../assets/images/premier-design-studio-img.webp";
-
 import designanddevimg from "../../assets/images/design-and-dev-img.webp";
-
 import ContentWithIcon from "../../components/ContentWithIcon";
-import { HiOutlinePhone } from "react-icons/hi";
 import { TbChecks } from "react-icons/tb";
 import ServicesCard from "../../components/ServicesCard";
 
@@ -29,41 +25,24 @@ import {
 import PurpleBGSec from "../../components/PurpleBGSec";
 import GetCustomLogo from "../../components/GetCustomLogo";
 
+import MainBanner from "../../components/MainBanner";
+
 const Home = () => {
   return (
     <DefaultLayout>
-      <section className="main-banner clipedShaped-sec bg-gradiant">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-6">
-              <div className="main-banner-content">
-                <h2>Design & Branding Studio in New York</h2>
-                <p className="poppins">
-                  At Edgar 360 Images, we specialize in helping real estate
-                  agents stand out with high-quality visuals that capture every
-                  property's best features. Our services include professional
-                  photography, immersive 360° videos, virtual staging, and more.
-                  Operated by active police officers, we offer a personalized,
-                  hands-on experience for each client.
-                </p>
-                <button className="ny-btn">Explore Our Services</button>
-              </div>
-            </div>
-            <div className="col-lg-6 mb-lg-0 mb-3">
-              <div className="main-banner-img">
-                <img src={bnnerimg} alt="Banner Image" className="img-fluid" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <MainBanner />
 
       <section className="premier-design-studio">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-12 mb-5">
               <div className="premier-design-studio-title">
-                <h1 className="text-center">
+                <h1
+                  className="text-center"
+                  data-aos="fade-up"
+                  data-aos-duration="3000"
+                  data-aos-offset="0"
+                >
                   A premier New York-based design studio
                 </h1>
               </div>
@@ -74,23 +53,29 @@ const Home = () => {
                   src={premierdesignstudioimg}
                   alt="A premier New York-based design studio"
                   className="img-fluid"
+                  data-aos="fade-right"
+                  data-aos-duration="2000"
                 />
               </div>
             </div>
             <div className="col-lg-6">
               <div className="sec-content">
-                <h2>
+                <h2 data-aos="fade-up" data-aos-duration="2000">
                   Websites and branding that set the groundwork for successful
                   marketing
                 </h2>
-                <p>
+                <p data-aos="fade-up" data-aos-duration="2000">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text ever since the 1500s, when an unknown
                   printer took a galley of type and scrambled it to make a type
                   specimen book
                 </p>
-                <div className="row mt-4">
+                <div
+                  className="row mt-4"
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                >
                   {premierDesignStudioIcon.map((item, index) => (
                     <div className="col-md-6 mb-md-0 mb-3" key={index}>
                       <ContentWithIcon
@@ -115,7 +100,12 @@ const Home = () => {
         <div className="container">
           <div className="row">
             {servicesInfoSec.map((item, index) => (
-              <div className="col-lg-4 mb-4" key={index}>
+              <div
+                className="col-lg-4 mb-4"
+                key={index}
+                data-aos="fade-up"
+                data-aos-duration="2000"
+              >
                 <ContentWithIcon
                   variant="row"
                   icon={item.icon}
@@ -133,8 +123,16 @@ const Home = () => {
           <div className="row">
             <div className="col-md-12 mb-4">
               <div className="sec-head mb-4">
-                <p className="sec-tag">Our Services</p>
-                <h2>Services We Offer</h2>
+                <p
+                  className="sec-tag"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
+                  Our Services
+                </p>
+                <h2 data-aos="fade-up" data-aos-duration="2000">
+                  Services We Offer
+                </h2>
               </div>
             </div>
             {ourServicesData.map((item, index) => (
@@ -157,9 +155,21 @@ const Home = () => {
           <div className="row">
             <div className="col-lg-6 mb-lg-0 mb-5">
               <div className="web-creation-content">
-                <p className="sec-tag mb-4">Our Benefits</p>
-                <h2>Why You Should Choose us.</h2>
-                <p className="poppins pe-xl-5 me-xl-5 pe-0   me-0">
+                <p
+                  className="sec-tag mb-4"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
+                  Our Benefits
+                </p>
+                <h2 data-aos="fade-up" data-aos-duration="2000">
+                  Why You Should Choose us.
+                </h2>
+                <p
+                  className="poppins pe-xl-5 me-xl-5 pe-0   me-0"
+                  data-aos="fade-up"
+                  data-aos-duration="3000"
+                >
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text ever since the 1500s, when an unknown
@@ -168,7 +178,11 @@ const Home = () => {
                   also the leap into electronic typesetting, remaining
                   essentially unchanged.
                 </p>
-                <div className="d-flex flex-wrap gap-3">
+                <div
+                  className="d-flex flex-wrap gap-3"
+                  data-aos="fade-up"
+                  data-aos-duration="3000"
+                >
                   <div className={`content-with-icon-item flex-row`}>
                     <div className="content-with-icon-icon">
                       <TbChecks />
@@ -194,7 +208,12 @@ const Home = () => {
               <div className="our_benefits-icons">
                 <div className="row">
                   {ourBenefitsContentIconData.map((item, index) => (
-                    <div className="col-md-6 mb-4" key={index}>
+                    <div
+                      className="col-md-6 mb-4"
+                      data-aos="fade-up"
+                      data-aos-duration="3000"
+                      key={index}
+                    >
                       <ContentWithIcon
                         icon={item.icon}
                         name={item.name}
@@ -234,10 +253,18 @@ const Home = () => {
           <div className="row align-items-center">
             <div className="col-lg-12 mb-5">
               <div className="premier-design-studio-title">
-                <h1 className="text-center">
+                <h1
+                  className="text-center"
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                >
                   Design and development across all platforms
                 </h1>
-                <p className="text-center">
+                <p
+                  className="text-center"
+                  data-aos="fade-up"
+                  data-aos-duration="3000"
+                >
                   We fuel the growth of purpose driven brands through strategy
                   activation, design empowerment, and market adoption.
                 </p>
@@ -245,20 +272,30 @@ const Home = () => {
             </div>
             <div className="col-lg-6 mb-lg-0 mb-4">
               <div className="premier-design-studio-img">
-                <img src={designanddevimg} alt="Design and development across all platforms" className="img-fluid" />
+                <img
+                  src={designanddevimg}
+                  alt="Design and development across all platforms"
+                  className="img-fluid"
+                  data-aos="fade-right"
+                  data-aos-duration="2000"
+                />
               </div>
             </div>
             <div className="col-lg-6">
               <div className="sec-content">
-                <h2>
+                <h2 data-aos="fade-up" data-aos-duration="2000">
                   We’re design-focused across every product that people love to
                   use
                 </h2>
-                <p>
+                <p data-aos="fade-up" data-aos-duration="3000">
                   We create human-centered enterprise software that has the
                   polished, snappy feel of the best consumer apps.
                 </p>
-                <div className="row mt-4">
+                <div
+                  className="row mt-4"
+                  data-aos="fade-up"
+                  data-aos-duration="3000"
+                >
                   {premierDesignStudioIcon.map((item, index) => (
                     <div className="col-md-6 mb-md-0 mb-3" key={index}>
                       <ContentWithIcon

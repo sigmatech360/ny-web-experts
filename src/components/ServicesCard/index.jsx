@@ -2,7 +2,8 @@ import React from 'react'
 
 const ServicesCard = (props) => {
     return (
-        <div className={`our-services-card ${props?.variant}`}>
+        <div className={`our-services-card ${props?.variant}`} data-aos="fade-up"
+        data-aos-duration="2000">
             <div className="our-services-card-header">
                 <img src={props?.image} alt="Our services Image" className='img-fluid' />
             </div>
