@@ -30,8 +30,10 @@ const Portfolio = () => {
             <div className="col-xl-10">
               <div className="sec-head text-center">
                 {/* <p className="sec-tag">Pricing Plan</p> */}
-                <h2>Get Inspired By Our Finest Work</h2>
-                <p>
+                <h2 data-aos="fade-up" data-aos-duration="1000">
+                  Get Inspired By Our Finest Work
+                </h2>
+                <p data-aos="fade-up" data-aos-duration="2000">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text ever since the 1500s, when an unknown
@@ -42,7 +44,11 @@ const Portfolio = () => {
                 </p>
               </div>
             </div>
-            <div className="col-md-12">
+            <div
+              className="col-md-12"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
               <Tabs
                 id="controlled-tab-example"
                 activeKey={key}
@@ -52,7 +58,11 @@ const Portfolio = () => {
                 <Tab eventKey="web-development" title="Web Development">
                   <div className="row">
                     <div className="col-md-4 mb-md-0 mb-3">
-                      <div className="projects-item d-flex flex-column gap-4">
+                      <div
+                        className="projects-item d-flex flex-column gap-4"
+                        data-aos="fade-right"
+                        data-aos-duration="2000"
+                      >
                         <img
                           src={projectsimg1}
                           className="img-fluid"
@@ -76,7 +86,11 @@ const Portfolio = () => {
                       </div>
                     </div>
                     <div className="col-md-4 mb-md-0 mb-3">
-                      <div className="projects-item d-flex flex-column gap-4">
+                      <div
+                        className="projects-item d-flex flex-column gap-4"
+                        data-aos="fade-up"
+                        data-aos-duration="2000"
+                      >
                         <img
                           src={projectsimg3}
                           className="img-fluid"
@@ -100,7 +114,11 @@ const Portfolio = () => {
                       </div>
                     </div>
                     <div className="col-md-4 mb-md-0 mb-3">
-                      <div className="projects-item d-flex flex-column gap-4">
+                      <div
+                        className="projects-item d-flex flex-column gap-4"
+                        data-aos="fade-left"
+                        data-aos-duration="2000"
+                      >
                         <img
                           src={projectsimg5}
                           className="img-fluid"

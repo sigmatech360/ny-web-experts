@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { gsap } from "gsap";
 
 const InnerBanner = (props) => {
-  const sectionRef = useRef(null);
   const headingRef = useRef(null);
   const textRef = useRef(null);
 
@@ -14,27 +13,19 @@ const InnerBanner = (props) => {
         defaults: { duration: 1, ease: "power3.out" },
       });
 
-      tl.from(sectionRef.current, {
-        opacity: 0,
-        scale: 0.5,
-        rotateX: -20,
-        rotateY: 10,
-        y: 120,
-        filter: "blur(20px)",
-        duration: 2.5,
-        ease: "power4.out",
-        transformOrigin: "center center",
-        perspective: 800,
-        onStart: () => {
-          gsap.to(sectionRef.current, { scale: 1, duration: 1.8, ease: "expo.out" });
-        },
-        onComplete: () => {
-          gsap.to(sectionRef.current, { filter: "blur(0px)", duration: 0.6 });
-        }
+      tl.from(headingRef.current, { 
+        opacity: 0, 
+        y: 40, 
+        duration: 0.8, 
+        ease: "power3.out" 
       })
-        .from(headingRef.current, { opacity: 0, y: 50 }, "-=0.5")
-        .from(textRef.current, { opacity: 0, y: 30 }, "-=0.5");
-    }, sectionRef);
+      .from(textRef.current, { 
+        opacity: 0, 
+        y: 25, 
+        duration: 0.6, 
+        ease: "power3.out" 
+      }, "-=0.4"); // Slight overlap for smoother appearance
+    });
 
     return () => ctx.revert();
   }, []);
@@ -43,7 +34,6 @@ const InnerBanner = (props) => {
     <section
       className="inner-banner-sec clipedShaped-sec"
       style={{ backgroundImage: `url(${props?.bannerBG})` }}
-      ref={sectionRef}
     >
       <div className="inner-bg-layer"></div>
       <div className="container">

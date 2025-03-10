@@ -77,7 +77,7 @@ const MainBanner = () => {
   return (
     <section
       className="main-banner clipedShaped-sec bg-gradiant"
-      ref={sectionRef}
+      // ref={sectionRef}
     >
       <div className="container">
         <div className="row align-items-center">

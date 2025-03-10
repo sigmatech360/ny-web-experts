@@ -7,7 +7,12 @@ const OurTeamSec = () => {
   return (
     <PurpleBGSec tag="Our Team" title="Meet Out Team">
       {teamData.map((item, index) => (
-        <div className="col-md-4 mb-md-0 mb-4" key={index}>
+        <div
+          className="col-md-4 mb-md-0 mb-4"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          key={index}
+        >
           <TeamCard
             image={item?.image}
             name={item?.name}

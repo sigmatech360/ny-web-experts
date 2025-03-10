@@ -30,11 +30,11 @@ const WebDevelopment = () => {
             <div className="col-lg-8 mb-4">
               <div class="sec-head text-center">
                 {/* <p class="sec-tag">Our Testimonials</p> */}
-                <h2>
+                <h2 data-aos="fade-up" data-aos-duration="2000">
                   An Outstanding Strategy, Design, And Development Across All
                   Platforms
                 </h2>
-                <p>
+                <p data-aos="fade-up" data-aos-duration="3000">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text ever since the 1500s, when an unknown
@@ -46,7 +46,11 @@ const WebDevelopment = () => {
               </div>
             </div>
             <div className="col-lg-6">
-              <div className="our_benefits-icons">
+              <div
+                className="our_benefits-icons"
+                data-aos="fade-right"
+                data-aos-duration="2000"
+              >
                 <div className="row">
                   {outstandingStretagyContentIconData.map((item, index) => (
                     <div className="col-md-6 mb-4" key={index}>
@@ -62,11 +66,15 @@ const WebDevelopment = () => {
             </div>
             <div className="col-lg-6">
               <div className="web-creation-content">
-                <h2>
+                <h2 data-aos="fade-up" data-aos-duration="1000">
                   We Fuel The Growth Of Purpose Driven Brands Through Strategy
                   Design Empowerment, And Market Adoption.
                 </h2>
-                <p className="grayColor poppins">
+                <p
+                  className="grayColor poppins"
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                >
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text ever since the 1500s, when an unknown
@@ -75,7 +83,13 @@ const WebDevelopment = () => {
                   also the leap into electronic typesetting, remaining
                   essentially unchanged.
                 </p>
-                <button className="ny-btn">Get Started</button>
+                <button
+                  className="ny-btn"
+                  data-aos="fade-up"
+                  data-aos-duration="3000"
+                >
+                  Get Started
+                </button>
               </div>
             </div>
           </div>

@@ -14,10 +14,16 @@ const defaultCenter = {
 
 const ContactUsSec = (props) => {
   return (
-    <section className={`contact-us-sec clipedShaped-sec bg-gradiant contact-us-sec-${props.variant} ${props.className}`}>
+    <section
+      className={`contact-us-sec clipedShaped-sec bg-gradiant contact-us-sec-${props.variant} ${props.className}`}
+    >
       <div className="container">
         <div className="row">
-          <div className="col-lg-6 mb-lg-0 mb-4">
+          <div
+            className="col-lg-6 mb-lg-0 mb-4"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
             <div className="web-creation-content mb-5">
               <p className="sec-tag mb-4">Contact Us</p>
               <h2>Drop us a Line.</h2>
@@ -67,7 +73,8 @@ const ContactUsSec = (props) => {
               </div>
             </div>
           </div>
-          <div className="col-lg-6">
+          <div className="col-lg-6" data-aos="fade-left"
+                  data-aos-duration="2000">
             <div className="contact-us-map-content">
               <LoadScript googleMapsApiKey="YOUR_GOOGLE_MAPS_API_KEY">
                 <GoogleMap
