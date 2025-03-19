@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { Link } from "react-router-dom";
 import logo from "../../../assets/images/logo.webp";
@@ -37,6 +37,31 @@ const footerLink = [
 ];
 
 const Footer = () => {
+  const [email, setEmail] = useState("");
+  const apiUrl = import.meta.env.VITE_API_BASE_URL;
+  console.log("apiUrl", apiUrl);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch(`${apiUrl}/newsletter-subscription`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      const result = await response.json();
+      console.log(result);
+      alert("Email Submitted Successfully");
+    } catch (error) {
+      console.log(`Error submitting email:`, error);
+      alert("Submission failed. Please try again.");
+    }
+  };
+
   return (
     <>
       <section className="main-footer bg-gradiant">
@@ -46,7 +71,11 @@ const Footer = () => {
               <div className="footer-about">
                 <div className="footer-logo">
                   <Link to={"/"}>
-                    <img src={logo} className="img-fluid" alt="New York Web Experts Logo" />
+                    <img
+                      src={logo}
+                      className="img-fluid"
+                      alt="New York Web Experts Logo"
+                    />
                   </Link>
                 </div>
                 <p>
@@ -75,7 +104,9 @@ const Footer = () => {
                 <ul className="footer-links">
                   {footerLink.map((item, index) => (
                     <li key={index}>
-                      <Link to={`${item.link ? item.link : "javascript:;"}`}>{item.name}</Link>
+                      <Link to={`${item.link ? item.link : "javascript:;"}`}>
+                        {item.name}
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -120,12 +151,17 @@ const Footer = () => {
                 <h3 className="footer-title">Newsletter</h3>
                 <div className="footer-newsletter-content">
                   <p>Subscribe to our newsletter for daily new and updates</p>
-                  <input
-                    type="text"
-                    className="form-control mb-3"
-                    placeholder="Email address"
-                  />
-                  <button className="ny-btn">Send</button>
+                  <form onSubmit={handleSubmit}>
+                    <input
+                      type="text"
+                      className="form-control mb-3"
+                      placeholder="Email address"
+                      name="email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                    />
+                    <button className="ny-btn">Send</button>
+                  </form>
                 </div>
               </div>
             </div>
