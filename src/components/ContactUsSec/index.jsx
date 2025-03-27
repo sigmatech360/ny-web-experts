@@ -30,7 +30,6 @@ const ContactUsSec = (props) => {
   });
 
   const apiUrl = import.meta.env.VITE_API_BASE_URL;
-  console.log("apiUrl", apiUrl);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -52,6 +51,14 @@ const ContactUsSec = (props) => {
       const result = await response.json();
       console.log(result);
       alert("Form Submitted Successfully");
+      
+      setFormData({
+        username: "",
+        email: "",
+        phone: "",
+        service_1: "",
+        data_message: "",
+      })
     } catch (error) {
       console.log(`Error submitting form:`, error);
       alert("Submission failed. Please try again.");
