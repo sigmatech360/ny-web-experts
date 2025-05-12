@@ -8,9 +8,10 @@ import AppRouter from "./Router/AppRouter";
 function App() {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
-      delay: 300,
+      duration: 2000,
+      offset: 0,
     });
+    AOS.refresh();
   }, []);
 
   return (

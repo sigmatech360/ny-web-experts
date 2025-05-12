@@ -11,7 +11,6 @@ import PricePlanCard from "../../components/PricePlanCard";
 import GetStarted from "../../components/GetStarted";
 import BlogSec from "../../components/BlogSec";
 import TestimonialSec from "../../components/TestimonialSec";
-import WebCreationSec from "../../components/WebCreationSec";
 import ProjectSec from "../../components/ProjectSec";
 import ContactUsSec from "../../components/ContactUsSec";
 
@@ -26,6 +25,16 @@ import PurpleBGSec from "../../components/PurpleBGSec";
 import GetCustomLogo from "../../components/GetCustomLogo";
 
 import MainBanner from "../../components/MainBanner";
+
+import WebCreationSec from "../../components/WebCreationSec";
+import webcreationimg from "../../assets/images/web-creation-img.webp";
+
+import projectsimg1 from "../../assets/images/projects-img-1.webp";
+import projectsimg2 from "../../assets/images/projects-img-2.webp";
+import projectsimg3 from "../../assets/images/projects-img-3.webp";
+import projectsimg4 from "../../assets/images/projects-img-4.webp";
+import projectsimg5 from "../../assets/images/projects-img-5.webp";
+import projectsimg6 from "../../assets/images/projects-img-6.webp";
 
 const Home = () => {
   return (
@@ -94,7 +103,31 @@ const Home = () => {
 
       <GetCustomLogo className="mb-5" />
 
-      <WebCreationSec />
+      <WebCreationSec
+        image={webcreationimg}
+        projectsCount={3500}
+        secTag="Web creation"
+        secTitle="High-end web development company"
+        secDescription={`Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book. It has survived not only five centuries, but
+                  also the leap into electronic typesetting, remaining
+                  essentially unchanged.`}
+        listdata={[
+          {
+            title: "Top cloud expertise",
+            description:
+              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.",
+          },
+          {
+            title: "Reliable web development",
+            description:
+              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.",
+          },
+        ]}
+      />
 
       <section className="services-info-sec">
         <div className="container">
@@ -148,7 +181,84 @@ const Home = () => {
         </div>
       </section>
 
-      <ProjectSec />
+      <ProjectSec
+        secTag="Projects"
+        secTitle="Get inspired by our finest work"
+        projectsData={[
+          { imageList: [projectsimg1, projectsimg2] },
+          { imageList: [projectsimg3, projectsimg4] },
+          { imageList: [projectsimg5, projectsimg6] },
+        ]}
+      />
+
+      {/* <section className="projects-sec">
+            <div className="container">
+              <div className="row">
+                <div className="col-md-12 mb-4">
+                  <div className="sec-head mb-4">
+                    <p className="sec-tag" data-aos="fade-up"
+                        data-aos-duration="1000">Projects</p>
+                    <h2 data-aos="fade-up"
+                        data-aos-duration="2000">Get inspired by our finest work</h2>
+                  </div>
+                </div>
+                <div className="col-md-4 mb-md-0 mb-3">
+                  <div className="projects-item d-flex flex-column gap-4">
+                    <img
+                      src={projectsimg1}
+                      className="img-fluid"
+                      alt="project image 1"
+                      data-aos="fade-up"
+                        data-aos-duration="2000"
+                    />
+                    <img
+                      src={projectsimg2}
+                      className="img-fluid"
+                      alt="project image 2"
+                      data-aos="fade-up"
+                        data-aos-duration="3000"
+                    />
+                  </div>
+                </div>
+                <div className="col-md-4 mb-md-0 mb-3">
+                  <div className="projects-item d-flex flex-column gap-4">
+                    <img
+                      src={projectsimg3}
+                      className="img-fluid"
+                      alt="project image 3"
+                      data-aos="fade-up"
+                        data-aos-duration="2000"
+                    />
+                    <img
+                      src={projectsimg4}
+                      className="img-fluid"
+                      alt="project image 4"
+                      data-aos="fade-up"
+                        data-aos-duration="3000"
+                    />
+                  </div>
+                </div>
+                <div className="col-md-4 mb-md-0 mb-3">
+                  <div className="projects-item d-flex flex-column gap-4">
+                    <img
+                      src={projectsimg5}
+                      className="img-fluid"
+                      alt="project image 5"
+                      data-aos="fade-up"
+                        data-aos-duration="2000"
+                    />
+                    <img
+                      src={projectsimg6}
+                      className="img-fluid"
+                      alt="project image 6"
+                      data-aos="fade-up"
+                        data-aos-duration="3000"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section> */}
 
       <section className="our-benefits clipedShaped-sec bg-gradiant">
         <div className="container">

@@ -932,8 +932,6 @@ p {
   color: #440370;
 }
 
-
-
 .privacy-policy-sec {
   margin: 60px 0;
 }
@@ -968,6 +966,25 @@ p {
   line-height: 1;
 }
 
+.services__avg-sec .content-with-icon-img {
+  /* background: #440370; */
+  background-image: url(assets/images/icon-bg.png);
+  height: 54px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.services__avg-sec .content-with-icon-img p {
+  color: #fff;
+  font-family: "Outfit", serif;
+  font-size: 18px;
+  font-weight: 500;
+}
 /* Inner Pages CSS End */
 
 @media (max-width: 1399px) {
