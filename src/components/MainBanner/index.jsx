@@ -83,14 +83,18 @@ const MainBanner = () => {
         <div className="row align-items-center">
           <div className="col-lg-6 mb-lg-0 mb-3">
             <div className="main-banner-content">
-              <h2 ref={headingRef}>Design & Branding Studio in New York</h2>
+              <h2 ref={headingRef}>
+                New York’s Single Stop For Digital Growth & Presence!
+              </h2>
               <p className="poppins" ref={textRef}>
-                At Edgar 360 Images, we specialize in helping real estate agents
-                stand out with high-quality visuals that capture every
-                property's best features. Our services include professional
-                photography, immersive 360° videos, virtual staging, and more.
-                Operated by active police officers, we offer a personalized,
-                hands-on experience for each client.
+                At New York Web Experts, we build strong websites and powerful
+                digital marketing strategies to boost your business. We create
+                assets that drive traffic, leads, and revenue. Our goal? Sharp
+                design, clean code, and marketing that hits where it matters. We
+                turn the clicks on your websites into potential clients and
+                sales! As a growing digital marketing and website development
+                company in New York, we know how to position your brand for your
+                audience with measurable growth.
               </p>
               <button className="ny-btn" ref={buttonRef}>
                 Explore Our Services

@@ -6,6 +6,10 @@ import aboutimg1 from "../../assets/images/about-img1.webp";
 import aboutimg2 from "../../assets/images/about-img2.webp";
 import digitalproductuiuximg from "../../assets/images/digital-product-uiux-img.webp";
 
+import blogimg1 from "../../assets/images/blog-img-1.webp";
+import blogimg2 from "../../assets/images/blog-img-2.webp";
+import blogimg3 from "../../assets/images/blog-img-3.webp";
+
 import { TbChecks } from "react-icons/tb";
 
 import DefaultLayout from "../../components/DefaultLayout";
@@ -17,6 +21,72 @@ import OurTeamSec from "../../components/OurTeamSec";
 import PurpleBGSec from "../../components/PurpleBGSec";
 
 import MouseHoverImg from "../../components/MouseHoverImg";
+
+const blogCardsData = [
+  {
+    id: 1,
+    image: blogimg1,
+    name: "Why a Professional Website Design Is Crucial for Your Business",
+    description:
+      "A strong website design builds trust, improves user experience, and boosts conversions. Discover how the right design sets your business apart.",
+  },
+  {
+    id: 2,
+    image: blogimg2,
+    name: "How to Choose the Right Website Design Company in New York",
+    description:
+      "Looking for a website design company in New York? Learn what to consider when hiring experts to build your online presence correctly.",
+  },
+  {
+    id: 3,
+    image: blogimg3,
+    name: "Custom Website Design vs. Templates: What’s Best for You?",
+    description:
+      "Explore the pros and cons of custom website design and templates, and find out which solution fits your brand, goals, and budget.",
+  },
+  {
+    id: 4,
+    image: blogimg1,
+    name: "Top Benefits of Responsive Web Design in 2025",
+    description:
+      "With mobile users rising, responsive web design ensures your site looks great on any device. Learn why it's essential for modern businesses.",
+  },
+  // {
+  //   id: 5,
+  //   image: blogimg2,
+  //   name: "Ten Ways of Lying about Your Relationship",
+  //   description:
+  //     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+  // },
+  // {
+  //   id: 6,
+  //   image: blogimg3,
+  //   name: "Ten Ways of Lying about Your Relationship",
+  //   description:
+  //     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+  // },
+  // {
+  //   id: 7,
+  //   image: blogimg1,
+  //   name: "Ten Ways of Lying about Your Relationship",
+  //   description:
+  //     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+  // },
+  // {
+  //   id: 8,
+  //   image: blogimg2,
+  //   name: "Ten Ways of Lying about Your Relationship",
+  //   description:
+  //     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+  // },
+  // {
+  //   id: 9,
+  //   image: blogimg3,
+  //   name: "Ten Ways of Lying about Your Relationship",
+  //   description:
+  //     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+  // },
+];
 
 const About = () => {
   return (
@@ -64,20 +134,21 @@ const About = () => {
               <div className="web-creation-content ps-xl-2 ms-xl-2 ps-0 ms-0">
                 <p className="sec-tag purpleColor mb-4">About Us</p>
                 <h2 data-aos="fade-up" data-aos-duration="2000">
-                  Get to Know About Digital Agency.
+                  Custom Web Solutions
                 </h2>
                 <p
                   className="poppins"
                   data-aos="fade-up"
                   data-aos-duration="2000"
                 >
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, but
-                  also the leap into electronic typesetting, remaining
-                  essentially unchanged.
+                  NY Web Experts is a full-service digital solutions company
+                  founded with a passion for helping businesses grow and succeed
+                  online. With expertise in Website Development, CMS
+                  Development, Digital Marketing, Social Media Marketing, Logo
+                  Design, and SEO in New York, we help brands thrive digitally.
+                  Trusted by startups and established companies, we’re committed
+                  to delivering innovative, high-quality services that provide
+                  lasting growth.
                 </p>
 
                 <h4
@@ -85,7 +156,7 @@ const About = () => {
                   data-aos="fade-up"
                   data-aos-duration="2000"
                 >
-                  The Professional Approach To Development.
+                  The Professional Approach To Digital Excellence
                 </h4>
 
                 <div
@@ -148,19 +219,20 @@ const About = () => {
         <div className="col-lg-6">
           <div className="digital-product-content">
             <h2 data-aos="fade-up" data-aos-duration="1000">
-              We are a digital product and user experience design agency
+              Full-Stack Design & Development For Ambitious Businesses
             </h2>
             <p
               className="poppins whiteColor"
               data-aos="fade-up"
               data-aos-duration="2000"
             >
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged.
+              At NY Web Experts, we provide full-stack enablement to businesses
+              that are passionate about growth. From attractive front-end
+              development to robust back-end development, our team is all about
+              creating custom solutions that scale with your growth. We provide
+              comprehensive, cutting-edge design and development services to
+              support your unique goals and drive success in today's competitive
+              digital landscape.
             </p>
             <button
               className="ny-btn"
@@ -184,10 +256,18 @@ const About = () => {
         </div>
       </PurpleBGSec>
 
-      <TestimonialSec />
-      <OurTeamSec />
-      <BlogSec />
-      <GetStarted />
+      <TestimonialSec
+        secTag="Testimonials"
+        secTitle="When Our Clients Win, We Win"
+      />
+
+      <OurTeamSec secTitle="Meet The Dream Team For Success & Growth" />
+
+      <BlogSec
+        secTitle="Latest Trends & Insights, All From The Blog"
+        blogCardsData={blogCardsData}
+      />
+      <GetStarted secTitle="Got An Idea? Let’s Discuss" secDescription="You’ve got business goals, and we have the best team to turn them into reality. Let’s build your business into a digital beast that gets clicks, leads, and revenue." btnText="Book A Call" />
     </DefaultLayout>
   );
 };

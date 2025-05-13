@@ -26,7 +26,7 @@ const WebCreationSec = (props) => {
                 <h1>
                   {props.projectsCount} <br />+
                 </h1>
-                <p>Successful Projects Done</p>
+                <p>{props.projectsCountText || `Successful Projects Done`}</p>
               </div>
             </div>
           </div>
@@ -43,6 +43,15 @@ const WebCreationSec = (props) => {
               >
                 {props.secDescription}
               </p>
+              {props.secDescription2 && (
+                <p
+                  className="poppins"
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                >
+                  {props.secDescription2}
+                </p>
+              )}
               <div
                 className="d-flex flex-column gap-3"
                 data-aos="fade-up"

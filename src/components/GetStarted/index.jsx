@@ -1,6 +1,6 @@
 import React from "react";
 
-const GetStarted = () => {
+const GetStarted = (props) => {
   return (
     <section className="getStarted-sec">
       <div className="container">
@@ -9,19 +9,20 @@ const GetStarted = () => {
             <div className="sec-head text-center">
               {/* <p className="sec-tag">Pricing Plan</p> */}
               <h2 data-aos="fade-up" data-aos-duration="1000">
-                Let’s Get Started New Project.
+                {props.secTitle || `Let’s Get Started New Project.`}
               </h2>
               <p data-aos="fade-up" data-aos-duration="2000">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
+                {props.secDescription ||
+                  `Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since.{" "}
+                text ever since.`}
               </p>
               <button
                 className="ny-btn"
                 data-aos="fade-up"
                 data-aos-duration="3000"
               >
-                Discover More
+                {props.btnText || `Discover More`}
               </button>
             </div>
           </div>

@@ -29,30 +29,26 @@ export const aboutBoxesData = [
   {
     id: 1,
     icon: startupicon,
-    name: "Startups",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.",
+    name: "Responsive Designs",
+    description: `Your website will adapt perfectly across all devices, ensuring better SEO and a higher ranking.`,
   },
   {
     id: 2,
     icon: developmenticon,
-    name: "Development",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.",
+    name: "Intuitive Interfaces",
+    description: `We prioritize UX and UI design that’s easy to navigate so visitors can easily find what they are looking for, be it a product or a service.`,
   },
   {
     id: 3,
     icon: analyticsicon,
-    name: "Analytics",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.",
+    name: "SEO-Friendly Development",
+    description: `Our websites are built with SEO friendly web design practices to help your business rank higher and reach a broader audience.`,
   },
   {
     id: 4,
     icon: comittedicon,
-    name: "Workflow",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.",
+    name: "Scalable Custom Solutions",
+    description: `From startups to enterprises, we deliver custom website design that perfectly aligns with your brand message.`,
   },
 ];
 
@@ -61,47 +57,44 @@ const Services = () => {
     <DefaultLayout>
       <InnerBanner
         bannerBG={bannerBG}
-        title="Web Development"
+        title="Web Design & Development"
         page="Services"
       />
 
       <OutsourcingStrategySec
-        secTitle={`An Outstanding Strategy, Design, And Development Across All Platforms`}
-        secDescription={`Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.`}
-        secSubSecTitle={`We Fuel The Growth Of Purpose Driven Brands Through Strategy Design Empowerment, And Market Adoption.`}
-        secSubSecDescription={`Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.`}
+        secTitle={`Website Design Services For Online Growth`}
+        secDescription={`Create and scale custom, high-impact website design solutions that immerse users and offer a smooth experience across every interaction. Our expert design and website development services in New York help businesses to strengthen their digital presence through trending, user-focused design and innovation.`}
+        secSubSecTitle={`Feature-Rich Website Design For Performance And Engagement`}
+        secSubSecDescription={`A website is built to facilitate user engagement. Our design and website development services in New York help create scalable digital platforms with intuitive UI/UX and performant functionalities for accessible online interaction. For further efficiency, we leverage threat resistance, tested site architectures, continuous maintenance, and custom JavaScript or CMS solutions, depending on the needs.`}
         boxesData={aboutBoxesData}
+        btnText="Book A Call"
       />
 
       <WebCreationSec
         image={webcreationimg}
-        projectsCount={3500}
-        secTag="Web creation"
-        secTitle="High-end web development company"
-        secDescription={`Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, but
-                  also the leap into electronic typesetting, remaining
-                  essentially unchanged.`}
+        projectsCount={500}
+        projectsCountText={"Projects Successfully Completed"}
+        secTag="Why Choose Us"
+        secTitle="Your Partner For High-Ranking Website Design & Development Services"
+        secDescription={`Websites are the face of your business; they should be as intriguing as your business itself. We combine creativity with code to deliver highly responsive designs.`}
+        secDescription2="Functionality-focused development is key to a high-performance website. With effective website development services in New York, you can check off all design and functionality metrics in your website development plan."
         listdata={[
           {
-            title: "Top cloud expertise",
+            title: "Trending Website Design & Development",
             description:
-              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.",
+              "Up-to-date with the latest website design trends to develop responsive websites.",
           },
           {
-            title: "Reliable web development",
+            title: "Equipped With The Latest technology",
             description:
-              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.",
+              "Equipped with modern features like AI chatbots, personalization, and microinteractions to make your website smarter and engaging.",
           },
         ]}
       />
 
       <ProjectSec
         secTag="Projects"
-        secTitle="Get inspired by our finest work"
+        secTitle="Explore Our Featured Work"
         projectsData={[
           { imageList: [projectsimg1, projectsimg2] },
           { imageList: [projectsimg3, projectsimg4] },

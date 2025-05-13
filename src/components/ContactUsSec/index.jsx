@@ -51,19 +51,19 @@ const ContactUsSec = (props) => {
       const result = await response.json();
       console.log(result);
       alert("Form Submitted Successfully");
-      
+
       setFormData({
         username: "",
         email: "",
         phone: "",
         service_1: "",
         data_message: "",
-      })
+      });
     } catch (error) {
       console.log(`Error submitting form:`, error);
       alert("Submission failed. Please try again.");
     }
-  }; 
+  };
 
   return (
     <section
@@ -77,8 +77,8 @@ const ContactUsSec = (props) => {
             data-aos-duration="2000"
           >
             <div className="web-creation-content mb-5">
-              <p className="sec-tag mb-4">Contact Us</p>
-              <h2>Drop us a Line.</h2>
+              <p className="sec-tag mb-4">{props.secTag || `Contact Us`}</p>
+              <h2>{props.secTitle || `Drop us a Line.`}</h2>
             </div>
             <div className="contact-us-form pe-xl-5 me-xl-5 pe-0 me-0">
               <form onSubmit={handleSubmit}>

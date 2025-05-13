@@ -2,10 +2,10 @@ import React from "react";
 
 import bannerBG from "../../assets/images/about-banner-bg.webp";
 
-import comittedicon from "../../assets/images/comitted-icon.webp";
 import startupicon from "../../assets/images/startup-icon.webp";
 import developmenticon from "../../assets/images/development-icon.webp";
 import analyticsicon from "../../assets/images/analytics-icon.webp";
+import comittedicon from "../../assets/images/comitted-icon.webp";
 
 import DefaultLayout from "../../components/DefaultLayout";
 import InnerBanner from "../../components/InnerBanner";
@@ -31,17 +31,17 @@ import AvgPerformanceSec from "../../components/AvgPerformanceSec";
 const avgPerformanceData = [
   {
     id: 1,
-    percentage: "140%",
+    percentage: "200%",
     // icon: brandicon,
-    name: "Branding",
-    description: "We design digital products used by millions of people.",
+    name: "Increase In ROI",
+    description: "Savvy tactics for greater ROI",
   },
   {
     id: 2,
-    percentage: "160%",
+    percentage: "170%",
     // icon: uiuxdesignicon,
-    name: "UX/UI Design",
-    description: "We design digital products used by millions of people.",
+    name: "Increase In Engagement",
+    description: "Igniting engagement on every channel.",
   },
 ];
 
@@ -49,30 +49,30 @@ export const aboutBoxesData = [
   {
     id: 1,
     icon: startupicon,
-    name: "Startups",
+    name: "Multi-Platform Campaigns",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.",
+      "We run highly targeted campaigns across Meta, Google Ads, TikTok, and YouTube to reach your audience where they’re most active.",
   },
   {
     id: 2,
     icon: developmenticon,
-    name: "Development",
+    name: "Data-Driven Strategy",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.",
+      "Our decisions are backed by real-time analytics, allowing us to continuously optimize and tweak for performance, conversions, and ROI.",
   },
   {
     id: 3,
     icon: analyticsicon,
-    name: "Analytics",
+    name: "Precise Audience Targeting",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.",
+      "Reach the right people at the right time with advanced demographic, interest, and behavior-based targeting.",
   },
   {
     id: 4,
     icon: comittedicon,
-    name: "Workflow",
+    name: "Measurable Results",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.",
+      "Track everything from clicks and engagement to leads and sales. Our transparent reporting keeps you in control of your marketing impact.",
   },
 ];
 
@@ -86,35 +86,30 @@ const DigitalMarketing = () => {
       />
 
       <OutsourcingStrategySec
-        secTitle={`An Outstanding Strategy, Design, And Development Across All Platforms`}
-        secDescription={`Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.`}
-        secSubSecTitle={`We Fuel The Growth Of Purpose Driven Brands Through Strategy Design Empowerment, And Market Adoption.`}
-        secSubSecDescription={`Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.`}
+        secTitle={`Marketing That Moves Your Brand With Real Growth`}
+        secDescription={`Need more leads, better engagement, higher conversions? That’s exactly what our digital marketing service in New York is built for: brands that are ready to grow. If you're a business aiming to achieve big, we’ve got you. At NY Web Experts, a leading digital marketing agency in New York, we deliver data-driven strategies and custom campaigns that help you attract, convert, and retain the right audience faster and smarter.`}
+        secSubSecTitle={`Digital Marketing That Achieves Higher ROI`}
+        secSubSecDescription={`Whether you're an e-commerce brand aiming for higher sales, a growing startup ready to scale, or a local business wanting to reach more local customers, digital marketing is the real growth engine. At NY Web Experts, we're a results-driven digital marketing agency in New York that fine-tunes your entire marketing funnel, executes proven strategies, and delivers measurable growth. No guesswork, no gimmicks, just pure data and skills.`}
         boxesData={aboutBoxesData}
+        btnText="Book A Call"
       />
 
       <WebCreationSec
         image={webcreationimg}
         projectsCount={3500}
-        secTag="Web creation"
-        secTitle="High-end web development company"
-        secDescription={`Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, but
-                  also the leap into electronic typesetting, remaining
-                  essentially unchanged.`}
+        secTag="Smart Strategies"
+        secTitle="What Digital Marketing Can Do For Your Business"
+        secDescription={`We help businesses grow through result-oriented digital marketing services tailored for maximum impact. As a leading digital marketing company in New York, we run high-converting campaigns across Meta, Google Ads, TikTok, and YouTube. Focusing on quality and performance, we create data-driven strategies that quickly generate traffic, boost conversions, and scale your brand online.`}
         listdata={[
           {
-            title: "Top cloud expertise",
+            title: "End-to-End Campaign Management",
             description:
-              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.",
+              "From creatives to A/B testing and analytics, we handle every step of your digital marketing strategy for consistent growth.",
           },
           {
-            title: "Reliable web development",
+            title: "Performance-Driven Digital Marketing Strategy",
             description:
-              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.",
+              "Our service is built to turn clicks into customers using tested digital marketing strategies in New York that work.",
           },
         ]}
       />
@@ -122,8 +117,8 @@ const DigitalMarketing = () => {
       <AvgPerformanceSec
         className="services__avg-sec"
         image={avgPerformanceImg}
-        secTitle="Our Average Performance Stats for Digital Marketing"
-        secDescription="We create human-centered enterprise software that has the polished, snappy feel of the best consumer apps."
+        secTitle="Unlock Higher Returns with Targeted Campaigns"
+        secDescription="Our digital marketing agency consistently outperforms industry benchmarks, achieving higher ROI through precise targeting, creative execution, and strategic platform use."
         listData={avgPerformanceData}
       />
 

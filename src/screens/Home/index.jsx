@@ -36,6 +36,76 @@ import projectsimg4 from "../../assets/images/projects-img-4.webp";
 import projectsimg5 from "../../assets/images/projects-img-5.webp";
 import projectsimg6 from "../../assets/images/projects-img-6.webp";
 
+import blogimg1 from "../../assets/images/blog-img-1.webp";
+import blogimg2 from "../../assets/images/blog-img-2.webp";
+import blogimg3 from "../../assets/images/blog-img-3.webp";
+
+const blogCardsData = [
+  {
+    id: 1,
+    image: blogimg1,
+    name: "Why a Professional Website Design Is Crucial for Your Business",
+    description:
+      "A strong website design builds trust, improves user experience, and boosts conversions. Discover how the right design sets your business apart.",
+  },
+  {
+    id: 2,
+    image: blogimg2,
+    name: "How to Choose the Right Website Design Company in New York",
+    description:
+      "Looking for a website design company in New York? Learn what to consider when hiring experts to build your online presence correctly.",
+  },
+  {
+    id: 3,
+    image: blogimg3,
+    name: "Custom Website Design vs. Templates: What’s Best for You?",
+    description:
+      "Explore the pros and cons of custom website design and templates, and find out which solution fits your brand, goals, and budget.",
+  },
+  // {
+  //   id: 4,
+  //   image: blogimg1,
+  //   name: "Top Benefits of Responsive Web Design in 2025",
+  //   description:
+  //     "With mobile users rising, responsive web design ensures your site looks great on any device. Learn why it's essential for modern businesses.",
+  // },
+  // {
+  //   id: 5,
+  //   image: blogimg2,
+  //   name: "Ten Ways of Lying about Your Relationship",
+  //   description:
+  //     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+  // },
+  // {
+  //   id: 6,
+  //   image: blogimg3,
+  //   name: "Ten Ways of Lying about Your Relationship",
+  //   description:
+  //     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+  // },
+  // {
+  //   id: 7,
+  //   image: blogimg1,
+  //   name: "Ten Ways of Lying about Your Relationship",
+  //   description:
+  //     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+  // },
+  // {
+  //   id: 8,
+  //   image: blogimg2,
+  //   name: "Ten Ways of Lying about Your Relationship",
+  //   description:
+  //     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+  // },
+  // {
+  //   id: 9,
+  //   image: blogimg3,
+  //   name: "Ten Ways of Lying about Your Relationship",
+  //   description:
+  //     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+  // },
+];
+
 const Home = () => {
   return (
     <DefaultLayout>
@@ -70,15 +140,17 @@ const Home = () => {
             <div className="col-lg-6">
               <div className="sec-content">
                 <h2 data-aos="fade-up" data-aos-duration="2000">
-                  Websites and branding that set the groundwork for successful
-                  marketing
+                  Sharp Strategies And Relentless Executions. We Deliver
+                  Success.
                 </h2>
                 <p data-aos="fade-up" data-aos-duration="2000">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book
+                  We blend our expertise in creative website design and
+                  development with critically planned digital marketing services
+                  in New York to solve real business problems. From
+                  digital-first designs to performance marketing, we’re wired to
+                  solve complex problems with clarity and creativity. At New
+                  York Web Experts, we go above and beyond the average
+                  expectations. Our goal? Consistent results.
                 </p>
                 <div
                   className="row mt-4"
@@ -105,26 +177,21 @@ const Home = () => {
 
       <WebCreationSec
         image={webcreationimg}
-        projectsCount={3500}
+        projectsCount={2000}
+        projectsCountText={"Projects Of Digital Success"}
         secTag="Web creation"
-        secTitle="High-end web development company"
-        secDescription={`Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, but
-                  also the leap into electronic typesetting, remaining
-                  essentially unchanged.`}
+        secTitle="Branding & Development Backed With Expertise"
+        secDescription={`With years of experience in digital design, development, and branding, we know how to make your brand shine and stand out! Our strategies are built around the behaviour of your targeted audience, insights from industry trends, and the expertise of our polished teams, who know how to get each detail right. Every decision we make is backed by concrete learnings from past experiences.`}
         listdata={[
           {
-            title: "Top cloud expertise",
+            title: "Years of Experience",
             description:
-              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.",
+              "10+ years in online marketing in New York, custom web design and development services, and more.",
           },
           {
-            title: "Reliable web development",
+            title: "Projects Completed",
             description:
-              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.",
+              "500+ successful websites, 300+ social media advertising campaigns, 1000+ Logo Designs and more.",
           },
         ]}
       />
@@ -153,7 +220,7 @@ const Home = () => {
 
       <section className="our-services-sec clipedShaped-sec bg-gradiant">
         <div className="container">
-          <div className="row">
+          <div className="row justify-content-center">
             <div className="col-md-12 mb-4">
               <div className="sec-head mb-4">
                 <p
@@ -164,7 +231,7 @@ const Home = () => {
                   Our Services
                 </p>
                 <h2 data-aos="fade-up" data-aos-duration="2000">
-                  Services We Offer
+                  Digital Solutions That Work For Results
                 </h2>
               </div>
             </div>
@@ -182,83 +249,14 @@ const Home = () => {
       </section>
 
       <ProjectSec
-        secTag="Projects"
-        secTitle="Get inspired by our finest work"
+        secTag="Portfolio "
+        secTitle="A Sneak-Peak Into Our Expertise"
         projectsData={[
           { imageList: [projectsimg1, projectsimg2] },
           { imageList: [projectsimg3, projectsimg4] },
           { imageList: [projectsimg5, projectsimg6] },
         ]}
       />
-
-      {/* <section className="projects-sec">
-            <div className="container">
-              <div className="row">
-                <div className="col-md-12 mb-4">
-                  <div className="sec-head mb-4">
-                    <p className="sec-tag" data-aos="fade-up"
-                        data-aos-duration="1000">Projects</p>
-                    <h2 data-aos="fade-up"
-                        data-aos-duration="2000">Get inspired by our finest work</h2>
-                  </div>
-                </div>
-                <div className="col-md-4 mb-md-0 mb-3">
-                  <div className="projects-item d-flex flex-column gap-4">
-                    <img
-                      src={projectsimg1}
-                      className="img-fluid"
-                      alt="project image 1"
-                      data-aos="fade-up"
-                        data-aos-duration="2000"
-                    />
-                    <img
-                      src={projectsimg2}
-                      className="img-fluid"
-                      alt="project image 2"
-                      data-aos="fade-up"
-                        data-aos-duration="3000"
-                    />
-                  </div>
-                </div>
-                <div className="col-md-4 mb-md-0 mb-3">
-                  <div className="projects-item d-flex flex-column gap-4">
-                    <img
-                      src={projectsimg3}
-                      className="img-fluid"
-                      alt="project image 3"
-                      data-aos="fade-up"
-                        data-aos-duration="2000"
-                    />
-                    <img
-                      src={projectsimg4}
-                      className="img-fluid"
-                      alt="project image 4"
-                      data-aos="fade-up"
-                        data-aos-duration="3000"
-                    />
-                  </div>
-                </div>
-                <div className="col-md-4 mb-md-0 mb-3">
-                  <div className="projects-item d-flex flex-column gap-4">
-                    <img
-                      src={projectsimg5}
-                      className="img-fluid"
-                      alt="project image 5"
-                      data-aos="fade-up"
-                        data-aos-duration="2000"
-                    />
-                    <img
-                      src={projectsimg6}
-                      className="img-fluid"
-                      alt="project image 6"
-                      data-aos="fade-up"
-                        data-aos-duration="3000"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section> */}
 
       <section className="our-benefits clipedShaped-sec bg-gradiant">
         <div className="container">
@@ -270,23 +268,23 @@ const Home = () => {
                   data-aos="fade-up"
                   data-aos-duration="1000"
                 >
-                  Our Benefits
+                  Our Specialty
                 </p>
                 <h2 data-aos="fade-up" data-aos-duration="2000">
-                  Why You Should Choose us.
+                  Specialized to Stand Out Online
                 </h2>
                 <p
                   className="poppins pe-xl-5 me-xl-5 pe-0   me-0"
                   data-aos="fade-up"
                   data-aos-duration="3000"
                 >
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, but
-                  also the leap into electronic typesetting, remaining
-                  essentially unchanged.
+                  Our strategies aren’t just another person in the crowd; we
+                  make custom marketing solutions that are built to connect. At
+                  New York Web Experts, every project is built with strategic
+                  depth, creative precision, and performance in mind. From
+                  trend-driven design to razor-sharp messaging, we personalize
+                  everything for your brand, your audience, and what actually
+                  works today.
                 </p>
                 <div
                   className="d-flex flex-wrap gap-3"
@@ -298,7 +296,7 @@ const Home = () => {
                       <TbChecks />
                     </div>
                     <div className="content-with-icon-content">
-                      <h5>Top cloud expertise</h5>
+                      <h5>Trusted By 300+ Brands</h5>
                       {/* <p></p> */}
                     </div>
                   </div>
@@ -307,7 +305,7 @@ const Home = () => {
                       <TbChecks />
                     </div>
                     <div className="content-with-icon-content">
-                      <h5>Reliable web development</h5>
+                      <h5>Critically Researched Strategies</h5>
                       {/* <p></p> */}
                     </div>
                   </div>
@@ -338,13 +336,13 @@ const Home = () => {
         </div>
       </section>
 
-      <TestimonialSec />
+      <TestimonialSec secTitle="When Our Clients Win, We Win" />
 
       <PurpleBGSec
         secClass="pricing-plan-sec"
         clipVariant="reverse"
         tag="Pricing Plan"
-        title="Your Partner For Software Innovation"
+        title="Flexible Pricing Plans For All Business Types"
       >
         {pricingPlan.map((item, index) => (
           <div className="col-lg-4 mb-4" key={index}>
@@ -394,12 +392,12 @@ const Home = () => {
             <div className="col-lg-6">
               <div className="sec-content">
                 <h2 data-aos="fade-up" data-aos-duration="2000">
-                  We’re design-focused across every product that people love to
-                  use
+                  Strategic Web and Design Solutions That Set You Apart
                 </h2>
                 <p data-aos="fade-up" data-aos-duration="3000">
-                  We create human-centered enterprise software that has the
-                  polished, snappy feel of the best consumer apps.
+                  Our team of extraordinary designers, developers, and
+                  strategists ensures that your website stands out with a
+                  beautiful design and a powerful backend for a smooth journey!
                 </p>
                 <div
                   className="row mt-4"
@@ -422,9 +420,17 @@ const Home = () => {
         </div>
       </section>
 
-      <ContactUsSec />
-      <BlogSec itemsPerPage={3} />
-      <GetStarted />
+      <ContactUsSec secTitle="Let’s Discuss Your Project!" />
+      <BlogSec
+        secTitle="Latest Trends & Insights, All From The Blog"
+        blogCardsData={blogCardsData}
+        itemsPerPage={3}
+      />
+      <GetStarted
+        secTitle="Got An Idea? Let’s Discuss!"
+        secDescription="You’ve got business goals, and we have the best team to turn them into reality. Let’s build your business into a digital beast that gets clicks, leads, and revenue."
+        btnText="Book A Call!"
+      />
     </DefaultLayout>
   );
 };

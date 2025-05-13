@@ -53,7 +53,7 @@ const OutsourcingStrategySec = (props) => {
                 data-aos="fade-up"
                 data-aos-duration="3000"
               >
-                Get Started
+                {props.btnText || `Get Started`}
               </button>
             </div>
           </div>

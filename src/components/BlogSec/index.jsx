@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import BlogCard from "../BlogCard";
-import { blogCardsData } from "../../data";
+
+// import { blogCardsData } from "../../data";
+
 import Pagination from "react-bootstrap/Pagination";
 
-const BlogSec = ({ itemsPerPage = 3, pagination }) => {
+const BlogSec = ({ secTitle, itemsPerPage = 3, blogCardsData,  pagination }) => {
+
   const [currentPage, setCurrentPage] = useState(1);
   const totalPages = Math.ceil(blogCardsData.length / itemsPerPage);
 
@@ -28,7 +31,8 @@ const BlogSec = ({ itemsPerPage = 3, pagination }) => {
                 From The Blog
               </p>
               <h2 data-aos="fade-up" data-aos-duration="3000">
-                Latest News & <br /> Articles from the Blog.
+                {/* Latest News & <br /> Articles from the Blog. */}
+                {secTitle || `Latest News & Articles from the Blog.`}
               </h2>
             </div>
           </div>
@@ -72,6 +76,8 @@ const BlogSec = ({ itemsPerPage = 3, pagination }) => {
             />
           </Pagination>
         )}
+
+
       </div>
     </section>
   );

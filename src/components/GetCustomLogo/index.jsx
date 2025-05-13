@@ -12,7 +12,8 @@ const GetCustomLogo = (props) => {
               data-aos="fade-right"
               data-aos-duration="2000"
             >
-              Get Custom Logo from our Best Logo Design Agency in USA
+              It’s Time To Boost Your Brand Online Across New York! Schedule a
+              Consultation.
             </h4>
           </div>
           <div className="col-lg-8">
@@ -27,7 +28,7 @@ const GetCustomLogo = (props) => {
                 </div>
                 <div className="get-custom-logo-item-content">
                   <p>Call Us</p>
-                  <a href="tel:(713) 347-2269">(713) 347-2269</a>
+                  <a href="tel:+1 (917) 791-7872">+1 (917) 791-7872</a>
                 </div>
               </div>
               <div className="get-custom-logo-item">

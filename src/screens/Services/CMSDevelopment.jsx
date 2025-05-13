@@ -29,30 +29,27 @@ export const aboutBoxesData = [
   {
     id: 1,
     icon: startupicon,
-    name: "Startups",
+    name: "Responsiveness",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.",
+      "Your website design will look great and function perfectly on all devices, delivering a smooth experience across all screen sizes.",
   },
   {
     id: 2,
     icon: developmenticon,
-    name: "Development",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.",
+    name: "Easy Navigation",
+    description: `We design intuitive layouts that help users quickly find what they need, improving usability and engagement.`,
   },
   {
     id: 3,
     icon: analyticsicon,
-    name: "Analytics",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.",
+    name: "Plugin Integration",
+    description: `Extend your site’s capabilities with powerful plugin integration for SEO, payment gateways, security, forms, and more.`,
   },
   {
     id: 4,
     icon: comittedicon,
-    name: "Workflow",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.",
+    name: "Pre-built Templates",
+    description: `Choose from professionally designed templates that save weeks in custom designs while ensuring your site looks perfect and performs efficiently.`,
   },
 ];
 
@@ -66,42 +63,38 @@ const CMSDevelopment = () => {
       />
 
       <OutsourcingStrategySec
-        secTitle={`An Outstanding Strategy, Design, And Development Across All Platforms`}
-        secDescription={`Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.`}
-        secSubSecTitle={`We Fuel The Growth Of Purpose Driven Brands Through Strategy Design Empowerment, And Market Adoption.`}
-        secSubSecDescription={`Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.`}
+        secTitle={`Optimized, Custom-Built CMS Platforms for Your Needs`}
+        secDescription={`Build mobile-friendly, user-focused online stores with top platforms like WordPress development, Wix development, Shopify development, Magento development, WooCommerce development, and BigCommerce development. Our full-service ecommerce website development solutions help brands to boost engagement, expand customer reach, and drive measurable growth.`}
+        secSubSecTitle={`Flexible, Scalable, and Easy to Manage CMS Website Development That Puts You in Control.`}
+        secSubSecDescription={`We offer full-cycle website development services in New York for startups, scale-ups, and enterprises. Whether you need an engaging new website, want to create a one-of-a-kind shopping experience, or a complete revamp of your existing platform, our skilled developers are ready to develop solutions that will grow with your business.`}
         boxesData={aboutBoxesData}
+        btnText="Book A Call"
       />
 
       <WebCreationSec
         image={webcreationimg}
-        projectsCount={3500}
-        secTag="Web creation"
-        secTitle="High-end web development company"
-        secDescription={`Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, but
-                  also the leap into electronic typesetting, remaining
-                  essentially unchanged.`}
+        projectsCount={500}
+        projectsCountText={"Projects Completed"}
+        secTag="High-End Design & Development"
+        secTitle="Your Trusted Website Development Company in New York"
+        secDescription={`We develop full-stack website development services designed to fuel real business growth. No matter which platform you choose, we build websites that make visitors curious enough to explore, engage, and convert.`}
         listdata={[
           {
-            title: "Top cloud expertise",
+            title: "Award Winning Agency",
             description:
-              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.",
+              "Recognized for excellence in custom website development services that deliver real impact.",
           },
           {
-            title: "Reliable web development",
+            title: "Years of Industry Experience",
             description:
-              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.",
+              "Has helped numerous clients through high-performing ecommerce website design services in New York.",
           },
         ]}
       />
 
       <ProjectSec
-        secTag="Projects"
-        secTitle="Get inspired by our finest work"
+        secTag="Portfolio"
+        secTitle="See What Sets Us Apart"
         projectsData={[
           { imageList: [projectsimg1, projectsimg2] },
           { imageList: [projectsimg3, projectsimg4] },

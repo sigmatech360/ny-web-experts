@@ -33,14 +33,16 @@ export const premierDesignStudioIcon = [
   {
     id: 1,
     icon: brandicon,
-    name: "Branding",
-    description: "We design digital products used by millions of people.",
+    name: "Mobile Optimized",
+    description:
+      "Every website design we make is made for different screens and custom sizes. Our layouts are flexible and unique.",
   },
   {
     id: 2,
     icon: uiuxdesignicon,
-    name: "UX/UI Design",
-    description: "We design digital products used by millions of people.",
+    name: "Conversion-Focused Design",
+    description:
+      "Our layouts are crafted to guide users toward action. Every button, section, and scroll is intentional and built to increase engagement, leads, and sales.",
   },
 ];
 
@@ -48,23 +50,23 @@ export const servicesInfoSec = [
   {
     id: 1,
     icon: experiencedmembericon,
-    name: "Experienced Members",
+    name: "24/7 Customer Support",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.",
+      "No waiting, no guessing. Our support team is available around the clock to keep your project moving, answer questions fast, and solve issues before they become problems.",
   },
   {
     id: 2,
     icon: supportandserviceicon,
-    name: "24/7 Support & Services",
+    name: "Dedicated Project Managers",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.",
+      "You get one point of contact, always in the loop. Our project managers keep everything on track. Clear communication, real deadlines, and zero confusion from beginning to launch.",
   },
   {
     id: 3,
     icon: guarenteeicon,
-    name: "100% Satisfaction Guaranteed",
+    name: "Personalized Services",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.",
+      "No copy-paste solutions here. We tailor every website and campaign to your specific goals, brand, and audience. Because we believe in building unique identities, and what works for others may not always work for you.",
   },
 ];
 
@@ -72,120 +74,155 @@ export const ourServicesData = [
   {
     id: 1,
     image: ourserviceimg1,
-    name: "Website Development",
+    name: "Website Design",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+      "Our website design services make your websites look brilliant and bring results that convert. Every layout, color, and feature is designed to engage your audience and drive real business growth.",
   },
   {
     id: 2,
     image: ourserviceimg2,
-    name: "Graphic Designing",
+    name: "CMS Development",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+      "From WordPress development to fully custom platforms, we build CMS solutions that give you control, flexibility, and performance without the tech headaches or confusing interfaces.",
   },
   {
     id: 3,
     image: ourserviceimg3,
-    name: "Application Development",
+    name: "Digital Marketing",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
-  },
-];
-
-export const blogCardsData = [
-  {
-    id: 1,
-    image: blogimg1,
-    name: "Ten Ways of Lying about Your Relationship",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
-  },
-  {
-    id: 2,
-    image: blogimg2,
-    name: "Ten Ways of Lying about Your Relationship",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
-  },
-  {
-    id: 3,
-    image: blogimg3,
-    name: "Ten Ways of Lying about Your Relationship",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+      "Our digital marketing services, New York don’t include following the trends; we are the trendsetters. We create targeted digital strategies that bring in traffic, leads, sales, and measurable results, not just impressions or likes.",
   },
   {
     id: 4,
-    image: blogimg1,
-    name: "Ten Ways of Lying about Your Relationship",
+    image: ourserviceimg1,
+    name: "Social Media Marketing",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+      "Our social media marketing company in New York helps you gain an influential presence online. From content to ads, we build campaigns that connect with your audience and grow your brand, fast.",
   },
   {
     id: 5,
-    image: blogimg2,
-    name: "Ten Ways of Lying about Your Relationship",
+    image: ourserviceimg2,
+    name: "Custom Web Development",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+      "From WordPress development to fully custom platforms, we build CMS solutions that give you control, flexibility, and performance without the tech headaches or confusing interfaces.",
   },
   {
     id: 6,
-    image: blogimg3,
-    name: "Ten Ways of Lying about Your Relationship",
+    image: ourserviceimg3,
+    name: "Search Engine Optimization",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+      "We make sure your business gets found. Our SEO services improve rankings, increase visibility, and drive high-quality traffic that’s ready to convert.",
   },
   {
     id: 7,
-    image: blogimg1,
-    name: "Ten Ways of Lying about Your Relationship",
+    image: ourserviceimg2,
+    name: "Logo Design",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+      "We craft logos that do more than look sharp; they tell your story. Our Logo designs are distinct, memorable, and built to leave an impression on every platform.",
   },
   {
     id: 8,
-    image: blogimg2,
-    name: "Ten Ways of Lying about Your Relationship",
+    image: ourserviceimg3,
+    name: "Mobile App Development",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
-  },
-  {
-    id: 9,
-    image: blogimg3,
-    name: "Ten Ways of Lying about Your Relationship",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+      "From concept to launch, our mobile app developers solve real problems. We make mobile apps with Intuitive interfaces, smooth performance, and powerful functionality, custom-built for iOS and Android.",
   },
 ];
+
+// export const blogCardsData = [
+//   {
+//     id: 1,
+//     image: blogimg1,
+//     name: "Ten Ways of Lying about Your Relationship",
+//     description:
+//       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+//   },
+//   {
+//     id: 2,
+//     image: blogimg2,
+//     name: "Ten Ways of Lying about Your Relationship",
+//     description:
+//       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+//   },
+//   {
+//     id: 3,
+//     image: blogimg3,
+//     name: "Ten Ways of Lying about Your Relationship",
+//     description:
+//       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+//   },
+//   {
+//     id: 4,
+//     image: blogimg1,
+//     name: "Ten Ways of Lying about Your Relationship",
+//     description:
+//       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+//   },
+//   {
+//     id: 5,
+//     image: blogimg2,
+//     name: "Ten Ways of Lying about Your Relationship",
+//     description:
+//       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+//   },
+//   {
+//     id: 6,
+//     image: blogimg3,
+//     name: "Ten Ways of Lying about Your Relationship",
+//     description:
+//       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+//   },
+//   {
+//     id: 7,
+//     image: blogimg1,
+//     name: "Ten Ways of Lying about Your Relationship",
+//     description:
+//       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+//   },
+//   {
+//     id: 8,
+//     image: blogimg2,
+//     name: "Ten Ways of Lying about Your Relationship",
+//     description:
+//       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+//   },
+//   {
+//     id: 9,
+//     image: blogimg3,
+//     name: "Ten Ways of Lying about Your Relationship",
+//     description:
+//       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+//   },
+// ];
 
 export const ourBenefitsContentIconData = [
   {
     id: 1,
     icon: qualityservicesicon,
-    name: "Quality Services",
+    name: "Creativity with a Purpose",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.",
+      "We don’t create for the sake of creativity. Every design and idea is rooted in your goals, built to capture attention, tell your story, and move your audience to take action.",
   },
   {
     id: 2,
     icon: professionaltemicon,
-    name: "Professional Team",
+    name: "Obsessive Attention to Detail",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.",
+      "We capture and optimize every detail so you don’t have to. Every element is triple-checked from pixel-perfect layouts to smooth user experience. We ensure performance, clarity, and quality.",
   },
   {
     id: 3,
     icon: trustedicon,
-    name: "Trusted by Clients",
+    name: "Audience-Focused Strategy",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.",
+      "We start with your audiece. By understanding your niche inside-out, we design experiences that resonate deeply and drive them to click, buy, call, or convert.",
   },
   {
     id: 4,
     icon: comittedicon,
-    name: "Commited to Deliver",
+    name: "Ahead of the Curve Marketing",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.",
+      "Trends evolve, and we stay ready. Our team constantly upgrades skills, tools, and strategies to deliver modern, high-impact results that don’t feel outdated the moment they launch.",
   },
 ];
 export const outstandingStretagyContentIconData = [
@@ -226,47 +263,63 @@ export const testimonialData = [
     name: "Stella Smith",
     designation: "Web Designer",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "NY Web Experts made launching my site very easy. The team was helpful, responsive, and totally nailed the design.",
   },
   {
     id: 2,
     image: testimonialimg2,
-    name: "Thomas Smith",
-    designation: "Web Designer",
+    name: "Thomas Walker",
+    designation: "Startup Founder",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "Their understanding of the project, communication, and attention to detail were amazing. Our website turned out better than we imagined. Great experience!",
   },
   {
     id: 3,
     image: testimonialimg3,
-    name: "Stella Smith",
-    designation: "Web Designer",
+    name: "Rachel Kim",
+    designation: "Marketing Manager",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "We needed a fast, mobile-friendly site, and they delivered. We have tripled our engagement in just 2 weeks. Highly Recommended!",
   },
   {
     id: 4,
     image: testimonialimg1,
-    name: "Stella Smith",
+    name: "Jason Lee",
     designation: "Web Designer",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "I am super impressed with their website development and support. They listened to what we wanted and executed it better than we could’ve asked for.",
   },
   {
     id: 5,
     image: testimonialimg2,
-    name: "Thomas Smith",
-    designation: "Web Designer",
+    name: "Amelia Rivera",
+    designation: "Fashion Blogger",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "Loved working with NY Web Experts! They captured my style perfectly and created a site that’s both beautiful and easy to manage.",
   },
   {
     id: 6,
     image: testimonialimg3,
-    name: "Stella Smith",
-    designation: "Web Designer",
+    name: "Daniel Brooks",
+    designation: "Ecommerce Owner",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "Our online store looks fantastic, and the responsive web design makes it run smoothly on all devices. Highly recommended.",
+  },
+  {
+    id: 7,
+    image: testimonialimg2,
+    name: "Maya Thompson",
+    designation: "Photographer",
+    description:
+      "They brought my brand to life. The site looks amazing, and clients love how easy it is to browse my portfolio.",
+  },
+  {
+    id: 8,
+    image: testimonialimg3,
+    name: "Leo Carter",
+    designation: "Real Estate Agent",
+    description:
+      "I wanted something clean, modern, and professional. NY Web Experts absolutely delivered on time and on budget. I couldn’t be happier.",
   },
 ];
 

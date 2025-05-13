@@ -16,6 +16,10 @@ import Testimonials from "../screens/Testimonials";
 // Services Page
 import CMSDevelopment from "../screens/Services/CMSDevelopment";
 import DigitalMarketing from "../screens/Services/DigitalMarketing";
+import SMM from "../screens/Services/SMM";
+import SEO from "../screens/Services/SEO";
+import CustomWebDevelopment from "../screens/Services/CustomWebDevelopment";
+import LogoDesign from "../screens/Services/LogoDesign";
 
 const AppRouter = () => {
   return (
@@ -28,10 +32,10 @@ const AppRouter = () => {
         <Route path="/services" element={<Services />} />
         <Route path="/services/cms-development" element={<CMSDevelopment />} />
         <Route path="/services/digital-marketing" element={<DigitalMarketing />} />
-        <Route path="/services/smm" element={<Services />} />
-        <Route path="/services/seo" element={<Services />} />
-        <Route path="/services/custom-web-development" element={<Services />} />
-        <Route path="/services/logo-design" element={<Services />} />
+        <Route path="/services/smm" element={<SMM />} />
+        <Route path="/services/seo" element={<SEO />} />
+        <Route path="/services/custom-web-development" element={<CustomWebDevelopment />} />
+        <Route path="/services/logo-design" element={<LogoDesign />} />
         <Route path="/services/mobile-app-development" element={<Services />} />
         {/* Services Pages */}
 
