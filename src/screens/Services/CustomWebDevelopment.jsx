@@ -64,30 +64,30 @@ export const aboutBoxesData = [
   {
     id: 1,
     icon: startupicon,
-    name: "Startups",
+    name: "Website Creation",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.",
+      "Built from scratch to align with your business model, branding, and vision.",
   },
   {
     id: 2,
     icon: developmenticon,
-    name: "Development",
+    name: "Website Maintenance",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.",
+      "We handle the updates, patches, and monitoring so your site never misses a beat.",
   },
   {
     id: 3,
     icon: analyticsicon,
-    name: "Analytics",
+    name: "Website Revamp",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.",
+      "We redesign outdated websites to modern, fast, and user-focused platforms.",
   },
   {
     id: 4,
     icon: comittedicon,
-    name: "Workflow",
+    name: "Performance Optimization",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.",
+      "We optimize loading speed, eliminate clutter, and enhance user experience for real results.",
   },
 ];
 
@@ -96,40 +96,34 @@ const CustomWebDevelopment = () => {
     <DefaultLayout>
       <InnerBanner
         bannerBG={bannerBG}
-        title="Social Media Marketing"
+        title="Custom Web Development"
         page="Services"
       />
 
       <OutsourcingStrategySec
-        secTitle={`An Outstanding Strategy, Design, And Development Across All Platforms`}
-        secDescription={`Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.`}
-        secSubSecTitle={`We Fuel The Growth Of Purpose Driven Brands Through Strategy Design Empowerment, And Market Adoption.`}
-        secSubSecDescription={`Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.`}
+        secTitle={`Custom Web Development Company In New York That Builds With Purpose`}
+        secDescription={`Experience powerful frontend and backend web development from the best web experts in New York; we specialize in creating customized websites made with a purpose. Each of our projects is a result of your vision and our efforts, with keen attention to detail and a strategic approach to capture your targeted audience, we leave no space for failure. `}
+        secSubSecTitle={`Designed, Delivered, & Optimized. We Curate Web Development Perfection.`}
+        secSubSecDescription={`Our team creates clean, conversion-focused code. From custom web design and development in New York to optimized user journeys, we make sure every feature drives business. Our custom web development company offers the following services to ensure you leave behind a legacy of digital perfection, and results never stop generating. `}
         boxesData={aboutBoxesData}
       />
 
       <WebCreationSec
         image={webcreationimg}
         projectsCount={3500}
-        secTag="Web creation"
-        secTitle="High-end web development company"
-        secDescription={`Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, but
-                  also the leap into electronic typesetting, remaining
-                  essentially unchanged.`}
+        secTag="Why Choose Us?"
+        secTitle="Your Vision, Expertly Engineered"
+        secDescription={`Our websites are more than just a representation platform for your business; we ensure your website generates results and revenue. As a leading custom web development company in New York, we create platforms tailored to your market and business.`}
         listdata={[
           {
-            title: "Top cloud expertise",
+            title: "Integrated Development Team",
             description:
-              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.",
+              "Our frontend and backend web development New York teams work together from start to finish to create a worthy website.",
           },
           {
-            title: "Reliable web development",
+            title: "Built With Your Audience in Mind",
             description:
-              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.",
+              "We align every project with your industry's trends, customer expectations, and your specific business goals.",
           },
         ]}
       />
@@ -144,7 +138,6 @@ const CustomWebDevelopment = () => {
         ]}
       />
 
-      
       <OurOfferSec
         secTitle="What We Offer"
         secDescription={`Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.`}
