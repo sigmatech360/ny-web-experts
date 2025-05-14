@@ -241,6 +241,7 @@ const Home = () => {
                   image={item.image}
                   name={item.name}
                   description={item.description}
+                  link={item.link}
                 />
               </div>
             ))}

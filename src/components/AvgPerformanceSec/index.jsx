@@ -31,6 +31,7 @@ const AvgPerformanceSec = (props) => {
           </div>
           <div className="col-lg-6">
             <div className="sec-content">
+              {props.secTag && <p className="sec-tag purpleColor">{props.secTag}</p>}
               <h2 data-aos="fade-up" data-aos-duration="2000">
                 {props.secTitle}
               </h2>

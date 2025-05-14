@@ -20,6 +20,7 @@ import SMM from "../screens/Services/SMM";
 import SEO from "../screens/Services/SEO";
 import CustomWebDevelopment from "../screens/Services/CustomWebDevelopment";
 import LogoDesign from "../screens/Services/LogoDesign";
+import MobileAppDevelopment from "../screens/Services/MobileAppDevelopment";
 
 const AppRouter = () => {
   return (
@@ -36,7 +37,7 @@ const AppRouter = () => {
         <Route path="/services/seo" element={<SEO />} />
         <Route path="/services/custom-web-development" element={<CustomWebDevelopment />} />
         <Route path="/services/logo-design" element={<LogoDesign />} />
-        <Route path="/services/mobile-app-development" element={<Services />} />
+        <Route path="/services/mobile-app-development" element={<MobileAppDevelopment />} />
         {/* Services Pages */}
 
         <Route path="/portfolio" element={<Portfolio />} />

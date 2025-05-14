@@ -1,11 +1,11 @@
 import React from "react";
 
-import bannerBG from "../../assets/images/about-banner-bg.webp";
+import bannerBG from "../../assets/images/services-digitalMarketing-banner-bg.png";
 
-import startupicon from "../../assets/images/startup-icon.webp";
-import developmenticon from "../../assets/images/development-icon.webp";
-import analyticsicon from "../../assets/images/analytics-icon.webp";
-import comittedicon from "../../assets/images/comitted-icon.webp";
+import startupicon from "../../assets/images/services-digitalMarketing-abt-icon1.png";
+import developmenticon from "../../assets/images/services-digitalMarketing-abt-icon2.png";
+import analyticsicon from "../../assets/images/services-digitalMarketing-abt-icon3.png";
+import comittedicon from "../../assets/images/services-digitalMarketing-abt-icon4.png";
 
 import DefaultLayout from "../../components/DefaultLayout";
 import InnerBanner from "../../components/InnerBanner";
@@ -16,7 +16,7 @@ import OurTeamSec from "../../components/OurTeamSec";
 import OutsourcingStrategySec from "../../components/OutsourcingStrategySec";
 
 import WebCreationSec from "../../components/WebCreationSec";
-import webcreationimg from "../../assets/images/services--cmdDev-web-creation-img.png";
+import webcreationimg from "../../assets/images/services--digitalMarketing-web-creation-img.png";
 
 import projectsimg1 from "../../assets/images/services-cms-Dev-projects-img-1.png";
 import projectsimg2 from "../../assets/images/services-cms-Dev-projects-img-2.png";
@@ -25,7 +25,7 @@ import projectsimg4 from "../../assets/images/services-cms-Dev-projects-img-4.pn
 import projectsimg5 from "../../assets/images/services-cms-Dev-projects-img-5.png";
 import projectsimg6 from "../../assets/images/services-cms-Dev-projects-img-6.png";
 
-import avgPerformanceImg from "../../assets/images/premier-design-studio-img.webp";
+import avgPerformanceImg from "../../assets/images/services-avg-img.png";
 
 import AvgPerformanceSec from "../../components/AvgPerformanceSec";
 const avgPerformanceData = [

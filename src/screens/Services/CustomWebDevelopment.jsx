@@ -1,6 +1,6 @@
 import React from "react";
 
-import bannerBG from "../../assets/images/about-banner-bg.webp";
+import bannerBG from "../../assets/images/services-customWebDev-banner-bg.png";
 
 import comittedicon from "../../assets/images/comitted-icon.webp";
 import startupicon from "../../assets/images/startup-icon.webp";
@@ -16,47 +16,67 @@ import OurTeamSec from "../../components/OurTeamSec";
 import OutsourcingStrategySec from "../../components/OutsourcingStrategySec";
 
 import WebCreationSec from "../../components/WebCreationSec";
-import webcreationimg from "../../assets/images/services--cmdDev-web-creation-img.png";
+import webcreationimg from "../../assets/images/services--customWebDev-web-creation-img.png";
 
-import projectsimg1 from "../../assets/images/services-cms-Dev-projects-img-1.png";
-import projectsimg2 from "../../assets/images/services-cms-Dev-projects-img-2.png";
-import projectsimg3 from "../../assets/images/services-cms-Dev-projects-img-3.png";
-import projectsimg4 from "../../assets/images/services-cms-Dev-projects-img-4.png";
-import projectsimg5 from "../../assets/images/services-cms-Dev-projects-img-5.png";
-import projectsimg6 from "../../assets/images/services-cms-Dev-projects-img-6.png";
+import projectsimg1 from "../../assets/images/services-customWebDev-projects-img-1.png";
+import projectsimg2 from "../../assets/images/services-customWebDev-projects-img-2.png";
+import projectsimg3 from "../../assets/images/services-customWebDev-projects-img-3.png";
+import projectsimg4 from "../../assets/images/services-customWebDev-projects-img-4.png";
+import projectsimg5 from "../../assets/images/services-customWebDev-projects-img-5.png";
+import projectsimg6 from "../../assets/images/services-customWebDev-projects-img-6.png";
 
-import avgPerformanceImg from "../../assets/images/premier-design-studio-img.webp";
+import avgPerformanceImg from "../../assets/images/services-customWebDev-avg-img.png";
 
 import AvgPerformanceSec from "../../components/AvgPerformanceSec";
 import OurOfferSec from "../../components/OurOfferSec";
 
 const offerListData = [
   {
-    title: "Content Strategy & Planning",
+    title: "Business Websites",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.",
+      "Professional and high-performing in generating leads and reinforcing trust.",
   },
   {
-    title: "Reliable web development",
+    title: "Personal Websites",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.",
+      "Modern online hubs to showcase personal brands, thought leadership, and credibility.",
+  },
+  {
+    title: "E-Commerce Websites",
+    description:
+      "Custom stores with secure checkouts and flexible inventory handling.",
+  },
+  {
+    title: "Blogs Website",
+    description:
+      "customEasy to manage and beautifully designed for writers, influencers, and media brands.webdev",
+  },
+  {
+    title: "Booking Websites",
+    description:
+      "Smooth and secure systems that handle appointments and payments on autopilot.",
+  },
+  {
+    title: "Portfolio Websites",
+    description:
+      "Interactive galleries that position creatives and professionals at the top of their game.",
   },
 ];
 
 const avgPerformanceData = [
   {
     id: 1,
-    percentage: "140%",
+    percentage: "300%",
     // icon: brandicon,
-    name: "Branding",
-    description: "We design digital products used by millions of people.",
+    name: "Increase in lead-gen",
+    description: "300% increase in qualified leads within 3 months",
   },
   {
     id: 2,
-    percentage: "160%",
+    percentage: "50%",
     // icon: uiuxdesignicon,
-    name: "UX/UI Design",
-    description: "We design digital products used by millions of people.",
+    name: "Increase in social media engagement",
+    description: "●	50% reduction in bounce rate from optimized UX",
   },
 ];
 
@@ -129,8 +149,8 @@ const CustomWebDevelopment = () => {
       />
 
       <ProjectSec
-        secTag="Projects"
-        secTitle="Get inspired by our finest work"
+        secTag="Our Portfolio"
+        secTitle="A Look At Our Custom Web Development"
         projectsData={[
           { imageList: [projectsimg1, projectsimg2] },
           { imageList: [projectsimg3, projectsimg4] },
@@ -139,23 +159,31 @@ const CustomWebDevelopment = () => {
       />
 
       <OurOfferSec
-        secTitle="What We Offer"
-        secDescription={`Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.`}
+        secTitle="Custom Solutions for Specialized Needs"
+        secDescription={`No two businesses are alike; every business has a unique audience that requires different platforms. That’s why we offer custom web application development tailored for your businesses in New York and all across the US, ready to stand out. Every website we make for you reflects your unique goals, tools, and audience. Here are the types of websites that we happily make for you:`}
         listdata={offerListData}
       />
 
       <AvgPerformanceSec
         className="services__avg-sec"
         image={avgPerformanceImg}
-        secTitle="Our Average Performance Stats for Digital Marketing"
-        secDescription="We create human-centered enterprise software that has the polished, snappy feel of the best consumer apps."
+        secTag="Results"
+        secTitle="What Success Looks Like Online"
+        secDescription="Looking for the growth hack that businesses use to hack sustainable growth? We have got it! With our custom web development services in New York, we have scaled many companies. Take a look at the average of our statistics:"
         listData={avgPerformanceData}
       />
 
-      <OurTeamSec />
+      <OurTeamSec secTitle="Meet The Brains Behind Your Success" />
 
-      <TestimonialSec />
-      <GetStarted />
+      <TestimonialSec
+        secTag="Testimonial"
+        secTitle="What The World Says About Our Custom Web Development"
+      />
+      <GetStarted
+        secTitle="Got An Idea? Let’s Discuss!"
+        secDescription="You’ve got business goals, and we have the best team to turn them into reality. Let’s build your business into a digital beast that gets clicks, leads, and revenue."
+        btnText="Book A Call!"
+      />
     </DefaultLayout>
   );
 };

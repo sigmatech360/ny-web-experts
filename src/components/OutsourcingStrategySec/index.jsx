@@ -18,14 +18,15 @@ const OutsourcingStrategySec = (props) => {
             </div>
           </div>
           <div className="col-lg-6">
-            <div
-              className="our_benefits-icons"
-              data-aos="fade-right"
-              data-aos-duration="2000"
-            >
+            <div className="our_benefits-icons">
               <div className="row">
                 {props.boxesData.map((item, index) => (
-                  <div className="col-md-6 mb-4" key={index}>
+                  <div
+                    className="col-md-6 mb-4 outstanding-strategy-cols"
+                    key={index}
+                    data-aos="flip-right"
+                    data-aos-delay={index * 200}
+                  >
                     <ContentWithIcon
                       icon={item.icon}
                       name={item.name}

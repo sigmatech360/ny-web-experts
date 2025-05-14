@@ -161,7 +161,7 @@ const ContactUsSec = (props) => {
                 </GoogleMap>
               </LoadScript>
               <div className="contact-us-map-content-text">
-                <h1>Call us anytime: (713) 347-2269</h1>
+                <h1>Call us anytime: +1 (917) 791-7872</h1>
               </div>
             </div>
           </div>

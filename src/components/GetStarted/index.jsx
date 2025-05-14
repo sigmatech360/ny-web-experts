@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const GetStarted = (props) => {
   return (
@@ -17,13 +18,14 @@ const GetStarted = (props) => {
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since.`}
               </p>
-              <button
+              <Link
+                to={"/contact-us"}
                 className="ny-btn"
                 data-aos="fade-up"
                 data-aos-duration="3000"
               >
                 {props.btnText || `Discover More`}
-              </button>
+              </Link>
             </div>
           </div>
         </div>

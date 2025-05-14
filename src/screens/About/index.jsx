@@ -21,6 +21,7 @@ import OurTeamSec from "../../components/OurTeamSec";
 import PurpleBGSec from "../../components/PurpleBGSec";
 
 import MouseHoverImg from "../../components/MouseHoverImg";
+import { Link } from "react-router-dom";
 
 const blogCardsData = [
   {
@@ -234,13 +235,14 @@ const About = () => {
               support your unique goals and drive success in today's competitive
               digital landscape.
             </p>
-            <button
+            <Link
+              to={"/contact-us"}
               className="ny-btn"
               data-aos="fade-up"
               data-aos-duration="3000"
             >
               Contact Us
-            </button>
+            </Link>
           </div>
         </div>
         <div className="col-lg-6 mb-lg-0 mb-3">

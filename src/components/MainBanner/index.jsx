@@ -1,6 +1,7 @@
 import React, { useLayoutEffect, useRef } from "react";
 import bnnerimg from "../../assets/images/bnner-img.webp";
 import { gsap } from "gsap";
+import { Link } from "react-router-dom";
 
 const MainBanner = () => {
   const sectionRef = useRef(null);
@@ -96,9 +97,9 @@ const MainBanner = () => {
                 company in New York, we know how to position your brand for your
                 audience with measurable growth.
               </p>
-              <button className="ny-btn" ref={buttonRef}>
+              <Link to={"/services"} className="ny-btn" ref={buttonRef}>
                 Explore Our Services
-              </button>
+              </Link>
             </div>
           </div>
           <div className="col-lg-6 mb-lg-0 mb-3">

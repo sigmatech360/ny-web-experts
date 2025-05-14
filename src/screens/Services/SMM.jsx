@@ -1,11 +1,11 @@
 import React from "react";
 
-import bannerBG from "../../assets/images/about-banner-bg.webp";
+import bannerBG from "../../assets/images/services-smm-banner-bg.png";
 
-import comittedicon from "../../assets/images/comitted-icon.webp";
-import startupicon from "../../assets/images/startup-icon.webp";
-import developmenticon from "../../assets/images/development-icon.webp";
-import analyticsicon from "../../assets/images/analytics-icon.webp";
+import startupicon from "../../assets/images/services-smm-abt-icon1.png";
+import developmenticon from "../../assets/images/services-smm-abt-icon2.png";
+import analyticsicon from "../../assets/images/services-smm-abt-icon3.png";
+import comittedicon from "../../assets/images/services-smm-abt-icon4.png";
 
 import DefaultLayout from "../../components/DefaultLayout";
 import InnerBanner from "../../components/InnerBanner";
@@ -25,7 +25,7 @@ import projectsimg4 from "../../assets/images/services-cms-Dev-projects-img-4.pn
 import projectsimg5 from "../../assets/images/services-cms-Dev-projects-img-5.png";
 import projectsimg6 from "../../assets/images/services-cms-Dev-projects-img-6.png";
 
-import avgPerformanceImg from "../../assets/images/premier-design-studio-img.webp";
+import avgPerformanceImg from "../../assets/images/services-smm-web-creation-img.png";
 
 import AvgPerformanceSec from "../../components/AvgPerformanceSec";
 import OurOfferSec from "../../components/OurOfferSec";

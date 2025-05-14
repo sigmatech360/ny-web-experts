@@ -2,8 +2,8 @@ import React from "react";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-import { CiFacebook } from "react-icons/ci";
-import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { CiFacebook, CiLinkedin } from "react-icons/ci";
+import { FaInstagram, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 import { RiPinterestLine } from "react-icons/ri";
 
 import logo from "../../../assets/images/logo.webp";
@@ -60,32 +60,38 @@ const Header = () => {
           </Nav>
           <div className="header_social-icons">
             <a
-              href="javascript:;"
+              href="https://www.facebook.com/NYWebExperts/"
               className="header_social-icon"
+              target="_blank"
               rel="noopener noreferrer"
             >
               <CiFacebook />
             </a>
             <a
-              href="javascript:;"
+              href="https://api.whatsapp.com/send?phone=19177917872&text=Hello%20there!%20%F0%9F%91%8B%20Welcome%20to%20NY%20Web%20Experts!%20How%20can%20we%20assist%20you%20today%3F%20Feel%20free%20to%20ask%20any%20questions%20or%20share%20your%20ideas%20with%20us%20%F0%9F%92%A1."
               className="header_social-icon"
+              target="_blank"
               rel="noopener noreferrer"
             >
               <FaWhatsapp />
             </a>
             <a
-              href="javascript:;"
+              href="https://www.instagram.com/nywebexperts/"
               className="header_social-icon"
+              target="_blank"
               rel="noopener noreferrer"
             >
               <FaInstagram />
             </a>
             <a
-              href="javascript:;"
+              href="https://www.linkedin.com/company/nywebexperts/"
               className="header_social-icon"
+              target="_blank"
               rel="noopener noreferrer"
             >
-              <RiPinterestLine />
+              {/* <RiPinterestLine /> */}
+              {/* <FaLinkedinIn /> */}
+              <CiLinkedin />
             </a>
           </div>
         </Navbar.Collapse>

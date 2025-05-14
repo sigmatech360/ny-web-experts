@@ -1,6 +1,6 @@
 import React from "react";
 
-import bannerBG from "../../assets/images/about-banner-bg.webp";
+import bannerBG from "../../assets/images/services-cmsDev-banner-bg.png";
 
 import comittedicon from "../../assets/images/comitted-icon.webp";
 import startupicon from "../../assets/images/startup-icon.webp";

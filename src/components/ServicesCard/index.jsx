@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const ServicesCard = (props) => {
     return (
@@ -10,7 +11,7 @@ const ServicesCard = (props) => {
             <div className="our-services-card-body">
                 <h3>{props?.name}</h3>
                 <p>{props?.description}</p>
-                <button className='ny-btn'>Get Started</button>
+                <Link to={props.link} target='_blank' className='ny-btn'>Get Started</Link>
             </div>
         </div>
     )

@@ -75,6 +75,7 @@ export const ourServicesData = [
     id: 1,
     image: ourserviceimg1,
     name: "Website Design",
+    link: "/services",
     description:
       "Our website design services make your websites look brilliant and bring results that convert. Every layout, color, and feature is designed to engage your audience and drive real business growth.",
   },
@@ -82,6 +83,7 @@ export const ourServicesData = [
     id: 2,
     image: ourserviceimg2,
     name: "CMS Development",
+    link: "/services/cms-development",
     description:
       "From WordPress development to fully custom platforms, we build CMS solutions that give you control, flexibility, and performance without the tech headaches or confusing interfaces.",
   },
@@ -89,6 +91,7 @@ export const ourServicesData = [
     id: 3,
     image: ourserviceimg3,
     name: "Digital Marketing",
+    link: "/services/digital-marketing",
     description:
       "Our digital marketing services, New York don’t include following the trends; we are the trendsetters. We create targeted digital strategies that bring in traffic, leads, sales, and measurable results, not just impressions or likes.",
   },
@@ -96,6 +99,7 @@ export const ourServicesData = [
     id: 4,
     image: ourserviceimg1,
     name: "Social Media Marketing",
+    link: "/services/smm",
     description:
       "Our social media marketing company in New York helps you gain an influential presence online. From content to ads, we build campaigns that connect with your audience and grow your brand, fast.",
   },
@@ -103,6 +107,7 @@ export const ourServicesData = [
     id: 5,
     image: ourserviceimg2,
     name: "Custom Web Development",
+    link: "/services/custom-web-development",
     description:
       "From WordPress development to fully custom platforms, we build CMS solutions that give you control, flexibility, and performance without the tech headaches or confusing interfaces.",
   },
@@ -110,6 +115,7 @@ export const ourServicesData = [
     id: 6,
     image: ourserviceimg3,
     name: "Search Engine Optimization",
+    link: "/services/seo",
     description:
       "We make sure your business gets found. Our SEO services improve rankings, increase visibility, and drive high-quality traffic that’s ready to convert.",
   },
@@ -117,6 +123,7 @@ export const ourServicesData = [
     id: 7,
     image: ourserviceimg2,
     name: "Logo Design",
+    link: "/services/logo-design",
     description:
       "We craft logos that do more than look sharp; they tell your story. Our Logo designs are distinct, memorable, and built to leave an impression on every platform.",
   },
@@ -124,6 +131,7 @@ export const ourServicesData = [
     id: 8,
     image: ourserviceimg3,
     name: "Mobile App Development",
+    link: "/services/mobile-app-development",
     description:
       "From concept to launch, our mobile app developers solve real problems. We make mobile apps with Intuitive interfaces, smooth performance, and powerful functionality, custom-built for iOS and Android.",
   },
