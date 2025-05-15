@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { toast } from 'react-toastify';
 
 import { Link } from "react-router-dom";
 import logo from "../../../assets/images/logo.webp";
@@ -60,10 +61,10 @@ const Footer = () => {
 
       const result = await response.json();
       console.log(result);
-      alert("Email Submitted Successfully");
+      toast.success("Email Submitted Successfully");
     } catch (error) {
       console.log(`Error submitting email:`, error);
-      alert("Submission failed. Please try again.");
+      toast.error("Submission failed. Please try again.");
     }
   };
 

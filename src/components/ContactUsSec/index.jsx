@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { toast } from 'react-toastify';
 
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 
@@ -50,7 +51,7 @@ const ContactUsSec = (props) => {
 
       const result = await response.json();
       console.log(result);
-      alert("Form Submitted Successfully");
+      toast.success("Form Submitted Successfully");
 
       setFormData({
         username: "",
@@ -61,7 +62,7 @@ const ContactUsSec = (props) => {
       });
     } catch (error) {
       console.log(`Error submitting form:`, error);
-      alert("Submission failed. Please try again.");
+      toast.error("Submission failed. Please try again.");
     }
   };
 
@@ -161,7 +162,7 @@ const ContactUsSec = (props) => {
                 </GoogleMap>
               </LoadScript>
               <div className="contact-us-map-content-text">
-                <h1>Call us anytime: +1 (917) 791-7872</h1>
+                <h1>Call us anytime: +1 (917) 791-7872  </h1>
               </div>
             </div>
           </div>
