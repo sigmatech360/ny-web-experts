@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import getstartedimg from "../../assets/images/get-started-img.webp"
+
 const GetStarted = (props) => {
   return (
-    <section className="getStarted-sec">
+    <section className="getStarted-sec" style={{backgroundImage: `url(${props.bgImage || getstartedimg}`}}>
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-xl-7">

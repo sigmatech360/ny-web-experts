@@ -27,6 +27,8 @@ import projectsimg6 from "../../assets/images/services-logoDesign-projects-img-6
 
 import avgPerformanceImg from "../../assets/images/services-logoDesign-avg-img.png";
 
+import servicesLogoDesigngetstartedimg from "../../assets/images/servicesLogoDesign-get-started-img.png";
+
 import AvgPerformanceSec from "../../components/AvgPerformanceSec";
 import OurOfferSec from "../../components/OurOfferSec";
 
@@ -175,6 +177,7 @@ const LogoDesign = () => {
         secTitle="Our Logo Designs Leave An Impact!"
       />
       <GetStarted
+        bgImage={servicesLogoDesigngetstartedimg}
         secTitle="Got An Idea? Let’s Discuss!"
         secDescription="You’ve got business goals, and we have the best team to turn them into reality. Let’s build your business into a digital beast that gets clicks, leads, and revenue."
         btnText="Book A Call!"

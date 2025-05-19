@@ -28,6 +28,8 @@ import avgPerformanceImg from "../../assets/images/services-mobileAppDev-avg-img
 import AvgPerformanceSec from "../../components/AvgPerformanceSec";
 import OurOfferSec from "../../components/OurOfferSec";
 
+import servicesMobileAppDevgetstartedimg from "../../assets/images/servicesMobileAppDev-get-started-img.png";
+
 const offerListData = [
   {
     title: "UI/UX Design & Wireframing",
@@ -88,14 +90,14 @@ export const aboutBoxesData = [
   },
   {
     id: 2,
-    icon: developmenticon,
+    icon: analyticsicon,
     name: "App Store Deployment",
     description:
       "Skip the frustration. We guide you through app submissions, ensuring you're visible, compliant, and searchable from day one.",
   },
   {
     id: 3,
-    icon: analyticsicon,
+    icon: developmenticon,
     name: "iOS & Android Development",
     description:
       "We create apps specifically tailored for each platform’s coding language, performance requirements, and user behavior patterns.",
@@ -178,6 +180,7 @@ const MobileAppDevelopment = () => {
         secTitle="Word-of-Mouth for Our Mobile Applications"
       />
       <GetStarted
+        bgImage={servicesMobileAppDevgetstartedimg}
         secTitle="Got An Idea? Let’s Discuss!"
         secDescription="You’ve got business goals, and we have the best team to turn them into reality. Let’s build your business into a digital beast that gets clicks, leads, and revenue."
         btnText="Book A Call!"

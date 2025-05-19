@@ -122,7 +122,7 @@ const DigitalMarketing = () => {
         listData={avgPerformanceData}
       />
 
-      <ProjectSec
+      {/* <ProjectSec
         secTag="Projects"
         secTitle="Get inspired by our finest work"
         projectsData={[
@@ -130,7 +130,7 @@ const DigitalMarketing = () => {
           { imageList: [projectsimg3, projectsimg4] },
           { imageList: [projectsimg5, projectsimg6] },
         ]}
-      />
+      /> */}
 
       <OurTeamSec />
 

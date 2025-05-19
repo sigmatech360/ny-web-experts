@@ -5,7 +5,7 @@ import bannerBG from "../../assets/images/services-smm-banner-bg.png";
 import startupicon from "../../assets/images/services-smm-abt-icon1.png";
 import developmenticon from "../../assets/images/services-smm-abt-icon2.png";
 import analyticsicon from "../../assets/images/services-smm-abt-icon3.png";
-import comittedicon from "../../assets/images/services-smm-abt-icon4.png";
+import tiktokicon from "../../assets/images/services-smm-abt-icon4.png";
 
 import DefaultLayout from "../../components/DefaultLayout";
 import InnerBanner from "../../components/InnerBanner";
@@ -92,7 +92,7 @@ export const aboutBoxesData = [
   },
   {
     id: 2,
-    icon: developmenticon,
+    icon: tiktokicon,
     name: "TikTok Ads",
     description:
       "Go viral with TikTok Ads that combine creativity and strategy. We craft engaging short-form videos that hook watchers from the start to the finish and inspire them to convert.",
@@ -106,7 +106,7 @@ export const aboutBoxesData = [
   },
   {
     id: 4,
-    icon: comittedicon,
+    icon: developmenticon,
     name: "YouTube Ads",
     description:
       "Tell your story through YouTube Ads. From skippable ads to bumper formats, we build campaigns and content for a single goal: Growth.",
