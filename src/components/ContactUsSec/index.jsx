@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { toast } from 'react-toastify';
+import { toast } from "react-toastify";
 
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 
@@ -152,7 +152,7 @@ const ContactUsSec = (props) => {
             data-aos-duration="2000"
           >
             <div className="contact-us-map-content">
-              <LoadScript googleMapsApiKey="YOUR_GOOGLE_MAPS_API_KEY">
+              {/* <LoadScript googleMapsApiKey="YOUR_GOOGLE_MAPS_API_KEY">
                 <GoogleMap
                   mapContainerStyle={containerStyle}
                   center={defaultCenter}
@@ -160,9 +160,21 @@ const ContactUsSec = (props) => {
                 >
                   <Marker position={defaultCenter} />
                 </GoogleMap>
-              </LoadScript>
+              </LoadScript> */}
+              <div style={{ width: "100%", height: "100%" }}>
+                <iframe
+                  title="California Map"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  loading="lazy"
+                  allowFullScreen
+                  // src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423286.2742347859!2d-118.69193073579997!3d34.02073048963344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c7b2c3b4a3f3%3A0xbaa14b7faeb7bc01!2sCalifornia%2C%20USA!5e0!3m2!1sen!2sin!4v1648454754173!5m2!1sen!2sin"
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13236.436185047787!2d-118.2437!3d34.0522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1716200000000!5m2!1sen!2sus"
+                ></iframe>
+              </div>
               <div className="contact-us-map-content-text">
-                <h1>Call us anytime: +1 (917) 791-7872  </h1>
+                <h1>Call us anytime: +1 (917) 791-7872 </h1>
               </div>
             </div>
           </div>

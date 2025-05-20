@@ -15,6 +15,19 @@ import projectsimg4 from "../../assets/images/projects-img-4.webp";
 import projectsimg5 from "../../assets/images/projects-img-5.webp";
 import projectsimg6 from "../../assets/images/projects-img-6.webp";
 
+import portfolioprojectsimg1 from "../../assets/images/portfolio-projects-img-1.png";
+import portfolioprojectsimg2 from "../../assets/images/portfolio-projects-img-2.png";
+import portfolioprojectsimg3 from "../../assets/images/portfolio-projects-img-3.png";
+import portfolioprojectsimg4 from "../../assets/images/portfolio-projects-img-4.png";
+import portfolioprojectsimg5 from "../../assets/images/portfolio-projects-img-5.png";
+import portfolioprojectsimg6 from "../../assets/images/portfolio-projects-img-6.png";
+import portfolioprojectsimg7 from "../../assets/images/portfolio-projects-img-7.png";
+import portfolioprojectsimg8 from "../../assets/images/portfolio-projects-img-8.png";
+import portfolioprojectsimg9 from "../../assets/images/portfolio-projects-img-9.png";
+import portfolioprojectsimg10 from "../../assets/images/portfolio-projects-img-10.png";
+import portfolioprojectsimg11 from "../../assets/images/portfolio-projects-img-11.png";
+import portfolioprojectsimg12 from "../../assets/images/portfolio-projects-img-12.png";
+
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 
@@ -88,6 +101,27 @@ const blogCardsData = [
   // },
 ];
 
+const portfolioColumns = [
+  [
+    portfolioprojectsimg1,
+    portfolioprojectsimg2,
+    portfolioprojectsimg3,
+    portfolioprojectsimg4,
+  ],
+  [
+    portfolioprojectsimg5,
+    portfolioprojectsimg6,
+    portfolioprojectsimg7,
+    portfolioprojectsimg8,
+  ],
+  [
+    portfolioprojectsimg9,
+    portfolioprojectsimg10,
+    portfolioprojectsimg11,
+    portfolioprojectsimg12,
+  ],
+];
+
 const Portfolio = () => {
   const [key, setKey] = useState("web-development");
   return (
@@ -127,6 +161,26 @@ const Portfolio = () => {
               >
                 <Tab eventKey="web-development" title="Web Development">
                   <div className="row">
+                    {portfolioColumns.map((item, index) => (
+                      <div className="col-md-4 mb-md-0 mb-3" key={index}>
+                        <div
+                          className="projects-item d-flex flex-column gap-4"
+                          data-aos="fade-up"
+                          data-aos-delay={index * 300}
+                        >
+                          {item.map((img, imgIndex) => (
+                            <img
+                              key={imgIndex}
+                              src={img}
+                              className="img-fluid"
+                              alt={`project image ${index + 1}-${imgIndex + 1}`}
+                            />
+                          ))}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                  {/* <div className="row">
                     <div className="col-md-4 mb-md-0 mb-3">
                       <div
                         className="projects-item d-flex flex-column gap-4"
@@ -134,22 +188,22 @@ const Portfolio = () => {
                         data-aos-duration="2000"
                       >
                         <img
-                          src={projectsimg1}
+                          src={portfolioprojectsimg1}
                           className="img-fluid"
                           alt="project image 1"
                         />
                         <img
-                          src={projectsimg2}
+                          src={portfolioprojectsimg2}
                           className="img-fluid"
                           alt="project image 2"
                         />
                         <img
-                          src={projectsimg1}
+                          src={portfolioprojectsimg3}
                           className="img-fluid"
                           alt="project image 1"
                         />
                         <img
-                          src={projectsimg2}
+                          src={portfolioprojectsimg4}
                           className="img-fluid"
                           alt="project image 2"
                         />
@@ -162,22 +216,22 @@ const Portfolio = () => {
                         data-aos-duration="2000"
                       >
                         <img
-                          src={projectsimg3}
+                          src={portfolioprojectsimg5}
                           className="img-fluid"
                           alt="project image 3"
                         />
                         <img
-                          src={projectsimg4}
+                          src={portfolioprojectsimg6}
                           className="img-fluid"
                           alt="project image 4"
                         />
                         <img
-                          src={projectsimg3}
+                          src={portfolioprojectsimg7}
                           className="img-fluid"
                           alt="project image 3"
                         />
                         <img
-                          src={projectsimg4}
+                          src={portfolioprojectsimg8}
                           className="img-fluid"
                           alt="project image 4"
                         />
@@ -190,28 +244,28 @@ const Portfolio = () => {
                         data-aos-duration="2000"
                       >
                         <img
-                          src={projectsimg5}
+                          src={portfolioprojectsimg9}
                           className="img-fluid"
                           alt="project image 5"
                         />
                         <img
-                          src={projectsimg6}
+                          src={portfolioprojectsimg10}
                           className="img-fluid"
                           alt="project image 6"
                         />
                         <img
-                          src={projectsimg5}
+                          src={portfolioprojectsimg11}
                           className="img-fluid"
                           alt="project image 5"
                         />
                         <img
-                          src={projectsimg6}
+                          src={portfolioprojectsimg12}
                           className="img-fluid"
                           alt="project image 6"
                         />
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </Tab>
                 <Tab eventKey="video-animation" title="Video Animation">
                   Video Animation
