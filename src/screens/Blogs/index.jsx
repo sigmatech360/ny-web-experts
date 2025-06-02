@@ -45,35 +45,35 @@ const blogCardsData = [
     image: blogimg2,
     name: "Ten Ways of Lying about Your Relationship",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+      "A strong website design builds trust, improves user experience, and boosts conversions. Discover how the right design sets your business apart.",
   },
   {
     id: 6,
     image: blogimg3,
     name: "Ten Ways of Lying about Your Relationship",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+      "A strong website design builds trust, improves user experience, and boosts conversions. Discover how the right design sets your business apart.",
   },
   {
     id: 7,
     image: blogimg1,
     name: "Ten Ways of Lying about Your Relationship",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+      "A strong website design builds trust, improves user experience, and boosts conversions. Discover how the right design sets your business apart.",
   },
   {
     id: 8,
     image: blogimg2,
     name: "Ten Ways of Lying about Your Relationship",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+      "A strong website design builds trust, improves user experience, and boosts conversions. Discover how the right design sets your business apart.",
   },
   {
     id: 9,
     image: blogimg3,
     name: "Ten Ways of Lying about Your Relationship",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+      "A strong website design builds trust, improves user experience, and boosts conversions. Discover how the right design sets your business apart.",
   },
 ];
 
@@ -81,10 +81,10 @@ const Blogs = () => {
   return (
     <DefaultLayout>
       <InnerBanner bannerBG={bannerBG} title="Blogs" page="Blogs" />
-    
+
       <BlogSec blogCardsData={blogCardsData} itemsPerPage={6} pagination />
       <GetCustomLogo />
-      <GetStarted  />
+      <GetStarted />
     </DefaultLayout>
   );
 };

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { toast } from 'react-toastify';
+import { toast } from "react-toastify";
 
 import { Link } from "react-router-dom";
 import logo from "../../../assets/images/logo.webp";
@@ -85,8 +85,9 @@ const Footer = () => {
                   </Link>
                 </div>
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry.
+                  Crafting modern websites with performance, design, and user
+                  experience in mind. Your trusted partner in web development
+                  and digital innovation.
                 </p>
                 <div className="header_social-icons">
                   <a
@@ -117,7 +118,7 @@ const Footer = () => {
                   >
                     {/* <RiPinterestLine /> */}
                     {/* <FaLinkedinIn /> */}
-                    <CiLinkedin  />
+                    <CiLinkedin />
                   </a>
                 </div>
               </div>

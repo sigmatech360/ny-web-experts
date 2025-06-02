@@ -89,13 +89,12 @@ const Pricing = () => {
                 <p className="sec-tag purpleColor mb-4">Our Benefits</p>
                 <h2>Why You Should Choose us.</h2>
                 <p className="poppins grayColor pe-xl-5 me-xl-5 pe-0 me-0">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, but
-                  also the leap into electronic typesetting, remaining
-                  essentially unchanged.
+                  We combine creativity, technology, and strategy to deliver
+                  high-quality digital solutions tailored to your business
+                  goals. With a focus on performance, design, and user
+                  experience, we ensure every project is delivered with
+                  precision and care—helping your brand stand out and succeed in
+                  the digital space.
                 </p>
                 <div className="d-flex flex-wrap gap-3">
                   <div className={`content-with-icon-item blue-icon flex-row`}>

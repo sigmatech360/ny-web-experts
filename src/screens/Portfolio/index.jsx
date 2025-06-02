@@ -138,13 +138,11 @@ const Portfolio = () => {
                   Get Inspired By Our Finest Work
                 </h2>
                 <p data-aos="fade-up" data-aos-duration="2000">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, but
-                  also the leap into electronic typesetting, remaining
-                  essentially unchanged.
+                  Discover how we turn ideas into impactful digital experiences.
+                  Our portfolio showcases the creativity, precision, and
+                  innovation that define every project we deliver. From sleek
+                  websites to robust applications, our work speaks for itself —
+                  inspiring brands to grow and thrive in the digital world.
                 </p>
               </div>
             </div>
