@@ -29,6 +29,7 @@ import avgPerformanceImg from "../../assets/images/services-smm-web-creation-img
 
 import AvgPerformanceSec from "../../components/AvgPerformanceSec";
 import OurOfferSec from "../../components/OurOfferSec";
+import ServicesBlogSec from "../../components/ServicesBlogSec";
 
 const offerListData = [
   {
@@ -184,6 +185,12 @@ const SMM = () => {
       <OurTeamSec />
 
       <TestimonialSec />
+
+      <ServicesBlogSec
+        categorySlug="social-media-marketing"
+        itemsPerPage={3}
+        pagination
+      />
       <GetStarted />
     </DefaultLayout>
   );

@@ -29,6 +29,7 @@ import AvgPerformanceSec from "../../components/AvgPerformanceSec";
 import OurOfferSec from "../../components/OurOfferSec";
 
 import servicesMobileAppDevgetstartedimg from "../../assets/images/servicesMobileAppDev-get-started-img.png";
+import ServicesBlogSec from "../../components/ServicesBlogSec";
 
 const offerListData = [
   {
@@ -178,6 +179,11 @@ const MobileAppDevelopment = () => {
       <TestimonialSec
         secTag="Testimonials"
         secTitle="Word-of-Mouth for Our Mobile Applications"
+      />
+      <ServicesBlogSec
+        categorySlug="mobile-app-development"
+        itemsPerPage={3}
+        pagination
       />
       <GetStarted
         bgImage={servicesMobileAppDevgetstartedimg}

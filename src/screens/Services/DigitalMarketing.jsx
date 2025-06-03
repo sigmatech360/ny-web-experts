@@ -28,6 +28,7 @@ import projectsimg6 from "../../assets/images/services-cms-Dev-projects-img-6.pn
 import avgPerformanceImg from "../../assets/images/services-avg-img.png";
 
 import AvgPerformanceSec from "../../components/AvgPerformanceSec";
+import ServicesBlogSec from "../../components/ServicesBlogSec";
 const avgPerformanceData = [
   {
     id: 1,
@@ -135,6 +136,12 @@ const DigitalMarketing = () => {
       <OurTeamSec />
 
       <TestimonialSec />
+
+      <ServicesBlogSec
+        categorySlug="digital-marketing"
+        itemsPerPage={3}
+        pagination
+      />
       <GetStarted />
     </DefaultLayout>
   );

@@ -424,8 +424,9 @@ const Home = () => {
       <ContactUsSec secTitle="Let’s Discuss Your Project!" />
       <BlogSec
         secTitle="Latest Trends & Insights, All From The Blog"
-        blogCardsData={blogCardsData}
         itemsPerPage={3}
+        // pagination
+        // blogCardsData={blogCardsData}
       />
       <GetStarted
         secTitle="Got An Idea? Let’s Discuss!"

@@ -29,6 +29,7 @@ import avgPerformanceImg from "../../assets/images/services-customWebDev-avg-img
 
 import AvgPerformanceSec from "../../components/AvgPerformanceSec";
 import OurOfferSec from "../../components/OurOfferSec";
+import ServicesBlogSec from "../../components/ServicesBlogSec";
 
 const offerListData = [
   {
@@ -178,6 +179,11 @@ const CustomWebDevelopment = () => {
       <TestimonialSec
         secTag="Testimonial"
         secTitle="What The World Says About Our Custom Web Development"
+      />
+      <ServicesBlogSec
+        categorySlug="custom-website-development"
+        itemsPerPage={3}
+        pagination
       />
       <GetStarted
         secTitle="Got An Idea? Let’s Discuss!"

@@ -1,24 +1,41 @@
-import React from 'react'
-import { FaRegUserCircle } from 'react-icons/fa'
-import { PiCalendarBlankBold } from 'react-icons/pi'
+import { FaRegUserCircle } from "react-icons/fa";
+import { PiCalendarBlankBold } from "react-icons/pi";
+import { Link } from "react-router-dom";
 
-const BlogCard = (props) => {
+const BlogCard = ({ image, name, description, slug, author, date }) => {
   return (
-    <div className={`blog-card`}>
-            <div className="our-services-card-header">
-                <img src={props?.image} alt="Our services Image" className='img-fluid' />
-            </div>
-            <div className="our-services-card-body">
-                <h3>{props?.name}</h3>
-                <p>{props?.description}</p>
-                <div className='blog-card-meta d-flex gap-2 flex-wrap'>
-                    <p><FaRegUserCircle /> admin</p>
-                    <p><PiCalendarBlankBold /> January 12, 2025</p>
-                </div>
-                <button className='ny-btn'>Read More</button>
-            </div>
+    <div className="blog-card">
+      <div className="our-services-card-header">
+        <Link to={`/blog/${slug}`}>
+          <img src={image} alt="Blog" className="img-fluid" />
+        </Link>
+      </div>
+      <div className="our-services-card-body">
+        <div className="our-services-card-body-top">
+          <Link
+            to={`/blog/${slug}`}
+            style={{ color: "unset", textDecoration: "none" }}
+          >
+            <h3>{name}</h3>
+          </Link>
+          <p>{description}</p>
         </div>
-  )
-}
+        <div className="our-services-card-body-bottom">
+          <div className="blog-card-meta d-flex gap-2 flex-wrap">
+            <p>
+              <FaRegUserCircle /> {author || "admin"}
+            </p>
+            <p>
+              <PiCalendarBlankBold /> {new Date(date).toLocaleDateString()}
+            </p>
+          </div>
+          <Link to={`/blog/${slug}`} className="ny-btn">
+            Read More
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-export default BlogCard
+export default BlogCard;

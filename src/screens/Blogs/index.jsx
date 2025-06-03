@@ -82,7 +82,11 @@ const Blogs = () => {
     <DefaultLayout>
       <InnerBanner bannerBG={bannerBG} title="Blogs" page="Blogs" />
 
-      <BlogSec blogCardsData={blogCardsData} itemsPerPage={6} pagination />
+      <BlogSec
+        // blogCardsData={blogCardsData}
+        itemsPerPage={6}
+        pagination
+      />
       <GetCustomLogo />
       <GetStarted />
     </DefaultLayout>

@@ -21,6 +21,8 @@ import SEO from "../screens/Services/SEO";
 import CustomWebDevelopment from "../screens/Services/CustomWebDevelopment";
 import LogoDesign from "../screens/Services/LogoDesign";
 import MobileAppDevelopment from "../screens/Services/MobileAppDevelopment";
+import BlogDetail from "../screens/BlogDetail";
+import CategoryBlogs from "../screens/CategoryBlogs";
 
 const AppRouter = () => {
   return (
@@ -42,7 +44,14 @@ const AppRouter = () => {
 
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/pricing" element={<Pricing />} />
+        {/* Blogs */}
         <Route path="/blogs" element={<Blogs />} />
+        <Route path="/blog/:slug" element={<BlogDetail />} />
+        <Route
+          path="/blog/category/:categorySlug"
+          element={<CategoryBlogs />}
+        />
+        {/* Blogs */}
         <Route path="/testimonials" element={<Testimonials />} />
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/terms-and-conditions" element={<TermsConditions />} />

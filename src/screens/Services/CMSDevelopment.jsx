@@ -24,6 +24,7 @@ import projectsimg3 from "../../assets/images/services-cms-Dev-projects-img-3.pn
 import projectsimg4 from "../../assets/images/services-cms-Dev-projects-img-4.png";
 import projectsimg5 from "../../assets/images/services-cms-Dev-projects-img-5.png";
 import projectsimg6 from "../../assets/images/services-cms-Dev-projects-img-6.png";
+import ServicesBlogSec from "../../components/ServicesBlogSec";
 
 export const aboutBoxesData = [
   {
@@ -105,6 +106,12 @@ const CMSDevelopment = () => {
       <OurTeamSec />
 
       <TestimonialSec />
+
+      <ServicesBlogSec
+        categorySlug="wordpress-development"
+        itemsPerPage={3}
+        pagination
+      />
       <GetStarted />
     </DefaultLayout>
   );

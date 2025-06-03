@@ -6,28 +6,73 @@ import Loader from "../Loader";
 
 const wpBaseUrl = import.meta.env.VITE_WP_BASE_URL;
 
-const BlogSec = ({ secTitle, itemsPerPage = 6, pagination }) => {
+const ServicesBlogSec = ({
+  secTitle,
+  categorySlug,
+  itemsPerPage = 6,
+  pagination,
+}) => {
   const [loading, setLoading] = useState(true);
   const [blogs, setBlogs] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
 
+  const [categoryId, setCategoryId] = useState(null);
+
   const totalPages = Math.ceil(blogs.length / itemsPerPage);
 
+  // useEffect(() => {
+  //   const fetchCategoryBlogs = async () => {
+  //     try {
+  //       setLoading(true);
+  //       const response = await axios.get(
+  //         `${wpBaseUrl}/posts?_embed&categories=${categorySlug}`
+  //       );
+  //       setBlogs(response.data);
+  //     } catch (error) {
+  //       console.error("Failed to fetch category blogs:", error);
+  //       setBlogs([]); // Ensure empty array on error
+  //     } finally {
+  //       setLoading(false);
+  //     }
+  //   };
+
+  //   fetchCategoryBlogs();
+  // }, [categorySlug]);
+
   useEffect(() => {
-    const fetchLatestBlogs = async () => {
+    const fetchCategoryIdAndPosts = async () => {
       try {
         setLoading(true);
-        const response = await axios.get(`${wpBaseUrl}/posts?_embed`);
-        setBlogs(response.data);
+
+        // Step 1: Get category ID from slug
+        const categoryRes = await axios.get(
+          `${wpBaseUrl}/categories?slug=${categorySlug}`
+        );
+        const category = categoryRes.data[0];
+
+        if (!category) {
+          console.warn("Category not found");
+          setBlogs([]);
+          return;
+        }
+
+        setCategoryId(category.id);
+
+        // Step 2: Fetch posts using category ID
+        const postsRes = await axios.get(
+          `${wpBaseUrl}/posts?_embed&categories=${category.id}`
+        );
+        setBlogs(postsRes.data);
       } catch (error) {
-        console.error("Failed to fetch blogs:", error);
+        console.error("Failed to fetch category blogs:", error);
+        setBlogs([]);
       } finally {
         setLoading(false);
       }
     };
 
-    fetchLatestBlogs();
-  }, []);
+    fetchCategoryIdAndPosts();
+  }, [categorySlug]);
 
   const startIndex = (currentPage - 1) * itemsPerPage;
   const displayedBlogs = blogs.slice(startIndex, startIndex + itemsPerPage);
@@ -46,18 +91,22 @@ const BlogSec = ({ secTitle, itemsPerPage = 6, pagination }) => {
                 From The Blog
               </p>
               <h2 data-aos="fade-up" data-aos-duration="3000">
-                {secTitle || `Latest News & Articles from the Blog.`}
+                {secTitle || `Related Articles & News`}
               </h2>
             </div>
           </div>
 
           {loading ? (
-            <div className="sideBar-loader">
+            <div className="sideBar-loader w-100 d-flex justify-content-center py-5">
               <Loader />
+            </div>
+          ) : blogs.length === 0 ? (
+            <div className="col-12 text-center py-4">
+              <p className="text-muted">No posts found in this category.</p>
             </div>
           ) : (
             displayedBlogs.map((item, index) => (
-              <div className="col-md-4 mb-4" key={index}>
+              <div className="col-lg-4 col-md-6 mb-4" key={index}>
                 <BlogCard
                   image={item._embedded?.["wp:featuredmedia"]?.[0]?.source_url}
                   name={item.title.rendered}
@@ -75,7 +124,7 @@ const BlogSec = ({ secTitle, itemsPerPage = 6, pagination }) => {
           )}
         </div>
 
-        {!loading && pagination && (
+        {!loading && blogs.length > 0 && pagination && (
           <Pagination className="blogs-pagination justify-content-center mt-4">
             <Pagination.Prev
               onClick={() => setCurrentPage((p) => p - 1)}
@@ -101,4 +150,4 @@ const BlogSec = ({ secTitle, itemsPerPage = 6, pagination }) => {
   );
 };
 
-export default BlogSec;
+export default ServicesBlogSec;

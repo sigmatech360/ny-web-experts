@@ -31,6 +31,7 @@ import servicesLogoDesigngetstartedimg from "../../assets/images/servicesLogoDes
 
 import AvgPerformanceSec from "../../components/AvgPerformanceSec";
 import OurOfferSec from "../../components/OurOfferSec";
+import ServicesBlogSec from "../../components/ServicesBlogSec";
 
 const offerListData = [
   {
@@ -175,6 +176,11 @@ const LogoDesign = () => {
       <TestimonialSec
         secTag="Testimonials"
         secTitle="Our Logo Designs Leave An Impact!"
+      />
+      <ServicesBlogSec
+        categorySlug="logo-designing"
+        itemsPerPage={3}
+        pagination
       />
       <GetStarted
         bgImage={servicesLogoDesigngetstartedimg}

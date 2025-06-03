@@ -29,6 +29,7 @@ import avgPerformanceImg from "../../assets/images/services-seo-avg-img.png";
 
 import AvgPerformanceSec from "../../components/AvgPerformanceSec";
 import OurOfferSec from "../../components/OurOfferSec";
+import ServicesBlogSec from "../../components/ServicesBlogSec";
 
 const offerListData = [
   {
@@ -181,6 +182,11 @@ const SEO = () => {
       <OurTeamSec secTitle="The Team That Feeds On Results" />
 
       <TestimonialSec secTitle="High Rankings Bring Happy Clients!" />
+      <ServicesBlogSec
+        categorySlug="search-engine-optimization"
+        itemsPerPage={3}
+        pagination
+      />
       <GetStarted
         secTitle="Got An Idea? Let’s Discuss!"
         secDescription="You’ve got business goals, and we have the best team to turn them into reality. Let’s build your business into a digital beast that gets clicks, leads, and revenue."
