@@ -3,7 +3,7 @@ import bnnerimg from "../../assets/images/bnner-img.webp";
 import { gsap } from "gsap";
 import { Link } from "react-router-dom";
 
-const MainBanner = () => {
+const MainBanner = ({ onScrollToServices }) => {
   const sectionRef = useRef(null);
   const headingRef = useRef(null);
   const textRef = useRef(null);
@@ -84,9 +84,9 @@ const MainBanner = () => {
         <div className="row align-items-center">
           <div className="col-lg-6 mb-lg-0 mb-3">
             <div className="main-banner-content">
-              <h2 ref={headingRef}>
+              <h1 ref={headingRef}>
                 New York’s Single Stop For Digital Growth & Presence!
-              </h2>
+              </h1>
               <p className="poppins" ref={textRef}>
                 At New York Web Experts, we build strong websites and powerful
                 digital marketing strategies to boost your business. We create
@@ -97,16 +97,20 @@ const MainBanner = () => {
                 company in New York, we know how to position your brand for your
                 audience with measurable growth.
               </p>
-              <Link to={"/services"} className="ny-btn" ref={buttonRef}>
+              <button
+                onClick={onScrollToServices}
+                className="ny-btn"
+                ref={buttonRef}
+              >
                 Explore Our Services
-              </Link>
+              </button>
             </div>
           </div>
           <div className="col-lg-6 mb-lg-0 mb-3">
             <div className="main-banner-img">
               <img
                 src={bnnerimg}
-                alt="Banner Image"
+                alt="Digital Growth & Presence!"
                 className="img-fluid"
                 ref={imageRef}
                 onMouseMove={handleImageMove}

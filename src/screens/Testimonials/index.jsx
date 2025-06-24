@@ -6,18 +6,31 @@ import bannerBG from "../../assets/images/about-banner-bg.webp";
 import GetStarted from "../../components/GetStarted";
 import GetCustomLogo from "../../components/GetCustomLogo";
 import TestimonialSec from "../../components/TestimonialSec";
+import ReactHelmet from "../../components/ReactHelmet";
 
 const Testimonials = () => {
   return (
-    <DefaultLayout>
-      <InnerBanner bannerBG={bannerBG} title="Testimonials" page="Testimonials" />
+    <>
+      <ReactHelmet
+        title="New York Web Experts"
+        description={`description`}
+        keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
+        url="https://nywebexperts.com/testimonials"
+      />
+      <DefaultLayout>
+        <InnerBanner
+          bannerBG={bannerBG}
+          title="Testimonials"
+          page="Testimonials"
+        />
 
-      {/* <ContactUsSec variant="light" /> */}
-      <TestimonialSec />
+        {/* <ContactUsSec variant="light" /> */}
+        <TestimonialSec />
 
-      <GetCustomLogo />
-      <GetStarted  />
-    </DefaultLayout>
+        <GetCustomLogo />
+        <GetStarted />
+      </DefaultLayout>
+    </>
   );
 };
 

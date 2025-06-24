@@ -19,7 +19,7 @@ const PurpleBGSec = (props) => {
                     {props.tag}
                   </p>
                 )}
-                <h2 data-aos="fade-up" data-aos-delay="400">
+                <h2  data-aos="fade-up" data-aos-delay="400">
                   {props.title}
                 </h2>
                 {props.secDescription && (

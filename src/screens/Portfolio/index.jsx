@@ -8,25 +8,46 @@ import GetStarted from "../../components/GetStarted";
 import BlogSec from "../../components/BlogSec";
 import ContactUsSec from "../../components/ContactUsSec";
 
-import projectsimg1 from "../../assets/images/projects-img-1.webp";
-import projectsimg2 from "../../assets/images/projects-img-2.webp";
-import projectsimg3 from "../../assets/images/projects-img-3.webp";
-import projectsimg4 from "../../assets/images/projects-img-4.webp";
-import projectsimg5 from "../../assets/images/projects-img-5.webp";
-import projectsimg6 from "../../assets/images/projects-img-6.webp";
+// import projectsimg1 from "../../assets/images/projects-img-1.webp";
+// import projectsimg2 from "../../assets/images/projects-img-2.webp";
+// import projectsimg3 from "../../assets/images/projects-img-3.webp";
+// import projectsimg4 from "../../assets/images/projects-img-4.webp";
+// import projectsimg5 from "../../assets/images/projects-img-5.webp";
+// import projectsimg6 from "../../assets/images/projects-img-6.webp";
 
-import portfolioprojectsimg1 from "../../assets/images/portfolio-projects-img-1.png";
-import portfolioprojectsimg2 from "../../assets/images/portfolio-projects-img-2.png";
-import portfolioprojectsimg3 from "../../assets/images/portfolio-projects-img-3.png";
-import portfolioprojectsimg4 from "../../assets/images/portfolio-projects-img-4.png";
-import portfolioprojectsimg5 from "../../assets/images/portfolio-projects-img-5.png";
-import portfolioprojectsimg6 from "../../assets/images/portfolio-projects-img-6.png";
-import portfolioprojectsimg7 from "../../assets/images/portfolio-projects-img-7.png";
-import portfolioprojectsimg8 from "../../assets/images/portfolio-projects-img-8.png";
-import portfolioprojectsimg9 from "../../assets/images/portfolio-projects-img-9.png";
-import portfolioprojectsimg10 from "../../assets/images/portfolio-projects-img-10.png";
-import portfolioprojectsimg11 from "../../assets/images/portfolio-projects-img-11.png";
-import portfolioprojectsimg12 from "../../assets/images/portfolio-projects-img-12.png";
+import portfolioprojectsimg1 from "../../assets/images/portfolio-projects-img-1.webp";
+import portfolioprojectsimg2 from "../../assets/images/portfolio-projects-img-2.webp";
+import portfolioprojectsimg3 from "../../assets/images/portfolio-projects-img-3.webp";
+import portfolioprojectsimg4 from "../../assets/images/portfolio-projects-img-4.webp";
+import portfolioprojectsimg5 from "../../assets/images/portfolio-projects-img-5.webp";
+import portfolioprojectsimg6 from "../../assets/images/portfolio-projects-img-6.webp";
+import portfolioprojectsimg7 from "../../assets/images/portfolio-projects-img-7.webp";
+import portfolioprojectsimg8 from "../../assets/images/portfolio-projects-img-8.webp";
+import portfolioprojectsimg9 from "../../assets/images/portfolio-projects-img-9.webp";
+import portfolioprojectsimg10 from "../../assets/images/portfolio-projects-img-10.webp";
+import portfolioprojectsimg11 from "../../assets/images/portfolio-projects-img-11.webp";
+import portfolioprojectsimg12 from "../../assets/images/portfolio-projects-img-12.webp";
+
+import projectsimg1 from "../../assets/images/services-logoDesign-projects-img-1.webp";
+import projectsimg2 from "../../assets/images/services-logoDesign-projects-img-2.webp";
+import projectsimg3 from "../../assets/images/services-logoDesign-projects-img-3.webp";
+import projectsimg4 from "../../assets/images/services-logoDesign-projects-img-4.webp";
+import projectsimg5 from "../../assets/images/services-logoDesign-projects-img-5.webp";
+import projectsimg6 from "../../assets/images/services-logoDesign-projects-img-6.webp";
+
+import cmsProjectsimg1 from "../../assets/images/services-cms-Dev-projects-img-1.webp";
+import cmsProjectsimg2 from "../../assets/images/services-cms-Dev-projects-img-2.webp";
+import cmsProjectsimg3 from "../../assets/images/services-cms-Dev-projects-img-3.webp";
+import cmsProjectsimg4 from "../../assets/images/services-cms-Dev-projects-img-4.webp";
+import cmsProjectsimg5 from "../../assets/images/services-cms-Dev-projects-img-5.webp";
+import cmsProjectsimg6 from "../../assets/images/services-cms-Dev-projects-img-6.webp";
+
+import mobileAppprojectsimg1 from "../../assets/images/services-mobileAppDev-projects-img-1.webp";
+import mobileAppprojectsimg2 from "../../assets/images/services-mobileAppDev-projects-img-2.webp";
+import mobileAppprojectsimg3 from "../../assets/images/services-mobileAppDev-projects-img-3.webp";
+import mobileAppprojectsimg4 from "../../assets/images/services-mobileAppDev-projects-img-4.webp";
+import mobileAppprojectsimg5 from "../../assets/images/services-mobileAppDev-projects-img-5.webp";
+import mobileAppprojectsimg6 from "../../assets/images/services-mobileAppDev-projects-img-6.webp";
 
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
@@ -34,6 +55,8 @@ import Tabs from "react-bootstrap/Tabs";
 import blogimg1 from "../../assets/images/blog-img-1.webp";
 import blogimg2 from "../../assets/images/blog-img-2.webp";
 import blogimg3 from "../../assets/images/blog-img-3.webp";
+import PortfolioSection from "../../components/PortfolioSection";
+import ReactHelmet from "../../components/ReactHelmet";
 
 const blogCardsData = [
   {
@@ -57,48 +80,6 @@ const blogCardsData = [
     description:
       "Explore the pros and cons of custom website design and templates, and find out which solution fits your brand, goals, and budget.",
   },
-  // {
-  //   id: 4,
-  //   image: blogimg1,
-  //   name: "Top Benefits of Responsive Web Design in 2025",
-  //   description:
-  //     "With mobile users rising, responsive web design ensures your site looks great on any device. Learn why it's essential for modern businesses.",
-  // },
-  // {
-  //   id: 5,
-  //   image: blogimg2,
-  //   name: "Ten Ways of Lying about Your Relationship",
-  //   description:
-  //     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
-  // },
-  // {
-  //   id: 6,
-  //   image: blogimg3,
-  //   name: "Ten Ways of Lying about Your Relationship",
-  //   description:
-  //     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
-  // },
-  // {
-  //   id: 7,
-  //   image: blogimg1,
-  //   name: "Ten Ways of Lying about Your Relationship",
-  //   description:
-  //     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
-  // },
-  // {
-  //   id: 8,
-  //   image: blogimg2,
-  //   name: "Ten Ways of Lying about Your Relationship",
-  //   description:
-  //     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
-  // },
-  // {
-  //   id: 9,
-  //   image: blogimg3,
-  //   name: "Ten Ways of Lying about Your Relationship",
-  //   description:
-  //     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
-  // },
 ];
 
 const portfolioColumns = [
@@ -122,9 +103,33 @@ const portfolioColumns = [
   ],
 ];
 
+const logoColumns = [
+  [projectsimg1, projectsimg2],
+  [projectsimg3, projectsimg4],
+  [projectsimg5, projectsimg6],
+];
+const cmsColumns = [
+  [cmsProjectsimg1, cmsProjectsimg2],
+  [cmsProjectsimg3, cmsProjectsimg4],
+  [cmsProjectsimg5, cmsProjectsimg6],
+];
+const mobileAppColumns = [
+  [mobileAppprojectsimg1, mobileAppprojectsimg2],
+  [mobileAppprojectsimg3, mobileAppprojectsimg4],
+  [mobileAppprojectsimg5, mobileAppprojectsimg6],
+];
+
 const Portfolio = () => {
-  const [key, setKey] = useState("web-development");
+  const [key, setKey] = useState("custom-web-development");
+
   return (
+    <>
+      <ReactHelmet
+        title="New York Web Experts"
+        description={`description`}
+        keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
+        url="https://nywebexperts.com/portfolio"
+      />
     <DefaultLayout>
       <InnerBanner bannerBG={bannerBG} title="Portfolio" page="Portfolio" />
 
@@ -157,125 +162,23 @@ const Portfolio = () => {
                 onSelect={(k) => setKey(k)}
                 className="mb-3"
               >
-                <Tab eventKey="web-development" title="Web Development">
-                  <div className="row">
-                    {portfolioColumns.map((item, index) => (
-                      <div className="col-md-4 mb-md-0 mb-3" key={index}>
-                        <div
-                          className="projects-item d-flex flex-column gap-4"
-                          data-aos="fade-up"
-                          data-aos-delay={index * 300}
-                        >
-                          {item.map((img, imgIndex) => (
-                            <img
-                              key={imgIndex}
-                              src={img}
-                              className="img-fluid"
-                              alt={`project image ${index + 1}-${imgIndex + 1}`}
-                            />
-                          ))}
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                  {/* <div className="row">
-                    <div className="col-md-4 mb-md-0 mb-3">
-                      <div
-                        className="projects-item d-flex flex-column gap-4"
-                        data-aos="fade-right"
-                        data-aos-duration="2000"
-                      >
-                        <img
-                          src={portfolioprojectsimg1}
-                          className="img-fluid"
-                          alt="project image 1"
-                        />
-                        <img
-                          src={portfolioprojectsimg2}
-                          className="img-fluid"
-                          alt="project image 2"
-                        />
-                        <img
-                          src={portfolioprojectsimg3}
-                          className="img-fluid"
-                          alt="project image 1"
-                        />
-                        <img
-                          src={portfolioprojectsimg4}
-                          className="img-fluid"
-                          alt="project image 2"
-                        />
-                      </div>
-                    </div>
-                    <div className="col-md-4 mb-md-0 mb-3">
-                      <div
-                        className="projects-item d-flex flex-column gap-4"
-                        data-aos="fade-up"
-                        data-aos-duration="2000"
-                      >
-                        <img
-                          src={portfolioprojectsimg5}
-                          className="img-fluid"
-                          alt="project image 3"
-                        />
-                        <img
-                          src={portfolioprojectsimg6}
-                          className="img-fluid"
-                          alt="project image 4"
-                        />
-                        <img
-                          src={portfolioprojectsimg7}
-                          className="img-fluid"
-                          alt="project image 3"
-                        />
-                        <img
-                          src={portfolioprojectsimg8}
-                          className="img-fluid"
-                          alt="project image 4"
-                        />
-                      </div>
-                    </div>
-                    <div className="col-md-4 mb-md-0 mb-3">
-                      <div
-                        className="projects-item d-flex flex-column gap-4"
-                        data-aos="fade-left"
-                        data-aos-duration="2000"
-                      >
-                        <img
-                          src={portfolioprojectsimg9}
-                          className="img-fluid"
-                          alt="project image 5"
-                        />
-                        <img
-                          src={portfolioprojectsimg10}
-                          className="img-fluid"
-                          alt="project image 6"
-                        />
-                        <img
-                          src={portfolioprojectsimg11}
-                          className="img-fluid"
-                          alt="project image 5"
-                        />
-                        <img
-                          src={portfolioprojectsimg12}
-                          className="img-fluid"
-                          alt="project image 6"
-                        />
-                      </div>
-                    </div>
-                  </div> */}
+                <Tab
+                  eventKey="custom-web-development"
+                  title="Custom Web Development"
+                >
+                  <PortfolioSection columns={portfolioColumns} />
                 </Tab>
-                <Tab eventKey="video-animation" title="Video Animation">
-                  Video Animation
+                <Tab
+                  eventKey="mobile-app-development"
+                  title="Mobile App Development"
+                >
+                  <PortfolioSection columns={mobileAppColumns} />
                 </Tab>
-                <Tab eventKey="ui-ux-design" title="UI/Ux Design">
-                  UI/Ux Design
-                </Tab>
-                <Tab eventKey="content-writting" title="Content Writting">
-                  Content Writting
+                <Tab eventKey="cms-development" title="CMS Development">
+                  <PortfolioSection columns={cmsColumns} />
                 </Tab>
                 <Tab eventKey="logo-design" title="Logo Design">
-                  Logo Design
+                  <PortfolioSection columns={logoColumns} />
                 </Tab>
               </Tabs>
             </div>
@@ -284,9 +187,10 @@ const Portfolio = () => {
       </section>
 
       <ContactUsSec />
-      <BlogSec blogCardsData={blogCardsData} />
+      <BlogSec blogCardsData={blogCardsData} itemsPerPage={3} />
       <GetStarted />
     </DefaultLayout>
+    </>
   );
 };
 

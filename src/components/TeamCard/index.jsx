@@ -7,7 +7,7 @@ const TeamCard = (props) => {
   return (
     <div className={`team-card`}>
       <div className="team-card-header">
-        <img src={props?.image} alt="Team menmber" className="img-fluid" />
+        <img src={props?.image} alt={props?.name} className="img-fluid" />
       </div>
       <div className="team-card-body">
         <h3>{props?.name}</h3>

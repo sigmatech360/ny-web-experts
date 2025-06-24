@@ -1,21 +1,28 @@
 import React from "react";
+import "./style.css"
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import { CiFacebook, CiLinkedin } from "react-icons/ci";
-import { FaInstagram, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
+import {
+  FaCaretDown,
+  FaCaretRight,
+  FaInstagram,
+  FaLinkedinIn,
+  FaWhatsapp,
+} from "react-icons/fa";
 import { RiPinterestLine } from "react-icons/ri";
 
 import logo from "../../../assets/images/logo.webp";
 
 const serviceLinks = [
-  { label: "CMS Development", path: "/services/cms-development" },
-  { label: "Digital Marketing", path: "/services/digital-marketing" },
-  { label: "SMM", path: "/services/smm" },
-  { label: "SEO", path: "/services/seo" },
-  { label: "Custom Web Development", path: "/services/custom-web-development" },
-  { label: "Logo Design", path: "/services/logo-design" },
-  { label: "Mobile App Development", path: "/services/mobile-app-development" },
+  { label: "Logo Design", path: "/logo-design" },
+  { label: "CMS Development", path: "/cms-development" },
+  { label: "Digital Marketing", path: "/digital-marketing" },
+  { label: "SMM", path: "/social-media-marketing" },
+  { label: "SEO", path: "/search-engine-optimization" },
+  { label: "Custom Web Development", path: "/custom-web-development" },
+  { label: "Mobile App Development", path: "/mobile-app-development" },
 ];
 
 const Header = () => {
@@ -28,35 +35,123 @@ const Header = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse>
           <Nav className="mx-auto">
-            <Link to={"/"} className="nav-link">
+            <NavLink to={"/"} className="nav-link">
               Home
-            </Link>
-            <Link to={"/about"} className="nav-link">
+            </NavLink>
+            <NavLink to={"/about"} className="nav-link">
               About
-            </Link>
+            </NavLink>
 
-            {/* <Link to={"/services"} className="nav-link">Services</Link> */}
-            <NavDropdown
+            {/* ============================================= */}
+
+            {/* <NavDropdown
               title="Services"
               id="services-dropdown"
               // className="nav-link"
             >
               {serviceLinks.map((service, index) => (
-                <NavDropdown.Item as={Link} to={service.path} key={index}>
+                <NavDropdown.Item
+                  as={Link}
+                  to={service.path}
+                  key={index}
+                  target="_blank"
+                  onClick={(e) => e.stopPropagation()}
+                >
                   {service.label}
                 </NavDropdown.Item>
               ))}
+            </NavDropdown> */}
+
+            <NavDropdown
+              title="Services"
+              id="services-dropdown"
+              // className="nav-link"
+            >
+              <NavDropdown.Item
+                as={Link}
+                to={"/logo-design"}
+                target="_blank"
+                onClick={(e) => e.stopPropagation()}
+              >
+                Logo Design
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                as={Link}
+                to={"/cms-development"}
+                target="_blank"
+                onClick={(e) => e.stopPropagation()}
+              >
+                CMS Development
+              </NavDropdown.Item>
+              <div className="nav-subdropdown-wrapper">
+                <NavDropdown.Item
+                  as={Link}
+                  to={"/digital-marketing"}
+                  target="_blank"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  Digital Marketing{" "}
+                  <span className="submenu-icon d-none d-lg-inline">
+                    <FaCaretRight />
+                  </span>
+                  <span className="submenu-icon d-inline d-lg-none">
+                    <FaCaretDown />
+                  </span>
+                </NavDropdown.Item>
+                <div className="nav-subdropdown">
+                  <NavDropdown.Item
+                    as={Link}
+                    to={"/social-media-marketing"}
+                    target="_blank"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    SMM
+                  </NavDropdown.Item>
+                  <NavDropdown.Item
+                    as={Link}
+                    to={"/search-engine-optimization"}
+                    target="_blank"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    SEO
+                  </NavDropdown.Item>
+                </div>
+              </div>
+
+              <NavDropdown.Item
+                as={Link}
+                to={"/custom-web-development"}
+                target="_blank"
+                onClick={(e) => e.stopPropagation()}
+              >
+                Custom Web Development
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                as={Link}
+                to={"/mobile-app-development"}
+                target="_blank"
+                onClick={(e) => e.stopPropagation()}
+              >
+                Mobile App Development
+              </NavDropdown.Item>
             </NavDropdown>
 
-            <Link to={"/portfolio"} className="nav-link">
+            {/* ============================================= */}
+            <NavLink to={"/portfolio"} className="nav-link">
               Portfolio
-            </Link>
-            <Link to={"/testimonials"} className="nav-link">
+            </NavLink>
+            <NavLink to={"/pricing"} className="nav-link">
+              Pricing
+            </NavLink>
+            <NavLink to={"/testimonials"} className="nav-link">
               Testimonials
-            </Link>
-            <Link to={"/contact-us"} className="nav-link">
+            </NavLink>
+            <NavLink to={"/blog"} className="nav-link">
+              Blogs
+            </NavLink>
+            <NavLink to={"/contact-us"} className="nav-link">
               Contact Us
-            </Link>
+            </NavLink>
           </Nav>
           <div className="header_social-icons">
             <a

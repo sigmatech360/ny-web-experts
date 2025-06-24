@@ -22,6 +22,7 @@ import PurpleBGSec from "../../components/PurpleBGSec";
 
 import MouseHoverImg from "../../components/MouseHoverImg";
 import { Link } from "react-router-dom";
+import ReactHelmet from "../../components/ReactHelmet";
 
 const blogCardsData = [
   {
@@ -52,45 +53,17 @@ const blogCardsData = [
     description:
       "With mobile users rising, responsive web design ensures your site looks great on any device. Learn why it's essential for modern businesses.",
   },
-  // {
-  //   id: 5,
-  //   image: blogimg2,
-  //   name: "Ten Ways of Lying about Your Relationship",
-  //   description:
-  //     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
-  // },
-  // {
-  //   id: 6,
-  //   image: blogimg3,
-  //   name: "Ten Ways of Lying about Your Relationship",
-  //   description:
-  //     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
-  // },
-  // {
-  //   id: 7,
-  //   image: blogimg1,
-  //   name: "Ten Ways of Lying about Your Relationship",
-  //   description:
-  //     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
-  // },
-  // {
-  //   id: 8,
-  //   image: blogimg2,
-  //   name: "Ten Ways of Lying about Your Relationship",
-  //   description:
-  //     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
-  // },
-  // {
-  //   id: 9,
-  //   image: blogimg3,
-  //   name: "Ten Ways of Lying about Your Relationship",
-  //   description:
-  //     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
-  // },
 ];
 
 const About = () => {
   return (
+    <>
+      <ReactHelmet
+        title="New York Web Experts"
+        description={`description`}
+        keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
+        url="https://nywebexperts.com/about"
+      />
     <DefaultLayout>
       <InnerBanner bannerBG={bannerBG} title="About" page="About" />
 
@@ -134,9 +107,9 @@ const About = () => {
             <div className="col-lg-6">
               <div className="web-creation-content ps-xl-2 ms-xl-2 ps-0 ms-0">
                 <p className="sec-tag purpleColor mb-4">About Us</p>
-                <h2 data-aos="fade-up" data-aos-duration="2000">
+                <h3 data-aos="fade-up" data-aos-duration="2000">
                   Custom Web Solutions
-                </h2>
+                </h3>
                 <p
                   className="poppins"
                   data-aos="fade-up"
@@ -170,7 +143,7 @@ const About = () => {
                       <TbChecks />
                     </div>
                     <div className="content-with-icon-content">
-                      <h5>Lorem Ipsum is simply</h5>
+                      <h5>Smart Digital Strategy</h5>
                       {/* <p></p> */}
                     </div>
                   </div>
@@ -179,7 +152,7 @@ const About = () => {
                       <TbChecks />
                     </div>
                     <div className="content-with-icon-content">
-                      <h5>Lorem Ipsum is simply</h5>
+                      <h5>Creative Web Design</h5>
                       {/* <p></p> */}
                     </div>
                   </div>
@@ -188,7 +161,7 @@ const About = () => {
                       <TbChecks />
                     </div>
                     <div className="content-with-icon-content">
-                      <h5>Lorem Ipsum is simply</h5>
+                      <h5>Modern Web Build</h5>
                       {/* <p></p> */}
                     </div>
                   </div>
@@ -197,19 +170,20 @@ const About = () => {
                       <TbChecks />
                     </div>
                     <div className="content-with-icon-content">
-                      <h5>Lorem Ipsum is simply</h5>
+                      <h5>SEO & Optimization</h5>
                       {/* <p></p> */}
                     </div>
                   </div>
                 </div>
 
-                <button
+                <Link
+                to={"/services"}
                   className="ny-btn"
                   data-aos="fade-up"
                   data-aos-duration="2000"
                 >
                   Discover More
-                </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -219,9 +193,9 @@ const About = () => {
       <PurpleBGSec secClass="digital-product" clipVariant="reverse">
         <div className="col-lg-6">
           <div className="digital-product-content">
-            <h2 data-aos="fade-up" data-aos-duration="1000">
+            <h3 data-aos="fade-up" data-aos-duration="1000">
               Full-Stack Design & Development For Ambitious Businesses
-            </h2>
+            </h3>
             <p
               className="poppins whiteColor"
               data-aos="fade-up"
@@ -271,6 +245,7 @@ const About = () => {
       />
       <GetStarted secTitle="Got An Idea? Let’s Discuss" secDescription="You’ve got business goals, and we have the best team to turn them into reality. Let’s build your business into a digital beast that gets clicks, leads, and revenue." btnText="Book A Call" />
     </DefaultLayout>
+    </>
   );
 };
 

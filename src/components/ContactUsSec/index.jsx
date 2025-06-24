@@ -1,27 +1,9 @@
 import React, { useState } from "react";
 import { toast } from "react-toastify";
 
-import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
-
-const containerStyle = {
-  width: "100%",
-  height: "100%",
-};
-
-const defaultCenter = {
-  lat: 34.0522, // Los Angeles latitude
-  lng: -118.2437, // Los Angeles longitude
-};
-
-const servicesList = [
-  { id: 1, name: "Web Development" },
-  { id: 2, name: "Video Animation" },
-  { id: 3, name: "UI/UX Design" },
-  { id: 4, name: "Content Writing" },
-  { id: 5, name: "Logo Design" },
-];
 
 const ContactUsSec = (props) => {
+  const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     username: "",
     email: "",
@@ -39,6 +21,7 @@ const ContactUsSec = (props) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
 
     try {
       const response = await fetch(`${apiUrl}/submit-query`, {
@@ -51,18 +34,30 @@ const ContactUsSec = (props) => {
 
       const result = await response.json();
       console.log(result);
-      toast.success("Form Submitted Successfully");
+      // toast.success("Form Submitted Successfully");
 
-      setFormData({
-        username: "",
-        email: "",
-        phone: "",
-        service_1: "",
-        data_message: "",
-      });
+      if (result.status) {
+        toast.success(result.message);
+        setFormData({
+          username: "",
+          email: "",
+          phone: "",
+          service_1: "",
+          data_message: "",
+        });
+      } else {
+        const messages = result.message;
+        Object.keys(messages).forEach((field) => {
+          messages[field].forEach((msg) => {
+            toast.error(msg);
+          });
+        });
+      }
     } catch (error) {
       console.log(`Error submitting form:`, error);
       toast.error("Submission failed. Please try again.");
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -79,7 +74,7 @@ const ContactUsSec = (props) => {
           >
             <div className="web-creation-content mb-5">
               <p className="sec-tag mb-4">{props.secTag || `Contact Us`}</p>
-              <h2>{props.secTitle || `Drop us a Line.`}</h2>
+              <h3>{props.secTitle || `Drop us a Line.`}</h3>
             </div>
             <div className="contact-us-form pe-xl-5 me-xl-5 pe-0 me-0">
               <form onSubmit={handleSubmit}>
@@ -106,7 +101,7 @@ const ContactUsSec = (props) => {
                   </div>
                   <div className="col-lg-6 mb-4">
                     <input
-                      type="number"
+                      type="text"
                       class="form-control"
                       placeholder="Phone number"
                       name="phone"
@@ -121,11 +116,25 @@ const ContactUsSec = (props) => {
                       value={formData.service_1}
                       onChange={handleChange}
                     >
-                      {servicesList.map((service) => (
-                        <option key={service.id} value={service.name}>
-                          {service.name}
-                        </option>
-                      ))}
+                      <option value="" disabled>
+                        Services
+                      </option>
+                      <option value="logo-design">Logo Design</option>
+                      <option value="cms-development">CMS Development</option>
+                      <option value="digital-marketing">
+                        Digital Marketing
+                      </option>
+                      <option value="social-media-marketing">
+                        Social Media Marketing
+                      </option>
+                      <option value="seo">SEO</option>
+                      <option value="custom-development">
+                        Custom Development
+                      </option>
+                      <option value="mobile-app-development">
+                        Mobile App Development
+                      </option>
+                      
                     </select>
                   </div>
                   <div className="col-lg-12 mb-3  4">
@@ -140,7 +149,16 @@ const ContactUsSec = (props) => {
                     ></textarea>
                   </div>
                   <div className="col-lg-12">
-                    <button className="ny-btn">Send a Message</button>
+                    <button
+                      className="ny-btn"
+                      disabled={loading}
+                      style={{
+                        opacity: loading ? 0.3 : 1,
+                      }}
+                    >
+                      {/* Send a Message */}
+                      {loading ? "Submitting..." : "Send a Message"}
+                    </button>
                   </div>
                 </div>
               </form>

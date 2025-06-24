@@ -8,7 +8,7 @@ const ContentWithIcon = (props) => {
       }`}
     >
       <div className="content-with-icon-img">
-        {props?.icon && <img src={props?.icon} alt="Content Icon" />}
+        {props?.icon && <img src={props?.icon} alt={"icon"} />}
         {props.iconText && <p>{props.iconText}</p>}
       </div>
       <div className="content-with-icon-content">

@@ -10,6 +10,7 @@ import GetCustomLogo from "../../components/GetCustomLogo";
 import blogimg1 from "../../assets/images/blog-img-1.webp";
 import blogimg2 from "../../assets/images/blog-img-2.webp";
 import blogimg3 from "../../assets/images/blog-img-3.webp";
+import ReactHelmet from "../../components/ReactHelmet";
 
 const blogCardsData = [
   {
@@ -79,17 +80,25 @@ const blogCardsData = [
 
 const Blogs = () => {
   return (
-    <DefaultLayout>
-      <InnerBanner bannerBG={bannerBG} title="Blogs" page="Blogs" />
-
-      <BlogSec
-        // blogCardsData={blogCardsData}
-        itemsPerPage={6}
-        pagination
+    <>
+      <ReactHelmet
+        title="New York Web Experts"
+        description={`description`}
+        keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
+        url="https://nywebexperts.com/blog"
       />
-      <GetCustomLogo />
-      <GetStarted />
-    </DefaultLayout>
+      <DefaultLayout>
+        <InnerBanner bannerBG={bannerBG} title="Blogs" page="Blogs" />
+
+        <BlogSec
+          // blogCardsData={blogCardsData}
+          itemsPerPage={6}
+          pagination
+        />
+        <GetCustomLogo />
+        <GetStarted />
+      </DefaultLayout>
+    </>
   );
 };
 

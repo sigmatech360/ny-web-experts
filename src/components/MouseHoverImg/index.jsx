@@ -62,7 +62,7 @@ const MouseHoverImg = ({ image, aosProps }) => {
       <img
         src={image}
         className="img-fluid"
-        alt="About Image 2"
+        alt="New York web expert about content"
         ref={imageRef}
       />
     </div>

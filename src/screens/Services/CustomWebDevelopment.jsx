@@ -1,6 +1,6 @@
 import React from "react";
 
-import bannerBG from "../../assets/images/services-customWebDev-banner-bg.png";
+import bannerBG from "../../assets/images/services-customWebDev-banner-bg.webp";
 
 import comittedicon from "../../assets/images/comitted-icon.webp";
 import startupicon from "../../assets/images/startup-icon.webp";
@@ -16,20 +16,21 @@ import OurTeamSec from "../../components/OurTeamSec";
 import OutsourcingStrategySec from "../../components/OutsourcingStrategySec";
 
 import WebCreationSec from "../../components/WebCreationSec";
-import webcreationimg from "../../assets/images/services--customWebDev-web-creation-img.png";
+import webcreationimg from "../../assets/images/services--customWebDev-web-creation-img.webp";
 
-import projectsimg1 from "../../assets/images/services-customWebDev-projects-img-1.png";
-import projectsimg2 from "../../assets/images/services-customWebDev-projects-img-2.png";
-import projectsimg3 from "../../assets/images/services-customWebDev-projects-img-3.png";
-import projectsimg4 from "../../assets/images/services-customWebDev-projects-img-4.png";
-import projectsimg5 from "../../assets/images/services-customWebDev-projects-img-5.png";
-import projectsimg6 from "../../assets/images/services-customWebDev-projects-img-6.png";
+import projectsimg1 from "../../assets/images/services-customWebDev-projects-img-1.webp";
+import projectsimg2 from "../../assets/images/services-customWebDev-projects-img-2.webp";
+import projectsimg3 from "../../assets/images/services-customWebDev-projects-img-3.webp";
+import projectsimg4 from "../../assets/images/services-customWebDev-projects-img-4.webp";
+import projectsimg5 from "../../assets/images/services-customWebDev-projects-img-5.webp";
+import projectsimg6 from "../../assets/images/services-customWebDev-projects-img-6.webp";
 
-import avgPerformanceImg from "../../assets/images/services-customWebDev-avg-img.png";
+import avgPerformanceImg from "../../assets/images/services-customWebDev-avg-img.webp";
 
 import AvgPerformanceSec from "../../components/AvgPerformanceSec";
 import OurOfferSec from "../../components/OurOfferSec";
 import ServicesBlogSec from "../../components/ServicesBlogSec";
+import ReactHelmet from "../../components/ReactHelmet";
 
 const offerListData = [
   {
@@ -114,6 +115,13 @@ export const aboutBoxesData = [
 
 const CustomWebDevelopment = () => {
   return (
+    <>
+      <ReactHelmet
+        title="New York Web Experts"
+        description={`description`}
+        keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
+        url="https://nywebexperts.com/custom-web-development"
+      />
     <DefaultLayout>
       <InnerBanner
         bannerBG={bannerBG}
@@ -174,7 +182,7 @@ const CustomWebDevelopment = () => {
         listData={avgPerformanceData}
       />
 
-      <OurTeamSec secTitle="Meet The Brains Behind Your Success" />
+      {/* <OurTeamSec secTitle="Meet The Brains Behind Your Success" /> */}
 
       <TestimonialSec
         secTag="Testimonial"
@@ -191,6 +199,7 @@ const CustomWebDevelopment = () => {
         btnText="Book A Call!"
       />
     </DefaultLayout>
+    </>
   );
 };
 

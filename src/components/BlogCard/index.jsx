@@ -7,7 +7,7 @@ const BlogCard = ({ image, name, description, slug, author, date }) => {
     <div className="blog-card">
       <div className="our-services-card-header">
         <Link to={`/blog/${slug}`}>
-          <img src={image} alt="Blog" className="img-fluid" />
+          <img src={image} alt={name} className="img-fluid" />
         </Link>
       </div>
       <div className="our-services-card-body">

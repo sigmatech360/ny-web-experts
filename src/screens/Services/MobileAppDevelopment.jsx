@@ -1,9 +1,9 @@
-import bannerBG from "../../assets/images/services-mobileAppDev-banner-bg.png";
+import bannerBG from "../../assets/images/services-mobileAppDev-banner-bg.webp";
 
-import startupicon from "../../assets/images/services-mobileAppDev-abt-icon1.png";
-import developmenticon from "../../assets/images/services-mobileAppDev-abt-icon2.png";
-import analyticsicon from "../../assets/images/services-mobileAppDev-abt-icon3.png";
-import comittedicon from "../../assets/images/services-mobileAppDev-abt-icon4.png";
+import startupicon from "../../assets/images/services-mobileAppDev-abt-icon1.webp";
+import developmenticon from "../../assets/images/services-mobileAppDev-abt-icon2.webp";
+import analyticsicon from "../../assets/images/services-mobileAppDev-abt-icon3.webp";
+import comittedicon from "../../assets/images/services-mobileAppDev-abt-icon4.webp";
 
 import DefaultLayout from "../../components/DefaultLayout";
 import InnerBanner from "../../components/InnerBanner";
@@ -14,22 +14,23 @@ import OurTeamSec from "../../components/OurTeamSec";
 import OutsourcingStrategySec from "../../components/OutsourcingStrategySec";
 
 import WebCreationSec from "../../components/WebCreationSec";
-import webcreationimg from "../../assets/images/services-mobileAppDev-web-creation-img.png";
+import webcreationimg from "../../assets/images/services-mobileAppDev-web-creation-img.webp";
 
-import projectsimg1 from "../../assets/images/services-mobileAppDev-projects-img-1.png";
-import projectsimg2 from "../../assets/images/services-mobileAppDev-projects-img-2.png";
-import projectsimg3 from "../../assets/images/services-mobileAppDev-projects-img-3.png";
-import projectsimg4 from "../../assets/images/services-mobileAppDev-projects-img-4.png";
-import projectsimg5 from "../../assets/images/services-mobileAppDev-projects-img-5.png";
-import projectsimg6 from "../../assets/images/services-mobileAppDev-projects-img-6.png";
+import projectsimg1 from "../../assets/images/services-mobileAppDev-projects-img-1.webp";
+import projectsimg2 from "../../assets/images/services-mobileAppDev-projects-img-2.webp";
+import projectsimg3 from "../../assets/images/services-mobileAppDev-projects-img-3.webp";
+import projectsimg4 from "../../assets/images/services-mobileAppDev-projects-img-4.webp";
+import projectsimg5 from "../../assets/images/services-mobileAppDev-projects-img-5.webp";
+import projectsimg6 from "../../assets/images/services-mobileAppDev-projects-img-6.webp";
 
-import avgPerformanceImg from "../../assets/images/services-mobileAppDev-avg-img.png";
+import avgPerformanceImg from "../../assets/images/services-mobileAppDev-avg-img.webp";
 
 import AvgPerformanceSec from "../../components/AvgPerformanceSec";
 import OurOfferSec from "../../components/OurOfferSec";
 
-import servicesMobileAppDevgetstartedimg from "../../assets/images/servicesMobileAppDev-get-started-img.png";
+import servicesMobileAppDevgetstartedimg from "../../assets/images/servicesMobileAppDev-get-started-img.webp";
 import ServicesBlogSec from "../../components/ServicesBlogSec";
+import ReactHelmet from "../../components/ReactHelmet";
 
 const offerListData = [
   {
@@ -114,6 +115,13 @@ export const aboutBoxesData = [
 
 const MobileAppDevelopment = () => {
   return (
+    <>
+      <ReactHelmet
+        title="New York Web Experts"
+        description={`description`}
+        keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
+        url="https://nywebexperts.com/mobile-app-development"
+      />
     <DefaultLayout>
       <InnerBanner
         bannerBG={bannerBG}
@@ -174,7 +182,7 @@ const MobileAppDevelopment = () => {
         listData={avgPerformanceData}
       />
 
-      <OurTeamSec secTitle="Meet The Minds Behind" />
+      {/* <OurTeamSec secTitle="Meet The Minds Behind" /> */}
 
       <TestimonialSec
         secTag="Testimonials"
@@ -192,6 +200,7 @@ const MobileAppDevelopment = () => {
         btnText="Book A Call!"
       />
     </DefaultLayout>
+    </>
   );
 };
 

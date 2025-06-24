@@ -18,12 +18,13 @@ import OutsourcingStrategySec from "../../components/OutsourcingStrategySec";
 import WebCreationSec from "../../components/WebCreationSec";
 import webcreationimg from "../../assets/images/web-creation-img.webp";
 
-import projectsimg1 from "../../assets/images/servicePage-projects-img-1.png";
-import projectsimg2 from "../../assets/images/servicePage-projects-img-2.png";
-import projectsimg3 from "../../assets/images/servicePage-projects-img-3.png";
-import projectsimg4 from "../../assets/images/servicePage-projects-img-4.png";
-import projectsimg5 from "../../assets/images/servicePage-projects-img-5.png";
-import projectsimg6 from "../../assets/images/servicePage-projects-img-6.png";
+import projectsimg1 from "../../assets/images/servicePage-projects-img-1.webp";
+import projectsimg2 from "../../assets/images/servicePage-projects-img-2.webp";
+import projectsimg3 from "../../assets/images/servicePage-projects-img-3.webp";
+import projectsimg4 from "../../assets/images/servicePage-projects-img-4.webp";
+import projectsimg5 from "../../assets/images/servicePage-projects-img-5.webp";
+import projectsimg6 from "../../assets/images/servicePage-projects-img-6.webp";
+import ReactHelmet from "../../components/ReactHelmet";
 
 export const aboutBoxesData = [
   {
@@ -54,6 +55,13 @@ export const aboutBoxesData = [
 
 const Services = () => {
   return (
+    <>
+      <ReactHelmet
+        title="New York Web Experts"
+        description={`description`}
+        keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
+        url="https://nywebexperts.com/services"
+      />
     <DefaultLayout>
       <InnerBanner
         bannerBG={bannerBG}
@@ -102,11 +110,12 @@ const Services = () => {
         ]}
       />
 
-      <OurTeamSec />
+      {/* <OurTeamSec /> */}
 
       <TestimonialSec />
       <GetStarted />
     </DefaultLayout>
+    </>
   );
 };
 

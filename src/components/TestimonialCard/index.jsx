@@ -4,7 +4,7 @@ const TestimonialCard = (props) => {
     return (
         <div className="testimonials-item">
             <div className="testimonials-item-img">
-                <img src={props?.image} alt="Testimonial Image" />
+                <img src={props?.image} alt={props?.name} />
             </div>
             <div className="testimonials-item-content">
                 <h4 className='testimonials-name'>{props?.name}</h4>

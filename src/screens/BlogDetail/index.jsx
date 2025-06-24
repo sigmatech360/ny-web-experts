@@ -115,7 +115,7 @@ const BlogDetail = () => {
               <div className="col-xl-9 col-lg-8 mb-lg-0 mb-4">
                 <section className="blog-detail-banner ">
                   <div className="blog-detail-banner-img">
-                    <img src={featuredImage} alt="" className="img-fluid" />
+                    <img src={featuredImage} alt={post.title.rendered} className="img-fluid" />
                   </div>
                 </section>
 
@@ -185,7 +185,7 @@ const BlogDetail = () => {
                               <img
                                 src={image}
                                 className="card-img-top"
-                                alt="Blog Post"
+                                alt={post.title.rendered}
                               />
                               <div className="sideBarBlogContent">
                                 <Link to={`/blog/${post.slug}`}>

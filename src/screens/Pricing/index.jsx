@@ -6,17 +6,38 @@ import bannerBG from "../../assets/images/about-banner-bg.webp";
 import ContactUsSec from "../../components/ContactUsSec";
 import GetStarted from "../../components/GetStarted";
 
+import FormModal from "../../components/FormModal";
+
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
-import { ourBenefitsContentIconData, pricingPlan } from "../../data";
+import {
+  brandingPricingPlan,
+  eCommercePricingPlan,
+  logoDesignPricingPlan,
+  maintenancePricingPlan,
+  ourBenefitsContentIconData,
+  pricingPlan,
+  seoPricingPlan,
+  webPackagesPricingPlan,
+  webPortalPricingPlan,
+} from "../../data";
 import PricePlanCard from "../../components/PricePlanCard";
 
 import { TbChecks } from "react-icons/tb";
 import ContentWithIcon from "../../components/ContentWithIcon";
+import ReactHelmet from "../../components/ReactHelmet";
 
 const Pricing = () => {
-  const [key, setKey] = useState("web-development");
+  const [key, setKey] = useState("logo-design");
+  const [showModal, setShowModal] = useState(false);
   return (
+    <>
+      <ReactHelmet
+        title="New York Web Experts"
+        description={`description`}
+        keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
+        url="https://nywebexperts.com/pricing"
+      />
     <DefaultLayout>
       <InnerBanner bannerBG={bannerBG} title="Pricing" page="Pricing" />
 
@@ -46,9 +67,9 @@ const Pricing = () => {
                 onSelect={(k) => setKey(k)}
                 className="mb-3"
               >
-                <Tab eventKey="web-development" title="Web Development">
+                <Tab eventKey="logo-design" title="Logo Design">
                   <div className="row">
-                    {pricingPlan.map((item, index) => (
+                    {logoDesignPricingPlan.map((item, index) => (
                       <div className="col-lg-4 mb-4" key={index}>
                         <PricePlanCard
                           variant="gray"
@@ -56,22 +77,111 @@ const Pricing = () => {
                           price={item.price}
                           description={item.description}
                           list={item.list}
+                          onClick={() => setShowModal(true)}
                         />
                       </div>
                     ))}
                   </div>
                 </Tab>
-                <Tab eventKey="video-animation" title="Video Animation">
-                  Video Animation
+                <Tab eventKey="web-packages" title="Web Packages">
+                  <div className="row">
+                    {webPackagesPricingPlan.map((item, index) => (
+                      <div className="col-lg-4 mb-4" key={index}>
+                        <PricePlanCard
+                          variant="gray"
+                          name={item.name}
+                          price={item.price}
+                          description={item.description}
+                          list={item.list}
+                          onClick={() => setShowModal(true)}
+                        />
+                      </div>
+                    ))}
+                  </div>
                 </Tab>
-                <Tab eventKey="ui-ux-design" title="UI/Ux Design">
-                  UI/Ux Design
+                <Tab eventKey="eCommerce-packages" title="E-Commerce Packages">
+                  <div className="row">
+                    {eCommercePricingPlan.map((item, index) => (
+                      <div className="col-lg-4 mb-4" key={index}>
+                        <PricePlanCard
+                          variant="gray"
+                          name={item.name}
+                          price={item.price}
+                          description={item.description}
+                          list={item.list}
+                          onClick={() => setShowModal(true)}
+                        />
+                      </div>
+                    ))}
+                  </div>
                 </Tab>
-                <Tab eventKey="content-writting" title="Content Writting">
-                  Content Writting
+                <Tab eventKey="branding-packages" title="Branding Packages">
+                  <div className="row">
+                    {brandingPricingPlan.map((item, index) => (
+                      <div className="col-lg-4 mb-4" key={index}>
+                        <PricePlanCard
+                          variant="gray"
+                          name={item.name}
+                          price={item.price}
+                          description={item.description}
+                          list={item.list}
+                          onClick={() => setShowModal(true)}
+                        />
+                      </div>
+                    ))}
+                  </div>
                 </Tab>
-                <Tab eventKey="logo-design" title="Logo Design">
-                  Logo Design
+
+                <Tab eventKey="web-portal-packages" title="Web Portal Packages">
+                  <div className="row justify-content-center">
+                    {webPortalPricingPlan.map((item, index) => (
+                      <div className="col-lg-4 mb-4" key={index}>
+                        <PricePlanCard
+                          variant="gray"
+                          name={item.name}
+                          price={item.price}
+                          description={item.description}
+                          list={item.list}
+                          onClick={() => setShowModal(true)}
+                        />
+                      </div>
+                    ))}
+                  </div>
+                </Tab>
+                <Tab eventKey="seoPackages" title="SEO">
+                  <div className="row">
+                    {seoPricingPlan.map((item, index) => (
+                      <div className="col-lg-4 mb-4" key={index}>
+                        <PricePlanCard
+                          variant="gray"
+                          name={item.name}
+                          price={item.price}
+                          description={item.description}
+                          list={item.list}
+                          onClick={() => setShowModal(true)}
+                        />
+                      </div>
+                    ))}
+                  </div>
+                </Tab>
+                <Tab
+                  eventKey="maintenance-packages"
+                  title="Maintenance Packages"
+                >
+                  <div className="row justify-content-center">
+                    {maintenancePricingPlan.map((item, index) => (
+                      <div className="col-lg-4 mb-4" key={index}>
+                        <PricePlanCard
+                          variant="gray"
+                          name={item.name}
+                          price={item.price}
+                          description={item.description}
+                          list={item.list}
+                          onClick={() => setShowModal(true)}
+                        />
+                      </div>
+                    ))}
+                  </div>
                 </Tab>
               </Tabs>
             </div>
@@ -138,7 +248,9 @@ const Pricing = () => {
       </section>
 
       <GetStarted />
+      <FormModal show={showModal} handleClose={() => setShowModal(false)} />
     </DefaultLayout>
+    </>
   );
 };
 

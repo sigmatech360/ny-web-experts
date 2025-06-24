@@ -23,7 +23,7 @@ const WebCreationSec = (props) => {
                 data-aos="fade-up"
                 data-aos-duration="2000"
               >
-                <h1>
+                <h1 className="successfull-projects-title">
                   {props.projectsCount} <br />+
                 </h1>
                 <p>{props.projectsCountText || `Successful Projects Done`}</p>
@@ -33,9 +33,9 @@ const WebCreationSec = (props) => {
           <div className="col-lg-6 mt-lg-0 mt-5">
             <div className="web-creation-content">
               <p className="sec-tag mb-4">{props.secTag}</p>
-              <h2 data-aos="fade-up" data-aos-duration="2000">
+              <h3 data-aos="fade-up" data-aos-duration="2000">
                 {props.secTitle}
-              </h2>
+              </h3>
               <p
                 className="poppins"
                 data-aos="fade-up"

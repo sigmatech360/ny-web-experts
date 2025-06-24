@@ -23,29 +23,33 @@ import LogoDesign from "../screens/Services/LogoDesign";
 import MobileAppDevelopment from "../screens/Services/MobileAppDevelopment";
 import BlogDetail from "../screens/BlogDetail";
 import CategoryBlogs from "../screens/CategoryBlogs";
+import ScrollToTop from "../components/ScrollToTop"; 
+import NotFound from "../screens/NotFound";
 
 const AppRouter = () => {
   return (
-    <Router basename="/ny-web-experts">
+    // <Router basename="/ny-web-experts">
+    <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
 
         {/* Services Pages */}
         <Route path="/services" element={<Services />} />
-        <Route path="/services/cms-development" element={<CMSDevelopment />} />
-        <Route path="/services/digital-marketing" element={<DigitalMarketing />} />
-        <Route path="/services/smm" element={<SMM />} />
-        <Route path="/services/seo" element={<SEO />} />
-        <Route path="/services/custom-web-development" element={<CustomWebDevelopment />} />
-        <Route path="/services/logo-design" element={<LogoDesign />} />
-        <Route path="/services/mobile-app-development" element={<MobileAppDevelopment />} />
+        <Route path="/cms-development" element={<CMSDevelopment />} />
+        <Route path="/digital-marketing" element={<DigitalMarketing />} />
+        <Route path="/social-media-marketing" element={<SMM />} />
+        <Route path="/search-engine-optimization" element={<SEO />} />
+        <Route path="/custom-web-development" element={<CustomWebDevelopment />} />
+        <Route path="/logo-design" element={<LogoDesign />} />
+        <Route path="/mobile-app-development" element={<MobileAppDevelopment />} />
         {/* Services Pages */}
 
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/pricing" element={<Pricing />} />
         {/* Blogs */}
-        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/blog" element={<Blogs />} />
         <Route path="/blog/:slug" element={<BlogDetail />} />
         <Route
           path="/blog/category/:categorySlug"
@@ -56,6 +60,7 @@ const AppRouter = () => {
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/terms-and-conditions" element={<TermsConditions />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );

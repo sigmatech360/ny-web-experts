@@ -2,6 +2,13 @@ import React from "react";
 import { HiOutlinePhone } from "react-icons/hi";
 
 const GetCustomLogo = (props) => {
+  const handleOpenChat = () => {
+    if (window.Tawk_API) {
+      window.Tawk_API.maximize(); // or toggle(), or popup()
+    } else {
+      console.warn("Tawk_API not available yet.");
+    }
+  };
   return (
     <section className={`get-custom-logo bg-gradiant ${props.className}`}>
       <div className="container">
@@ -28,7 +35,7 @@ const GetCustomLogo = (props) => {
                 </div>
                 <div className="get-custom-logo-item-content">
                   <p>Call Us</p>
-                  <a href="tel:+1 (917) 791-7872">+1 (917) 791-7872</a>
+                  <a href="tel:+19177917872">+1 (917) 791-7872</a>
                 </div>
               </div>
               <div className="get-custom-logo-item">
@@ -37,7 +44,9 @@ const GetCustomLogo = (props) => {
                 </div>
                 <div className="get-custom-logo-item-content">
                   <p>Start</p>
-                  <a href="javascript:;">Live Chat</a>
+                  <a href="javascript:;" onClick={handleOpenChat}>
+                    Live Chat
+                  </a>
                 </div>
               </div>
               <div className="get-custom-logo-item">

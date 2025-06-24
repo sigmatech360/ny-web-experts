@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import ContentWithIcon from "../ContentWithIcon";
+import { Link } from "react-router-dom";
+import FormModal from "../FormModal";
+
 
 const OutsourcingStrategySec = (props) => {
+  const [showModal, setShowModal] = useState(false);
+  
   return (
+    <>
+    
     <section className="outstanding-strategy">
       <div className="container">
         <div className="row justify-content-center">
@@ -39,9 +46,9 @@ const OutsourcingStrategySec = (props) => {
           </div>
           <div className="col-lg-6">
             <div className="web-creation-content">
-              <h2 data-aos="fade-up" data-aos-duration="1000">
+              <h3 data-aos="fade-up" data-aos-duration="1000">
                 {props.secSubSecTitle}
-              </h2>
+              </h3>
               <p
                 className="grayColor poppins"
                 data-aos="fade-up"
@@ -50,9 +57,11 @@ const OutsourcingStrategySec = (props) => {
                 {props.secSubSecDescription}
               </p>
               <button
+                // to={"/contact-us"}
                 className="ny-btn"
                 data-aos="fade-up"
                 data-aos-duration="3000"
+                onClick={() => setShowModal(true)}
               >
                 {props.btnText || `Get Started`}
               </button>
@@ -61,6 +70,9 @@ const OutsourcingStrategySec = (props) => {
         </div>
       </div>
     </section>
+
+    <FormModal show={showModal} handleClose={() => setShowModal(false)} />
+    </>
   );
 };
 

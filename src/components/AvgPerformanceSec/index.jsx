@@ -22,7 +22,7 @@ const AvgPerformanceSec = (props) => {
             <div className="premier-design-studio-img">
               <img
                 src={props.image}
-                alt="A premier New York-based design studio"
+                alt={props.secTitle}
                 className="img-fluid"
                 data-aos="fade-right"
                 data-aos-duration="2000"
@@ -31,10 +31,12 @@ const AvgPerformanceSec = (props) => {
           </div>
           <div className="col-lg-6">
             <div className="sec-content">
-              {props.secTag && <p className="sec-tag purpleColor">{props.secTag}</p>}
-              <h2 data-aos="fade-up" data-aos-duration="2000">
+              {props.secTag && (
+                <p className="sec-tag purpleColor">{props.secTag}</p>
+              )}
+              <h3 data-aos="fade-up" data-aos-duration="2000">
                 {props.secTitle}
-              </h2>
+              </h3>
               <p data-aos="fade-up" data-aos-duration="2000">
                 {props.secDescription}
               </p>
