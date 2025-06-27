@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css"
+import "./style.css";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { Link, NavLink } from "react-router-dom";
 
@@ -16,6 +16,7 @@ import { RiPinterestLine } from "react-icons/ri";
 import logo from "../../../assets/images/logo.webp";
 
 const serviceLinks = [
+  { label: "Web Design", path: "/web-design-development" },
   { label: "Logo Design", path: "/logo-design" },
   { label: "CMS Development", path: "/cms-development" },
   { label: "Digital Marketing", path: "/digital-marketing" },
@@ -30,7 +31,7 @@ const Header = () => {
     <Navbar collapseOnSelect expand="lg" className="main-header py-0">
       <Container>
         <Link to={"/"} className="navbar-brand">
-          <img src={logo} alt="New York Web Experts Logo" />
+          <img src={logo} alt="NY Web Experts Logo" />
         </Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse>
@@ -69,6 +70,14 @@ const Header = () => {
             >
               <NavDropdown.Item
                 as={Link}
+                to={"/web-design-development"}
+                target="_blank"
+                onClick={(e) => e.stopPropagation()}
+              >
+                Web Design & Development
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                as={Link}
                 to={"/logo-design"}
                 target="_blank"
                 onClick={(e) => e.stopPropagation()}
@@ -99,6 +108,14 @@ const Header = () => {
                   </span>
                 </NavDropdown.Item>
                 <div className="nav-subdropdown">
+                  {/* <NavDropdown.Item
+                    as={Link}
+                    to={"/digital-marketing"}
+                    target="_blank"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    Digital Marketing
+                  </NavDropdown.Item> */}
                   <NavDropdown.Item
                     as={Link}
                     to={"/social-media-marketing"}

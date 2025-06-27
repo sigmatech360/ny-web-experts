@@ -41,7 +41,7 @@ const InnerBanner = (props) => {
           <div className="col-md-12">
             <div className="inner-banner-content">
               <h1 ref={headingRef}>{props?.title}</h1>
-              <nav ref={textRef}>
+              {/* <nav ref={textRef}>
                 <ol className="breadcrumb">
                   <li className="breadcrumb-item">
                     <Link to="/">Home</Link>
@@ -50,7 +50,7 @@ const InnerBanner = (props) => {
                     {props?.page}
                   </li>
                 </ol>
-              </nav>
+              </nav> */}
             </div>
           </div>
         </div>

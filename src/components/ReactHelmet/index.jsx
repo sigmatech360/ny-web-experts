@@ -2,7 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 
 const ReactHelmet = ({
-  title = "New York Web Experts",
+  title = "NY Web Experts",
   description = "This is the default description of the website.",
   keywords = "web, development, seo, react",
   url = "https://nywebexperts.com/",

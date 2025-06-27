@@ -77,7 +77,7 @@ const Home = () => {
   return (
     <>
       <ReactHelmet
-        title="New York Web Experts"
+        title="NY Web Experts"
         description={`description`}
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
         url="https://nywebexperts.com/"
@@ -123,7 +123,7 @@ const Home = () => {
                     services in New York to solve real business problems. From
                     digital-first designs to performance marketing, we’re wired
                     to solve complex problems with clarity and creativity. At
-                    New York Web Experts, we go above and beyond the average
+                    NY Web Experts, we go above and beyond the average
                     expectations. Our goal? Consistent results.
                   </p>
                   <div
@@ -258,7 +258,7 @@ const Home = () => {
                   >
                     Our strategies aren’t just another person in the crowd; we
                     make custom marketing solutions that are built to connect.
-                    At New York Web Experts, every project is built with
+                    At NY Web Experts, every project is built with
                     strategic depth, creative precision, and performance in
                     mind. From trend-driven design to razor-sharp messaging, we
                     personalize everything for your brand, your audience, and

@@ -33,7 +33,7 @@ const Pricing = () => {
   return (
     <>
       <ReactHelmet
-        title="New York Web Experts"
+        title="NY Web Experts"
         description={`description`}
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
         url="https://nywebexperts.com/pricing"
@@ -68,7 +68,7 @@ const Pricing = () => {
                 className="mb-3"
               >
                 <Tab eventKey="logo-design" title="Logo Design">
-                  <div className="row">
+                  <div className="row justify-content-center">
                     {logoDesignPricingPlan.map((item, index) => (
                       <div className="col-lg-4 mb-4" key={index}>
                         <PricePlanCard

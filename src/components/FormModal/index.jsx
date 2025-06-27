@@ -98,6 +98,7 @@ const FormModal = ({ show, handleClose }) => {
               <Form.Group controlId="username">
                 {/* <Form.Label>Email address</Form.Label> */}
                 <Form.Control
+                required
                   type="text"
                   placeholder="Name"
                   name="username"
@@ -109,6 +110,7 @@ const FormModal = ({ show, handleClose }) => {
               <Form.Group controlId="email">
                 {/* <Form.Label>Email address</Form.Label> */}
                 <Form.Control
+                required
                   type="email"
                   placeholder="Email Address"
                   name="email"
@@ -120,6 +122,7 @@ const FormModal = ({ show, handleClose }) => {
               <Form.Group controlId="phone">
                 {/* <Form.Label>Email address</Form.Label> */}
                 <Form.Control
+                required
                   placeholder="Phone Number"
                   name="phone"
                   value={formData.phone}
@@ -129,6 +132,7 @@ const FormModal = ({ show, handleClose }) => {
 
               {/* <Form.Group controlId="company_name">
                 <Form.Control
+                required
                   type="text"
                   placeholder="Company Name"
                   name="company_name"
@@ -143,10 +147,12 @@ const FormModal = ({ show, handleClose }) => {
                   value={formData.service_1}
                   onChange={handleChange}
                   className="form-control"
+                  required
                 >
                   <option value="" disabled>
                     Services
                   </option>
+                  <option value="web-design-development">Web Design And Development</option>
                   <option value="logo-design">Logo Design</option>
                   <option value="cms-development">CMS Development</option>
                   <option value="digital-marketing">Digital Marketing</option>
@@ -169,6 +175,7 @@ const FormModal = ({ show, handleClose }) => {
                   name="data_message"
                   value={formData.data_message}
                   onChange={handleChange}
+                  required
                 ></textarea>
               </Form.Group>
 

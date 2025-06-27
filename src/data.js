@@ -90,7 +90,7 @@ export const ourServicesData = [
     id: 1,
     image: ourserviceimg1,
     name: "Website Design",
-    link: "/services",
+    link: "/web-design-development",
     description:
       "Our website design services make your websites look brilliant and bring results that convert. Every layout, color, and feature is designed to engage your audience and drive real business growth.",
   },

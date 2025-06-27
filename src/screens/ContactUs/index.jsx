@@ -12,7 +12,7 @@ const ContactUs = () => {
   return (
     <>
       <ReactHelmet
-        title="New York Web Experts"
+        title="NY Web Experts"
         description={`description`}
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
         url="https://nywebexperts.com/contact-us"
@@ -23,7 +23,7 @@ const ContactUs = () => {
         <ContactUsSec variant="light" />
 
         <GetCustomLogo />
-        <GetStarted />
+        <GetStarted btnLink="/pricing" />
       </DefaultLayout>
     </>
   );

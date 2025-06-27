@@ -22,7 +22,7 @@ const GetStarted = (props) => {
                   `Let’s bring your vision to life with a custom web solution tailored to your needs. Get started today and make your project stand out.`}
               </p>
               <Link
-                to={"/contact-us"}
+                to={props.btnLink || "/contact-us"}
                 className="ny-btn"
                 data-aos="fade-up"
                 data-aos-duration="3000"

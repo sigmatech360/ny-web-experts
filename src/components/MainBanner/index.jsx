@@ -88,7 +88,7 @@ const MainBanner = ({ onScrollToServices }) => {
                 New York’s Single Stop For Digital Growth & Presence!
               </h1>
               <p className="poppins" ref={textRef}>
-                At New York Web Experts, we build strong websites and powerful
+                At NY Web Experts, we build strong websites and powerful
                 digital marketing strategies to boost your business. We create
                 assets that drive traffic, leads, and revenue. Our goal? Sharp
                 design, clean code, and marketing that hits where it matters. We

@@ -77,6 +77,10 @@ const ServicesBlogSec = ({
   const startIndex = (currentPage - 1) * itemsPerPage;
   const displayedBlogs = blogs.slice(startIndex, startIndex + itemsPerPage);
 
+  if(blogs.length === 0){
+    return null
+  }
+
   return (
     <section className="blog-sec">
       <div className="container">

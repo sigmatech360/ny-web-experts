@@ -3,7 +3,8 @@ import React from "react";
 import TestimonialCard from "../../components/TestimonialCard";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Mousewheel, Keyboard } from "swiper/modules";
+// import { Autoplay, Mousewheel, Keyboard } from "swiper/modules";
+import { Autoplay, Mousewheel, Keyboard, FreeMode } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -34,14 +35,23 @@ const TestimonialSec = (props) => {
         <div className="row">
           <div className="col-md-12">
             <Swiper
+              loop={true}
               direction="horizontal"
               // slidesPerView={3.5}
               spaceBetween={30}
               mousewheel={true}
               keyboard={{ enabled: true }}
               centeredSlides={true}
-              loop={true}
-              modules={[Mousewheel, Keyboard]}
+              autoplay={{
+                delay: 0,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+              }}
+              freeMode={true}
+              freeModeMomentum={false}
+              grabCursor={true}
+              speed={3000}
+              modules={[Autoplay, FreeMode]}
               breakpoints={{
                 320: {
                   // Small screens (mobile)

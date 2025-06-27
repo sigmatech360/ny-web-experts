@@ -87,6 +87,7 @@ const ContactUsSec = (props) => {
                       name="username"
                       value={formData.username}
                       onChange={handleChange}
+                      required
                     />
                   </div>
                   <div className="col-lg-6 mb-4">
@@ -97,6 +98,7 @@ const ContactUsSec = (props) => {
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
+                      required
                     />
                   </div>
                   <div className="col-lg-6 mb-4">
@@ -107,6 +109,7 @@ const ContactUsSec = (props) => {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
+                      required
                     />
                   </div>
                   <div className="col-lg-6 mb-4">
@@ -115,10 +118,12 @@ const ContactUsSec = (props) => {
                       name="service_1"
                       value={formData.service_1}
                       onChange={handleChange}
+                      required
                     >
                       <option value="" disabled>
                         Services
                       </option>
+                      <option value="web-design-development">Web Design And Development</option>
                       <option value="logo-design">Logo Design</option>
                       <option value="cms-development">CMS Development</option>
                       <option value="digital-marketing">
@@ -146,6 +151,7 @@ const ContactUsSec = (props) => {
                       value={formData.data_message}
                       onChange={handleChange}
                       style={{ resize: "none" }}
+                      required
                     ></textarea>
                   </div>
                   <div className="col-lg-12">

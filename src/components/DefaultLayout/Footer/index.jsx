@@ -116,7 +116,7 @@ const Footer = () => {
                     <img
                       src={logo}
                       className="img-fluid"
-                      alt="New York Web Experts Logo"
+                      alt="NY Web Experts Logo"
                     />
                   </Link>
                 </div>
@@ -220,6 +220,7 @@ const Footer = () => {
                       name="email"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
+                      required
                     />
                     <button
                       className="ny-btn"

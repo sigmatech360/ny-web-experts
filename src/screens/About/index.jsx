@@ -59,7 +59,7 @@ const About = () => {
   return (
     <>
       <ReactHelmet
-        title="New York Web Experts"
+        title="NY Web Experts"
         description={`description`}
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
         url="https://nywebexperts.com/about"
@@ -177,7 +177,7 @@ const About = () => {
                 </div>
 
                 <Link
-                to={"/services"}
+                to={"/web-design-development"}
                   className="ny-btn"
                   data-aos="fade-up"
                   data-aos-duration="2000"
@@ -237,7 +237,7 @@ const About = () => {
         secTitle="When Our Clients Win, We Win"
       />
 
-      <OurTeamSec secTitle="Meet The Dream Team For Success & Growth" />
+      {/* <OurTeamSec secTitle="Meet The Dream Team For Success & Growth" /> */}
 
       <BlogSec
         secTitle="Latest Trends & Insights, All From The Blog"
