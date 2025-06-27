@@ -72,15 +72,15 @@ const avgPerformanceData = [
     id: 1,
     percentage: "45%",
     // icon: brandicon,
-    name: "Increase in lead-gen",
-    description: "45% increase in brand recall within 60 days of logo update.",
+    name: "Increase in Brand Recall",
+    description: "Logo redesign boosted brand recall by 45% within 60 days",
   },
   {
     id: 2,
     percentage: "60%",
     // icon: uiuxdesignicon,
-    name: "Increase in social media engagement",
-    description: "60% growth in social media engagement after a logo upgrade.",
+    name: "Growth in Social Engagement",
+    description: "Logo upgrade led to 60% growth in social media engagement.",
   },
 ];
 

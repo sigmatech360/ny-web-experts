@@ -68,17 +68,17 @@ const offerListData = [
 const avgPerformanceData = [
   {
     id: 1,
-    percentage: "300%",
+    percentage: "100%",
     // icon: brandicon,
-    name: "Increase in lead-gen",
-    description: "300% increase in qualified leads within 3 months",
+    name: "Boost in Conversion Rates",
+    description: "Businesses saw up to a 300% increase in conversions within 3 months.",
   },
   {
     id: 2,
     percentage: "50%",
     // icon: uiuxdesignicon,
-    name: "Increase in social media engagement",
-    description: "●	50% reduction in bounce rate from optimized UX",
+    name: "Drop in Bounce Rate ",
+    description: "Custom UX design reduced bounce rate by 50% through optimization",
   },
 ];
 

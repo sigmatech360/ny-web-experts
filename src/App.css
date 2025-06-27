@@ -433,6 +433,8 @@ p {
 }
 .sec-tag {
   font-weight: 600 !important;
+  font-size: 1.75rem !important;
+  text-transform: capitalize;
 }
 
 .our-benefits {

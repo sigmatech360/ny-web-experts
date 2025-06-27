@@ -314,7 +314,7 @@ const Home = () => {
           </div>
         </section>
 
-        <TestimonialSec secTitle="When Our Clients Win, We Win" />
+        <TestimonialSec secTitle="When Our Clients Win, We Win!" />
 
         <PurpleBGSec
           secClass="pricing-plan-sec"
@@ -341,7 +341,7 @@ const Home = () => {
               <div className="col-lg-12 mb-5">
                 <div className="premier-design-studio-title">
                   <h2
-                    className="text-center"
+                    className="text-center text-capitalize "
                     data-aos="fade-up"
                     data-aos-duration="2000"
                   >

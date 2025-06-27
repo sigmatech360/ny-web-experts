@@ -70,15 +70,15 @@ const avgPerformanceData = [
     id: 1,
     percentage: "250%",
     // icon: brandicon,
-    name: "Increase in lead-gen",
-    description: "250% increase in local keyword rankings in 90 days",
+    name: "Increase in Local Keyword Rankings",
+    description: "250% rise in local keyword rankings within 90 days.",
   },
   {
     id: 2,
     percentage: "60%",
     // icon: uiuxdesignicon,
-    name: "Increase in social media engagement",
-    description: "60% drop in bounce rate after on-page SEO overhaul",
+    name: "Drop in Bounce Rate",
+    description: "On-page SEO overhaul cut sitewide bounce rate by 60%.",
   },
 ];
 

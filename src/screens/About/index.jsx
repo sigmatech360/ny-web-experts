@@ -234,7 +234,7 @@ const About = () => {
 
       <TestimonialSec
         secTag="Testimonials"
-        secTitle="When Our Clients Win, We Win"
+        secTitle="When Our Clients Win, We Win!"
       />
 
       {/* <OurTeamSec secTitle="Meet The Dream Team For Success & Growth" /> */}

@@ -72,7 +72,7 @@ const Services = () => {
       <OutsourcingStrategySec
         secTitle={`Website Design Services For Online Growth`}
         secDescription={`Create and scale custom, high-impact website design solutions that immerse users and offer a smooth experience across every interaction. Our expert design and website development services in New York help businesses to strengthen their digital presence through trending, user-focused design and innovation.`}
-        secSubSecTitle={`Feature-Rich Website Design For Performance And Engagement`}
+        secSubSecTitle={`Feature-Rich Website Design For Performance and Engagement`}
         secSubSecDescription={`A website is built to facilitate user engagement. Our design and website development services in New York help create scalable digital platforms with intuitive UI/UX and performant functionalities for accessible online interaction. For further efficiency, we leverage threat resistance, tested site architectures, continuous maintenance, and custom JavaScript or CMS solutions, depending on the needs.`}
         boxesData={aboutBoxesData}
         btnText="Book A Call"

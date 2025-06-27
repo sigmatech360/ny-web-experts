@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { Container, Dropdown, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { Link, NavLink } from "react-router-dom";
 
 import { CiFacebook, CiLinkedin } from "react-icons/ci";
@@ -62,13 +62,12 @@ const Header = () => {
                 </NavDropdown.Item>
               ))}
             </NavDropdown> */}
-
-            <NavDropdown
-              title="Services"
-              id="services-dropdown"
-              // className="nav-link"
-            >
-              <NavDropdown.Item
+            <Dropdown className="nav-dropdown-custom">
+              <Dropdown.Toggle as="div" className="custom-toggle cursor-pointer nav-link">
+                Services
+              </Dropdown.Toggle>
+              <Dropdown.Menu>
+                <NavDropdown.Item
                 as={Link}
                 to={"/web-design-development"}
                 target="_blank"
@@ -151,7 +150,10 @@ const Header = () => {
               >
                 Mobile App Development
               </NavDropdown.Item>
-            </NavDropdown>
+              </Dropdown.Menu>
+            </Dropdown>
+
+                  
 
             {/* ============================================= */}
             <NavLink to={"/portfolio"} className="nav-link">

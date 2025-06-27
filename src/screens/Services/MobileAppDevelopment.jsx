@@ -70,15 +70,15 @@ const avgPerformanceData = [
     id: 1,
     percentage: "75%",
     // icon: brandicon,
-    name: "Increase in lead-gen",
-    description: "75% of users were retained after 30 days.",
+    name: "User Retention After 30 Days",
+    description: "Improved onboarding and performance retained 75% of users after 30 days.",
   },
   {
     id: 2,
     percentage: "40%",
     // icon: uiuxdesignicon,
-    name: "Increase in social media engagement",
-    description: "40% improvement in app store ratings post-redesign.",
+    name: "Boost in App Store Ratings",
+    description: "Redesigned UX and speed improvements increased app ratings by 40%.",
   },
 ];
 
