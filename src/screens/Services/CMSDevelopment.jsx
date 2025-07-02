@@ -105,7 +105,7 @@ const CMSDevelopment = () => {
 
       <ProjectSec
         secTag="Portfolio"
-        secTitle="See What Sets Us Apart"
+        secTitle="See What Sets Us Apart!"
         projectsData={[
           { imageList: [projectsimg1, projectsimg2] },
           { imageList: [projectsimg3, projectsimg4] },

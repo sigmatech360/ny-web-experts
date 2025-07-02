@@ -198,7 +198,7 @@ const ContactUsSec = (props) => {
                 ></iframe>
               </div>
               <div className="contact-us-map-content-text">
-                <h1>Call us anytime: +1 (917) 791-7872 </h1>
+                <h1>Call us anytime: +1 (917) 722-0955 </h1>
               </div>
             </div>
           </div>

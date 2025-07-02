@@ -139,7 +139,7 @@ const SEO = () => {
 
       <OurOfferSec
         secTitle="Our SEO Solutions Include:"
-        secDescription={`Our solutions cover every corner of Search Engine Optimization Marketing in New York, from technical boosts and optimization to strategic content building for on-page perfection. Following is the list of services that we offer as a part of our SEO.`}
+        secDescription={`Our solutions cover every corner of Search Engine Optimization Marketing in New York, from technical boosts and optimization to strategic content building for on-page perfection. Following is the list of services that we offer as part of our SEO:`}
         listdata={offerListData}
       />
 

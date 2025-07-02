@@ -15,11 +15,11 @@ const GetStarted = (props) => {
             <div className="sec-head text-center">
               {/* <p className="sec-tag">Pricing Plan</p> */}
               <h2 data-aos="fade-up" data-aos-duration="1000">
-                {props.secTitle || `Let’s Get Started New Project.`}
+                {props.secTitle || `Got An Idea? Let’s Discuss!`}
               </h2>
               <p data-aos="fade-up" data-aos-duration="2000">
                 {props.secDescription ||
-                  `Let’s bring your vision to life with a custom web solution tailored to your needs. Get started today and make your project stand out.`}
+                  `You’ve got business goals, and we have the best team to turn them into reality. Let’s build your business into a digital beast that gets clicks, leads, and revenue.`}
               </p>
               <Link
                 to={props.btnLink || "/contact-us"}
@@ -27,7 +27,7 @@ const GetStarted = (props) => {
                 data-aos="fade-up"
                 data-aos-duration="3000"
               >
-                {props.btnText || `Discover More`}
+                {props.btnText || `Contact Us`}
               </Link>
             </div>
           </div>

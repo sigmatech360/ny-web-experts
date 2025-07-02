@@ -73,7 +73,7 @@ const avgPerformanceData = [
     percentage: "45%",
     // icon: brandicon,
     name: "Increase in Brand Recall",
-    description: "Logo redesign boosted brand recall by 45% within 60 days",
+    description: "Logo redesign boosted brand recall by 45% within 60 days.",
   },
   {
     id: 2,

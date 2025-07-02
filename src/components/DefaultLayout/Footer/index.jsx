@@ -136,7 +136,7 @@ const Footer = () => {
                   <a
                     className="header_social-icon"
                     target="_blank"
-                    href="https://api.whatsapp.com/send?phone=19177917872&text=Hello%20there!%20%F0%9F%91%8B%20Welcome%20to%20NY%20Web%20Experts!%20How%20can%20we%20assist%20you%20today%3F%20Feel%20free%20to%20ask%20any%20questions%20or%20share%20your%20ideas%20with%20us%20%F0%9F%92%A1."
+                    href="https://api.whatsapp.com/send?phone=19177220955&text=Hello%20there!%20%F0%9F%91%8B%20Welcome%20to%20NY%20Web%20Experts!%20How%20can%20we%20assist%20you%20today%3F%20Feel%20free%20to%20ask%20any%20questions%20or%20share%20your%20ideas%20with%20us%20%F0%9F%92%A1."
                   >
                     <FaWhatsapp />
                   </a>
@@ -189,8 +189,8 @@ const Footer = () => {
                     <div className="footer-list-icon">
                       <HiOutlinePhone />
                     </div>
-                    <a href="tel:(917)7917872" className="footer-list-text">
-                      +1 (917) 791-7872
+                    <a href="tel:+19177220955" className="footer-list-text">
+                      +1 (917) 722-0955
                     </a>
                   </div>
                   <div className="footer-list-icon-item">

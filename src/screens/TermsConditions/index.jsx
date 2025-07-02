@@ -237,7 +237,7 @@ const TermsConditions = () => {
 
                   <ul>
                     {[
-                      "Contacting our Toll-Free Number: +1 (917) 791-7872",
+                      "Contacting our Toll-Free Number: +1 (917)-722-0955",
                       "Engaging in a Live Chat session. Click here to initiate the chat or send us an email.",
                       "We will promptly respond and begin the necessary analysis upon receiving your refund request. Once completed, the refund process will be initiated.",
                       "Please be aware that after the refund is issued, you will no longer retain any rights to the designs or materials submitted by nywebexperts.com. The relevant information will be submitted to the Government Copyright Agencies to ensure compliance with legal requirements.",
@@ -434,7 +434,7 @@ const TermsConditions = () => {
                     {[
                       "Chat – Engage in real-time conversation with our support team.",
                       "support@nywebexperts.com – Contact us via email for prompt assistance.",
-                      "+1 (917) 791-7872 – Call our Toll-Free number to speak directly with our representatives.",
+                      "+1 (917)-722-0955 – Call our Toll-Free number to speak directly with our representatives.",
                     ].map((item) => (
                       <li key={item}>{item}</li>
                     ))}
@@ -497,7 +497,7 @@ const TermsConditions = () => {
                     </p>
                     <p>
                       <span className="fw-bold">Phone:</span>{" "}
-                      <a href="tel:+19177917872">+1 (917) 791-7872</a>
+                      <a href="tel:+19177220955">+1 (917) 722-0955</a>
                     </p>
                     <p>
                       <span className="fw-bold">Website:</span>{" "}

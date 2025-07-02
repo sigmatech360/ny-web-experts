@@ -35,7 +35,7 @@ const GetCustomLogo = (props) => {
                 </div>
                 <div className="get-custom-logo-item-content">
                   <p>Call Us</p>
-                  <a href="tel:+19177917872">+1 (917) 791-7872</a>
+                  <a href="tel:+19177220955">+1 (917) 722-0955</a>
                 </div>
               </div>
               <div className="get-custom-logo-item">

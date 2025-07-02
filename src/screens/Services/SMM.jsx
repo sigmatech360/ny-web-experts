@@ -36,7 +36,7 @@ const offerListData = [
   {
     title: "Targeted Advertising",
     description:
-      "Social media marketing platforms allow precise targeting by demographics, interests, and behaviors, allowing your ads reach the right audience for higher conversions.",
+      "Social media marketing platforms allow precise targeting by demographics, interests, and behaviors, allowing your ads to reach the right audience for higher conversions.",
   },
   {
     title: "Brand Awareness",
@@ -72,7 +72,8 @@ const avgPerformanceData = [
     // icon: brandicon,
     name: "Increase In Conversions",
     description:
-      "Higher website conversions with the implementation of smart social media strategies",
+      "Higher website conversions with the implementation of smart social media strategies.",
+      
   },
   {
     id: 2,

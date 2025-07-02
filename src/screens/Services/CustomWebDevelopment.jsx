@@ -51,7 +51,7 @@ const offerListData = [
   {
     title: "Blogs Website",
     description:
-      "customEasy to manage and beautifully designed for writers, influencers, and media brands.webdev",
+      "Easy to manage and beautifully designed for writers, influencers, and media brands.",
   },
   {
     title: "Booking Websites",
@@ -140,9 +140,9 @@ const CustomWebDevelopment = () => {
       <WebCreationSec
         image={webcreationimg}
         projectsCount={3500}
-        secTag="Why Choose Us?"
+        secTag="Why Choose Us"
         secTitle="Your Vision, Expertly Engineered"
-        secDescription={`Our websites are more than just a representation platform for your business; we ensure your website generates results and revenue. As a leading custom web development company in New York, we create platforms tailored to your market and business.`}
+        secDescription={`Your websites are more than just a representation platform for your business; we ensure your website generates results and revenue. As a leading custom web development company in New York, we create platforms tailored to your market and business.`}
         listdata={[
           {
             title: "Integrated Development Team",
