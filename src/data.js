@@ -354,7 +354,7 @@ export const logoDesignPricingPlan = [
     name: "Basic",
     price: "19.00",
     description:
-      "Suitable for branding and revamping of all small, medium and large Enterprises",
+      "Ideal for small businesses seeking a fresh and professional brand identity.",
     list: [
       {
         heading: null,
@@ -373,7 +373,7 @@ export const logoDesignPricingPlan = [
     name: "Start Up",
     price: "59.00",
     description:
-      "Suitable for branding and revamping of all small, medium and large Enterprises.",
+      "Perfect for growing companies ready to establish a strong and memorable logo.",
     list: [
       {
         heading: null,
@@ -397,7 +397,7 @@ export const logoDesignPricingPlan = [
     name: "Beginner",
     price: "89.00",
     description:
-      "Suitable for branding and revamping of all small, medium and large Enterprises.",
+      "Designed for emerging businesses aiming to build a distinctive brand presence",
     list: [
       {
         heading: null,
@@ -423,7 +423,7 @@ export const logoDesignPricingPlan = [
     name: "Advance",
     price: "159.00",
     description:
-      "Suitable for branding and revamping of all small, medium and large Enterprises.",
+      "Best for established enterprises looking for a comprehensive, high-impact branding redesign.",
     list: [
       {
         heading: null,
@@ -451,10 +451,10 @@ export const logoDesignPricingPlan = [
 export const webPackagesPricingPlan = [
   {
     id: 1,
-    name: "Basic Package",
+    name: "Basic",
     price: "399.00",
     description:
-      "Best for new startups or businesses with occasional in-person sales",
+      "Ideal for startups and small businesses starting out and looking to build a simple, effective online presence.",
     list: [
       {
         heading: null,
@@ -478,7 +478,7 @@ export const webPackagesPricingPlan = [
     name: "Professional (Recommended)",
     price: "799.00",
     description:
-      "Best for new startups or businesses with occasional in-person sales",
+      "Perfect for growing businesses and SMEs seeking a fast, feature-rich website to engage customers.",
     list: [
       {
         heading: null,
@@ -524,7 +524,7 @@ export const webPackagesPricingPlan = [
     name: "Business",
     price: "1,399.00",
     description:
-      "Best for new startups or businesses with occasional in-person sales",
+      "Designed for established companies needing a comprehensive, scalable website to support growing business goals and needs.",
     list: [
       {
         heading: null,
@@ -571,7 +571,7 @@ export const eCommercePricingPlan = [
     name: "Starter",
     price: "399.00",
     description:
-      "Best for new startups or businesses with occasional in-person sales",
+      "Ideal for new businesses launching their first online store with essential features.",
     list: [
       {
         heading: null,
@@ -625,7 +625,7 @@ export const eCommercePricingPlan = [
     name: "Professional",
     price: "799.00",
     description:
-      "Best for new startups or businesses with occasional in-person sales",
+      "Perfect for growing e-commerce brands seeking advanced functionality and optimized sales.",
     list: [
       {
         heading: null,
@@ -697,7 +697,7 @@ export const eCommercePricingPlan = [
     name: "Business",
     price: "1,399.00",
     description:
-      "Best for new startups or businesses with occasional in-person sales",
+      "Designed for established online retailers requiring a robust, scalable platform to support maximum growth.",
     list: [
       {
         heading: "Core Features",
@@ -827,7 +827,7 @@ export const brandingPricingPlan = [
     name: "Stationary Design Basic",
     price: "45.00",
     description:
-      "Best for new startups or businesses with occasional in-person sales",
+      " Ideal for SMEs needing essential stationery that reflects their brand identity.",
     list: [
       {
         heading: null,
@@ -849,7 +849,7 @@ export const brandingPricingPlan = [
     name: "Stationary Design Economy",
     price: "79.00",
     description:
-      "Best for new startups or businesses with occasional in-person sales",
+      "Perfect for small businesses seeking cost-effective, professional branding solutions.",
     list: [
       {
         heading: null,
@@ -874,7 +874,7 @@ export const brandingPricingPlan = [
     name: "Stationary Design Startup",
     price: "129.00",
     description:
-      "Best for new startups or businesses with occasional in-person sales",
+      "Designed for growing companies wanting customized stationery to strengthen brand presence.",
     list: [
       {
         heading: null,
@@ -902,7 +902,7 @@ export const webPortalPricingPlan = [
     name: "Basic",
     price: "3,999.00",
     description:
-      "Best for new startups or businesses with occasional in-person sales",
+      "Ideal for organizations needing a simple, user-friendly portal to manage essential functions.",
     list: [
       {
         heading: null,
@@ -935,7 +935,7 @@ export const webPortalPricingPlan = [
     name: "Plus",
     price: "6,999.00",
     description:
-      "Best for new startups or businesses with occasional in-person sales",
+      "Perfect for growing businesses requiring advanced features and enhanced portal capabilities like speed and security. ",
     list: [
       {
         heading: null,
@@ -992,7 +992,7 @@ export const seoPricingPlan = [
     name: "Basic",
     price: "249.00",
     description:
-      "Best for new startups or businesses with occasional in-person sales",
+      "Best for small businesses starting to build their online presence with essential SEO tactics.",
     list: [
       {
         heading: null,
@@ -1025,7 +1025,7 @@ export const seoPricingPlan = [
     name: "Standard",
     price: "499.00",
     description:
-      "Best for new startups or businesses with occasional in-person sales",
+      "Perfect for growing companies aiming to improve rankings and increase targeted traffic",
     list: [
       {
         heading: null,
@@ -1062,7 +1062,7 @@ export const seoPricingPlan = [
     name: "Enterprise",
     price: "999.00",
     description:
-      "Best for new startups or businesses with occasional in-person sales",
+      "Designed for large businesses seeking advanced, customized SEO strategies for market leadership.",
     list: [
       {
         heading: null,
@@ -1119,7 +1119,7 @@ export const maintenancePricingPlan = [
     name: "Basic Web Maintenance Package",
     price: "99.00",
     description:
-      "Best for new startups or businesses with occasional in-person sales",
+      "Ideal for small websites needing regular updates, backups, and basic support to stay secure and functional",
     list: [
       {
         heading: null,
@@ -1147,7 +1147,7 @@ export const maintenancePricingPlan = [
     name: "Enterprise Web Maintenance Package",
     price: "199.00",
     description:
-      "Best for new startups or businesses with occasional in-person sales",
+      "Best for large, complex websites requiring comprehensive maintenance, monitoring, and priority support, 24/7.",
     list: [
       {
         heading: null,

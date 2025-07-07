@@ -91,7 +91,7 @@ const Home = () => {
               <div className="col-lg-12 mb-5">
                 <div className="premier-design-studio-title">
                   <h2
-                    className="text-center"
+                    className="text-center text-capitalize "
                     data-aos="fade-up"
                     data-aos-duration="3000"
                     data-aos-offset="0"
@@ -114,7 +114,7 @@ const Home = () => {
               <div className="col-lg-6">
                 <div className="sec-content">
                   <h3 data-aos="fade-up" data-aos-duration="2000">
-                    Sharp Strategies And Relentless Executions. We Deliver
+                    Sharp Strategies and Relentless Executions. We Deliver
                     Success.
                   </h3>
                   <p data-aos="fade-up" data-aos-duration="2000">
@@ -341,11 +341,11 @@ const Home = () => {
               <div className="col-lg-12 mb-5">
                 <div className="premier-design-studio-title">
                   <h2
-                    className="text-center text-capitalize "
+                    className="text-center  "
                     data-aos="fade-up"
                     data-aos-duration="2000"
                   >
-                    Design and development across all platforms
+                    Design and Development Across All Platforms
                   </h2>
                   <p
                     className="text-center"

@@ -49,14 +49,7 @@ const Pricing = () => {
                 <p className="sec-tag">Pricing Plan</p>
                 <h2>Your Partner For Software Innovation</h2>
                 <p>
-                  While We Understand Our Competitive Landscape, Our Core Value
-                  Lies In Providing Quality Over Quantity. Our Transparent And
-                  Fair Logo Design Pricing Packages, Including Our Entire Range
-                  Of Branding And Web Design Services, Ensure You Find The
-                  Perfect Fit For Your Budget And Brand Needs. We Prioritize
-                  Dedicated Effort And Personalized Attention, Guaranteeing
-                  Unique And Impactful Solutions For Each Brand, Unlike Those
-                  Focused On Quantity.
+                  While we understand our competitive landscape, our core value lies in providing quality over quantity. Our transparent and fair design & development packages, including our entire range of branding, web design and other services, ensure you find the perfect fit for your budget and brand needs. We prioritize dedicated effort and personalized attention, guaranteeing unique and impactful solutions for each brand, unlike those focused on quantity.
                 </p>
               </div>
             </div>
@@ -67,7 +60,7 @@ const Pricing = () => {
                 onSelect={(k) => setKey(k)}
                 className="mb-3"
               >
-                <Tab eventKey="logo-design" title="Logo Design">
+                <Tab eventKey="logo-design" title="Logo Design Packages">
                   <div className="row justify-content-center">
                     {logoDesignPricingPlan.map((item, index) => (
                       <div className="col-lg-4 mb-4" key={index}>
@@ -148,7 +141,7 @@ const Pricing = () => {
                     ))}
                   </div>
                 </Tab>
-                <Tab eventKey="seoPackages" title="SEO">
+                <Tab eventKey="seoPackages" title="SEO Packages">
                   <div className="row">
                     {seoPricingPlan.map((item, index) => (
                       <div className="col-lg-4 mb-4" key={index}>
@@ -196,15 +189,10 @@ const Pricing = () => {
           <div className="row">
             <div className="col-lg-6 mb-lg-0 mb-5">
               <div className="web-creation-content">
-                <p className="sec-tag purpleColor mb-4">Our Benefits</p>
+                <p className="sec-tag purpleColor mb-4">Other Benefits</p>
                 <h2>Why You Should Choose us.</h2>
                 <p className="poppins grayColor pe-xl-5 me-xl-5 pe-0 me-0">
-                  We combine creativity, technology, and strategy to deliver
-                  high-quality digital solutions tailored to your business
-                  goals. With a focus on performance, design, and user
-                  experience, we ensure every project is delivered with
-                  precision and care—helping your brand stand out and succeed in
-                  the digital space.
+                  We combine creativity, technology, and strategy to deliver high-quality digital solutions tailored to your business goals. With a focus on performance, design, and user experience, we ensure every project is delivered with precision and care, helping your brand stand out and succeed in the digital space.
                 </p>
                 <div className="d-flex flex-wrap gap-3">
                   <div className={`content-with-icon-item blue-icon flex-row`}>

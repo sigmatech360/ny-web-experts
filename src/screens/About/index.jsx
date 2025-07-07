@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 
 import bannerBG from "../../assets/images/about-banner-bg.webp";
 
@@ -23,6 +23,7 @@ import PurpleBGSec from "../../components/PurpleBGSec";
 import MouseHoverImg from "../../components/MouseHoverImg";
 import { Link } from "react-router-dom";
 import ReactHelmet from "../../components/ReactHelmet";
+import FormModal from "../../components/FormModal";
 
 const blogCardsData = [
   {
@@ -56,6 +57,7 @@ const blogCardsData = [
 ];
 
 const About = () => {
+  const [showModal, setShowModal] = useState(false);
   return (
     <>
       <ReactHelmet
@@ -87,7 +89,7 @@ const About = () => {
                         data-aos="fade-up"
                         data-aos-duration="2000"
                       >
-                        <h3>30+ Years</h3>
+                        <h3>10+ Years</h3>
                         <p>OF EXPERIENCE</p>
                       </div>
                     </div>
@@ -177,7 +179,7 @@ const About = () => {
                 </div>
 
                 <Link
-                to={"/web-design-development"}
+                to={"/portfolio"}
                   className="ny-btn"
                   data-aos="fade-up"
                   data-aos-duration="2000"
@@ -243,7 +245,9 @@ const About = () => {
         secTitle="Latest Trends & Insights, All From The Blog"
         blogCardsData={blogCardsData}
       />
+
       <GetStarted secTitle="Got An Idea? Let’s Discuss" secDescription="You’ve got business goals, and we have the best team to turn them into reality. Let’s build your business into a digital beast that gets clicks, leads, and revenue." btnText="Book A Call" />
+      <FormModal show={showModal} handleClose={() => setShowModal(false)} />
     </DefaultLayout>
     </>
   );

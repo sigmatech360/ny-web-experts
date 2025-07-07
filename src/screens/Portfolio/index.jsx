@@ -143,11 +143,7 @@ const Portfolio = () => {
                   Get Inspired By Our Finest Work
                 </h2>
                 <p data-aos="fade-up" data-aos-duration="2000">
-                  Discover how we turn ideas into impactful digital experiences.
-                  Our portfolio showcases the creativity, precision, and
-                  innovation that define every project we deliver. From sleek
-                  websites to robust applications, our work speaks for itself —
-                  inspiring brands to grow and thrive in the digital world.
+                 Discover how we turn ideas into impactful digital experiences. Our portfolio showcases the creativity, precision, and innovation that define every project we deliver. From sleek websites to robust applications, our work speaks for itself, inspiring brands to grow and thrive in the digital world.
                 </p>
               </div>
             </div>

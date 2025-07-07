@@ -29,9 +29,9 @@ const BlogCard = ({ image, name, description, slug, author, date }) => {
               <PiCalendarBlankBold /> {new Date(date).toLocaleDateString()}
             </p>
           </div>
-          <Link to={`/blog/${slug}`} className="ny-btn">
+          {/* <Link to={`/blog/${slug}`} className="ny-btn">
             Read More
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>
