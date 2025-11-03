@@ -204,6 +204,36 @@ p {
   color: #440370;
   font-size: 25px;
 }
+.header_social-icons .header_social-icon.behanceIcon {
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #68dcfc;
+  padding: 2px 4px;
+  border-radius: 6px;
+}
+
+.header_social-icons .header_social-icon.clutchIcon {
+  width: 30px;
+  border-radius: 6px;
+}
+.header_social-icons .header_social-icon.clutchIcon img {
+  border-radius: 6px;
+  width: 100%;
+}
+.header_social-icons .header_social-icon.trustPilot {
+  width: 120px;
+  border-radius: 6px;
+  border: 1px solid #68dcfc;
+  padding: 0 8px 8px 8px;
+}
+.header_social-icons .header_social-icon.trustPilot img {
+  border-radius: 6px;
+  width: 100%;
+  mix-blend-mode: lighten;
+}
 
 /* Banner Start */
 .main-banner {
