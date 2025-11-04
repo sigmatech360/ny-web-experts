@@ -82,8 +82,8 @@ const Blogs = () => {
   return (
     <>
       <ReactHelmet
-        title="NY Web Experts"
-        description={`description`}
+        title="Insights & Updates - Expert Web Development Blog"
+        description="Stay informed with in-depth articles on web and app development trends, best practices, and industry insights. Explore our expert blog for valuable knowledge."
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
         url="https://nywebexperts.com/blog"
       />

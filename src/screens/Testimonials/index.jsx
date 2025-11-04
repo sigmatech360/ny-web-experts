@@ -12,8 +12,8 @@ const Testimonials = () => {
   return (
     <>
       <ReactHelmet
-        title="NY Web Experts"
-        description={`description`}
+        title="What Clients Say - Real Stories, Real Results"
+        description="Hear from satisfied clients who trusted us with their web and app projects. See the impact we made—ready to join them? Let’s build your success story!"
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
         url="https://nywebexperts.com/testimonials"
       />

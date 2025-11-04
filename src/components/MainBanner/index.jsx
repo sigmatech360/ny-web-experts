@@ -88,14 +88,14 @@ const MainBanner = ({ onScrollToServices }) => {
                 New York’s Single Stop For Digital Growth & Presence!
               </h1>
               <p className="poppins" ref={textRef}>
-                At NY Web Experts, we build strong websites and powerful
-                digital marketing strategies to boost your business. We create
-                assets that drive traffic, leads, and revenue. Our goal? Sharp
-                design, clean code, and marketing that hits where it matters. We
-                turn the clicks on your websites into potential clients and
-                sales! As a growing digital marketing and website development
-                company in New York, we know how to position your brand for your
-                audience with measurable growth.
+                At NY Web Experts, we build strong websites and powerful digital
+                marketing strategies to boost your business. We create assets
+                that drive traffic, leads, and revenue. Our goal? Sharp design,
+                clean code, and marketing that hits where it matters. We turn
+                the clicks on your websites into potential clients and sales! As
+                a growing digital marketing and website development company in
+                New York, we know how to position your brand for your audience
+                with measurable growth.
               </p>
               <button
                 onClick={onScrollToServices}
@@ -115,6 +115,9 @@ const MainBanner = ({ onScrollToServices }) => {
                 ref={imageRef}
                 onMouseMove={handleImageMove}
                 onMouseLeave={handleImageLeave}
+                fetchpriority="high"
+                width={"636"}
+                height={"640"}
               />
             </div>
           </div>

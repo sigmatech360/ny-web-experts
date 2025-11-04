@@ -6,6 +6,7 @@ import bannerBG from "../../assets/images/about-banner-bg.webp";
 import GetStarted from "../../components/GetStarted";
 import ContactUsSec from "../../components/ContactUsSec";
 import ReactHelmet from "../../components/ReactHelmet";
+import ObfuscatedEmail from "../../components/ObfuscatedEmail";
 
 const PrivacyPolicy = () => {
   return (
@@ -43,7 +44,7 @@ const PrivacyPolicy = () => {
                 <p>Clients might receive updates about our site and services, including newsletters and promotional information. Moreover, the information about clients’ interests and purchases helps us enhance our website design and improve the overall purchasing experience.</p>
 
                 <h3>Newsletter Opt-out</h3>
-                <p>If you no longer wish to receive our newsletters and promotional communications, you can opt out by following the instructions provided in each communication. Alternatively, you can contact us via email at support@nywebexperts.com or call us at +1 (917) 722-0955</p>
+                <p>If you no longer wish to receive our newsletters and promotional communications, you can opt out by following the instructions provided in each communication. Alternatively, you can contact us via email at support<span className="at"></span>nywebexperts<span className="dot"></span>com or call us at +1 (518) 318-1052</p>
 
                 <h3>Social Media and Widgets</h3>
                 <p>Our website includes Social Media Features and Widgets, such as the Facebook Like button. These features may collect your IP address and page visits for proper functionality. Interactions with these features are subject to the privacy policies of the respective companies.</p>
@@ -73,7 +74,7 @@ const PrivacyPolicy = () => {
                 <p>We may modify this policy and will communicate changes through various means. Review this policy periodically for updates.</p>
 
                 <p className="fw-bold mb-1">Questions</p>
-                <p>For privacy policy inquiries, contact us at +1 (917) 722-0955 or support@nywebexperts.com.</p>
+                <p>For privacy policy inquiries, contact us at +1 (518) 318-1052 or support@nywebexperts.com.</p>
                 
                 {/* <ul>
                   {[
@@ -90,13 +91,14 @@ const PrivacyPolicy = () => {
                   <p>NY Web Experts</p>
                   <p>
                     <span className="fw-bold">Email:</span>{" "}
-                    <a href="malto:support@nywebexperts.com">
-                      support@nywebexperts.com
-                    </a>
+                    <ObfuscatedEmail />
+                    {/* <a href="mailto:support@nywebexperts.com">
+                      support<span className="at"></span>nywebexperts<span className="dot"></span>com
+                    </a> */}
                   </p>
                   <p>
                     <span className="fw-bold">Phone:</span>{" "}
-                    <a href="tel:+19177220955">+1 (917) 722-0955</a>
+                    <a href="tel:+15183181052">+1 (518) 318-1052</a>
                   </p>
                   <p>
                     <span className="fw-bold">Website:</span>{" "}

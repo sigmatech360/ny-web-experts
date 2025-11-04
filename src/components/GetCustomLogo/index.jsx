@@ -1,5 +1,6 @@
 import React from "react";
 import { HiOutlinePhone } from "react-icons/hi";
+import ObfuscatedEmail from "../ObfuscatedEmail";
 
 const GetCustomLogo = (props) => {
   const handleOpenChat = () => {
@@ -35,7 +36,7 @@ const GetCustomLogo = (props) => {
                 </div>
                 <div className="get-custom-logo-item-content">
                   <p>Call Us</p>
-                  <a href="tel:+19177220955">+1 (917) 722-0955</a>
+                  <a href="tel:+15183181052">+1 (518) 318-1052</a>
                 </div>
               </div>
               <div className="get-custom-logo-item">
@@ -55,9 +56,10 @@ const GetCustomLogo = (props) => {
                 </div>
                 <div className="get-custom-logo-item-content">
                   <p>Start</p>
-                  <a href="mailto:support@nywebexperts.com">
-                    support@nywebexperts.com
-                  </a>
+                  <ObfuscatedEmail />
+                  {/* <a href="mailto:support@nywebexperts.com">
+                    support<span className="at"></span>nywebexperts<span className="dot"></span>com
+                  </a> */}
                 </div>
               </div>
             </div>

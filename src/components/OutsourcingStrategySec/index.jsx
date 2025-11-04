@@ -14,8 +14,8 @@ const OutsourcingStrategySec = (props) => {
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-8 mb-4">
-            <div class="sec-head text-center">
-              {/* <p class="sec-tag">Our Testimonials</p> */}
+            <div className="sec-head text-center">
+              {/* <p className="sec-tag">Our Testimonials</p> */}
               <h2 data-aos="fade-up" data-aos-duration="2000">
                 {props.secTitle}
               </h2>

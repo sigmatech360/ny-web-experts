@@ -13,18 +13,21 @@ const InnerBanner = (props) => {
         defaults: { duration: 1, ease: "power3.out" },
       });
 
-      tl.from(headingRef.current, { 
-        opacity: 0, 
-        y: 40, 
-        duration: 0.8, 
-        ease: "power3.out" 
-      })
-      .from(textRef.current, { 
-        opacity: 0, 
-        y: 25, 
-        duration: 0.6, 
-        ease: "power3.out" 
-      }, "-=0.4"); // Slight overlap for smoother appearance
+      tl.from(headingRef.current, {
+        opacity: 0,
+        y: 40,
+        duration: 0.8,
+        ease: "power3.out",
+      }).from(
+        textRef.current,
+        {
+          opacity: 0,
+          y: 25,
+          duration: 0.6,
+          ease: "power3.out",
+        },
+        "-=0.4"
+      ); // Slight overlap for smoother appearance
     });
 
     return () => ctx.revert();
@@ -33,14 +36,26 @@ const InnerBanner = (props) => {
   return (
     <section
       className="inner-banner-sec clipedShaped-sec"
-      style={{ backgroundImage: `url(${props?.bannerBG})` }}
+      // style={{ backgroundImage: `url(${props?.bannerBG})` }}
     >
+      <img
+        src={props?.bannerBG}
+        alt={props?.title}
+        className="inner-banner-sec-bgImg"
+        fetchPriority="high"
+        width={"1920"}
+        height={"1080"}
+        // width={"1432"}
+        // height={"488"}
+      />
       <div className="inner-bg-layer"></div>
       <div className="container">
         <div className="row">
           <div className="col-md-12">
             <div className="inner-banner-content">
-              <h1 ref={headingRef}>{props?.title}</h1>
+              <h1 data-aos="fade-up" data-aos-duration="1000">
+                {props?.title}
+              </h1>
               {/* <nav ref={textRef}>
                 <ol className="breadcrumb">
                   <li className="breadcrumb-item">

@@ -5,7 +5,7 @@ const ReactHelmet = ({
   title = "NY Web Experts",
   description = "This is the default description of the website.",
   keywords = "web, development, seo, react",
-  url = "https://nywebexperts.com/",
+  url = "https://nywebexperts.com",
   // image = "https://yourdomain.com/default-image.webp",
 }) => {
   return (
@@ -13,7 +13,7 @@ const ReactHelmet = ({
       <title>{title}</title>
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
-      <link rel="canonical" href={url} />
+      <link rel="canonical" href={url} data-react-helmet="true" />
 
       {/* Open Graph Meta */}
       <meta property="og:title" content={title} />

@@ -9,7 +9,7 @@ const PricePlanCard = (props) => {
     >
       <div className="price_plan_card_head">
         <p className="package_name">{props?.name}</p>
-        <h4 className="package_price">${props?.price}/Mo</h4>
+        <p className="package_price">${props?.price}</p>
         <p className="price_plan_card_head-description">{props?.description}</p>
         <button className="price_plan_card-btn" onClick={props.onClick}>Purchase Now</button>
       </div>

@@ -3,6 +3,7 @@ import { toast } from "react-toastify";
 
 import { Link } from "react-router-dom";
 import logo from "../../../assets/images/logo.webp";
+import ObfuscatedEmail from "../../../components/ObfuscatedEmail";
 import { CiFacebook, CiLinkedin } from "react-icons/ci";
 import {
   FaInstagram,
@@ -66,7 +67,6 @@ const Footer = () => {
   const [loading, setLoading] = useState(false);
   const [email, setEmail] = useState("");
   const apiUrl = import.meta.env.VITE_API_BASE_URL;
-  console.log("apiUrl", apiUrl);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -83,7 +83,7 @@ const Footer = () => {
 
       const result = await response.json();
       // console.log(result);
-      
+
       if (result.status) {
         toast.success("Email Submitted Successfully");
         // toast.success(result.message);
@@ -130,13 +130,19 @@ const Footer = () => {
                     className="header_social-icon"
                     target="_blank"
                     href="https://www.facebook.com/NYWebExperts/"
+                    rel="noopener noreferrer"
+                    title="Follow us on Facebook"
+                    aria-label="Facebook"
                   >
                     <CiFacebook />
                   </a>
                   <a
                     className="header_social-icon"
                     target="_blank"
-                    href="https://api.whatsapp.com/send?phone=19177220955&text=Hello%20there!%20%F0%9F%91%8B%20Welcome%20to%20NY%20Web%20Experts!%20How%20can%20we%20assist%20you%20today%3F%20Feel%20free%20to%20ask%20any%20questions%20or%20share%20your%20ideas%20with%20us%20%F0%9F%92%A1."
+                    href="https://api.whatsapp.com/send?phone=15183181052&text=Hello%20there!%20%F0%9F%91%8B%20Welcome%20to%20NY%20Web%20Experts!%20How%20can%20we%20assist%20you%20today%3F%20Feel%20free%20to%20ask%20any%20questions%20or%20share%20your%20ideas%20with%20us%20%F0%9F%92%A1."
+                    rel="noopener noreferrer"
+                    title="Whatsapp"
+                    aria-label="Whatsapp"
                   >
                     <FaWhatsapp />
                   </a>
@@ -144,6 +150,9 @@ const Footer = () => {
                     className="header_social-icon"
                     target="_blank"
                     href="https://www.instagram.com/nywebexperts/"
+                    rel="noopener noreferrer"
+                    title="Follow us on Instagram"
+                    aria-label="Instagram"
                   >
                     <FaInstagram />
                   </a>
@@ -151,6 +160,9 @@ const Footer = () => {
                     className="header_social-icon"
                     target="_blank"
                     href="https://www.linkedin.com/company/nywebexperts/"
+                    rel="noopener noreferrer"
+                    title="Follow us on Linkedin"
+                    aria-label="Linkedin"
                   >
                     {/* <RiPinterestLine /> */}
                     {/* <FaLinkedinIn /> */}
@@ -161,7 +173,7 @@ const Footer = () => {
             </div>
             <div className="col-lg-2 mb-lg-0 mb-4">
               <div className="footer-links">
-                <h5 className="footer-title">Links</h5>
+                <h6 className="footer-title">Links</h6>
                 <ul className="footer-links">
                   {footerLink.map((item, index) => (
                     <li key={index}>
@@ -175,7 +187,7 @@ const Footer = () => {
             </div>
             <div className="col-lg-3 mb-lg-0 mb-4">
               <div className="footer-contact">
-                <h5 className="footer-title">Contact</h5>
+                <h6 className="footer-title">Contact</h6>
                 <div className="footer-list-icon-items">
                   <div className="footer-list-icon-item">
                     <div className="footer-list-icon">
@@ -189,27 +201,28 @@ const Footer = () => {
                     <div className="footer-list-icon">
                       <HiOutlinePhone />
                     </div>
-                    <a href="tel:+19177220955" className="footer-list-text">
-                      +1 (917) 722-0955
+                    <a href="tel:+15183181052" className="footer-list-text">
+                      +1 (518) 318-1052  
                     </a>
                   </div>
                   <div className="footer-list-icon-item">
                     <div className="footer-list-icon">
                       <FaRegEnvelope />
                     </div>
-                    <a
+                    <ObfuscatedEmail className="footer-list-text" />
+                    {/* <a
                       href="mailto:support@nywebexperts.com"
                       className="footer-list-text"
                     >
-                      support@nywebexperts.com
-                    </a>
+                      support<span className="at"></span>nywebexperts<span className="dot"></span>com
+                    </a> */}
                   </div>
                 </div>
               </div>
             </div>
             <div className="col-lg-3">
               <div className="footer-newsletter">
-                <h5 className="footer-title">Newsletter</h5>
+                <h6 className="footer-title">Newsletter</h6>
                 <div className="footer-newsletter-content">
                   <p>Subscribe to our newsletter for daily new and updates</p>
                   <form onSubmit={handleSubmit}>
@@ -223,11 +236,13 @@ const Footer = () => {
                       required
                     />
                     <button
-                      className="ny-btn"
+                      className={`ny-btn ${
+                        loading ? "btn-loading" : "btn-loaded"
+                      }`}
                       disabled={loading}
-                      style={{
-                        opacity: loading ? 0.3 : 1,
-                      }}
+                      // style={{
+                      //   opacity: loading ? 0.3 : 1,
+                      // }}
                     >
                       {/* Send */}
                       {loading ? "Sending..." : "Send"}
@@ -240,7 +255,6 @@ const Footer = () => {
         </div>
       </section>
 
-      
       <section className="copyright-sec">
         <div className="container">
           <div className="row">

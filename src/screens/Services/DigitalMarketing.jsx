@@ -82,8 +82,8 @@ const DigitalMarketing = () => {
   return (
     <>
       <ReactHelmet
-        title="NY Web Experts"
-        description={`description`}
+        title="Digital Marketing | NY Web Experts – Grow Your Online Reach"
+        description="Elevate your brand with digital marketing services by NY Web Experts. From strategy to success, we build campaigns that convert—let's grow together!"
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
         url="https://nywebexperts.com/digital-marketing"
       />

@@ -120,8 +120,8 @@ const SMM = () => {
   return (
     <>
       <ReactHelmet
-        title="NY Web Experts"
-        description={`description`}
+        title="Social Media Marketing | NY Web Experts – Engage & Grow"
+        description="Craft a winning social media marketing strategy with NY Web Experts. Boost brand visibility, engage your audience, and grow smarter—start now!"
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
         url="https://nywebexperts.com/social-media-marketing"
       />

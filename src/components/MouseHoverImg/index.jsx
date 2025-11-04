@@ -12,11 +12,11 @@ const MouseHoverImg = ({ image, aosProps }) => {
     let tl = gsap.timeline({ paused: true });
 
     tl.to(image, {
-      scale: 1.2, 
-      rotateX: 10, 
-      rotateY: 10, 
+      scale: 1.2,
+      rotateX: 10,
+      rotateY: 10,
       duration: 0.8,
-      ease: "expo.out", 
+      ease: "expo.out",
     });
 
     container.addEventListener("mouseenter", () => tl.play());
@@ -29,25 +29,23 @@ const MouseHoverImg = ({ image, aosProps }) => {
         rotateX: 0,
         rotateY: 0,
         duration: 0.8,
-        ease: "expo.inOut", 
+        ease: "expo.inOut",
       });
     });
 
-    
     container.addEventListener("mousemove", (e) => {
       const { left, top, width, height } = container.getBoundingClientRect();
-      const x = ((e.clientX - left) / width) * 2 - 1; 
-      const y = ((e.clientY - top) / height) * 2 - 1; 
+      const x = ((e.clientX - left) / width) * 2 - 1;
+      const y = ((e.clientY - top) / height) * 2 - 1;
 
       gsap.to(image, {
-        x: x * 15, 
-        y: y * 15, 
-        rotateX: y * -10, 
-        rotateY: x * 10, 
-        duration: 0.4, 
+        x: x * 15,
+        y: y * 15,
+        rotateX: y * -10,
+        rotateY: x * 10,
+        duration: 0.4,
         ease: "power2.out",
       });
-
     });
 
     return () => {
@@ -64,6 +62,7 @@ const MouseHoverImg = ({ image, aosProps }) => {
         className="img-fluid"
         alt="New York web expert about content"
         ref={imageRef}
+        fetchPriority="high"
       />
     </div>
   );

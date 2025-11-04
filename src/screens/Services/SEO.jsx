@@ -117,8 +117,8 @@ const SEO = () => {
   return (
     <>
       <ReactHelmet
-        title="NY Web Experts"
-        description={`description`}
+        title="Search Engine Optimization | SEO That Drives Results"
+        description="Partner with a top SEO company in New York to boost rankings, drive organic traffic, and grow your business online. Get your custom SEO strategy today!"
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
         url="https://nywebexperts.com/search-engine-optimization"
       />

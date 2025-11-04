@@ -14,9 +14,9 @@ const GetStarted = (props) => {
           <div className="col-xl-7">
             <div className="sec-head text-center">
               {/* <p className="sec-tag">Pricing Plan</p> */}
-              <h2 data-aos="fade-up" data-aos-duration="1000">
+              <h3 data-aos="fade-up" data-aos-duration="1000">
                 {props.secTitle || `Got An Idea? Let’s Discuss!`}
-              </h2>
+              </h3>
               <p data-aos="fade-up" data-aos-duration="2000">
                 {props.secDescription ||
                   `You’ve got business goals, and we have the best team to turn them into reality. Let’s build your business into a digital beast that gets clicks, leads, and revenue.`}

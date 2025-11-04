@@ -13,16 +13,40 @@ const TeamCard = (props) => {
         <h3>{props?.name}</h3>
         <p>{props?.designation}</p>
         <div className="header_social-icons">
-          <a className="header_social-icon" href="javascript:;">
+          <a
+            className="header_social-icon"
+            href="javascript:;"
+            rel="noopener noreferrer"
+            title="Follow Facebook"
+            aria-label="Facebook"
+          >
             <CiFacebook />
           </a>
-          <a className="header_social-icon" href="javascript:;">
+          <a
+            className="header_social-icon"
+            href="javascript:;"
+            rel="noopener noreferrer"
+            title="Follow Whatsapp"
+            aria-label="Whatsapp"
+          >
             <FaWhatsapp />
           </a>
-          <a className="header_social-icon" href="javascript:;">
+          <a
+            className="header_social-icon"
+            href="javascript:;"
+            rel="noopener noreferrer"
+            title="Follow Instagram"
+            aria-label="Instagram"
+          >
             <FaInstagram />
           </a>
-          <a className="header_social-icon" href="javascript:;">
+          <a
+            className="header_social-icon"
+            href="javascript:;"
+            rel="noopener noreferrer"
+            title="Follow Pinterest"
+            aria-label="Pinterest"
+          >
             <RiPinterestLine />
           </a>
         </div>

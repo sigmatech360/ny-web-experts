@@ -23,9 +23,9 @@ const WebCreationSec = (props) => {
                 data-aos="fade-up"
                 data-aos-duration="2000"
               >
-                <h1 className="successfull-projects-title">
+                <p className="successfull-projects-title">
                   {props.projectsCount} <br />+
-                </h1>
+                </p>
                 <p>{props.projectsCountText || `Successful Projects Done`}</p>
               </div>
             </div>
@@ -66,7 +66,7 @@ const WebCreationSec = (props) => {
                       <TbChecks />
                     </div>
                     <div className="content-with-icon-content">
-                      <h5>{item.title}</h5>
+                      <h4>{item.title}</h4>
                       <p>{item.description}</p>
                     </div>
                   </div>

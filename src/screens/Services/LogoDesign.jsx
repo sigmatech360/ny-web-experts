@@ -119,8 +119,8 @@ const LogoDesign = () => {
   return (
     <>
       <ReactHelmet
-        title="NY Web Experts"
-        description={`description`}
+        title="Logo Design | NY Web Experts – Build a Brand That Stands Out"
+        description="Custom Logo Design that captures your brand’s identity. NY Web Experts create unique, memorable logos. Start your visual branding journey today!"
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
         url="https://nywebexperts.com/logo-design"
       />

@@ -125,8 +125,8 @@ const Portfolio = () => {
   return (
     <>
       <ReactHelmet
-        title="NY Web Experts"
-        description={`description`}
+        title="Portfolio Showcase - See Our Custom Web & App Projects"
+        description="Explore our portfolio of innovative web and mobile projects. Ready to create something amazing? Check out our work and start your project today!"
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
         url="https://nywebexperts.com/portfolio"
       />

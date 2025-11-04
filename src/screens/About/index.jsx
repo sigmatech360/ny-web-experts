@@ -61,8 +61,8 @@ const About = () => {
   return (
     <>
       <ReactHelmet
-        title="NY Web Experts"
-        description={`description`}
+        title="About Us | NY Web Experts – Meet Your Digital Partners"
+        description="Discover who we are at About Us. Passionate creators delivering results-driven web solutions. Let’s grow your brand—connect with us!"
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
         url="https://nywebexperts.com/about"
       />

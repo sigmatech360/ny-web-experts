@@ -77,8 +77,8 @@ const Home = () => {
   return (
     <>
       <ReactHelmet
-        title="NY Web Experts"
-        description={`description`}
+        title="Custom Websites That Grow Your Business | NY Web Experts"
+        description="NY Web Experts craft stunning, high-converting websites for brands that want results. Get a site that sells - contact us today for a free consultation!"
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
         url="https://nywebexperts.com/"
       />
@@ -108,6 +108,8 @@ const Home = () => {
                     className="img-fluid"
                     data-aos="fade-right"
                     data-aos-duration="2000"
+                    width={"606"}
+                    height={"509"}
                   />
                 </div>
               </div>
@@ -248,9 +250,9 @@ const Home = () => {
                   >
                     Our Specialty
                   </p>
-                  <h2 data-aos="fade-up" data-aos-duration="2000">
+                  <h3 data-aos="fade-up" data-aos-duration="2000">
                     Specialized to Stand Out Online
-                  </h2>
+                  </h3>
                   <p
                     className="poppins pe-xl-5 me-xl-5 pe-0   me-0"
                     data-aos="fade-up"
@@ -274,7 +276,7 @@ const Home = () => {
                         <TbChecks />
                       </div>
                       <div className="content-with-icon-content">
-                        <h5>Trusted By 300+ Brands</h5>
+                        <h4>Trusted By 300+ Brands</h4>
                         {/* <p></p> */}
                       </div>
                     </div>
@@ -283,7 +285,7 @@ const Home = () => {
                         <TbChecks />
                       </div>
                       <div className="content-with-icon-content">
-                        <h5>Critically Researched Strategies</h5>
+                        <h4>Critically Researched Strategies</h4>
                         {/* <p></p> */}
                       </div>
                     </div>

@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 
+
+import StaticMapService from "../../assets/images/StaticMapService.webp"
 
 const ContactUsSec = (props) => {
   const [loading, setLoading] = useState(false);
@@ -11,6 +13,15 @@ const ContactUsSec = (props) => {
     service_1: "",
     data_message: "",
   });
+  const [loadIframe, setLoadIframe] = useState(false);
+  // Load iframe after page loads or after interaction
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoadIframe(true);
+    }, 10000); // Delay iframe load for performance (adjust as needed)
+
+    return () => clearTimeout(timer);
+  }, []);
 
   const apiUrl = import.meta.env.VITE_API_BASE_URL;
 
@@ -82,7 +93,7 @@ const ContactUsSec = (props) => {
                   <div className="col-lg-6 mb-4">
                     <input
                       type="text"
-                      class="form-control"
+                      className="form-control"
                       placeholder="Full name"
                       name="username"
                       value={formData.username}
@@ -93,7 +104,7 @@ const ContactUsSec = (props) => {
                   <div className="col-lg-6 mb-4">
                     <input
                       type="email"
-                      class="form-control"
+                      className="form-control"
                       placeholder="Email address"
                       name="email"
                       value={formData.email}
@@ -104,7 +115,7 @@ const ContactUsSec = (props) => {
                   <div className="col-lg-6 mb-4">
                     <input
                       type="text"
-                      class="form-control"
+                      className="form-control"
                       placeholder="Phone number"
                       name="phone"
                       value={formData.phone}
@@ -113,8 +124,12 @@ const ContactUsSec = (props) => {
                     />
                   </div>
                   <div className="col-lg-6 mb-4">
+                    <label htmlFor="serviceSelect" className="visually-hidden">
+                      Select Services
+                    </label>
                     <select
-                      class="form-select form-control"
+                      id="serviceSelect"
+                      className="form-select form-control"
                       name="service_1"
                       value={formData.service_1}
                       onChange={handleChange}
@@ -123,7 +138,9 @@ const ContactUsSec = (props) => {
                       <option value="" disabled>
                         Services
                       </option>
-                      <option value="web-design-development">Web Design And Development</option>
+                      <option value="web-design-development">
+                        Web Design And Development
+                      </option>
                       <option value="logo-design">Logo Design</option>
                       <option value="cms-development">CMS Development</option>
                       <option value="digital-marketing">
@@ -139,28 +156,28 @@ const ContactUsSec = (props) => {
                       <option value="mobile-app-development">
                         Mobile App Development
                       </option>
-                      
                     </select>
                   </div>
                   <div className="col-lg-12 mb-3  4">
                     <textarea
-                      class="form-control"
+                      className="form-control"
                       rows="5"
                       placeholder="Write message"
                       name="data_message"
                       value={formData.data_message}
                       onChange={handleChange}
-                      style={{ resize: "none" }}
                       required
                     ></textarea>
                   </div>
                   <div className="col-lg-12">
                     <button
-                      className="ny-btn"
+                      className={`ny-btn ${
+                        loading ? "btn-loading" : "btn-loaded"
+                      }`}
                       disabled={loading}
-                      style={{
-                        opacity: loading ? 0.3 : 1,
-                      }}
+                      // style={{
+                      //   opacity: loading ? 0.3 : 1,
+                      // }}
                     >
                       {/* Send a Message */}
                       {loading ? "Submitting..." : "Send a Message"}
@@ -185,20 +202,28 @@ const ContactUsSec = (props) => {
                   <Marker position={defaultCenter} />
                 </GoogleMap>
               </LoadScript> */}
-              <div style={{ width: "100%", height: "100%" }}>
-                <iframe
-                  title="California Map"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  loading="lazy"
-                  allowFullScreen
-                  // src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423286.2742347859!2d-118.69193073579997!3d34.02073048963344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c7b2c3b4a3f3%3A0xbaa14b7faeb7bc01!2sCalifornia%2C%20USA!5e0!3m2!1sen!2sin!4v1648454754173!5m2!1sen!2sin"
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13236.436185047787!2d-118.2437!3d34.0522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1716200000000!5m2!1sen!2sus"
-                ></iframe>
+              <div className="contact-us-map-content-iframeDiv">
+                {!loadIframe && (
+                  <img
+                    src={StaticMapService}
+                    alt="California Map"
+                  />
+                )}
+                {loadIframe && (
+                  <iframe
+                    title="California Map"
+                    width="100%"
+                    height="100%"
+                    // style={{ border: 0 }}
+                    loading="lazy"
+                    allowFullScreen
+                    // src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423286.2742347859!2d-118.69193073579997!3d34.02073048963344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c7b2c3b4a3f3%3A0xbaa14b7faeb7bc01!2sCalifornia%2C%20USA!5e0!3m2!1sen!2sin!4v1648454754173!5m2!1sen!2sin"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13236.436185047787!2d-118.2437!3d34.0522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1716200000000!5m2!1sen!2sus"
+                  ></iframe>
+                )}
               </div>
               <div className="contact-us-map-content-text">
-                <h1>Call us anytime: +1 (917) 722-0955 </h1>
+                <p>Call us anytime: +1 (518) 318-1052 </p>
               </div>
             </div>
           </div>

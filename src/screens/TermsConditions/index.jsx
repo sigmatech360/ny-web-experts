@@ -6,6 +6,7 @@ import bannerBG from "../../assets/images/about-banner-bg.webp";
 import GetStarted from "../../components/GetStarted";
 import ContactUsSec from "../../components/ContactUsSec";
 import ReactHelmet from "../../components/ReactHelmet";
+import ObfuscatedEmail from "../../components/ObfuscatedEmail";
 
 const TermsConditions = () => {
   return (
@@ -237,7 +238,7 @@ const TermsConditions = () => {
 
                   <ul>
                     {[
-                      "Contacting our Toll-Free Number: +1 (917)-722-0955",
+                      "Contacting our Toll-Free Number: +1 (518) 318-1052",
                       "Engaging in a Live Chat session. Click here to initiate the chat or send us an email.",
                       "We will promptly respond and begin the necessary analysis upon receiving your refund request. Once completed, the refund process will be initiated.",
                       "Please be aware that after the refund is issued, you will no longer retain any rights to the designs or materials submitted by nywebexperts.com. The relevant information will be submitted to the Government Copyright Agencies to ensure compliance with legal requirements.",
@@ -332,13 +333,14 @@ const TermsConditions = () => {
                   <h3>Communication Policy</h3>
                   <p>
                     For effective communication, we urge you to exclusively use
-                    the following contact details: support@nywebexperts.com and
-                    the official numbers provided on our website. We take no
-                    responsibility for any communication via other platforms or
-                    unauthorized contact details not provided. We highly
-                    recommend utilizing our official communication channels to
-                    ensure the accuracy and security of your interactions with
-                    us.
+                    the following contact details: support
+                    <span className="at"></span>nywebexperts
+                    <span className="dot"></span>com and the official numbers
+                    provided on our website. We take no responsibility for any
+                    communication via other platforms or unauthorized contact
+                    details not provided. We highly recommend utilizing our
+                    official communication channels to ensure the accuracy and
+                    security of your interactions with us.
                   </p>
 
                   <p>
@@ -430,14 +432,30 @@ const TermsConditions = () => {
                     contact us. You can reach us through the following methods:
                   </p>
 
-                  <ul>
+                  {/* <ul>
                     {[
                       "Chat – Engage in real-time conversation with our support team.",
                       "support@nywebexperts.com – Contact us via email for prompt assistance.",
-                      "+1 (917)-722-0955 – Call our Toll-Free number to speak directly with our representatives.",
+                      "+1 (518) 318-1052 – Call our Toll-Free number to speak directly with our representatives.",
                     ].map((item) => (
                       <li key={item}>{item}</li>
                     ))}
+                  </ul> */}
+
+                  <ul>
+                    <li>
+                      Chat – Engage in real-time conversation with our support
+                      team.
+                    </li>
+                    <li>
+                      support<span className="at"></span>nywebexperts
+                      <span className="dot"></span>com – Contact us via email
+                      for prompt assistance.
+                    </li>
+                    <li>
+                      +1 (518) 318-1052 – Call our Toll-Free number to speak
+                      directly with our representatives.
+                    </li>
                   </ul>
 
                   <p>
@@ -491,13 +509,14 @@ const TermsConditions = () => {
                     <p>NY Web Experts</p>
                     <p>
                       <span className="fw-bold">Email:</span>{" "}
-                      <a href="malto:support@nywebexperts.com">
-                        support@nywebexperts.com
-                      </a>
+                      <ObfuscatedEmail />
+                      {/* <a href="mailto:support@nywebexperts.com">
+                        support<span className="at"></span>nywebexperts<span className="dot"></span>com
+                      </a> */}
                     </p>
                     <p>
                       <span className="fw-bold">Phone:</span>{" "}
-                      <a href="tel:+19177220955">+1 (917) 722-0955</a>
+                      <a href="tel:+15183181052">+1 (518) 318-1052</a>
                     </p>
                     <p>
                       <span className="fw-bold">Website:</span>{" "}

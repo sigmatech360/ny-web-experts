@@ -87,7 +87,11 @@ const FormModal = ({ show, handleClose }) => {
         <div className="formModal-content">
           <div className="formModal-imgDiv">
             <div className="formModalImg">
-              <img src={modalMobileImg} className="img-fluid" alt="New York web expert" />
+              <img
+                src={modalMobileImg}
+                className="img-fluid"
+                alt="New York web expert"
+              />
             </div>
           </div>
           <div className="formModal-formContent">
@@ -98,7 +102,7 @@ const FormModal = ({ show, handleClose }) => {
               <Form.Group controlId="username">
                 {/* <Form.Label>Email address</Form.Label> */}
                 <Form.Control
-                required
+                  required
                   type="text"
                   placeholder="Name"
                   name="username"
@@ -110,7 +114,7 @@ const FormModal = ({ show, handleClose }) => {
               <Form.Group controlId="email">
                 {/* <Form.Label>Email address</Form.Label> */}
                 <Form.Control
-                required
+                  required
                   type="email"
                   placeholder="Email Address"
                   name="email"
@@ -122,7 +126,7 @@ const FormModal = ({ show, handleClose }) => {
               <Form.Group controlId="phone">
                 {/* <Form.Label>Email address</Form.Label> */}
                 <Form.Control
-                required
+                  required
                   placeholder="Phone Number"
                   name="phone"
                   value={formData.phone}
@@ -152,7 +156,9 @@ const FormModal = ({ show, handleClose }) => {
                   <option value="" disabled>
                     Services
                   </option>
-                  <option value="web-design-development">Web Design And Development</option>
+                  <option value="web-design-development">
+                    Web Design And Development
+                  </option>
                   <option value="logo-design">Logo Design</option>
                   <option value="cms-development">CMS Development</option>
                   <option value="digital-marketing">Digital Marketing</option>
@@ -182,11 +188,11 @@ const FormModal = ({ show, handleClose }) => {
               <div className="d-flex justify-content-center">
                 <button
                   type="submit"
-                  className="ny-btn"
+                  className={`ny-btn ${loading ? "btn-loading" : "btn-loaded"}`}
                   disabled={loading}
-                  style={{
-                    opacity: loading ? 0.3 : 1,
-                  }}
+                  // style={{
+                  //   opacity: loading ? 0.3 : 1,
+                  // }}
                 >
                   {/* Request a quote */}
                   {loading ? "Submitting..." : "Request a quote"}

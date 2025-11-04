@@ -45,9 +45,9 @@ const BlogSec = ({ secTitle, itemsPerPage = 6, pagination }) => {
               >
                 From The Blog
               </p>
-              <h2 data-aos="fade-up" data-aos-duration="3000">
+              <h3 data-aos="fade-up" data-aos-duration="3000">
                 {secTitle || `Latest News & Articles from the Blog.`}
-              </h2>
+              </h3>
             </div>
           </div>
 

@@ -117,8 +117,8 @@ const MobileAppDevelopment = () => {
   return (
     <>
       <ReactHelmet
-        title="NY Web Experts"
-        description={`description`}
+        title="Mobile App Development - Transform Ideas Into Apps Today"
+        description="Bring your app idea to life with expert development. Ready to disrupt the market? Take the first step and turn your vision into reality—reach out now!"
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
         url="https://nywebexperts.com/mobile-app-development"
       />

@@ -24,9 +24,9 @@ const TestimonialSec = (props) => {
               >
                 {props.secTag || `Testimonials`}
               </p>
-              <h2 className="text-capitalize" data-aos="fade-up" data-aos-duration="3000">
+              <h3 className="text-capitalize" data-aos="fade-up" data-aos-duration="3000">
                 {props.secTitle || `What our clients are saying about us!`}
-              </h2>
+              </h3>
             </div>
           </div>
         </div>

@@ -16,7 +16,7 @@ const OurOfferSec = (props) => {
               <TbChecks />
             </div>
             <div className="content-with-icon-content">
-              <h5>{item.title}</h5>
+              <h3>{item.title}</h3>
               <p>{item.description}</p>
             </div>
           </div>

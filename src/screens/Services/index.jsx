@@ -57,10 +57,10 @@ const Services = () => {
   return (
     <>
       <ReactHelmet
-        title="NY Web Experts"
-        description={`description`}
+        title="Professional Web Design - Create Stunning Digital Experiences"
+        description="Craft captivating, user-friendly websites that leave a lasting impression. Ready to transform your online presence? Let’s design something extraordinary together"
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
-        url="https://nywebexperts.com/services"
+        url="https://nywebexperts.com/web-design-development"
       />
     <DefaultLayout>
       <InnerBanner

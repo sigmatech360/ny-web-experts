@@ -117,8 +117,8 @@ const CustomWebDevelopment = () => {
   return (
     <>
       <ReactHelmet
-        title="NY Web Experts"
-        description={`description`}
+        title="Custom Web Development – Build Your Unique Website Today"
+        description="Expert custom web development tailored to your goals. Build a fast, scalable website that sets you apart—let’s bring your digital vision to life."
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
         url="https://nywebexperts.com/custom-web-development"
       />

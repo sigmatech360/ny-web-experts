@@ -33,8 +33,8 @@ const Pricing = () => {
   return (
     <>
       <ReactHelmet
-        title="NY Web Experts"
-        description={`description`}
+        title="Affordable Pricing - Transparent Rates for Web Solutions"
+        description="Affordable Pricing - Transparent Rates for Web Solutions"
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
         url="https://nywebexperts.com/pricing"
       />

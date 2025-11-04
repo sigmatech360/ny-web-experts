@@ -12,7 +12,7 @@ const ContentWithIcon = (props) => {
         {props.iconText && <p>{props.iconText}</p>}
       </div>
       <div className="content-with-icon-content">
-        <h5>{props?.name}</h5>
+        <h4>{props?.name}</h4>
         <p>{props?.description}</p>
       </div>
     </div>

@@ -16,9 +16,9 @@ const ProjectSec = (props) => {
               >
                 {props.secTag}
               </p>
-              <h2 data-aos="fade-up" data-aos-duration="2000">
+              <h3 data-aos="fade-up" data-aos-duration="2000">
                 {props.secTitle}
-              </h2>
+              </h3>
             </div>
           </div>
           {/* {props.projectsData.map((item, index) => (

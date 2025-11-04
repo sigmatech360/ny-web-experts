@@ -12,8 +12,8 @@ const ContactUs = () => {
   return (
     <>
       <ReactHelmet
-        title="NY Web Experts"
-        description={`description`}
+        title="Contact Us | NY Web Experts - Get a Free Consultation Today"
+        description="Contact us at NY Web Experts to start your digital project. Get expert advice, fast responses, and a free consultation. Let’s bring your vision to life!"
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
         url="https://nywebexperts.com/contact-us"
       />
