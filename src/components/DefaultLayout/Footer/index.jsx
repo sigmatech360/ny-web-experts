@@ -3,9 +3,13 @@ import { toast } from "react-toastify";
 
 import { Link } from "react-router-dom";
 import logo from "../../../assets/images/logo.webp";
+import clutch from "../../../assets/images/footer/clutch-icon.png";
+import trustPilot from "../../../assets/images/footer/trust-pilot.webp";
 import ObfuscatedEmail from "../../../components/ObfuscatedEmail";
 import { CiFacebook, CiLinkedin } from "react-icons/ci";
 import {
+  FaBehance,
+  FaBehanceSquare,
   FaInstagram,
   FaLinkedinIn,
   FaRegEnvelope,
@@ -14,6 +18,7 @@ import {
 import { RiPinterestLine } from "react-icons/ri";
 import { PiMapPinBold } from "react-icons/pi";
 import { HiOutlinePhone } from "react-icons/hi";
+import { SiYelp } from "react-icons/si";
 
 const footerLink = [
   {
@@ -168,6 +173,55 @@ const Footer = () => {
                     {/* <FaLinkedinIn /> */}
                     <CiLinkedin />
                   </a>
+                  <a
+                    className="header_social-icon"
+                    target="_blank"
+                    href="https://www.behance.net/nywebexperts1"
+                    rel="noopener noreferrer"
+                    title="Behance"
+                    aria-label="Behance"
+                  >
+                    {/* <RiPinterestLine /> */}
+                    {/* <FaLinkedinIn /> */}
+                    <FaBehanceSquare />
+                  </a>
+                  <a
+                    className="header_social-icon behanceIcon"
+                    target="_blank"
+                    href="https://www.crunchbase.com/organization/ny-web-experts"
+                    rel="noopener noreferrer"
+                    title="Crunchbase"
+                    aria-label="Crunchbase"
+                  >
+                    cb
+                  </a>
+                  <a
+                    className="header_social-icon clutchIcon"
+                    target="_blank"
+                    href="https://clutch.co/profile/ny-web-experts"
+                    rel="noopener noreferrer"
+                    title="Clutch"
+                    aria-label="Clutch"
+                  >
+                    <img src={clutch} alt="" />
+                  </a>
+                  <a
+                    className="header_social-icon"
+                    target="_blank"
+                    href="https://www.yelp.com/biz/ny-web-experts-new-york "
+                    rel="noopener noreferrer"
+                    title="yelp"
+                    aria-label="yelp"
+                  >
+                    {/* <RiPinterestLine /> */}
+                    {/* <FaLinkedinIn /> */}
+                    <SiYelp />
+                  </a>
+                </div>
+                <div className="header_social-icons mt-4">
+                  <a href="https://www.trustpilot.com/review/nywebexperts.com " className="header_social-icon trustPilot">
+                    <img src={trustPilot} alt="" />
+                  </a>
                 </div>
               </div>
             </div>
@@ -202,7 +256,7 @@ const Footer = () => {
                       <HiOutlinePhone />
                     </div>
                     <a href="tel:+15183181052" className="footer-list-text">
-                      +1 (518) 318-1052  
+                      +1 (518) 318-1052
                     </a>
                   </div>
                   <div className="footer-list-icon-item">
