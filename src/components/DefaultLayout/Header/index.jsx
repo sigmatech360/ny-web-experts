@@ -157,6 +157,50 @@ const Header = () => {
               </Dropdown.Menu>
             </Dropdown>
 
+            <Dropdown className="nav-dropdown-custom">
+              <Dropdown.Toggle
+                as="button"
+                className="custom-toggle cursor-pointer nav-link"
+                aria-expanded="false"
+              >
+                Locations
+              </Dropdown.Toggle>
+              <Dropdown.Menu>
+                <div className="nav-subdropdown-wrapper">
+                  <NavDropdown.Item
+                    as="button"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    Buffalo{" "}
+                    <span className="submenu-icon d-none d-lg-inline">
+                      <FaCaretRight />
+                    </span>
+                    <span className="submenu-icon d-inline d-lg-none">
+                      <FaCaretDown />
+                    </span>
+                  </NavDropdown.Item>
+                  <div className="nav-subdropdown">
+                    <NavDropdown.Item
+                      as={Link}
+                      to={"/app-development-buffalo"}
+                      target="_blank"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      Mobile App Development
+                    </NavDropdown.Item>
+                    <NavDropdown.Item
+                      as={Link}
+                      to={"/wordpress-development-buffalo"}
+                      target="_blank"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      Wordpress Development
+                    </NavDropdown.Item>
+                  </div>
+                </div>
+              </Dropdown.Menu>
+            </Dropdown>
+
             {/* ============================================= */}
             <NavLink to={"/portfolio"} className="nav-link">
               Portfolio

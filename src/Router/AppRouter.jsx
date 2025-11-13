@@ -25,6 +25,8 @@ import BlogDetail from "../screens/BlogDetail";
 import CategoryBlogs from "../screens/CategoryBlogs";
 import ScrollToTop from "../components/ScrollToTop"; 
 import NotFound from "../screens/NotFound";
+import AppDevelopmentBuffalo from "../screens/locationpages/AppDevelopmentBuffalo";
+import WordpressDevelopmentBuffalo from "../screens/locationpages/WordpressDevelopmentBuffalo";
 
 const AppRouter = () => {
   return (
@@ -61,6 +63,11 @@ const AppRouter = () => {
         <Route path="/terms-and-conditions" element={<TermsConditions />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="*" element={<NotFound />} />
+
+        {/* Location Pages  */}
+        <Route path="/app-development-buffalo" element={<AppDevelopmentBuffalo />} />
+        <Route path="/wordpress-development-buffalo" element={<WordpressDevelopmentBuffalo />} />
+
       </Routes>
     </Router>
   );

@@ -1172,3 +1172,405 @@ export const maintenancePricingPlan = [
     ],
   },
 ];
+
+
+
+
+export const dynamictabsData = [
+  {
+    title: "ALL",
+    packages: [
+      {
+        name: "Basic Package",
+        price: "900",
+        variant: "basic",
+        description: "Ideal for startups seeking professional logo design essentials.",
+        list: [
+          {
+            heading: "Features",
+            items: [
+              "10 Custom Logo Design Concepts",
+              "2 Dedicated Brand Designers",
+              "Unlimited Revisions",
+              "Full Ownership Rights",
+              "Final Files in Multiple Formats",
+              "24/7 Project Support",
+              "Money-Back Guarantee",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Pro Package",
+        price: "1350",
+        variant: "pro",
+        description: "Perfect for growing brands needing creative and consistent branding.",
+        list: [
+          {
+            heading: "Features",
+            items: [
+              "Unlimited Logo Design Concepts",
+              "3 Dedicated Designers",
+              "Brand Style Guide Included",
+              "Stationery Design (Business Card, Letterhead)",
+              "Social Media Kit",
+              "Priority Support",
+              "100% Satisfaction Guarantee",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Premium Package",
+        price: "1650",
+        variant: "premium",
+        description: "Comprehensive branding package for established businesses.",
+        list: [
+          {
+            heading: "Features",
+            items: [
+              "Unlimited Custom Logo Concepts",
+              "Dedicated Creative Director",
+              "Brand Guidelines + Mockups",
+              "Website Favicon Design",
+              "Full File Ownership",
+              "One-Year Free Design Support",
+              "Top Priority Assistance",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+
+  {
+    title: "Web Design",
+    packages: [
+      {
+        name: "Basic Web Design",
+        price: "900",
+        variant: "basic",
+        description: "Simple and elegant websites for small businesses and startups.",
+        list: [
+          {
+            heading: "Features",
+            items: [
+              "Up to 3 Pages Website",
+              "Custom UI Design",
+              "Responsive Layout",
+              "Basic SEO Setup",
+              "Contact Form Integration",
+              "1 Week Delivery",
+              "Email Support",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Pro Web Design",
+        price: "1350",
+        variant: "pro",
+        description: "Professional websites built for performance and engagement.",
+        list: [
+          {
+            heading: "Features",
+            items: [
+              "Up to 5 Pages Website",
+              "Advanced UI/UX Design",
+              "SEO-Friendly Structure",
+              "Speed Optimization",
+              "Blog Integration",
+              "Google Analytics Setup",
+              "Priority Email Support",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Premium Web Design",
+        price: "1650",
+        variant: "premium",
+        description: "High-end web design solutions with CMS and advanced features.",
+        list: [
+          {
+            heading: "Features",
+            items: [
+              "Up to 10 Pages Website",
+              "Custom CMS Integration",
+              "E-commerce Ready",
+              "Premium Animations",
+              "Comprehensive SEO Setup",
+              "Content Upload & Training",
+              "Dedicated Account Manager",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+
+  {
+    title: "UI / UX Design",
+    packages: [
+      {
+        name: "Basic UI/UX Package",
+        price: "900",
+        variant: "basic",
+        description: "Essential UI/UX designs focusing on clarity and user flow.",
+        list: [
+          {
+            heading: "Features",
+            items: [
+              "Wireframes for 3 Screens",
+              "Custom UI Kit",
+              "User Flow Diagram",
+              "Responsive Layouts",
+              "Color Palette & Typography Guide",
+              "Basic Prototype",
+              "1 Revision Round",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Pro UI/UX Package",
+        price: "1350",
+        variant: "pro",
+        description: "Detailed UI/UX solutions with interactivity and microinteractions.",
+        list: [
+          {
+            heading: "Features",
+            items: [
+              "Wireframes for 6 Screens",
+              "Interactive Prototype",
+              "Microinteractions Design",
+              "Accessibility Optimization",
+              "Usability Testing",
+              "Figma Source Files",
+              "Priority Feedback Loop",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Premium UI/UX Package",
+        price: "1650",
+        variant: "premium",
+        description: "Comprehensive user experience design for enterprise-level products.",
+        list: [
+          {
+            heading: "Features",
+            items: [
+              "Unlimited Screens",
+              "High-Fidelity Prototypes",
+              "Full Design System",
+              "Comprehensive User Testing",
+              "UX Audit Report",
+              "24/7 Design Support",
+              "Dedicated UI/UX Lead",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+
+  {
+    title: "Logo Design",
+    packages: [
+      {
+        name: "Basic Logo Design",
+        price: "900",
+        variant: "basic",
+        description: "Clean, timeless logos tailored for new brands.",
+        list: [
+          {
+            heading: "Features",
+            items: [
+              "5 Custom Logo Concepts",
+              "1 Dedicated Designer",
+              "2 Rounds of Revisions",
+              "High-Resolution Files",
+              "Transparent PNG + Vector",
+              "Black & White Versions",
+              "48-Hour Turnaround",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Pro Logo Design",
+        price: "1350",
+        variant: "pro",
+        description: "Creative logo design for growing brands seeking strong identity.",
+        list: [
+          {
+            heading: "Features",
+            items: [
+              "10 Logo Design Concepts",
+              "2 Dedicated Designers",
+              "Stationery Design (Card, Letterhead)",
+              "Social Media Profile Kit",
+              "Multiple File Formats",
+              "Brand Color Palette",
+              "Priority Revisions",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Premium Logo Design",
+        price: "1650",
+        variant: "premium",
+        description: "Full-scale brand identity design for premium clients.",
+        list: [
+          {
+            heading: "Features",
+            items: [
+              "Unlimited Logo Concepts",
+              "Creative Director Oversight",
+              "Brand Identity Design",
+              "Custom Typography",
+              "Comprehensive File Delivery",
+              "Lifetime File Storage",
+              "Top-Tier Support",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+
+  {
+    title: "Video Animation",
+    packages: [
+      {
+        name: "Basic Animation",
+        price: "900",
+        variant: "basic",
+        description: "Short, engaging 2D animations for quick brand storytelling.",
+        list: [
+          {
+            heading: "Features",
+            items: [
+              "30 Seconds Animation",
+              "Basic 2D Characters",
+              "Script & Storyboard Included",
+              "Voice-over Integration",
+              "Royalty-Free Music",
+              "HD Resolution",
+              "2 Revisions",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Pro Animation",
+        price: "1350",
+        variant: "pro",
+        description: "Professional animations with custom characters and effects.",
+        list: [
+          {
+            heading: "Features",
+            items: [
+              "60 Seconds Animation",
+              "Custom Illustrated Characters",
+              "Full Script & Voice-over",
+              "Transitions & Effects",
+              "Sound Design",
+              "4 Revisions",
+              "Fast Delivery",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Premium Animation",
+        price: "1650",
+        variant: "premium",
+        description: "High-end animation services with 3D and premium visuals.",
+        list: [
+          {
+            heading: "Features",
+            items: [
+              "90 Seconds Animation",
+              "Custom Storyboard & Concept Art",
+              "3D Elements (Optional)",
+              "Premium Voice-over",
+              "Dynamic Visual Effects",
+              "Full Editing Support",
+              "Unlimited Revisions",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+
+  {
+    title: "E-Commerce Web Design",
+    packages: [
+      {
+        name: "Basic E-Commerce",
+        price: "900",
+        variant: "basic",
+        description: "E-commerce setup for small online stores to start selling fast.",
+        list: [
+          {
+            heading: "Features",
+            items: [
+              "Up to 10 Products Setup",
+              "Shopping Cart Integration",
+              "Payment Gateway Setup",
+              "Mobile-Friendly Design",
+              "Basic Admin Panel",
+              "1 Week Support",
+              "SEO Ready Pages",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Pro E-Commerce",
+        price: "1350",
+        variant: "pro",
+        description: "Feature-rich online store for scalable e-commerce growth.",
+        list: [
+          {
+            heading: "Features",
+            items: [
+              "Up to 50 Products Setup",
+              "Advanced Admin Dashboard",
+              "Product Filter & Sorting",
+              "Discount & Coupon Setup",
+              "Stock Management System",
+              "Multi-Currency Support",
+              "Email Marketing Integration",
+            ],
+          },
+        ],
+      },
+      {
+        name: "Premium E-Commerce",
+        price: "1650",
+        variant: "premium",
+        description: "Enterprise-level online store with advanced integrations.",
+        list: [
+          {
+            heading: "Features",
+            items: [
+              "Unlimited Products",
+              "Custom E-Commerce Theme",
+              "Advanced Analytics Dashboard",
+              "Multi-Vendor Functionality",
+              "CRM Integration",
+              "1 Year Free Maintenance",
+              "Dedicated E-Commerce Manager",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+];
+

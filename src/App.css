@@ -1446,6 +1446,489 @@ textarea.form-control {
   font-size: 45px;
 }
 
+/************* Location Pages CSS Start *************/
+
+.WordPressPerformanceSection .abouttxt-data .web-whychoose-list {
+  padding: 0px;
+  margin: 0px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 20px;
+}
+
+.WordPressPerformanceSection .abouttxt-data .web-whychoose-list li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #707070;
+}
+
+.pixel-perfect-sec .news-card-img img {
+  height: auto;
+}
+
+.pixel-perfect-sec {
+  background: url(./assets/images/locationpages/app-development-buffalo/portfoliobg.webp)
+    no-repeat top center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding: 50px 0px 100px 0px;
+}
+
+section.pixel-perfect-sec .news-card-img img {
+  height: auto;
+}
+
+.pixel-perfect-head {
+  margin: 40px 0px 40px 0px;
+  color: #fff;
+}
+
+.pixel-perfect-head h2 {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 1.1;
+}
+
+.pixel-perfect-head p {
+  color: #fff;
+}
+
+.location-support-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 20px 0 0;
+  gap: 20px;
+}
+
+.location-support-card {
+  text-align: center;
+}
+
+.location-card-img {
+  background: transparent linear-gradient(180deg, #026888 0%, #440370 100%) 0%
+    0% no-repeat padding-box;
+  width: 100%;
+  height: 200px;
+  border-radius: 20px;
+  margin: 0 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.location-card-img:before {
+  position: absolute;
+  content: "";
+  border: 1px solid #fff;
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+}
+
+section.location-support-sec {
+  padding: 70px 0;
+}
+
+section.location-support-sec {
+  padding: 70px 0;
+}
+
+.location-support-head h6 {
+  color: #440370;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.location-support-head h3 {
+  color: #292f3a;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.location-contact-sec {
+  background: url(./assets/images/locationpages/app-development-buffalo/contactbg.webp)
+    no-repeat top center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding: 150px 0px 130px 0px;
+}
+
+.location-contact-txt {
+  color: #fff;
+}
+
+.location-contact-txt h2 {
+  font-size: 50px;
+}
+
+.location-contact-txt p {
+  color: #fff;
+}
+
+.location-contact-txt ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.location-contact-txt ul li {
+  list-style: none;
+  padding: 10px 0px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.location-contact-txt ul li span {
+  color: #67dbfd;
+  padding: 7px 10px 10px 10px;
+  background: #ffffff1a;
+  border: 0.30000001192092896px solid #ffffff5c;
+  border-radius: 5px;
+  line-height: normal;
+}
+
+.contactForm {
+  padding: 30px;
+  background: #63318eb0;
+  box-shadow: 0px 3px 6px #00000029;
+  border: 0.30000001192092896px solid #ffffff29;
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+}
+
+.contactForm textarea.form-control {
+  height: 130px;
+  border-radius: 15px;
+}
+
+.location-faqs-sec {
+  padding: 80px 0px;
+}
+
+section.location-faqs-sec {
+  padding: 80px 0px;
+}
+
+.location-faqs-txt h6 {
+  color: #440370;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.location-faqs-txt h2 {
+  font-size: 50px;
+  color: #292f3a;
+}
+
+.location-faqs-txt p {
+  color: #161515;
+}
+
+.location-faqs-txt {
+  margin: 0px 0px 40px 0px;
+}
+
+.location-faqs .accordion .accordion-item {
+  margin: 0px 0px 20px 0px;
+  border-radius: 10px;
+  border: none;
+  background: transparent linear-gradient(180deg, #026888 0%, #440370 100%) 0%
+    0% no-repeat padding-box;
+}
+
+.location-faqs .accordion {
+  background: transparent;
+  border: none;
+}
+
+.location-faqs .accordion .accordion-item .accordion-header {
+  background: transparent;
+  color: #fff;
+  border: none !important;
+}
+
+.location-faqs
+  .accordion
+  .accordion-item
+  .accordion-header
+  button.accordion-button.collapsed {
+  background: #fff;
+  color: #161515;
+  border: none !important;
+  font-weight: 500;
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+.location-faqs
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.location-faqs
+  .accordion
+  .accordion-item:first-of-type
+  > .accordion-header
+  .accordion-button {
+  background: transparent;
+  color: #161515;
+  border: none !important;
+}
+
+.location-faqs
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button:not(.collapsed) {
+  color: #fff;
+  background-color: transparent;
+  font-weight: 500;
+}
+
+.location-faqs .accordion .accordion-item .accordion-collapse.collapse.show {
+  border: none !important;
+}
+
+.location-faqs .accordion .accordion-item .accordion-body {
+  border: none !important;
+  color: #fff;
+}
+
+.location-faqs
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button::after {
+  background-image: url(./assets/images/locationpages/app-development-buffalo/downarrow.svg);
+  transform: rotate(0deg);
+}
+
+.location-faqs
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button:not(.collapsed)::after {
+  background-image: url(./assets/images/locationpages/app-development-buffalo/uparrow.svg);
+}
+
+.location-faqs
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button:focus {
+  outline: none;
+  border: none !important;
+}
+
+section.tabs-pricing-sec {
+  padding: 70px 0px;
+}
+
+section.tabs-pricing-sec {
+  padding: 70px 0px;
+}
+
+.tabs-pricing-head h6 {
+  color: #440370;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.tabs-pricing-head h2 {
+  font-size: 50px;
+  color: #292f3a;
+  font-weight: 600;
+}
+
+.tabs-pricing-head p {
+  color: #161515;
+}
+
+.tabs-pricing-head {
+  margin: 0px 0px 30px 0px;
+}
+
+.dynamic-pricing-tabs .react-tabs .react-tabs__tab-list {
+  border: none;
+  border-radius: 50px;
+  justify-content: center;
+  max-width: max-content;
+  margin: 0 auto 40px !important;
+  gap: 20px;
+}
+
+.dynamic-pricing-tabs .react-tabs .react-tabs__tab-list .react-tabs__tab {
+  font-weight: 500;
+  padding: 8px 24px;
+  border-radius: 16px;
+  font-family: "Poppins", serif;
+  border: 1px solid #440370;
+  color: #440370;
+}
+
+.dynamic-pricing-tabs
+  .react-tabs
+  .react-tabs__tab-list
+  .react-tabs__tab--selected {
+  color: #fff;
+  background: rgb(2, 104, 136);
+  background-image: linear-gradient(
+    187deg,
+    rgba(2, 104, 136, 1) 0%,
+    rgba(68, 3, 112, 1) 100%
+  );
+}
+
+
+/* Services page Css Start */
+.services-banner-sec {
+  padding: 170px 0 60px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+  background-color: #120f10;
+}
+.services-banner-sec-bgImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 651px;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+}
+.services-banner-sec .container {
+  position: relative;
+  z-index: 2;
+}
+
+.services-banner__content {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-height: 315px;
+}
+
+.main-banner__content-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.services-banner__content .main-banner__content-btns {
+  justify-content: start;
+}
+
+.services-banner__content h1 {
+  font-size: 50px;
+}
+.services-banner__img img {
+  width: 100%;
+  height: auto;
+}
+
+.main-banner__content-imgs {
+  max-width: 450px;
+}
+
+.services-banner__content p {
+  font-size: 16px;
+}
+
+.services-about__sec {
+  margin: 60px 0;
+  overflow: hidden;
+}
+
+.services-about__content h2 {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.services-about__content p {
+  font-size: 16px;
+}
+
+.services-about__content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+
+.app-florida-herobanner {
+  padding: 60px 0px 130px 0px;
+  background: transparent;
+}
+
+.app-florida-herobanner .services-banner-sec-bgImg {
+    min-height: auto;
+}
+
+.app-florida-herobanner .services-banner__content p {
+    color: #fff;
+} 
+
+.choose-head {
+    margin: 0px 0px 50px 0px;
+    text-align: center;
+}
+
+.choose-head h6 {
+    color: #440370;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.choose-head h2 {
+    font-size: 50px;
+    font-weight: 600;
+    color: #292F3A;
+}
+
+.choose-head p {
+    color: #161515;
+}
+
+.location-hero-banner {
+    background: #ffffff;
+    padding: 190px 0px 190px 0px;
+}
+
+.location-hero-banner .services-banner__content p {
+    color: #fff;
+}
+
+.locatio-banner-bulletpoints {
+    padding: 0px 0px 0px 20px;
+}
+
+.service-form {
+  background: #ffffff17;
+}
+
+/************* Location Pages CSS End *************/
+
+
+
+
+
 @media (max-width: 1399px) {
   .clipedShaped-sec:before,
   .clipedShaped-sec:after {
@@ -1658,6 +2141,26 @@ textarea.form-control {
   }
 }
 
+@media (max-width: 786px) {
+  .location-contact-txt {
+    margin: 0px 0px 40px 0px;
+}
+
+.location-support-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.services-banner__content {
+    margin: 0px 0px 50px 0px;
+}
+
+
+.abouttxt-data {
+    padding: 40px 0px 0px 0px;
+}
+
+}
+
 @media (max-width: 767px) {
   .successfull-projects-title {
     font-size: 33px !important;
@@ -1773,6 +2276,73 @@ textarea.form-control {
   .digital-product h3 {
     font-size: 31px;
   }
+
+
+.services-banner__content {
+    margin: 0px 0px 40px 0px;
+}
+
+.choose-head h2 {
+    font-size: 40px;
+}
+
+.abouttxt-data {
+    margin: 40px 0px 0px 0px;
+}
+
+.WordPressPerformanceSection .abouttxt-data .web-whychoose-list {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.pixel-perfect-head h2 {
+    font-size: 40px;
+}
+
+.tabs-pricing-head h2 {
+    font-size: 40px;
+}
+
+.services-banner__content h1 {
+    font-size: 40px;
+}
+
+.app-florida-herobanner {
+    padding: 60px 0px 80px 0px;
+}
+
+.location-support-head h3 {
+    font-size: 40px;
+}
+
+.location-hero-banner {
+    padding: 130px 0px 190px 0px;
+}
+
+.location-support-grid {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.location-contact-sec {
+    padding: 70px 0px 70px 0px;
+}
+
+.location-faqs-txt h2 {
+    font-size: 40px;
+}
+
+.location-contact-txt h2 {
+    font-size: 40px;
+}
+
+.location-contact-txt {
+    margin: 0px 0px 40px 0px;
+}
+
+.location-hero-banner .services-banner-sec-bgImg {
+    object-position: left;
+}
+
+
 }
 
 @media (max-width: 430px) {
