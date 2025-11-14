@@ -49,20 +49,31 @@ const PortfolioSec = () => {
     dots: false,
     arrows: false,
     infinite: true,
-    centerMode: false,
+    centerMode: true,
     centerPadding: "10px",
     speed: 8000,
     autoplaySpeed: 0,
     cssEase: "linear",
-    slidesToShow: 4,
+    slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
     pauseOnHover: false,
+    slidesToShow: 2,
+
     responsive: [
+      {
+        settings: {
+          slidesToShow: 2,
+          autoplay: true,
+          infinite: true,
+        },
+      },
       {
         breakpoint: 1200,
         settings: {
           slidesToShow: 2,
+          autoplay: true,
+          infinite: true,
         },
       },
       {
@@ -70,6 +81,8 @@ const PortfolioSec = () => {
         settings: {
           slidesToShow: 1,
           centerMode: false,
+          autoplay: true,
+          infinite: true,
         },
       },
     ],
