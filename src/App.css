@@ -2730,6 +2730,17 @@ section.ecommerce-portfolio-sec .pixel-perfect-head p {
     bottom: 60%;
     left: 30%;
   }
+
+  .ecommerce-head h2 {
+    font-size: 40px;
+}
+
+.ecommerce-service-box {
+    text-align: center;
+}
+
+
+
 }
 
 @media (max-width: 430px) {
@@ -2774,4 +2785,12 @@ section.ecommerce-portfolio-sec .pixel-perfect-head p {
     font-size: 28px;
     /* line-height: 1; */
   }
+}
+
+@media (max-width: 375px) {
+
+  .eccomerce-about-sec .about-abslt-box {
+    display: none !important;
+}
+
 }
