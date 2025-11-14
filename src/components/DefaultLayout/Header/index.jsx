@@ -87,6 +87,7 @@ const Header = () => {
                 >
                   Logo Design
                 </NavDropdown.Item>
+                <div className="nav-subdropdown-wrapper">
                 <NavDropdown.Item
                   as={Link}
                   to={"/cms-development"}
@@ -94,7 +95,32 @@ const Header = () => {
                   onClick={(e) => e.stopPropagation()}
                 >
                   CMS Development
+                  <span className="submenu-icon d-none d-lg-inline">
+                      <FaCaretRight />
+                    </span>
+                    <span className="submenu-icon d-inline d-lg-none">
+                      <FaCaretDown />
+                    </span>
+                     <div className="nav-subdropdown">
+                    <NavDropdown.Item
+                      as={Link}
+                      to={"/wordpress-development"}
+                      target="_blank"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      Wordpress Development
+                    </NavDropdown.Item>
+                    <NavDropdown.Item
+                      as={Link}
+                      to={"/ecommerce-development"}
+                      target="_blank"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      Ecommerce Development
+                    </NavDropdown.Item>
+                  </div>
                 </NavDropdown.Item>
+                </div>
                 <div className="nav-subdropdown-wrapper">
                   <NavDropdown.Item
                     as={Link}

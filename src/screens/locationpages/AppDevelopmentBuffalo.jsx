@@ -117,7 +117,7 @@ const AppDevelopmentBuffalo = () => {
       <DefaultLayout>
         
          <ReactHelmet
-          title="App Development Buffalo, NY | NY Web Experts - Get a Free Consultation Today"
+          title="App Development Buffalo, NY"
           description="The leading design and development company, NY Web Experts offers App Development in Buffalo, NY, creating stunning iOS and Android apps that engage users and drive results."
           keywords="mobile app development company Buffalo NY, custom mobile app development Buffalo NY, mobile app development agency Buffalo NY, mobile app development cost Buffalo NY, custom mobile app development services Buffalo NY, iOS app development Buffalo NY, Android app development Buffalo NY"
           url="https://nywebexperts.com/app-development-buffalo"
@@ -161,15 +161,15 @@ const AppDevelopmentBuffalo = () => {
           onImageClick={handleImageClick}
         />
 
-        <TabsPricing
+        {/* <TabsPricing
           minihead="Pricing Plans"
           mainhead="Packed with Power and Performance in Pricing That Makes Sense!"
           secPara="Think of it this way: a brilliant app is an investment that keeps giving. A poor one? It drains resources, frustrates users, and kills conversions. At NY Web Experts, our mobile app development cost in Buffalo, NY, is shaped around value, not vanity. "
           tabsData={dynamictabsData}
-        />
+        /> */}
 
         <ServicesBanner
-          secClass="app-florida-herobanner"
+          secClass="app-florida-herobanner reimage-banner"
           bgImage={aboutbannerbg}
           title="Engagement isn’t Luck, It’s Our Code!"
           description="Did you know that businesses with well-designed mobile apps see up to a 62% increase in customer engagement within their first six months? That’s not luck, that’s a strategy we master like it’s at the tip of our fingers! "

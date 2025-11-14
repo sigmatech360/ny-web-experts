@@ -26,6 +26,7 @@ import PricePlanCard from "../../components/PricePlanCard";
 import { TbChecks } from "react-icons/tb";
 import ContentWithIcon from "../../components/ContentWithIcon";
 import ReactHelmet from "../../components/ReactHelmet";
+import OurBenenfits from "../../components/OurBenenfits";
 
 const Pricing = () => {
   const [key, setKey] = useState("logo-design");
@@ -184,7 +185,8 @@ const Pricing = () => {
 
       <ContactUsSec />
 
-      <section className="our-benefits our-benefits-pricing">
+
+ <section className="our-benefits our-benefits-pricing">
         <div className="container">
           <div className="row">
             <div className="col-lg-6 mb-lg-0 mb-5">

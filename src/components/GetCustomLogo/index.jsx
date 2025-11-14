@@ -20,8 +20,7 @@ const GetCustomLogo = (props) => {
               data-aos="fade-right"
               data-aos-duration="2000"
             >
-              It’s Time To Boost Your Brand Online Across New York! Schedule a
-              Consultation.
+               {props.maintxt || "It’s Time To Boost Your Brand Online Across New York! Schedule a Consultation."}
             </h4>
           </div>
           <div className="col-lg-8">

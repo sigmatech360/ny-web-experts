@@ -744,7 +744,7 @@ p {
 }
 
 .contact-us-sec {
-  padding: 80px 0;
+  padding: 120px 0;
   overflow: hidden;
 }
 
@@ -1818,7 +1818,6 @@ section.tabs-pricing-sec {
   );
 }
 
-
 /* Services page Css Start */
 .services-banner-sec {
   padding: 170px 0 60px;
@@ -1853,11 +1852,11 @@ section.tabs-pricing-sec {
 }
 
 .main-banner__content-btns {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 .services-banner__content .main-banner__content-btns {
@@ -1901,60 +1900,364 @@ section.tabs-pricing-sec {
   gap: 16px;
 }
 
-
 .app-florida-herobanner {
   padding: 60px 0px 130px 0px;
   background: transparent;
 }
 
 .app-florida-herobanner .services-banner-sec-bgImg {
-    min-height: auto;
+  min-height: auto;
 }
 
 .app-florida-herobanner .services-banner__content p {
-    color: #fff;
-} 
+  color: #fff;
+}
 
 .choose-head {
-    margin: 0px 0px 50px 0px;
-    text-align: center;
+  margin: 0px 0px 50px 0px;
+  text-align: center;
 }
 
 .choose-head h6 {
-    color: #440370;
-    font-weight: 600;
-    font-size: 18px;
+  color: #440370;
+  font-weight: 600;
+  font-size: 18px;
 }
 
 .choose-head h2 {
-    font-size: 50px;
-    font-weight: 600;
-    color: #292F3A;
+  font-size: 50px;
+  font-weight: 600;
+  color: #292f3a;
 }
 
 .choose-head p {
-    color: #161515;
+  color: #161515;
 }
 
 .location-hero-banner {
-    background: #ffffff;
-    padding: 190px 0px 190px 0px;
+  background: #ffffff;
+  padding: 190px 0px 190px 0px;
 }
 
 .location-hero-banner .services-banner__content p {
-    color: #fff;
+  color: #fff;
 }
 
 .locatio-banner-bulletpoints {
-    padding: 0px 0px 0px 20px;
+  padding: 0px 0px 0px 20px;
 }
 
 .service-form {
   background: #ffffff17;
 }
 
+.reimage-banner .contactForm {
+  display: none;
+}
+
+.wordpress-banner .contactForm {
+  display: none;
+}
+
 /************* Location Pages CSS End *************/
 
+/************* Wordpress Develoment Page CSS Start *************/
+
+.wordpress-banner {
+  padding: 240px 0px 190px 0px;
+}
+
+.shorttop-head {
+  color: #440370;
+  font-size: 18px;
+}
+
+.web-creation-content .another-benefit-para {
+  margin: 20px 0px 30px 0px;
+}
+
+section.our-process-sec {
+  padding: 50px 0px 50px 0px;
+}
+
+.our-process-head {
+  text-align: center;
+  margin: 0px 0px 50px 0px;
+}
+
+.our-process-head p {
+  color: #161515;
+}
+
+.mainhead {
+  font-size: 50px;
+  font-weight: 600;
+  color: #292f3a;
+}
+
+.process-box h3 {
+  font-size: 40px;
+  color: #292f3a;
+  text-decoration: underline;
+  font-weight: bold;
+  margin: 0px 0px 30px 0px;
+}
+
+.process-box h5 {
+  color: #440370;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0px 0px 10px 0px;
+}
+
+.process-box p {
+  color: #161515;
+  font-size: 16px;
+}
+
+.our-services-sec {
+  background: url(./assets/images/services/wordpressdevelopment/servicebg.webp)
+    no-repeat top center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding: 100px 0px;
+}
+
+.our-service-head {
+  color: #fff;
+  text-align: center;
+  margin: 0px 0px 50px 0px;
+}
+
+.our-service-head h2 {
+  font-size: 50px;
+}
+
+.our-service-head p {
+  color: #fff;
+}
+
+.serivce-box-small {
+  border: 1px solid #ffffff;
+  padding: 30px 0px 0px 30px;
+  border-radius: 13px;
+  margin: 0px 0px 40px 0px;
+}
+
+.service-small-txt h6 {
+  color: #fff;
+}
+
+.service-small-txt p {
+  color: #fff;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.service-small-img img {
+  width: 90%;
+}
+
+.service-small-img {
+  text-align: end;
+}
+
+.service-large-box {
+  border: 1px solid #ffffff;
+  padding: 30px 0px 0px 30px;
+  border-radius: 13px;
+  display: flex;
+  align-items: flex-start;
+  margin: 0px 0px 40px 0px;
+}
+
+.service-large-txt h6 {
+  color: #fff;
+  font-size: 20px;
+}
+
+.service-large-txt p {
+  color: #fff;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.service-large-img img {
+  width: 90%;
+}
+
+.service-large-txt {
+  width: 50%;
+}
+
+.service-large-img {
+  width: 50%;
+  padding: 38px 0px 20px 0px;
+}
+
+.portfolio-card {
+  width: 500px !important ;
+  height: 400px;
+}
+
+.portfolio-img img {
+  width: 100%;
+}
+
+.portfolio-cards .slick-list .slick-track {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.portfolio-cards .slick-list .slick-track .slick-slide {
+  width: auto !important;
+}
+
+.service-portfolio-sec {
+}
+
+.portfolio-head {
+  text-align: center;
+  margin: 0px 0px 50px 0px;
+}
+
+.portfolio-head p {
+  color: #161515;
+}
+
+/************* Wordpress Develoment Page CSS End *************/
+
+/************* Ecommerce Develoment Page CSS Start *************/
+
+.ecommerce-sevices-sec {
+  background: url(./assets/images/services/ecommercedevelopment/servicebg.webp)
+    no-repeat top center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding: 80px 0px 80px 0px;
+}
+
+.ecommerce-head {
+  text-align: center;
+  margin: 0px 0px 50px 0px;
+  color: #fff;
+}
+
+.ecommerce-head h2 {
+  font-size: 50px;
+}
+
+.ecommerce-head p {
+  color: #ffffff;
+}
+
+.ecommerce-service-box {
+  padding: 30px;
+  color: #ffff;
+  background: #440370 0% 0% no-repeat padding-box;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+}
+
+.ecommerce-service-box img {
+  width: 70px;
+}
+
+.ecommerce-service-box h5 {
+  font-weight: 500;
+  margin: 10px 0px 20px 0px;
+}
+
+.ecommerce-service-box p {
+  color: #fff;
+}
+
+.ecommerce-service-btn {
+  text-align: center;
+  margin: 50px 0px 40px 0px;
+}
+
+.ecommerce-portfolio-sec {
+  padding: 70px 0px;
+}
+
+.ecommerce-portfolio-sec .news-card-img img {
+  height: auto;
+}
+
+section.ecommerce-portfolio-sec .pixel-perfect-head h6 {
+  color: #440370;
+  font-size: 18px;
+}
+
+section.ecommerce-portfolio-sec .pixel-perfect-head h2 {
+  color: #292f3a;
+  font-weight: 600;
+}
+
+section.ecommerce-portfolio-sec .pixel-perfect-head p {
+  color: #161515;
+}
+
+
+
+.ecommerce-portfolio-sec .pixel-button-div {
+    display: block !important;
+    text-align: center;
+    margin: 30px 0px 0px 0px;
+}
+
+.ecommerce-portfolio-sec  .packages-number {
+  display: none !important;
+}
+
+.eccomerce-about-sec {
+  position: relative;
+}
+
+.eccomerce-about-sec .about-abslt-box {
+  display: block !important;
+    width: 220px;
+    background: transparent linear-gradient(145deg, #551382 0%, #290343 100%) 0% 0% no-repeat padding-box;
+    color: #fff;
+    padding: 20px 30px 10px 30px;
+    border: 3px solid #FFFFFF;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 35px;
+    left: 31%;
+}
+
+.about-abslt-box h3 {
+    font-size: 40px;
+}
+
+.eccomerce-about-sec .about-abslt-box p {
+    color: #fff;
+}
+
+.about-abslt-box h3 {
+    font-size: 40px;
+}
+
+.fantasy-bullet-points li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 0px;
+}
+
+.fantasy-bullet-points {
+  padding: 0px;
+}
+
+
+
+/************* Ecommerce Develoment Page CSS End *************/
 
 
 
@@ -2174,21 +2477,23 @@ section.tabs-pricing-sec {
 @media (max-width: 786px) {
   .location-contact-txt {
     margin: 0px 0px 40px 0px;
-}
+  }
 
-.location-support-grid {
+  .location-support-grid {
     grid-template-columns: repeat(2, 1fr);
-}
+  }
 
-.services-banner__content {
+  .services-banner__content {
     margin: 0px 0px 50px 0px;
-}
+  }
 
-
-.abouttxt-data {
+  .abouttxt-data {
     padding: 40px 0px 0px 0px;
-}
+  }
 
+  .app-florida-herobanner .services-banner-sec-bgImg {
+    object-position: left;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2307,72 +2612,69 @@ section.tabs-pricing-sec {
     font-size: 31px;
   }
 
-
-.services-banner__content {
+  .services-banner__content {
     margin: 0px 0px 40px 0px;
-}
+  }
 
-.choose-head h2 {
+  .choose-head h2 {
     font-size: 40px;
-}
+  }
 
-.abouttxt-data {
+  .abouttxt-data {
     margin: 40px 0px 0px 0px;
-}
+  }
 
-.WordPressPerformanceSection .abouttxt-data .web-whychoose-list {
+  .WordPressPerformanceSection .abouttxt-data .web-whychoose-list {
     grid-template-columns: repeat(1, 1fr);
-}
+  }
 
-.pixel-perfect-head h2 {
+  .pixel-perfect-head h2 {
     font-size: 40px;
-}
+  }
 
-.tabs-pricing-head h2 {
+  .tabs-pricing-head h2 {
     font-size: 40px;
-}
+  }
 
-.services-banner__content h1 {
+  .services-banner__content h1 {
     font-size: 40px;
-}
+  }
 
-.app-florida-herobanner {
+  .app-florida-herobanner {
     padding: 60px 0px 80px 0px;
-}
+  }
 
-.location-support-head h3 {
+  .location-support-head h3 {
     font-size: 40px;
-}
+  }
 
-.location-hero-banner {
+  .location-hero-banner {
     padding: 130px 0px 190px 0px;
-}
+  }
 
-.location-support-grid {
+  .location-support-grid {
     grid-template-columns: repeat(1, 1fr);
-}
+  }
 
-.location-contact-sec {
+  .location-contact-sec {
     padding: 70px 0px 70px 0px;
-}
+  }
 
-.location-faqs-txt h2 {
+  .location-faqs-txt h2 {
     font-size: 40px;
-}
+  }
 
-.location-contact-txt h2 {
+  .location-contact-txt h2 {
     font-size: 40px;
-}
+  }
 
-.location-contact-txt {
+  .location-contact-txt {
     margin: 0px 0px 40px 0px;
-}
+  }
 
-.location-hero-banner .services-banner-sec-bgImg {
+  .location-hero-banner .services-banner-sec-bgImg {
     object-position: left;
-}
-
-
+  }
 }
 
 @media (max-width: 430px) {

@@ -107,7 +107,7 @@ const AppDevelopmentBuffalo = () => {
     <>
       <DefaultLayout>
         <ReactHelmet
-          title=" WordPress Development Buffalo, NY | NY Web Experts - Get a Free Consultation Today"
+          title=" WordPress Development Buffalo, NY"
           description="Build, scale, and grow with expert WordPress Development in Buffalo, NY; custom, high-performing websites by NY Web Experts, optimized for AEO, GEO, and SEO for powerful growth and increased web ranking"
           keywords="WordPress development Buffalo ny, custom WordPress development Buffalo ny, WordPress development services Buffalo ny, top wordpress development agencies Buffalo ny, wordpress website development in Buffalo ny, wordpress development company Buffalo , wordpress development services Buffalo ny"
           url="https://nywebexperts.com/wordpress-development-buffalo"
@@ -159,16 +159,16 @@ const AppDevelopmentBuffalo = () => {
           projectsData={webDesignPortfolioData}
           onImageClick={handleImageClick}
         />
-
+{/* 
         <TabsPricing
           minihead="Pricing Plans"
           mainhead="Smart Pricing for Real Results"
           secPara="We believe quality digital solutions should be accessible to everyone. Thus, our transparent pricing plan ensures startups, enterprises, and every other business get the best WordPress website development service in Buffalo, NY"
           tabsData={dynamictabsData}
-        />
+        /> */}
 
         <ServicesBanner
-          secClass="app-florida-herobanner"
+          secClass="app-florida-herobanner reimage-banner"
           bgImage={aboutbannerbg}
           title="Reimagine What WordPress Can Do for You"
           description="Most websites exist; Yours should perform. At NY Web Experts, our top WordPress development team in Buffalo, NY, transforms websites into business engines; tools that generate leads, convert users, and evolve with market trends."

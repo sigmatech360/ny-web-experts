@@ -6,7 +6,7 @@ import Loader from "../Loader";
 
 const wpBaseUrl = import.meta.env.VITE_WP_BASE_URL;
 
-const BlogSec = ({ secTitle, itemsPerPage = 6, pagination }) => {
+const BlogSec = ({ secTitle, blogminihead, itemsPerPage = 6, pagination }) => {
   const [loading, setLoading] = useState(true);
   const [blogs, setBlogs] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
@@ -43,7 +43,7 @@ const BlogSec = ({ secTitle, itemsPerPage = 6, pagination }) => {
                 data-aos="fade-up"
                 data-aos-duration="2000"
               >
-                From The Blog
+                {blogminihead || "From The Blog"}
               </p>
               <h3 data-aos="fade-up" data-aos-duration="3000">
                 {secTitle || `Latest News & Articles from the Blog.`}

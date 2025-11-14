@@ -191,6 +191,10 @@ const WordPressPerformanceSection = (props) => {
                   data-aos-duration="1000"
                   data-aos-offset="50"
                 />
+                <div className="about-abslt-box d-none">
+                  <h3>3500+</h3>
+                  <p>Successful Projects Done</p>
+                </div>
                 <video
                   src={props.videoSrc}
                   autoPlay

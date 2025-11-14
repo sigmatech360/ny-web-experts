@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 import { FaPhoneAlt } from "react-icons/fa";
 import { LuMapPin } from "react-icons/lu";
 import { toast } from "react-toastify";
@@ -6,12 +7,15 @@ import { toast } from "react-toastify";
 const LocationContact = (props) => {
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
-    username: "",
+    first_name: "",
+    last_name: "",
+    company: "",
+    website: "",
     email: "",
     phone: "",
-    subject: "",
     service: "",
-    data_message: "",
+    about_cwc: "",
+    business: "",
   });
 
   const apiUrl = import.meta.env.VITE_API_BASE_URL;
@@ -22,43 +26,34 @@ const LocationContact = (props) => {
   };
 
   const handleSubmit = async (e) => {
-    // e.preventDefault();
     e.preventDefault();
     setLoading(true);
 
     try {
-      const response = await fetch(`${apiUrl}/submit-query`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
+      const response = await axios.post(`${apiUrl}/let-connect`, formData, {
+        headers: { "Content-Type": "application/json" },
       });
 
-      const result = await response.json();
-      console.log(result);
-      // toast.success("Form Submitted Successfully");
+      const result = response.data;
 
       if (result.status) {
         toast.success(result.message);
         setFormData({
-          username: "",
+          first_name: "",
+          last_name: "",
+          company: "",
+          website: "",
           email: "",
           phone: "",
-          subject: "",
           service: "",
-          data_message: "",
+          about_cwc: "",
+          business: "",
         });
       } else {
-        const messages = result.message;
-        Object.keys(messages).forEach((field) => {
-          messages[field].forEach((msg) => {
-            toast.error(msg);
-          });
-        });
+        toast.error("Something went wrong. Please try again.");
       }
     } catch (error) {
-      console.log(`Error submitting form:`, error);
+      console.error("Error submitting form:", error);
       toast.error("Submission failed. Please try again.");
     } finally {
       setLoading(false);
@@ -69,6 +64,7 @@ const LocationContact = (props) => {
     <section className="location-contact-sec">
       <div className="container">
         <div className="row">
+          {/* Left Info Section */}
           <div className="col-lg-6">
             <div className="location-contact-txt">
               <h6>{props.minihead}</h6>
@@ -102,53 +98,68 @@ const LocationContact = (props) => {
                   <span>
                     <LuMapPin />
                   </span>{" "}
-                 353 Lexington Ave, New York, NY 10016, United States
+                  353 Lexington Ave, New York, NY 10016, United States
                 </li>
               </ul>
             </div>
           </div>
+
+          {/* Right Form Section */}
           <div className="col-lg-6">
             <div className="contactForm">
               <form onSubmit={handleSubmit}>
                 <div className="row">
+                  {/* First Name */}
                   <div className="col-lg-6 mb-3">
                     <input
                       type="text"
                       placeholder="First Name"
                       className="form-control"
-                      name="username"
-                      value={formData.username}
+                      name="first_name"
+                      value={formData.first_name}
                       onChange={handleChange}
                       required
                     />
                   </div>
+
+                  {/* Last Name */}
                   <div className="col-lg-6 mb-3">
                     <input
                       type="text"
                       placeholder="Last Name"
                       className="form-control"
-                      name="username"
+                      name="last_name"
+                      value={formData.last_name}
+                      onChange={handleChange}
                       required
                     />
                   </div>
-                   <div className="col-lg-6 mb-3">
+
+                  {/* Company */}
+                  <div className="col-lg-6 mb-3">
                     <input
                       type="text"
-                      placeholder="Company Organization"
+                      placeholder="Company / Organization"
                       className="form-control"
-                      name="username"
-                      required
+                      name="company"
+                      value={formData.company}
+                      onChange={handleChange}
                     />
                   </div>
-                   <div className="col-lg-6 mb-3">
+
+                  {/* Website */}
+                  <div className="col-lg-6 mb-3">
                     <input
                       type="text"
                       placeholder="Website"
                       className="form-control"
-                      name="username"
-                      required
+                      name="website"
+                      value={formData.website}
+                      onChange={handleChange}
                     />
                   </div>
+
+                  {/* Email */}
                   <div className="col-lg-6 mb-3">
                     <input
                       type="email"
@@ -160,6 +171,8 @@ const LocationContact = (props) => {
                       required
                     />
                   </div>
+
+                  {/* Phone */}
                   <div className="col-lg-6 mb-3">
                     <input
                       type="text"
@@ -168,72 +181,60 @@ const LocationContact = (props) => {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      required
                     />
                   </div>
+
+                  {/* Services */}
                   <div className="col-lg-12 mb-3">
-                    <label htmlFor="serviceSelect" className="visually-hidden">
-                      Select Services
-                    </label>
                     <select
-                      id="serviceSelect"
                       className="form-select form-control"
                       name="service"
                       value={formData.service}
                       onChange={handleChange}
                       required
                     >
-                      <option value="" disabled>
-                        Services
-                      </option>
-                      <option value="web-design-development">
-                        Web Design and Development
-                      </option>
-                      <option value="logo-design">Logo Design</option>
-                      <option value="cms-development">CMS Development</option>
-                      <option value="digital-marketing">
-                        Digital Marketing
-                      </option>
-                      <option value="social-media-marketing">
-                        Social Media Marketing
-                      </option>
-                      <option value="seo">SEO</option>
-                      <option value="custom-development">
-                        Custom Development
-                      </option>
-                      <option value="mobile-app-development">
-                        Mobile App Development
-                      </option>
+                      <option value="">Select Services</option>
+                      <option value="logo design">Logo Design</option>
+                      <option value="website design">Web Design</option>
+                      <option value="cms development">CMS Development</option>
+                      <option value="digital marketing">Digital Marketing</option>
+                      <option value="custom web development">Custom Web Development</option>
+                      <option value="app development">App Development</option>
                     </select>
                   </div>
-                    <div className="col-lg-12 mb-3">
+
+                  {/* About CWC */}
+                  <div className="col-lg-12 mb-3">
                     <input
                       type="text"
-                      placeholder="How Did You Hear About TWS?"
+                      placeholder="How Did You Hear About NY Web Experts?"
                       className="form-control"
-                      name="subject"
-                      required
+                      name="about_cwc"
+                      value={formData.about_cwc}
+                      onChange={handleChange}
                     />
                   </div>
-                  <div className="col-lg-12">
+
+                  {/* Business */}
+                  <div className="col-lg-12 mb-3">
                     <textarea
                       className="form-control"
-                      placeholder="Tell Us About Your Buisness"
-                      name="data_message"
-                      value={formData.data_message}
+                      placeholder="Tell Us About Your Business"
+                      rows={3}
+                      name="business"
+                      value={formData.business}
                       onChange={handleChange}
-                      required
                     ></textarea>
                   </div>
+
+                  {/* Submit Button */}
                   <div className="col-md-12 mt-4">
                     <button
                       type="submit"
-                      className={`ny-btn ${
-                        loading ? "btn-loading" : "btn-loaded"
-                      }`}
+                      className={`ny-btn ${loading ? "btn-loading" : "btn-loaded"}`}
                       disabled={loading}
                     >
-                     {props.btntxt || "send a message"}
+                      {loading ? "Submitting..." : props.btntxt || "Send Message"}
                     </button>
                   </div>
                 </div>

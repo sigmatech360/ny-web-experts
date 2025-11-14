@@ -3,7 +3,7 @@ import { toast } from "react-toastify";
 
 import { Link } from "react-router-dom";
 import logo from "../../../assets/images/logo.webp";
-import clutch from "../../../assets/images/footer/clutch-icon.png";
+import clutch from "../../../assets/images/footer/clutch-icon.webp";
 import trustPilot from "../../../assets/images/footer/trust-pilot.webp";
 import ObfuscatedEmail from "../../../components/ObfuscatedEmail";
 import { CiFacebook, CiLinkedin } from "react-icons/ci";
@@ -203,7 +203,7 @@ const Footer = () => {
                     title="Clutch"
                     aria-label="Clutch"
                   >
-                    <img src={clutch} alt="" />
+                    <img src={clutch} alt="clutch" />
                   </a>
                   <a
                     className="header_social-icon"
@@ -220,7 +220,7 @@ const Footer = () => {
                 </div>
                 <div className="header_social-icons mt-4">
                   <a href="https://www.trustpilot.com/review/nywebexperts.com " className="header_social-icon trustPilot">
-                    <img src={trustPilot} alt="" />
+                    <img src={trustPilot} alt="trust pilot" />
                   </a>
                 </div>
               </div>

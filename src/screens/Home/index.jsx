@@ -42,6 +42,7 @@ import blogimg2 from "../../assets/images/blog-img-2.webp";
 import blogimg3 from "../../assets/images/blog-img-3.webp";
 import FormModal from "../../components/FormModal";
 import ReactHelmet from "../../components/ReactHelmet";
+import OurBenenfits from "../../components/OurBenenfits";
 
 const blogCardsData = [
   {
@@ -124,8 +125,8 @@ const Home = () => {
                     development with critically planned digital marketing
                     services in New York to solve real business problems. From
                     digital-first designs to performance marketing, we’re wired
-                    to solve complex problems with clarity and creativity. At
-                    NY Web Experts, we go above and beyond the average
+                    to solve complex problems with clarity and creativity. At NY
+                    Web Experts, we go above and beyond the average
                     expectations. Our goal? Consistent results.
                   </p>
                   <div
@@ -238,83 +239,21 @@ const Home = () => {
           ]}
         />
 
-        <section className="our-benefits clipedShaped-sec bg-gradiant">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-6 mb-lg-0 mb-5">
-                <div className="web-creation-content">
-                  <p
-                    className="sec-tag mb-4"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                  >
-                    Our Specialty
-                  </p>
-                  <h3 data-aos="fade-up" data-aos-duration="2000">
-                    Specialized to Stand Out Online
-                  </h3>
-                  <p
-                    className="poppins pe-xl-5 me-xl-5 pe-0   me-0"
-                    data-aos="fade-up"
-                    data-aos-duration="3000"
-                  >
-                    Our strategies aren’t just another person in the crowd; we
+        <OurBenenfits
+          minihead="Our Specialty"
+          mainhead="Specialized to Stand Out Online "
+          mainpara="Our strategies aren’t just another person in the crowd; we
                     make custom marketing solutions that are built to connect.
                     At NY Web Experts, every project is built with
                     strategic depth, creative precision, and performance in
                     mind. From trend-driven design to razor-sharp messaging, we
                     personalize everything for your brand, your audience, and
-                    what actually works today.
-                  </p>
-                  <div
-                    className="d-flex flex-wrap gap-3"
-                    data-aos="fade-up"
-                    data-aos-duration="3000"
-                  >
-                    <div className={`content-with-icon-item flex-row`}>
-                      <div className="content-with-icon-icon">
-                        <TbChecks />
-                      </div>
-                      <div className="content-with-icon-content">
-                        <h4>Trusted By 300+ Brands</h4>
-                        {/* <p></p> */}
-                      </div>
-                    </div>
-                    <div className={`content-with-icon-item flex-row`}>
-                      <div className="content-with-icon-icon">
-                        <TbChecks />
-                      </div>
-                      <div className="content-with-icon-content">
-                        <h4>Critically Researched Strategies</h4>
-                        {/* <p></p> */}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-6">
-                <div className="our_benefits-icons">
-                  <div className="row">
-                    {ourBenefitsContentIconData.map((item, index) => (
-                      <div
-                        className="col-md-6 mb-4"
-                        data-aos="fade-up"
-                        data-aos-duration="3000"
-                        key={index}
-                      >
-                        <ContentWithIcon
-                          icon={item.icon}
-                          name={item.name}
-                          description={item.description}
-                        />
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+                    what actually works today."
+          leftItems={[
+            { name: "Trusted By 300+ Brands" },
+            { name: "Critically Researched Strategies" },
+          ]}
+        />
 
         <TestimonialSec secTitle="When Our Clients Win, We Win!" />
 

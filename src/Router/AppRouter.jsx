@@ -27,6 +27,8 @@ import ScrollToTop from "../components/ScrollToTop";
 import NotFound from "../screens/NotFound";
 import AppDevelopmentBuffalo from "../screens/locationpages/AppDevelopmentBuffalo";
 import WordpressDevelopmentBuffalo from "../screens/locationpages/WordpressDevelopmentBuffalo";
+import WordPressDevelopment from "../screens/Services/WordPressDevelopment";
+import EcommerceDevelopment from "../screens/Services/EcommerceDevelopment";
 
 const AppRouter = () => {
   return (
@@ -43,7 +45,15 @@ const AppRouter = () => {
         <Route path="/digital-marketing" element={<DigitalMarketing />} />
         <Route path="/social-media-marketing" element={<SMM />} />
         <Route path="/search-engine-optimization" element={<SEO />} />
+
+
+          {/* CMS Development & Inner Pages */}
         <Route path="/custom-web-development" element={<CustomWebDevelopment />} />
+        <Route path="/wordpress-development" element={<WordPressDevelopment />} />
+        <Route path="/ecommerce-development" element={<EcommerceDevelopment />} />
+
+
+
         <Route path="/logo-design" element={<LogoDesign />} />
         <Route path="/mobile-app-development" element={<MobileAppDevelopment />} />
         {/* Services Pages */}
