@@ -29,6 +29,7 @@ import serivce6 from "../../assets/images/services/ecommercedevelopment/eccommer
 import LocationSupport from "../../components/LocationSupport";
 import PixelPerfectSec from "../../components/PixelPerfectSec";
 import EcommerceServices from "../../components/EcommerceServices";
+import ReactHelmet from "../../components/ReactHelmet";
 
 const EcommerceDevelopment = () => {
   const webDesignPortfolioData = [
@@ -108,7 +109,18 @@ const EcommerceDevelopment = () => {
 
   return (
     <>
+
+       <ReactHelmet
+          title="E-Commerce Website Development Company in New York"
+          description="Build your online store with New York Web Experts a trusted e-commerce website development company in New York delivering conversion-focused solutions."
+          keywords="e-commerce website development services new york, e commerce website development new york, e-commerce website development company new york, e commerce website developer new york, e-commerce website development agency new york"
+          url="https://nywebexperts.com/ecommerce-development"
+        />
+
+
+
       <DefaultLayout>
+
         <ServicesBanner
           secClass="location-hero-banner wordpress-banner"
           formClass="service-form"
