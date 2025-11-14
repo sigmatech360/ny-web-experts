@@ -139,6 +139,7 @@ const WordPressDevelopment = () => {
           mainpara="Yes, everyone can build a website; everyone can publish it, too. But what we do is create the difference that puts your business over your competitors; the kind of difference that gets you noticed, remembered, and ranked."
           para2="The loading of your webpage before you can even blink? That’s what we do. A 60% increase in conversions driven by breathtaking design choices? That’s the difference we make. We don’t build websites; we build performance machines. We don’t follow design trends; we create visual systems that convert."
           para3="At our WordPress website development company in New York, your WordPress site isn’t just built to exist; it’s built to win."
+          btntxt="Let’s Go Custom WordPress"
           leftItems={[
             { name: "Intuitive Frontend" },
             { name: "Powerful Backend" },

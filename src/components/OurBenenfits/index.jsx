@@ -30,7 +30,7 @@ const OurBenenfits = ({ minihead, mainhead, mainpara, para2, para3, btntxt,  lef
               </p>
               {para2 && <p>{para2}</p>}
               {para3 && <p>{para3}</p>}
-              {btntxt && <Link to="/contact">{btntxt}</Link>}
+              
               <div
                 className="d-flex flex-wrap gap-3"
                 data-aos="fade-up"
@@ -48,6 +48,7 @@ const OurBenenfits = ({ minihead, mainhead, mainpara, para2, para3, btntxt,  lef
                   </div>
                 ))}
               </div>
+              {btntxt && <Link to="/contact" className="ny-btn">{btntxt}</Link>}
             </div>
           </div>
           <div className="col-lg-6">
