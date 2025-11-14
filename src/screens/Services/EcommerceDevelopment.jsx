@@ -188,12 +188,12 @@ const EcommerceDevelopment = () => {
           btnboxClass="d-none"
         />
 
-        <TabsPricing
+        {/* <TabsPricing
           minihead="Pricing Plan"
           mainhead="E-Commerce Web Development Packages"
           secPara="Choose from flexible packages designed for startups, growing brands, and enterprise businesses. Every plan includes full-stack e-commerce development, testing, and post-launch support."
           tabsData={dynamictabsData}
-        />
+        /> */}
 
         <ContactUsSec secTitle="Let Us Reach You" />
 

@@ -148,12 +148,12 @@ const WordPressDevelopment = () => {
           rightItems={ourBenefitsWordpressData}
         />
 
-        <TabsPricing
+        {/* <TabsPricing
           minihead="Pricing Plans"
           mainhead="Smart Pricing for Real Results"
           secPara="We believe quality digital solutions should be accessible to everyone. Thus, our transparent pricing plan ensures startups, enterprises, and every other business get the best WordPress website development service in Buffalo, NY"
           tabsData={dynamictabsData}
-        />
+        /> */}
 
          <PortfolioSec />
 
