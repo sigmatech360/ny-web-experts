@@ -2202,15 +2202,13 @@ section.ecommerce-portfolio-sec .pixel-perfect-head p {
   color: #161515;
 }
 
-
-
 .ecommerce-portfolio-sec .pixel-button-div {
-    display: block !important;
-    text-align: center;
-    margin: 30px 0px 0px 0px;
+  display: block !important;
+  text-align: center;
+  margin: 30px 0px 0px 0px;
 }
 
-.ecommerce-portfolio-sec  .packages-number {
+.ecommerce-portfolio-sec .packages-number {
   display: none !important;
 }
 
@@ -2220,47 +2218,50 @@ section.ecommerce-portfolio-sec .pixel-perfect-head p {
 
 .eccomerce-about-sec .about-abslt-box {
   display: block !important;
-    width: 220px;
-    background: transparent linear-gradient(145deg, #551382 0%, #290343 100%) 0% 0% no-repeat padding-box;
-    color: #fff;
-    padding: 20px 30px 10px 30px;
-    border: 3px solid #FFFFFF;
-    border-radius: 20px;
-    position: absolute;
-    bottom: 35px;
-    left: 31%;
+  width: 220px;
+  background: transparent linear-gradient(145deg, #551382 0%, #290343 100%) 0%
+    0% no-repeat padding-box;
+  color: #fff;
+  padding: 20px 30px 10px 30px;
+  border: 3px solid #ffffff;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 35px;
+  left: 31%;
 }
 
 .about-abslt-box h3 {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 .eccomerce-about-sec .about-abslt-box p {
-    color: #fff;
+  color: #fff;
 }
 
 .about-abslt-box h3 {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 .fantasy-bullet-points li {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 5px 0px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 0px;
 }
 
 .fantasy-bullet-points {
   padding: 0px;
 }
 
+.wordpress-benefit-sec {
+}
 
+.benefit-check-points {
+  margin: 30px 0px 30px 0px;
+}
 
 /************* Ecommerce Develoment Page CSS End *************/
-
-
-
 
 @media (max-width: 1399px) {
   .clipedShaped-sec:before,
@@ -2494,6 +2495,55 @@ section.ecommerce-portfolio-sec .pixel-perfect-head p {
   .app-florida-herobanner .services-banner-sec-bgImg {
     object-position: left;
   }
+
+  .wordpress-banner {
+    padding: 100px 0px 70px 0px;
+  }
+
+  .wordpress-banner .services-banner-sec-bgImg {
+    object-position: left;
+  }
+
+  .our-service-head h2 {
+    font-size: 40px;
+  }
+
+  .service-large-box {
+    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .service-large-img {
+    width: 100%;
+    padding: 10px 0px 0px 0px;
+  }
+
+  .serivce-box-small {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .service-small-img {
+    text-align: center;
+  }
+
+  .mainhead {
+    font-size: 40px;
+  }
+
+  .process-box {
+    text-align: center;
+  }
+
+  .service-large-txt {
+    width: 100%;
+  }
+
+  .eccomerce-about-sec .about-abslt-box {
+    bottom: 35%;
+    left: 60%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2674,6 +2724,11 @@ section.ecommerce-portfolio-sec .pixel-perfect-head p {
 
   .location-hero-banner .services-banner-sec-bgImg {
     object-position: left;
+  }
+
+  .eccomerce-about-sec .about-abslt-box {
+    bottom: 60%;
+    left: 30%;
   }
 }
 

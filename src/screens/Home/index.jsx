@@ -253,6 +253,7 @@ const Home = () => {
             { name: "Trusted By 300+ Brands" },
             { name: "Critically Researched Strategies" },
           ]}
+          rightItems={ourBenefitsContentIconData}
         />
 
         <TestimonialSec secTitle="When Our Clients Win, We Win!" />

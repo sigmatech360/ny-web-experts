@@ -13,7 +13,7 @@ import OurBenenfits from "../../components/OurBenenfits";
 import BlogSec from "../../components/BlogSec";
 import GetStarted from "../../components/GetStarted";
 import TabsPricing from "../../components/TabsPricing";
-import { dynamictabsData } from "../../data";
+import { dynamictabsData, ourBenefitsWordpressData } from "../../data";
 import OurProcess from "../../components/OurProcess";
 import GetCustomLogo from "../../components/GetCustomLogo";
 import OurServices from "../../components/OurServices";
@@ -130,10 +130,11 @@ const WordPressDevelopment = () => {
         />
 
         <GetCustomLogo className="mb-5" 
-          maintxt="Get Custom Logo from our Best Logo Design Agency in USA"
+          maintxt="Leading Design & Development Agency in New York"
          />
 
         <OurBenenfits
+          secClass="wordpress-benefit-sec"
           minihead="Why Choose Us?"
           mainhead="Generic Web Dev? They Aren’t Even Our Competitors!"
           mainpara="Yes, everyone can build a website; everyone can publish it, too. But what we do is create the difference that puts your business over your competitors; the kind of difference that gets you noticed, remembered, and ranked."
@@ -144,6 +145,7 @@ const WordPressDevelopment = () => {
             { name: "Intuitive Frontend" },
             { name: "Powerful Backend" },
           ]}
+          rightItems={ourBenefitsWordpressData}
         />
 
         <TabsPricing
@@ -155,10 +157,11 @@ const WordPressDevelopment = () => {
 
          <PortfolioSec />
 
-        <ContactUsSec />
+        <ContactUsSec secTitle="Talk to the Real Experts, Americans Trust!" />
 
         <BlogSec
-          secTitle="Latest Trends & Insights, All From The Blog"
+          blogminihead="Blogs"
+          secTitle="Get All the Latest Tech-Related Insights From the Experts"
           itemsPerPage={3}
         />
 

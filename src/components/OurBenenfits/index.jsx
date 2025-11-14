@@ -4,9 +4,9 @@ import { TbChecks } from "react-icons/tb";
 import { ourBenefitsContentIconData } from "../../data";
 import { Link } from "react-router-dom";
 
-const OurBenenfits = ({ minihead, mainhead, mainpara, para2, para3, btntxt,  leftItems = [] }) => {
+const OurBenenfits = ({ minihead, mainhead, mainpara, para2, para3, btntxt, secClass,  leftItems = [], rightItems = [], }) => {
   return (
-    <section className="our-benefits clipedShaped-sec bg-gradiant">
+    <section className={`our-benefits clipedShaped-sec bg-gradiant ${secClass}`}>
       <div className="container">
         <div className="row">
           <div className="col-lg-6 mb-lg-0 mb-5">
@@ -32,7 +32,7 @@ const OurBenenfits = ({ minihead, mainhead, mainpara, para2, para3, btntxt,  lef
               {para3 && <p>{para3}</p>}
               
               <div
-                className="d-flex flex-wrap gap-3"
+                className="d-flex flex-wrap gap-3 benefit-check-points"
                 data-aos="fade-up"
                 data-aos-duration="3000"
               >
@@ -54,7 +54,7 @@ const OurBenenfits = ({ minihead, mainhead, mainpara, para2, para3, btntxt,  lef
           <div className="col-lg-6">
             <div className="our_benefits-icons">
               <div className="row">
-                {ourBenefitsContentIconData.map((item, index) => (
+                {rightItems?.map((item, index) => (
                   <div
                     className="col-md-6 mb-4"
                     data-aos="fade-up"

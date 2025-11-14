@@ -15,7 +15,7 @@ const OurProcess = ({ minihead, mainhead, mainpara, data }) => {
         </div>
         <div className="row">
           {data.map((item, index) => (
-            <div className="col-lg-3" key={index}>
+            <div className="col-lg-3 col-md-6" key={index}>
               <div className="process-box">
                 <h3>{item.number}</h3>
                 <h5>{item.title}</h5>

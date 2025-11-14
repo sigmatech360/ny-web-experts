@@ -183,6 +183,37 @@ export const ourBenefitsContentIconData = [
   },
 ];
 
+export const ourBenefitsWordpressData = [
+  {
+    id: 1,
+    icon: qualityservicesicon,
+    name: "No-Code, Low Code",
+    description:
+      "Build your dream site without touching a line of code; our plugins do the heavy lifting.",
+  },
+  {
+    id: 2,
+    icon: professionaltemicon,
+    name: "1000’s of Supported Plugins",
+    description:
+      "Plugins are the heart of scalability when it comes to websites, and WordPress boasts thousands of them, supported by a dedicated developer community.",
+  },
+  {
+    id: 3,
+    icon: trustedicon,
+    name: "Doesn’t Need a Developer to Control",
+    description:
+      "Who needs a developer? Take full control, customize freely, and rule your WordPress site like a digital wizard.",
+  },
+  {
+    id: 4,
+    icon: comittedicon,
+    name: "Scale with Your Business",
+    description:
+      "Grow without limit. Your WordPress site evolves alongside your business, scaling smoothly without headaches or extra hands.",
+  },
+];
+
 export const testimonialData = [
   {
     id: 1,
