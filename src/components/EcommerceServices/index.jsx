@@ -32,7 +32,7 @@ const EcommerceServices = (props) => {
         <div className="row">
           <div className="col-lg-12">
             <div className="ecommerce-service-btn">
-              <Link href="/contact" className="ny-btn">{props.btntxt}</Link>
+              <Link to="/contact-us" className="ny-btn">{props.btntxt}</Link>
             </div>
           </div>
         </div>

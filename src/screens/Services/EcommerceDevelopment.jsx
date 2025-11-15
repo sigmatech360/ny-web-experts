@@ -109,25 +109,21 @@ const EcommerceDevelopment = () => {
 
   return (
     <>
-
-       <ReactHelmet
-          title="E-Commerce Website Development Company in New York"
-          description="Build your online store with New York Web Experts a trusted e-commerce website development company in New York delivering conversion-focused solutions."
-          keywords="e-commerce website development services new york, e commerce website development new york, e-commerce website development company new york, e commerce website developer new york, e-commerce website development agency new york"
-          url="https://nywebexperts.com/ecommerce-development"
-        />
-
-
+      <ReactHelmet
+        title="E-Commerce Website Development Company in New York"
+        description="Build your online store with New York Web Experts a trusted e-commerce website development company in New York delivering conversion-focused solutions."
+        keywords="e-commerce website development services new york, e commerce website development new york, e-commerce website development company new york, e commerce website developer new york, e-commerce website development agency new york"
+        url="https://nywebexperts.com/ecommerce-development"
+      />
 
       <DefaultLayout>
-
         <ServicesBanner
           secClass="location-hero-banner wordpress-banner"
           formClass="service-form"
           bgImage={bannerBG}
           title="Get Yourself an E-Commerce Platfrom That Never Stops Selling"
           description="At New York Web Experts, we specialize in e-commerce website development that keeps your store running smoothly. From smart backend management to flawless checkout experiences, our e-commerce website development services in New York ensure your operations stay fast, secure, and scalable. We turn your ideas into online stores that effortlessly sell 24/7."
-           cta1="Speak to a Web Expert"
+          cta1="Speak to a Web Expert"
           cta2="hehe"
         />
 
@@ -155,11 +151,11 @@ const EcommerceDevelopment = () => {
         />
 
         <PixelPerfectSec
-        pixelSec="ecommerce-portfolio-sec"
+          pixelSec="ecommerce-portfolio-sec"
           minihead="Our Portfolio"
           secTitle="Our Most Loved E-Commerce Websites"
           secDescription="Explore our portfolio of e-commerce websites developed in New York, designed to convert traffic into loyal customers."
-          btnText="View Our Portfolio"
+          btnText="Get In Touch"
           btnlink="/contact-us"
           projectsData={webDesignPortfolioData}
           onImageClick={handleImageClick}
@@ -171,13 +167,13 @@ const EcommerceDevelopment = () => {
           title="Your Most Trusted Sales Engine! Build Your Own ECommerce Store"
           description="At New York Web Experts, we create e-commerce websites that move products, build loyalty, and simplify growth for your future plans. Every store we develop has an interactive design, strong strategy, and high performance backend to keep your customers engaged and your operations effortless."
           fantasypoints={[
-          "Smart E-Commerce Stores",
-          "Seamless System Integrations",
-          "Automated Marketing Flow",
-          "Built on Data Insights",
-          "Personalized Shopping Journeys",
-        ]}
-        btnboxClass="d-none"
+            "Smart E-Commerce Stores",
+            "Seamless System Integrations",
+            "Automated Marketing Flow",
+            "Built on Data Insights",
+            "Personalized Shopping Journeys",
+          ]}
+          btnboxClass="d-none"
           cta1=" Talk to Us"
           cta2="hehe"
         />
@@ -191,7 +187,7 @@ const EcommerceDevelopment = () => {
         />
 
         <ServicesBanner
-          secClass="app-florida-herobanner reimage-banner"
+          secClass="app-florida-herobanner reimage-banner ecommerce-easier-sec"
           bgImage={aboutbannerbg}
           title="Easier Reach, Higher Returns You Sell Smoothly With Us"
           description="With New York Web Experts, every click brings value. We make selling online easy through custom e-commerce website development designed for scalability and performance. Whether you’re starting fresh or expanding globally, we handle technical complexities so your brand stays focused on growth, visibility, and customer satisfaction."

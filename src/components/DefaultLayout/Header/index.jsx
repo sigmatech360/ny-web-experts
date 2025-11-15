@@ -33,7 +33,7 @@ const Header = () => {
         <Link to={"/"} className="navbar-brand">
           <img src={logo} alt="NY Web Experts Logo" />
         </Link>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" className="bg-body-tertiary"/>
         <Navbar.Collapse>
           <Nav className="mx-auto">
             <NavLink to={"/"} className="nav-link">

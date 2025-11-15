@@ -15,6 +15,12 @@ import portfolio3 from "../../assets/images/services/wordpressdevelopment/portfo
 import portfolio4 from "../../assets/images/services/wordpressdevelopment/portfolio-4.webp"
 import portfolio5 from "../../assets/images/services/wordpressdevelopment/portfolio-5.webp"
 import portfolio6 from "../../assets/images/services/wordpressdevelopment/portfolio-6.webp"
+import portfolio7 from "../../assets/images/services/wordpressdevelopment/portfolio-7.webp"
+import portfolio8 from "../../assets/images/services/wordpressdevelopment/portfolio-8.webp"
+import portfolio9 from "../../assets/images/services/wordpressdevelopment/portfolio-9.webp"
+import portfolio10 from "../../assets/images/services/wordpressdevelopment/portfolio-10.webp"
+import portfolio11 from "../../assets/images/services/wordpressdevelopment/portfolio-11.webp"
+import portfolio12 from "../../assets/images/services/wordpressdevelopment/portfolio-12.webp"
 
 
 import "./index.css";
@@ -29,6 +35,15 @@ const portfolioimgs1 = [
   {
     image: portfolio3,
   },
+  {
+    image: portfolio7,
+  },
+  {
+    image: portfolio8,
+  },
+  {
+    image: portfolio9,
+  },
 ];
 
 
@@ -41,6 +56,15 @@ const portfolioimgs2 = [
   },
   {
     image: portfolio6,
+  },
+  {
+    image: portfolio10,
+  },
+  {
+    image: portfolio11,
+  },
+  {
+    image: portfolio12,
   },
 ];
 

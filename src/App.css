@@ -2116,7 +2116,9 @@ section.our-process-sec {
 }
 
 .service-portfolio-sec {
+    padding: 70px 0px;
 }
+
 
 .portfolio-head {
   text-align: center;
@@ -2254,12 +2256,17 @@ section.ecommerce-portfolio-sec .pixel-perfect-head p {
   padding: 0px;
 }
 
-.wordpress-benefit-sec {
-}
 
 .benefit-check-points {
   margin: 30px 0px 30px 0px;
 }
+
+
+.ecommerce-easier-sec {
+    padding: 140px 0px 140px 0px;
+        margin: 0px 0px 30px 0px;
+}
+
 
 
 
@@ -2546,6 +2553,10 @@ section.ecommerce-portfolio-sec .pixel-perfect-head p {
     bottom: 35%;
     left: 60%;
   }
+
+  .ecommerce-easier-sec {
+    padding: 90px 0px 30px 0px;
+}
 }
 
 @media (max-width: 767px) {
@@ -2740,6 +2751,7 @@ section.ecommerce-portfolio-sec .pixel-perfect-head p {
 .ecommerce-service-box {
     text-align: center;
 }
+
 
 
 

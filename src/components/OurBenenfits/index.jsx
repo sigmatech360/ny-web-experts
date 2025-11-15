@@ -48,7 +48,7 @@ const OurBenenfits = ({ minihead, mainhead, mainpara, para2, para3, btntxt, secC
                   </div>
                 ))}
               </div>
-              {btntxt && <Link to="/contact" className="ny-btn">{btntxt}</Link>}
+              {btntxt && <Link to="/contact-us" className="ny-btn">{btntxt}</Link>}
             </div>
           </div>
           <div className="col-lg-6">
