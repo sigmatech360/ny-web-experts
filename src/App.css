@@ -2421,8 +2421,215 @@ section.frontend-portfolio-sec {
     color: #fff;
 }
 
+.frontend-herobanner-bg {
+    padding: 320px 0px 190px 0px;
+}
+
 /************* Frontend Develoment Page CSS End *************/
 
+
+/************* Backend Development Page CSS Start *************/
+
+.backend-about-sec {
+    padding: 70px 0px;
+}
+
+
+.backend-about-img img {
+    width: 100%;
+}
+
+
+.about-webapp-box {
+    background: transparent linear-gradient(152deg, #551382 0%, #290343 100%) 0% 0% no-repeat padding-box;
+    padding: 30px 40px;
+    border-radius: 20px;
+}
+
+.about-webapp-box img {
+    width: 60px;
+    margin: 0px 0px 10px 0px;
+}
+
+.about-webapp-box h3 {
+    color: #fff;
+}
+
+.about-webapp-box p {
+    color: #fff;
+}
+
+.backend-about-txt p {
+    color: #161515;
+}
+
+
+.backend-portfolio-sec {
+  background: url(./assets/images/services/backenddevelopment/portfolio-bg.webp) no-repeat top center;
+  background-size: cover;
+  padding: 50px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.backend-portfolio-sec .news-card-content h5 {
+    color: #fff;
+    font-size: 18px;
+}
+
+.backend-portfolio-sec .news-card-content p {
+    color: #fff;
+}
+
+.backend-portfolio-sec .pixel-button-div {
+    display: block !important;
+    margin: 40px 0px 0px 0px;
+    text-align: center;
+}
+
+.backend-portfolio-sec .packages-number {
+  display: none !important;
+}
+
+section.backend-process-sec {
+  padding: 70px 0px;
+}
+
+.backend-process-cards {
+  max-height: 450px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-right: 20px;
+  scroll-behavior: smooth;
+}
+
+.backend-process-card {
+  padding: 30px;
+  border: 1px solid #707070;
+  border-radius: 20px;
+  margin: 0px 0px 30px 0px;
+}
+
+.backend-process-card h6 {
+  padding: 11px 14px;
+  background: transparent linear-gradient(180deg, #026888 0%, #440370 100%) 0% 0% no-repeat padding-box;
+  display: inline-block;
+  border-radius: 100%;
+  font-size: 20px;
+  color: #fff;
+  margin: 0px 0px 15px 0px;
+}
+
+.backend-process-card h4 {
+  color: #161515;
+    font-weight: 500;
+    margin: 0px 0px 10px 0px;
+    font-size: 20px;
+}
+
+.backend-process-card p {
+  color: #161515;
+}
+
+.backend-process-cards::-webkit-scrollbar {
+  width: 6px;
+}
+
+.backend-process-cards::-webkit-scrollbar-thumb {
+  background: #440370;
+  border-radius: 10px;
+}
+
+.mainback-portfolio-sec {
+  background: url(./assets/images/services/backenddevelopment/main-portfolio-bg.webp) no-repeat top center;
+  background-size: cover;
+  padding: 50px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.mainback-portfolio-sec .news-card-img img {
+    height: auto;
+}
+
+.backend-process-head p {
+    color: #161515;
+}
+
+.mainback-portfolio-sec .news-card-img img {
+    height: auto;
+}
+
+section.backend-benefit-sec {
+    padding: 70px 0px;
+}
+
+.backend-benefit-head {
+    text-align: center;
+    margin: 0px 0px 50px 0px;
+}
+
+.backend-benefit-head p {
+    color: #292F3A;
+}
+
+.benefit-backend-box {
+    padding: 20px;
+    background: transparent linear-gradient(144deg, #551382 0%, #290343 100%) 0% 0% no-repeat padding-box;
+    border-radius: 20px;
+}
+
+.benefit-backend-box img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.benefit-backend-box p {
+    margin: 0px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.benefit-backend-box h4 {
+    color: #fff;
+    font-size: 18px;
+    margin: 20px 0px 10px 0px;
+}
+
+.backend-choose-bg {
+  background: url(./assets/images/services/backenddevelopment/backend-choose-bg.webp) no-repeat top center;
+  background-size: cover;
+  padding: 100px 0px 150px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.backend-choose-bg ul.web-whychoose-list {
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-start !important;
+}
+
+.backend-choose-bg .abouttxt-data .web-whychoose-list li {
+  color: #fff;
+}
+
+.backend-choose-bg ul.web-whychoose-list li .purplecheck {
+    display: none;
+}
+
+.backend-choose-bg ul.web-whychoose-list li .doublecheck-white {
+    display: block !important;
+}
+
+.backend-choose-bg .abouttxt-data,
+.backend-choose-bg .abouttxt-data p {
+    color: #fff;
+}
+
+
+/************* Backend Development Page CSS End *************/
 
 
 
@@ -2711,6 +2918,62 @@ section.frontend-portfolio-sec {
   .ecommerce-easier-sec {
     padding: 90px 0px 30px 0px;
 }
+
+.frontend-herobanner-bg {
+    padding: 150px 0px 150px 0px;
+}
+
+.frontend-herobanner-bg .services-banner-sec-bgImg {
+    object-position: left;
+}
+
+  .frontend-herobanner-bg  .services-banner__content {
+        padding: 30px 30px 50px 30px;
+        background: #351d5bd4;
+        border-radius: 10px;
+    }
+
+    section.clients-data-sec {
+    padding: 50px 0px 0px 0px;
+}
+
+.client-data-txt p {
+    border-right: 1px solid #35205F;
+    padding: 10px 0;
+    margin: 10px 0px;
+    border-left: 1px solid #35205F;
+}
+
+.frontend-choose-sec .abouttxt-data {
+    text-align: left;
+}
+
+.backend-about-txt p {
+    padding: 20px 0px 0px 0px;
+}
+
+.backend-about-txt {
+    margin: 0px 0px 30px 0px;
+}
+
+.backend-process-head {
+    margin: 0px 0px 40px 0px;
+}
+
+
+.benefit-backend-box {
+    margin: 0px 0px 30px 0px;
+}
+
+.backend-choose-bg .abouttxt-data, .backend-choose-bg .abouttxt-data {
+    text-align: left;
+}
+
+.backend-choose-bg {
+    padding: 60px 0px 90px 0px;
+}
+
+
 }
 
 @media (max-width: 767px) {
@@ -2906,7 +3169,19 @@ section.frontend-portfolio-sec {
     text-align: center;
 }
 
+.frontend-expertise-sec {
+    text-align: center;
+    padding: 60px 0px;
+}
 
+
+.frontend-service-card {
+    text-align: center;
+}
+
+.frontend-herobanner-bg {
+    padding: 100px 0px 130px 0px;
+}
 
 
 }

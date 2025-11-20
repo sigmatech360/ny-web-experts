@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { SiTicktick } from "react-icons/si";
 import { FaCheckCircle, FaPhoneAlt, FaRegCheckCircle } from "react-icons/fa";
 import whychoose1 from "../../Assets/images/locationpages/app-development-buffalo/choosecheck.svg";
+import whychoose2 from "../../assets/images/services/backenddevelopment/doublecheck.svg";
 
 const WordPressPerformanceSection = (props) => {
   const isReversed = props.reverse;
@@ -74,7 +75,7 @@ const WordPressPerformanceSection = (props) => {
                   <ul className="web-whychoose-list">
                     {props.chooseListItems.map((item, index) => (
                       <li key={index}>
-                        <img src={whychoose1} alt="check icon" /> {item}
+                        <img src={whychoose1} alt="check icon" className="purplecheck" /><img src={whychoose2} alt="icon" className="doublecheck-white d-none" /> {item}
                       </li>
                     ))}
                   </ul>

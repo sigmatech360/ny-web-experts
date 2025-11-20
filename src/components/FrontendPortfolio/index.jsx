@@ -13,55 +13,51 @@ const FrontendPortfolio = () => {
         <div className="row justify-content-center">
           <div className="col-lg-10">
             <div className="frontend-service-head">
-              <h6 className="shorttop-head">Our Portfolio</h6>
-              <h2 className="mainhead">Recent Wordpress Projects</h2>
-              <p>
-                We’ve helped businesses across industries bring their brands
-                online through visually stunning and conversion-focused
-                WordPress websites.
-              </p>
+              <h6 className="shorttop-head">Portfolio</h6>
+              <h2 className="mainhead">Our Goldmine of Front-End Work</h2>
+              <p>Browse case studies where design and engineering converged, resulting in improved user metrics.</p>
             </div>
           </div>
         </div>
         <div className="row">
-          <div className="col-lg-6">
+          <div className="col-lg-6 col-md-6">
             <div className="frontend-portfolio-img">
               <img src={portfolio1} alt="img" />
-              <div className="portfolio-image-arrow">
+              {/* <div className="portfolio-image-arrow">
                 <span>
                   <MdArrowOutward />
                 </span>
-              </div>
+              </div> */}
             </div>
           </div>
-          <div className="col-lg-6">
+          <div className="col-lg-6 col-md-6">
             <div className="frontend-portfolio-img">
               <img src={portfolio2} alt="img" />
-              <div className="portfolio-image-arrow">
+              {/* <div className="portfolio-image-arrow">
                 <span>
                   <MdArrowOutward />
                 </span>
-              </div>
+              </div> */}
             </div>
           </div>
-          <div className="col-lg-6">
+          <div className="col-lg-6 col-md-6">
             <div className="frontend-portfolio-img">
               <img src={portfolio3} alt="img" />
-              <div className="portfolio-image-arrow">
+              {/* <div className="portfolio-image-arrow">
                 <span>
                   <MdArrowOutward />
                 </span>
-              </div>
+              </div> */}
             </div>
           </div>
-          <div className="col-lg-6">
+          <div className="col-lg-6 col-md-6">
             <div className="frontend-portfolio-img">
               <img src={portfolio4} alt="img" />
-              <div className="portfolio-image-arrow">
+              {/* <div className="portfolio-image-arrow">
                 <span>
                   <MdArrowOutward />
                 </span>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

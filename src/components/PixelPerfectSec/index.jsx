@@ -45,6 +45,7 @@ const PixelPerfectSec = (props) => {
                   image={item.image}
                   imgClass={props.imgClass}
                   description={item.description}
+                 titleprod={item.title}  
                 />
               </div>
             ))}

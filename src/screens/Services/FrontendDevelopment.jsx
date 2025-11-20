@@ -14,18 +14,28 @@ import { dynamictabsData } from "../../data";
 import ContactUsSec from "../../components/ContactUsSec";
 import BlogSec from "../../components/BlogSec";
 import GetStarted from "../../components/GetStarted";
+import ReactHelmet from "../../components/ReactHelmet";
 
 const FrontendDevelopment = () => {
   return (
     <>
+
+      <ReactHelmet
+          title="Frontend Development in New York"
+          description="Build responsive, high-performing websites with NY Web Experts, the leading front-end development company in New York delivering strategically designed web pages, mobile app designs, UI, SPAs, and more."
+          keywords="front-end development company new york, front-end development agency new york, front-end development services new york, front-end web development new york, front-end design and development new york, custom front-end development new york, React front-end development new york, Angular front-end development new york, Vue.js front-end development new york"
+          url="https://nywebexperts.com/frontend-development"
+        />
+
+
       <DefaultLayout>
         <ServicesBanner
-          secClass="location-hero-banner wordpress-banner"
+          secClass="location-hero-banner wordpress-banner frontend-herobanner-bg"
           formClass="service-form"
           bgImage={heroabanner}
-          title="Get Yourself an E-Commerce Platfrom That Never Stops Selling"
-          description="At New York Web Experts, we specialize in e-commerce website development that keeps your store running smoothly. From smart backend management to flawless checkout experiences, our e-commerce website development services in New York ensure your operations stay fast, secure, and scalable. We turn your ideas into online stores that effortlessly sell 24/7."
-          cta1="Speak to a Web Expert"
+          title="Turn Scrolls into Sales with Front-End Brilliance"
+          description="At NY Web Experts, we don’t just code what you send; we reimagine it, refine it, and optimize it for the modern web. From React to Vue.js, our front-end development services in New York bring beauty, speed, and strategy together, creating digital experiences that feel effortless and convert seamlessly."
+          cta1="Start Your Project"
           cta2="hehe"
         />
 
@@ -34,24 +44,24 @@ const FrontendDevelopment = () => {
             <div className="row justify-content-center">
               <div className="col-lg-10">
                 <div className="row justify-content-center">
-                  <div className="col-lg-3">
+                  <div className="col-lg-3 col-md-6">
                     <div className="client-data-txt">
-                      <p>750+ Digital Experts</p>
+                      <p>320+ Web Designs Developed</p>
                     </div>
                   </div>
-                  <div className="col-lg-3">
+                  <div className="col-lg-3 col-md-6">
                     <div className="client-data-txt">
-                      <p>29-Year Track Record</p>
+                      <p>12 Years of Experience</p>
                     </div>
                   </div>
-                  <div className="col-lg-3">
+                  <div className="col-lg-3 col-md-6">
                     <div className="client-data-txt">
-                      <p>1,100+ Reviews</p>
+                      <p>570 Reviews</p>
                     </div>
                   </div>
-                  <div className="col-lg-3">
+                  <div className="col-lg-3 col-md-6">
                     <div className="client-data-txt">
-                      <p>In-House Technology</p>
+                      <p>Powering 31 Industries</p>
                     </div>
                   </div>
                 </div>
@@ -65,14 +75,15 @@ const FrontendDevelopment = () => {
           wordpresssecclass="WordPressPerformanceSection location-choose-banner"
           miniheadclass="shorttop-head"
           minihead="About Us"
-          secTitle1="100+ E-Commerce Websites,"
-          secTitle2="Millions of Products Sold"
-          description="We’re an e-commerce website development company in New York trusted by many businesses that don’t chase quick results, but long-term value. Our team has launched over 100 fully functional online stores that automate workflows, simplify inventory control, and boost conversions. We design systems that never crash, never slow down, and always sell"
+          secTitle1="Professional Front-End Development for"
+          secTitle2="Modern Businesses"
+          description="Design is a promise, persuasive, hooking, inspiring, all things our code keeps and helps you increase your business, your brand, and your reputation!"
+          descriptiontwo="As the leading front-end development company in New York, we turn your visual ideas into responsive, fast, and emotionally smart interfaces. Others think of it as magic, but what we really do is we combine design intent with engineering rigor so users arrive, stay, and convert."
           image={aboutimg}
           listClass="d-none"
           TouchBtn="d-none"
-          btntext="More About New York Web Experts"
-          aboutbtnlink="/about"
+          btntext="Talk to Our Developers"
+          aboutbtnlink="/contact-us"
         />
 
         <FrontendServices />
@@ -81,56 +92,53 @@ const FrontendDevelopment = () => {
           reverse
           wordpresssecclass="WordPressPerformanceSection location-choose-banner frontend-choose-sec"
           miniheadclass="shorttop-head"
-          minihead="Why Choose Us"
-          secTitle1="Why Choose Us For Front End Development"
-          secTitle2="In New York?"
-          description="We’re an e-commerce website development company in New York trusted by many businesses that don’t chase quick results, but long-term value. Our team has launched over 100 fully functional online stores that automate workflows, simplify inventory control, and boost conversions. We design systems that never crash, never slow down, and always sell"
+          minihead="The Best in the Industry"
+          secTitle1="Frontend Dev So Good,"
+          secTitle2="It Converts"
+          description="Design is powerful, so powerful that it can increase your conversion rate by 60%. Now that’s a power your business can also harness with custom front-end development in New York. As the leading design and development company in America, trusted by Americans and the world, we offer:"
           chooseParaItems={[
             {
-              spanText: "Over 10 Years of Expertise",
-              text: "– We have empowered hundreds of businesses to grow and succeed online with our proven e-commerce solutions.",
+              text: "Vector Designs",
             },
             {
-              spanText: "Affordable & Transparent Pricing ",
-              text: "– Enjoy premium development services tailored to your budget with no hidden costs.",
+              text: "3D Illustrations",
             },
             {
-              spanText: "SEO-Optimized Online Stores",
-              text: "– We have empowered hundreds of businesses to grow and succeed online with our proven e-commerce solutions.",
+              text: "SEO, AEO, and GEO Optimized",
             },
             {
-              spanText: "Reliable 24/7 Support & Maintenance",
-              text: "– Enjoy premium development services tailored to your budget with no hidden costs.",
+              text: "Responsive Interface",
             },
           ]}
+          description2="Increase your sales with great designs."
           image={chooseimg}
           listClass="d-none"
           TouchBtn="d-none"
-          btntext="More About New York Web Experts"
-          aboutbtnlink="/about"
+          btntext="Talk to Us"
+          aboutbtnlink="/contact-us"
         />
 
         <GetCustomLogo
           className="mb-5"
-          maintxt="Leading Design & Development Agency in New York"
+          maintxt="Leading Design & Frontend Development Agency in New York"
         />
 
         <FrontendPortfolio />
 
         <FrontendExpertise />
 
-        <TabsPricing
+        {/* <TabsPricing
           minihead="Pricing Plan"
-          mainhead="E-Commerce Web Development Packages"
-          secPara="Choose from flexible packages designed for startups, growing brands, and enterprise businesses. Every plan includes full-stack e-commerce development, testing, and post-launch support."
+          mainhead="Affordable Yet Robust Frontend Development"
+          secPara="With NY Web Experts, select the right package for your website and unlock new, limitless possibilities with React, Angular, and Vue.js development in New York"
           tabsData={dynamictabsData}
-        />
+        /> */}
 
-        <ContactUsSec secTitle="Let Us Reach You" />
+        <ContactUsSec secTag="Connect With Us" secTitle="Start Your Frontend Project" />
 
         <BlogSec
-          blogminihead="Blogs & Updates"
-          secTitle="Get Insights on Latest Trends and Business Flow"
+          blogminihead="Blogs & Articles"
+          secTitle="Your Place for Latest News and Insights"
           itemsPerPage={3}
         />
 
