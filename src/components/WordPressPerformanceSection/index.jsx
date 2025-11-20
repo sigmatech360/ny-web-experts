@@ -79,6 +79,17 @@ const WordPressPerformanceSection = (props) => {
                     ))}
                   </ul>
                 )}
+
+                {props.chooseParaItems && props.chooseParaItems.length > 0 && (
+                  <ul className="web-whypara-list d-none">
+                    {props.chooseParaItems.map((item, index) => (
+                      <li key={index}>
+                        <span>{item.spanText}</span>
+                        {item.text}
+                      </li>
+                    ))}
+                  </ul>
+                )}
                 <div className={props.anotherFlexClass}>
                   <div className={props.alllistdata}>
                     <ul

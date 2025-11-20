@@ -2267,10 +2267,164 @@ section.ecommerce-portfolio-sec .pixel-perfect-head p {
         margin: 0px 0px 30px 0px;
 }
 
+section.clients-data-sec {
+    padding: 50px 0px;
+}
 
+.client-data-txt p {
+    color: #35205F;
+    margin: 0px;
+    border-right: 1px solid #35205F;
+    text-align: center;
+    font-weight: 500;
+}
+
+.frontend-services-sec {
+  background: url(./assets/images/services/frontenddevelopment/service-bg.webp) no-repeat top center;
+  background-size: cover;
+  padding: 100px 0px;
+  width: 100%;
+  height: 100%;
+}
 
 
 /************* Ecommerce Develoment Page CSS End *************/
+
+
+/************* Frontend Develoment Page CSS Start *************/
+
+
+
+.frontend-services-head {
+    text-align: center;
+    margin: 0px 0px 40px 0px;
+}
+
+.frontend-services-head p {
+    color: #fff;
+}
+
+.frontend-services-head h6 {
+    color: #fff;
+}
+
+.frontend-service-card {
+    padding: 50px 30px 40px 30px;
+    background: transparent linear-gradient(138deg, #551382 0%, #290343 100%) 0% 0% no-repeat padding-box;
+    border: 1px solid #67DBFF;
+    border-radius: 20px;
+    margin: 0px 0px 30px 0px;
+}
+
+.frontend-service-card h4 {
+    color: #fff;
+    font-size: 20px;
+    margin: 20px 0px 20px 0px;
+}
+
+.frontend-service-card p {
+    color: #fff;
+    margin: 0px;
+}
+
+
+.frontend-choose-sec .web-whypara-list li span {
+    color: #35205F;
+}
+
+.frontend-choose-sec p {
+    color: #161515;
+}
+
+.frontend-choose-sec .web-whypara-list li {
+    font-weight: 500;
+    padding: 7px 0px;
+}
+
+.frontend-service-card img {
+    height: 60px;
+    width: 60px;
+}
+
+
+.frontend-service-btn {
+    text-align: center;
+    margin: 40px 0px 0px 0px;
+}
+
+.frontend-choose-sec .web-whypara-list {
+    display: block !important;
+}
+
+.frontend-portfolio-img img {
+    width: 100%;
+}
+
+.frontend-portfolio-img {
+    position: relative;
+    margin: 0px 0px 20px 0px;
+}
+
+.portfolio-image-arrow {
+    position: absolute;
+    content: "";
+    bottom: 70px;
+    left: 40px;
+}
+
+.portfolio-image-arrow span {
+    background: transparent linear-gradient(138deg, #551382 0%, #290343 100%) 0% 0% no-repeat padding-box;
+    color: #67DBFF;
+    padding: 22px 30px 30px 30px;
+    border-radius: 100%;
+    border: 1px solid #67DBFF;
+    font-size: 30px;
+    line-height: normal;
+}
+
+section.frontend-portfolio-sec {
+    padding: 50px 0px;
+}
+
+.frontend-service-head {
+    margin: 0px 0px 50px 0px;
+    text-align: center;
+}
+
+.frontend-service-head p {
+    color: #161515;
+}
+
+.frontend-portfolio-btn {
+    text-align: center;
+    margin: 40px 0px 0px 0px;
+}
+
+.frontend-expertise-sec {
+    background: url(./assets/images/services/frontenddevelopment/expertise-bg.webp) no-repeat top center;
+  background-size: cover;
+  padding: 100px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.frontend-expertise-head p {
+    color: #fff;
+}
+
+.frontend-expertise-point h5 {
+    color: #fff;
+    font-size: 18px;
+}
+
+.frontend-expertise-point p {
+    color: #fff;
+}
+
+/************* Frontend Develoment Page CSS End *************/
+
+
+
 
 @media (max-width: 1399px) {
   .clipedShaped-sec:before,

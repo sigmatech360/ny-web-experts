@@ -29,6 +29,8 @@ import AppDevelopmentBuffalo from "../screens/locationpages/AppDevelopmentBuffal
 import WordpressDevelopmentBuffalo from "../screens/locationpages/WordpressDevelopmentBuffalo";
 import WordPressDevelopment from "../screens/Services/WordPressDevelopment";
 import EcommerceDevelopment from "../screens/Services/EcommerceDevelopment";
+import FrontendDevelopment from "../screens/Services/FrontendDevelopment";
+import BackendDevelopment from "../screens/Services/BackendDevelopment";
 
 const AppRouter = () => {
   return (
@@ -41,16 +43,21 @@ const AppRouter = () => {
 
         {/* Services Pages */}
         <Route path="/web-design-development" element={<Services />} />
-        <Route path="/cms-development" element={<CMSDevelopment />} />
         <Route path="/digital-marketing" element={<DigitalMarketing />} />
         <Route path="/social-media-marketing" element={<SMM />} />
         <Route path="/search-engine-optimization" element={<SEO />} />
 
 
           {/* CMS Development & Inner Pages */}
-        <Route path="/custom-web-development" element={<CustomWebDevelopment />} />
+        <Route path="/cms-development" element={<CMSDevelopment />} />
         <Route path="/wordpress-development" element={<WordPressDevelopment />} />
         <Route path="/ecommerce-development" element={<EcommerceDevelopment />} />
+
+
+
+          {/* Custom Development & Inner Pages */}
+        <Route path="/frontend-development" element={<FrontendDevelopment />} />
+        <Route path="/backend-development" element={<BackendDevelopment />} />
 
 
 
