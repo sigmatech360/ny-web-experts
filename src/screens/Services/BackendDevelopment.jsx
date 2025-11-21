@@ -121,7 +121,7 @@ const BackendDevelopment = () => {
 
      <ReactHelmet
           title="Backend Development Company in New York"
-          description="Build powerful and scalable backend systems with New York Web Experts, experts in APIs, databases, and performance-driven development."
+          description="Build powerful and scalable backend systems with New York Web Experts, being the trusted experts in APIs, databases, and performance-driven development, we want your brand to grow effortlessly."
           keywords="backend development company new york, backend API development new york, backend development agency new york, Node.js backend development new york, backend development services new york, PHP backend development new york, backend web development new york"
           url="https://nywebexperts.com/backend-development"
         />

@@ -2633,6 +2633,469 @@ section.backend-benefit-sec {
 
 
 
+/************* Domain Registeration Page CSS Start *************/
+
+.domain-registeration-herobanner {
+    padding: 130px 0px 90px 0px;
+}
+
+.domain-registeration-herobanner {
+    padding: 130px 0px 90px 0px;
+}
+
+.find-domain-name {
+    text-align: center;
+    background: transparent linear-gradient(180deg, #026888 0%, #440370 100%) 0% 0% no-repeat padding-box;
+    border-radius: 204px;
+    padding: 30px 0px;
+}
+
+section.find-domain-sec {
+    padding: 70px 0px;
+}
+
+
+.find-input-box input {
+    width: 65%;
+    border: none;
+    padding: 18px 30px;
+    border-radius: 40px;
+}
+
+
+.find-input-box {
+    position: relative;
+    margin: 30px 0px;
+}
+
+.find-input-box button {
+    position: absolute;
+    top: 14%;
+    right: 19%;
+    padding: 9px 30px;
+    background: transparent linear-gradient(180deg, #026888 0%, #440370 100%) 0% 0% no-repeat padding-box;
+    border-radius: 33px;
+    border: none;
+    color: #fff;
+    font-weight: 400;
+}
+
+.find-domain-name p {
+    color: #fff;
+}
+
+.domain-registeration-services {
+  background: url(./assets/images/services/domainregisteration/domain-service-bg.webp) no-repeat top center;
+  background-size: cover;
+  padding: 100px 0px 100px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+section.registeration-choose-sec {
+    padding: 70px 0px;
+}
+
+.registeration-choose-head {
+    text-align: center;
+    margin: 0px 0px 50px 0px;
+}
+
+.registeration-choose-card {
+    padding: 20px;
+    border-radius: 30px;
+    background: transparent linear-gradient(180deg, #026888 0%, #440370 100%) 0% 0% no-repeat padding-box;
+    text-align: center;
+    transition: all .6s ease;
+    transform: translate(0px, 0px);
+}
+
+.registeration-choose-card img {
+    width: 70px;
+}
+
+.registeration-choose-card h4 {
+    color: #fff;
+    font-size: 20px;
+    margin: 20px 0px;
+}
+
+.registeration-choose-card p {
+    color: #fff;
+}
+
+.registeration-choose-card:hover {
+    transform: translate(0px, -10px);
+    cursor: pointer;
+}
+
+
+.registeration-privacy-sec {
+  background: url(./assets/images/services/domainregisteration/privacy-bg.webp) no-repeat top center;
+  background-size: cover;
+  padding: 100px 0px 100px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+
+.registeration-privacy-img img {
+    width: 100%;
+    padding: 70px;
+}
+
+.registeration-privacy-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.registeration-privacy-txt p {
+    color: #fff;
+}
+
+
+.hosting-boxes-sec {
+  padding: 50px 0px;
+}
+
+.hosting-box {
+  height: 250px;
+  background: #f4f6f9;
+  padding: 30px;
+  border-radius: 30px;
+  transition: all 0.6s ease;
+  transform: translate(0px, 0px);
+}
+
+.hosting-box:hover {
+  background: transparent linear-gradient(180deg, #026888 0%, #440370 100%) 0% 0% no-repeat padding-box;
+  transform: translate(0px, -10px);
+  cursor: pointer;
+}
+
+.hosting-box h3 {
+  font-weight: 700;
+  padding: 0px 0px 10px 0px;
+}
+
+.hosting-box:hover h3 {
+  color: #fff;
+  font-size: 40px;
+}
+
+.hosting-box:hover p {
+  color: #fff;
+}
+
+.hosting-box p {
+  transition: all 0.6s ease;
+}
+
+.hosting-box:hover p span {
+  display: block;
+  padding: 50px 0px 0px 0px;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.hosting-box span {
+  transition: all 0.6s ease;
+}
+
+.domain-transfer-banner {
+    padding: 190px 0 190px 0;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.domain-transfer-banner .container {
+    position: relative;
+    z-index: 99;
+}
+
+.domain-transfer-txt {
+    text-align: center;
+}
+
+.domain-transfer-boxes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    margin: 40px 0px 40px 0px;
+}
+
+.transfer-icon-box img {
+    width: 60px;
+    margin: 0px 0px 10px 0px;
+}
+
+.transfer-icon-box h5 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.domain-transfer-txt p {
+    color: #fff;
+}
+
+.domain-transfer-services {
+  background: url(./assets/images/services/domaintransfer/service-bg.webp) no-repeat top center;
+  background-size: cover;
+  padding: 100px 0px 100px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+
+section.domain-search-buy {
+  padding: 50px 0px;
+}
+
+.domain-prices {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 3px 6px #00000029;
+  border: 1px solid #707070;
+  border-radius: 42px;
+  padding: 10px 0px;
+}
+
+.different-domain-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0px 15px;
+  border-right: 1px solid #707070;
+}
+
+.different-domain-price h6 {
+  margin: 0px;
+  color: #000000;
+  font-size: 16px;
+  line-height: normal;
+}
+
+.different-domain-price:nth-child(6) {
+  border: none;
+}
+
+.domain-search-bar input {
+  box-shadow: 0px 3px 6px #00000029;
+  border: 1px solid #707070;
+  border-radius: 42px;
+  width: 100%;
+  padding: 15px 20px;
+}
+
+.domain-search-bar span {
+  color: #fff;
+  background: transparent linear-gradient(180deg, #026888 0%, #440370 100%) 0% 0% no-repeat padding-box;
+  position: absolute;
+  padding: 9px 15px 15px 15px;
+  font-size: 24px;
+  border-radius: 100%;
+  line-height: normal;
+  right: 0px;
+  top: 0px;
+  cursor: pointer;
+}
+
+.different-domain-price img {
+  width: 50px;
+  height: 33px;
+  object-fit: contain;
+}
+
+.domain-search-bar {
+  position: relative;
+}
+
+.domain-search-bar input::placeholder {
+  color: #000000;
+}
+
+.domain-search-bar input:focus {
+  outline: none;
+}
+
+.trustpilot-txt {
+  margin: 40px 0px 0px 0px;
+  text-align: center;
+  box-shadow: 0px 3px 6px #00000029;
+  border: 1px solid #707070;
+  border-radius: 42px;
+  padding: 14px 0px;
+}
+
+.trustpilot-txt p {
+  margin: 0px;
+  color: #000000;
+}
+
+.trustpilot-txt span {
+  font-weight: 600;
+  padding: 0px 0px 0px 10px;
+}
+
+.trustpilot-txt img {
+  margin: 0px 15px;
+}
+
+.trustpilot-stars {
+  width: 90px;
+}
+
+.trustpilotstar {
+  width: 20px;
+  margin: 0px 0px 0px 10px !important;
+}
+
+
+/************* Domain Registeration Page CSS End *************/
+
+
+/************* Domain Transfer Page CSS Start *************/
+
+
+
+.transfer-whyus-sec {
+  background: url(./assets/images/services/domaintransfer/whytransfer-bg.webp) no-repeat top center;
+  background-size: cover;
+  padding: 150px 0px 150px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.transfer-why-txt p {
+    color: #fff;
+}
+
+.whyus-box h3 {
+    color: #67DBFF;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.whyus-box p {
+    color: #fff;
+    width: 80%;
+}
+
+.domain-transfer-steps {
+    padding: 70px 0px;
+}
+
+.transfer-step img {
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+}
+
+
+.transfer-step-txt h4 {
+    color: #292F3A;
+    font-size: 20px;
+}
+
+.transfer-step-txt p {
+    color: #161515;
+}
+
+
+.transfer-step-txt a {
+    margin: 100px 0px 0px 0px;
+}
+
+.transfer-support-sec {
+  background: url(./assets/images/services/domaintransfer/support-bg.webp) no-repeat top center;
+  background-size: cover;
+  padding: 100px 0px 100px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.transfer-support-txt {
+    background: transparent linear-gradient(108deg, #440370 0%, #026888 100%) 0% 0% no-repeat padding-box;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.transfer-support-txt p {
+    color: #fff;
+}
+
+.transfer-support-txt p {
+    color: #fff;
+}
+
+.transfer-support-txt a {
+    background: #fff;
+    color: #0504A5;
+    padding: 10px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 20px 0px 0px 0px;
+    transition: all .6s ease;
+    border: 1px solid #fff;
+}
+
+.transfer-support-txt a:hover {
+    background: transparent;
+    color: #fff;
+}
+
+.need-domain-head {
+    margin: 0px 0px 40px 0px;
+}
+
+.reactabout-buffalo-banner {
+    padding: 200px 0px;
+}
+
+.registeration-privacy-txt .ny-btn {
+    width: fit-content;
+}
+
+.specific-para-span {
+  font-style: italic;
+}
+
+.smart-transfer-sec ul.web-whypara-list {
+    display: block !important;
+    margin: 0px;
+}
+
+.smart-transfer-sec ul.web-whypara-list li {
+    padding: 8px 0px;
+}
+
+.smart-transfer-sec p {
+  color: #161515;
+}
+
+.benefits-transfer-scroll {
+    max-height: 450px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-right: 20px;
+    scroll-behavior: smooth;
+}
+
+.expert-domain-registeration .choose-head {
+  display: none;
+}
+
+/************* Domain Transfer Page CSS End *************/
+
+
+
+
 @media (max-width: 1399px) {
   .clipedShaped-sec:before,
   .clipedShaped-sec:after {
@@ -2974,6 +3437,70 @@ section.backend-benefit-sec {
 }
 
 
+.find-domain-name {
+    border-radius: 54px;
+    padding: 20px 0px;
+}
+
+.find-input-box input {
+  width: 100%;
+    padding: 15px 30px;
+    border-radius: 40px;
+}
+
+.find-input-box {
+    margin: 20px 30px;
+}
+
+.find-input-box button {
+    top: 11%;
+    right: 1%;
+}
+
+.registeration-choose-card {
+    margin: 0px 0px 30px 0px;
+}
+
+.registeration-privacy-txt {
+    margin: 0px 0px 40px 0px;
+}
+
+.hosting-box {
+    margin: 0px 0px 20px 0px;
+}
+
+.smart-transfer-sec .abouttxt-data {
+    text-align: left;
+}
+
+    .different-domain-price {
+        padding: 0 10px;
+        gap: 8px;
+    }
+
+        .different-domain-price img {
+        width: 40px;
+    }
+
+    .domain-search-bar {
+    margin: 0px 0px 30px 0px;
+}
+
+.trustpilot-txt p {
+    font-size: 15px;
+}
+
+.transfer-why-txt p {
+    margin: 0px 0px 40px 0px;
+}
+
+
+.transfer-step-txt a {
+    margin: 20px 0px 50px 0px;
+}
+
+
+
 }
 
 @media (max-width: 767px) {
@@ -3183,6 +3710,85 @@ section.backend-benefit-sec {
     padding: 100px 0px 130px 0px;
 }
 
+.registeration-privacy-txt {text-align: center;}
+
+.registeration-privacy-txt a {
+    margin: 0 auto;
+}
+
+.find-domain-name h2 {
+    font-size: 30px;
+    padding: 0px 20px;
+}
+
+.find-domain-name p {
+    font-size: 12px;
+}
+
+    .find-domain-name {
+        border-radius: 20px;
+    }
+
+        .find-input-box input {
+        padding: 10px 30px;
+    }
+
+        .find-input-box button {
+        top: 9%;
+        right: 1%;
+        padding: 8px 25px;
+        font-size: 14px;
+    }
+
+        .find-input-box {
+        margin: 20px 20px;
+    }
+
+    .registeration-privacy-img img {
+    padding: 20px;
+}
+
+
+    .different-domain-price {
+        flex-direction: column;
+        gap: 0;
+        padding: 10px 0;
+    }
+
+    .domain-prices {
+        display: grid
+;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+        .different-domain-price:nth-child(2), .different-domain-price:nth-child(4) {
+        border: none;
+    }
+
+        .trustpilot-txt {
+        padding: 15px 20px;
+    }
+
+    .transfer-whyus-sec {
+    padding: 80px 0px 80px 0px;
+}
+
+.domain-transfer-boxes {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+}
+
+
+.need-domain-head {
+    text-align: center;
+}
+
+.transfer-support-txt {
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+    
 
 }
 

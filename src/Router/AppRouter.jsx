@@ -31,6 +31,9 @@ import WordPressDevelopment from "../screens/Services/WordPressDevelopment";
 import EcommerceDevelopment from "../screens/Services/EcommerceDevelopment";
 import FrontendDevelopment from "../screens/Services/FrontendDevelopment";
 import BackendDevelopment from "../screens/Services/BackendDevelopment";
+import DomainRegisteration from "../screens/Services/DomainRegisteration";
+import DomainTransfer from "../screens/Services/DomainTransfer";
+import ReactDevelopmentBuffalo from "../screens/locationpages/ReactDevelopmentBuffalo";
 
 const AppRouter = () => {
   return (
@@ -46,20 +49,6 @@ const AppRouter = () => {
         <Route path="/digital-marketing" element={<DigitalMarketing />} />
         <Route path="/social-media-marketing" element={<SMM />} />
         <Route path="/search-engine-optimization" element={<SEO />} />
-
-
-          {/* CMS Development & Inner Pages */}
-        <Route path="/cms-development" element={<CMSDevelopment />} />
-        <Route path="/wordpress-development" element={<WordPressDevelopment />} />
-        <Route path="/ecommerce-development" element={<EcommerceDevelopment />} />
-
-
-
-          {/* Custom Development & Inner Pages */}
-        <Route path="/frontend-development" element={<FrontendDevelopment />} />
-        <Route path="/backend-development" element={<BackendDevelopment />} />
-
-
 
         <Route path="/logo-design" element={<LogoDesign />} />
         <Route path="/mobile-app-development" element={<MobileAppDevelopment />} />
@@ -81,9 +70,28 @@ const AppRouter = () => {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="*" element={<NotFound />} />
 
+
+
+          {/* CMS Development & Inner Pages */}
+        <Route path="/cms-development" element={<CMSDevelopment />} />
+        <Route path="/wordpress-development" element={<WordPressDevelopment />} />
+        <Route path="/ecommerce-development" element={<EcommerceDevelopment />} />
+
+
+         {/* Custom Development & Inner Pages */}
+        <Route path="/frontend-development" element={<FrontendDevelopment />} />
+        <Route path="/backend-development" element={<BackendDevelopment />} />
+
+
+           {/* Domain & Hosting  Inner Pages */}
+        <Route path="/domain-registeration" element={<DomainRegisteration />} />
+        <Route path="/domain-transfer" element={<DomainTransfer />} />
+
+
         {/* Location Pages  */}
         <Route path="/app-development-buffalo" element={<AppDevelopmentBuffalo />} />
         <Route path="/wordpress-development-buffalo" element={<WordpressDevelopmentBuffalo />} />
+        <Route path="/react-development-buffalo" element={<ReactDevelopmentBuffalo />} />
 
       </Routes>
     </Router>

@@ -33,7 +33,10 @@ const Header = () => {
         <Link to={"/"} className="navbar-brand">
           <img src={logo} alt="NY Web Experts Logo" />
         </Link>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" className="bg-body-tertiary"/>
+        <Navbar.Toggle
+          aria-controls="responsive-navbar-nav"
+          className="bg-body-tertiary"
+        />
         <Navbar.Collapse>
           <Nav className="mx-auto">
             <NavLink to={"/"} className="nav-link">
@@ -87,40 +90,44 @@ const Header = () => {
                 >
                   Logo Design
                 </NavDropdown.Item>
+
+                {/* CMS Development & Inner Pages */}
                 <div className="nav-subdropdown-wrapper">
-                <NavDropdown.Item
-                  as={Link}
-                  to={"/cms-development"}
-                  target="_blank"
-                  onClick={(e) => e.stopPropagation()}
-                >
-                  CMS Development
-                  <span className="submenu-icon d-none d-lg-inline">
+                  <NavDropdown.Item
+                    as={Link}
+                    to={"/cms-development"}
+                    target="_blank"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    CMS Development
+                    <span className="submenu-icon d-none d-lg-inline">
                       <FaCaretRight />
                     </span>
                     <span className="submenu-icon d-inline d-lg-none">
                       <FaCaretDown />
                     </span>
-                     <div className="nav-subdropdown">
-                    <NavDropdown.Item
-                      as={Link}
-                      to={"/wordpress-development"}
-                      target="_blank"
-                      onClick={(e) => e.stopPropagation()}
-                    >
-                      Wordpress Development
-                    </NavDropdown.Item>
-                    <NavDropdown.Item
-                      as={Link}
-                      to={"/ecommerce-development"}
-                      target="_blank"
-                      onClick={(e) => e.stopPropagation()}
-                    >
-                      Ecommerce Development
-                    </NavDropdown.Item>
-                  </div>
-                </NavDropdown.Item>
+                    <div className="nav-subdropdown">
+                      <NavDropdown.Item
+                        as={Link}
+                        to={"/wordpress-development"}
+                        target="_blank"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        Wordpress Development
+                      </NavDropdown.Item>
+                      <NavDropdown.Item
+                        as={Link}
+                        to={"/ecommerce-development"}
+                        target="_blank"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        Ecommerce Development
+                      </NavDropdown.Item>
+                    </div>
+                  </NavDropdown.Item>
                 </div>
+
+                {/* Digital Marketing & Inner Pages */}
                 <div className="nav-subdropdown-wrapper">
                   <NavDropdown.Item
                     as={Link}
@@ -163,22 +170,24 @@ const Header = () => {
                     </NavDropdown.Item>
                   </div>
                 </div>
+
+                {/* Custom Web Development & Inner Pages */}
                 <div className="nav-subdropdown-wrapper">
-                <NavDropdown.Item
-                  as={Link}
-                  to={"/custom-web-development"}
-                  target="_blank"
-                  onClick={(e) => e.stopPropagation()}
-                >
-                  Custom Web Development
-                  <span className="submenu-icon d-none d-lg-inline">
+                  <NavDropdown.Item
+                    as={Link}
+                    to={"/custom-web-development"}
+                    target="_blank"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    Custom Web Development
+                    <span className="submenu-icon d-none d-lg-inline">
                       <FaCaretRight />
                     </span>
                     <span className="submenu-icon d-inline d-lg-none">
                       <FaCaretDown />
                     </span>
-                </NavDropdown.Item>
-                <div className="nav-subdropdown">
+                  </NavDropdown.Item>
+                  <div className="nav-subdropdown">
                     <NavDropdown.Item
                       as={Link}
                       to={"/frontend-development"}
@@ -197,6 +206,7 @@ const Header = () => {
                     </NavDropdown.Item>
                   </div>
                 </div>
+
                 <NavDropdown.Item
                   as={Link}
                   to={"/mobile-app-development"}
@@ -205,9 +215,45 @@ const Header = () => {
                 >
                   Mobile App Development
                 </NavDropdown.Item>
+
+                {/* Domain & Hosting & Inner Pages */}
+                <div className="nav-subdropdown-wrapper">
+                  <NavDropdown.Item
+                    as="button"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    Domain & Hosting
+                    <span className="submenu-icon d-none d-lg-inline">
+                      <FaCaretRight />
+                    </span>
+                    <span className="submenu-icon d-inline d-lg-none">
+                      <FaCaretDown />
+                    </span>
+                  </NavDropdown.Item>
+                  <div className="nav-subdropdown">
+                    <NavDropdown.Item
+                      as={Link}
+                      to={"/domain-registeration"}
+                      target="_blank"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      Domain Registeration
+                    </NavDropdown.Item>
+                    <NavDropdown.Item
+                      as={Link}
+                      to={"/domain-transfer"}
+                      target="_blank"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      Domain Transfer
+                    </NavDropdown.Item>
+                  </div>
+                </div>
               </Dropdown.Menu>
             </Dropdown>
 
+
+            {/* Location Pages */}
             <Dropdown className="nav-dropdown-custom">
               <Dropdown.Toggle
                 as="button"
@@ -246,6 +292,14 @@ const Header = () => {
                       onClick={(e) => e.stopPropagation()}
                     >
                       Wordpress Development
+                    </NavDropdown.Item>
+                    <NavDropdown.Item
+                      as={Link}
+                      to={"/react-development-buffalo"}
+                      target="_blank"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      React Development
                     </NavDropdown.Item>
                   </div>
                 </div>

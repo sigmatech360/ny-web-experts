@@ -105,14 +105,14 @@ const AppDevelopmentBuffalo = () => {
 
   return (
     <>
-      <DefaultLayout>
-        <ReactHelmet
-          title=" WordPress Development Buffalo, NY"
-          description="Build, scale, and grow with expert WordPress Development in Buffalo, NY; custom, high-performing websites by NY Web Experts, optimized for AEO, GEO, and SEO for powerful growth and increased web ranking"
-          keywords="WordPress development Buffalo ny, custom WordPress development Buffalo ny, WordPress development services Buffalo ny, top wordpress development agencies Buffalo ny, wordpress website development in Buffalo ny, wordpress development company Buffalo , wordpress development services Buffalo ny"
-          url="https://nywebexperts.com/wordpress-development-buffalo"
-        />
+      <ReactHelmet
+        title=" WordPress Development Buffalo, NY"
+        description="Build, scale, and grow with expert WordPress Development in Buffalo, NY; custom, high-performing websites by NY Web Experts, optimized for AEO, GEO, and SEO for powerful growth and increased web ranking"
+        keywords="WordPress development Buffalo ny, custom WordPress development Buffalo ny, WordPress development services Buffalo ny, top wordpress development agencies Buffalo ny, wordpress website development in Buffalo ny, wordpress development company Buffalo , wordpress development services Buffalo ny"
+        url="https://nywebexperts.com/wordpress-development-buffalo"
+      />
 
+      <DefaultLayout>
         <ServicesBanner
           secClass="location-hero-banner"
           formClass="service-form"
@@ -120,11 +120,11 @@ const AppDevelopmentBuffalo = () => {
           title="Scale Your Business with WordPress Development in Buffalo, NY"
           description="Your business deserves performance, power, purpose, and a platform that lets the world see what you do best. At NY Web Experts, we develop websites that showcase your work to the world through our WordPress Development in Buffalo, NY process and help you:"
           bulletpoints={[
-          "Gain more customers",
-          "Beat your competitors at every turn",
-          "Take your brand to the top",
-        ]}
-        descriptionthree="Open your digital office with NY Web Experts today!"
+            "Gain more customers",
+            "Beat your competitors at every turn",
+            "Take your brand to the top",
+          ]}
+          descriptionthree="Open your digital office with NY Web Experts today!"
           cta1="Scale with WordPress"
           cta2="hehe"
         />
@@ -159,7 +159,7 @@ const AppDevelopmentBuffalo = () => {
           projectsData={webDesignPortfolioData}
           onImageClick={handleImageClick}
         />
-{/* 
+        {/* 
         <TabsPricing
           minihead="Pricing Plans"
           mainhead="Smart Pricing for Real Results"

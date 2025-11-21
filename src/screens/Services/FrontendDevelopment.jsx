@@ -15,18 +15,43 @@ import ContactUsSec from "../../components/ContactUsSec";
 import BlogSec from "../../components/BlogSec";
 import GetStarted from "../../components/GetStarted";
 import ReactHelmet from "../../components/ReactHelmet";
+import custom from "../../assets/images/services/frontenddevelopment/custom.svg"
+import screens from "../../assets/images/services/frontenddevelopment/screens.svg"
+import uiux from "../../assets/images/services/frontenddevelopment/uiux.svg"
+import javascript from "../../assets/images/services/frontenddevelopment/javascript.svg"
 
 const FrontendDevelopment = () => {
+  const frontendservices = [
+    {
+      img: custom,
+      title: "CMS Development",
+      para: "Every great website starts with a smart foundation. We build robust, flexible, and secure CMS-based front ends that give you control without complexity, blending sleek design with seamless functionality to make managing your content effortless.",
+    },
+    {
+      img: screens,
+      title: "Shopify Front-End Development",
+      para: "Your storefront deserves more than templates. Our Shopify front-end development in New York transforms online stores into immersive, high-converting experiences. From custom layouts to optimized checkout flows, we code with conversion in mind.",
+    },
+    {
+      img: uiux,
+      title: "WordPress Front-End Development",
+      para: "Clean, optimized, and  designed to impress, that’s our approach to WordPress front-end design and development in New York. We create lightning-fast, pixel-perfect interfaces that load quickly, rank higher, and deliver results your audience (and Google) will love.",
+    },
+    {
+      img: javascript,
+      title: "Wix Front-End Development",
+      para: "Simplicity meets sophistication. Our Wix front-end development services elevate drag-and-drop design into high-performance interfaces that look professional, load fast, and work beautifully across all devices.",
+    },
+  ];
+
   return (
     <>
-
       <ReactHelmet
-          title="Frontend Development in New York"
-          description="Build responsive, high-performing websites with NY Web Experts, the leading front-end development company in New York delivering strategically designed web pages, mobile app designs, UI, SPAs, and more."
-          keywords="front-end development company new york, front-end development agency new york, front-end development services new york, front-end web development new york, front-end design and development new york, custom front-end development new york, React front-end development new york, Angular front-end development new york, Vue.js front-end development new york"
-          url="https://nywebexperts.com/frontend-development"
-        />
-
+        title="Frontend Development in New York"
+        description="Build responsive, high-performing websites with NY Web Experts, the leading front-end development company in New York delivering strategically designed web pages, mobile app designs, UI, SPAs, and more."
+        keywords="front-end development company new york, front-end development agency new york, front-end development services new york, front-end web development new york, front-end design and development new york, custom front-end development new york, React front-end development new york, Angular front-end development new york, Vue.js front-end development new york"
+        url="https://nywebexperts.com/frontend-development"
+      />
 
       <DefaultLayout>
         <ServicesBanner
@@ -86,7 +111,14 @@ const FrontendDevelopment = () => {
           aboutbtnlink="/contact-us"
         />
 
-        <FrontendServices />
+        <FrontendServices
+          shortHead="Services"
+          mainHead="Frontend Development is Not the Only Thing We Do"
+          description="We do frontend, but not only for the website..."
+          btnText="Start Your Project"
+          btnLink="/contact-us"
+          services={frontendservices}
+        />
 
         <WordPressPerformanceSection
           reverse
@@ -134,7 +166,10 @@ const FrontendDevelopment = () => {
           tabsData={dynamictabsData}
         /> */}
 
-        <ContactUsSec secTag="Connect With Us" secTitle="Start Your Frontend Project" />
+        <ContactUsSec
+          secTag="Connect With Us"
+          secTitle="Start Your Frontend Project"
+        />
 
         <BlogSec
           blogminihead="Blogs & Articles"

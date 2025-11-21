@@ -57,8 +57,7 @@ const AppDevelopmentBuffalo = () => {
 
   const faqsData = [
     {
-      header:
-        " How long does it take to develop a mobile app in Buffalo, NY?",
+      header: " How long does it take to develop a mobile app in Buffalo, NY?",
       content:
         "The duration depends on the project's complexity, but ideally, a medium-sized app takes between 8 and 16 weeks from design to deployment. For larger apps or ERP solutions, we create a detailed roadmap by breaking the project into sprints. This way, development stays transparent, and you can see your app come to life with every implementation phase clearly demonstrated. ",
     },
@@ -68,8 +67,7 @@ const AppDevelopmentBuffalo = () => {
         "We offer both iOS and Android app development in Buffalo, NY, along with cross-platform solutions built for speed, scalability, and consistent user experience across devices.",
     },
     {
-      header:
-        "Do you offer post-launch app support and maintenance?",
+      header: "Do you offer post-launch app support and maintenance?",
       content:
         "Yes, we believe app maintenance is as vital as good app development, as it keeps the platform fast and reliable! We offer ongoing technical support, updates, and optimization services to ensure your app stays fast, secure, and compatible with the latest operating systems.",
     },
@@ -80,7 +78,8 @@ const AppDevelopmentBuffalo = () => {
         "Absolutely, whether it’s CRM, ERP, or custom APIs, our custom mobile app development services in Buffalo, NY,, ensure smooth integration with your existing ecosystem, without any downtime.",
     },
     {
-      header: "What makes California Web Coders different from other app development companies in Los Angeles?",
+      header:
+        "What makes California Web Coders different from other app development companies in Los Angeles?",
       content:
         "We don’t just build apps; we build growth engines. Every decision is made to maximize engagement, retention, and conversions. That’s what makes us more than developers; we’re your strategic tech partners.",
     },
@@ -114,15 +113,14 @@ const AppDevelopmentBuffalo = () => {
 
   return (
     <>
-      <DefaultLayout>
-        
-         <ReactHelmet
-          title="App Development Buffalo, NY"
-          description="The leading design and development company, NY Web Experts offers App Development in Buffalo, NY, creating stunning iOS and Android apps that engage users and drive results."
-          keywords="mobile app development company Buffalo NY, custom mobile app development Buffalo NY, mobile app development agency Buffalo NY, mobile app development cost Buffalo NY, custom mobile app development services Buffalo NY, iOS app development Buffalo NY, Android app development Buffalo NY"
-          url="https://nywebexperts.com/app-development-buffalo"
-        />
+      <ReactHelmet
+        title="App Development Buffalo, NY"
+        description="The leading design and development company, NY Web Experts offers App Development in Buffalo, NY, creating stunning iOS and Android apps that engage users and drive results."
+        keywords="mobile app development company Buffalo NY, custom mobile app development Buffalo NY, mobile app development agency Buffalo NY, mobile app development cost Buffalo NY, custom mobile app development services Buffalo NY, iOS app development Buffalo NY, Android app development Buffalo NY"
+        url="https://nywebexperts.com/app-development-buffalo"
+      />
 
+      <DefaultLayout>
         <ServicesBanner
           secClass="location-hero-banner"
           formClass="service-form"

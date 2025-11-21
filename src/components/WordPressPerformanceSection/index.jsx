@@ -141,8 +141,9 @@ const WordPressPerformanceSection = (props) => {
                         data-aos={textAos}
                         data-aos-duration="1000"
                         data-aos-offset="50"
+
                       >
-                        {props.description2}
+                        {props.description2} <span className="specific-para-span">{props.description2span}</span>
                       </p>
                     )}
                     <Link
