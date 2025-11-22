@@ -21,7 +21,7 @@ const DomainTransferSteps = () => {
                 transfer, zero downtime, total security, and complete ownership
                 control from start to finish.
               </p>
-              <Link to="/about" className="ny-btn">
+              <Link to="/contact-us" className="ny-btn">
                 Talk to Domain Professionals
               </Link>
             </div>
