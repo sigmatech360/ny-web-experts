@@ -62,7 +62,7 @@ const DomainRegisteration = () => {
           cta2="hehe"
         />
 
-        <FindDomain />
+        {/* <FindDomain /> */}
 
         <WordPressPerformanceSection
           reverse

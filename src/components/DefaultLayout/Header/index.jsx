@@ -299,7 +299,7 @@ const Header = () => {
                       target="_blank"
                       onClick={(e) => e.stopPropagation()}
                     >
-                      React Development
+                      Reactjs Development
                     </NavDropdown.Item>
                   </div>
                 </div>

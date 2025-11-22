@@ -114,7 +114,7 @@ const FrontendDevelopment = () => {
         <FrontendServices
           shortHead="Services"
           mainHead="Frontend Development is Not the Only Thing We Do"
-          description="We do frontend, but not only for the website..."
+          description="We do frontend, but not only for the website. Below is the list of frontend development we offer for different platforms."
           btnText="Start Your Project"
           btnLink="/contact-us"
           services={frontendservices}

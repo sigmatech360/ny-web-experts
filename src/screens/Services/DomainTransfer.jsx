@@ -119,7 +119,7 @@ const DomainTransfer = () => {
           aboutbtnlink="/contact-us"
         />
 
-        <DomainSearchPrice />
+        {/* <DomainSearchPrice /> */}
 
         <TransferWhyus />
 
