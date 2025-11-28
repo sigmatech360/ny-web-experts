@@ -3094,6 +3094,166 @@ section.domain-search-buy {
 /************* Domain Transfer Page CSS End *************/
 
 
+/************* Web App Development Page CSS Start *************/
+
+
+.webapp-services-sec {
+  background: url(./assets/images/services/webappdevelopment/service-bg.webp) no-repeat top center;
+  background-size: cover;
+  padding: 100px 0px 100px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.webapp-service-img img {
+    width: 100%;
+}
+
+.webapp-service-img img {
+    width: 100%;
+}
+
+.webapp-service-head {
+    text-align: center;
+    margin: 0px 0px 50px 0px;
+}
+
+.webapp-service-head p {
+    color: #fff;
+}
+
+.webapp-service-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.webapp-service-txt a {
+    width: fit-content;
+}
+
+.webapp-service-txt h4 {
+    color: #fff;
+    margin: 0px 0px 15px 0px;
+}
+
+.webapp-service-txt p {
+    color: #fff;
+    margin: 0px 0px 20px 0px;
+}
+
+
+section.webapp-process-sec {
+    padding: 60px 0px;
+}
+
+.webapp-process-head {
+    text-align: center;
+    margin: 0px 0px 50px 0px;
+}
+
+.webapp-process-txt {
+    margin: 0px 0px 30px 0px;
+    padding: 0px 20px;
+    border-right: 2px solid #707070;
+}
+
+.webapp-process-txt h4 {
+    color: #440370;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.webapp-process-txt p {
+    color: #161515;
+}
+
+.process-txt-border {
+  border: none;
+}
+
+
+section.expert-talk-sec {
+    padding: 50px 0px;
+    background-image: linear-gradient(90deg,rgba(68, 3, 112, 1) 0%, rgba(42, 53, 80, 1) 82%, rgba(42, 53, 80, 1) 100%  );
+}
+
+.expert-talk-txt p {
+    color: #fff;
+}
+
+.expert-talk-btn {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.ecommerce-portfolio-img img {
+    padding: 50px 110px;
+}
+
+section.ecommerce-portflio-sec {
+    padding: 60px 0px;
+}
+
+.ecommerce-portfolio-head {
+    text-align: center;
+} 
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: "" !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 50px !important;
+  height: 50px !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-button-prev {
+  background-image: url("./assets/images/services/webappdevelopment/left-arrow.svg");
+}
+
+/* RIGHT ARROW SVG */ 
+.swiper-button-next {
+  background-image: url("./assets/images/services/webappdevelopment/right-arrow.svg");
+}
+
+
+.weserve-sec {
+  background: url(./assets/images/services/webappdevelopment/industries-bg.webp) no-repeat top center;
+  background-size: cover;
+  padding: 70px 0px 130px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.weservce-head {
+  text-align: center;
+  margin: 0px 0px 50px 0px;
+}
+
+
+.weservce-head p {
+    color: #fff;
+}
+
+.serve-item p {
+    color: #fff;
+    font-weight: 500;
+}
+
+
+
+/************* Web App Development Page CSS End *************/
+
 
 
 @media (max-width: 1399px) {
@@ -3500,6 +3660,26 @@ section.domain-search-buy {
 }
 
 
+.webapp-service-txt {
+    margin: 0px 0px 90px 0px;
+}
+
+.webapp-service-img {
+    margin: 0px 0px 40px 0px;
+}
+
+.webapp-process-txt {
+    border: none;
+    text-align: center;
+}
+
+.serve-item {
+    margin: 0px 0px 20px 0px;
+}
+
+.weserve-sec {
+    padding: 40px 0px 30px 0px;
+}
 
 }
 
@@ -3787,6 +3967,35 @@ section.domain-search-buy {
     padding: 30px;
     border-radius: 20px;
     text-align: center;
+}
+
+.serve-item {
+    text-align: center;
+}
+
+.ecommerce-portfolio-img img {
+    padding: 40px 60px;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    width: 30px !important;
+    height: 30px !important;
+}
+
+.expert-talk-txt {
+    text-align: center;
+}
+
+.expert-talk-btn {
+    align-items: center;
+}
+
+.webapp-service-txt {
+    text-align: center;
+}
+
+.webapp-service-txt a {
+    margin: 0 auto;
 }
     
 

@@ -207,14 +207,38 @@ const Header = () => {
                   </div>
                 </div>
 
+               <div className="nav-subdropdown-wrapper">
                 <NavDropdown.Item
-                  as={Link}
-                  to={"/mobile-app-development"}
-                  target="_blank"
+                  as="button"
                   onClick={(e) => e.stopPropagation()}
                 >
-                  Mobile App Development
+                  App Development
+                  <span className="submenu-icon d-none d-lg-inline">
+                      <FaCaretRight />
+                    </span>
+                    <span className="submenu-icon d-inline d-lg-none">
+                      <FaCaretDown />
+                    </span>  
                 </NavDropdown.Item>
+                <div className="nav-subdropdown">
+                    <NavDropdown.Item
+                      as={Link}
+                      to={"/mobile-app-development"}
+                      target="_blank"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      Mobile App Development
+                    </NavDropdown.Item>
+                    <NavDropdown.Item
+                      as={Link}
+                      to={"/web-app-development"}
+                      target="_blank"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      Web App Development
+                    </NavDropdown.Item>
+                </div>
+                </div>
 
                 {/* Domain & Hosting & Inner Pages */}
                 <div className="nav-subdropdown-wrapper">

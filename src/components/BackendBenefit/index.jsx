@@ -1,8 +1,8 @@
 import React from 'react'
-import benefit1 from "../../assets/images/services/backenddevelopment/benefit1.svg";
-import benefit2 from "../../assets/images/services/backenddevelopment/benefit2.svg";
-import benefit3 from "../../assets/images/services/backenddevelopment/benefit3.svg";
-import benefit4 from "../../assets/images/services/backenddevelopment/benefit4.svg";
+import benefit1 from "../../assets/images/services/backenddevelopment/APIDevelopment.svg";
+import benefit2 from "../../assets/images/services/backenddevelopment/databasemanagement.svg";
+import benefit3 from "../../assets/images/services/backenddevelopment/trustedclients.svg";
+import benefit4 from "../../assets/images/services/backenddevelopment/delivercommitted.svg";
 
 const BackendBenefit = () => {
   return (

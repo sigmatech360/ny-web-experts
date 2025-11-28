@@ -34,6 +34,7 @@ import BackendDevelopment from "../screens/Services/BackendDevelopment";
 import DomainRegisteration from "../screens/Services/DomainRegisteration";
 import DomainTransfer from "../screens/Services/DomainTransfer";
 import ReactDevelopmentBuffalo from "../screens/locationpages/ReactDevelopmentBuffalo";
+import WebAppDevelopment from "../screens/Services/WebAppDevelopment";
 
 const AppRouter = () => {
   return (
@@ -51,7 +52,7 @@ const AppRouter = () => {
         <Route path="/search-engine-optimization" element={<SEO />} />
 
         <Route path="/logo-design" element={<LogoDesign />} />
-        <Route path="/mobile-app-development" element={<MobileAppDevelopment />} />
+
         {/* Services Pages */}
 
         <Route path="/portfolio" element={<Portfolio />} />
@@ -81,6 +82,10 @@ const AppRouter = () => {
          {/* Custom Development & Inner Pages */}
         <Route path="/frontend-development" element={<FrontendDevelopment />} />
         <Route path="/backend-development" element={<BackendDevelopment />} />
+
+          {/* App Development & Inner Pages */}        
+        <Route path="/mobile-app-development" element={<MobileAppDevelopment />} />
+        <Route path="/web-app-development" element={<WebAppDevelopment />} />
 
 
            {/* Domain & Hosting  Inner Pages */}
