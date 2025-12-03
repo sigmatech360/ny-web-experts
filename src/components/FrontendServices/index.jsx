@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 
-const FrontendServices = ({ shortHead, mainHead, description, services, btnText, btnLink, CardCol , ServiceSecClass }) => {
+const FrontendServices = ({ shortHead, mainHead, btnClass, description, secCardClass, services, btnText, btnLink, CardCol , ServiceSecClass }) => {
   return (
     <section className={ServiceSecClass || "frontend-services-sec"}>
       <div className="container">
@@ -19,7 +19,7 @@ const FrontendServices = ({ shortHead, mainHead, description, services, btnText,
         <div className="row justify-content-center">
           {services?.map((item, index) => (
             <div key={index} className={CardCol || "col-lg-6 col-md-6"}>
-              <div className="frontend-service-card">
+              <div className={`frontend-service-card ${secCardClass}`}>
                 <img src={item.img} alt={item.title} />
                 <h4>{item.title}</h4>
                 <p>{item.para}</p>
@@ -31,7 +31,7 @@ const FrontendServices = ({ shortHead, mainHead, description, services, btnText,
         <div className="row">
           <div className="col-lg-12">
             <div className="frontend-service-btn">
-              <Link to={btnLink} className="ny-btn">
+              <Link to={btnLink} className={btnClass || "ny-btn"}>
                 {btnText}
               </Link>
             </div>

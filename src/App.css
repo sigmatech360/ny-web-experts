@@ -3250,9 +3250,559 @@ section.ecommerce-portflio-sec {
     font-weight: 500;
 }
 
-
-
 /************* Web App Development Page CSS End *************/
+
+
+
+/************* Brand Strategy Page CSS Start *************/
+
+
+.grow-brand-background {
+    background: transparent linear-gradient(280deg, #2A3550 0%, #440370 100%) 0% 0% no-repeat padding-box;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+section.growbrand-sec {
+    padding: 50px 0px;
+}
+
+.grow-brand-btn {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.brand-strategy-sec {
+  background: url(./assets/images/services/brandstrategy/service-bg.webp) no-repeat top center;
+  background-size: cover;
+  padding: 130px 0px 100px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.brand-strategy-head p {
+    color: #fff;
+    margin: 0px 0px 20px 0px;
+}
+
+.brand-strategy-head h6 {
+    margin: 0px 0px 10px 0px;
+}
+
+
+
+.brand-service-list .accordion .accordion-item {
+  margin: 0px 0px 20px 0px;
+  border: none;
+  border-bottom: 0.4000000059604645px solid #FFFFFf;
+  background: transparent;
+}
+
+.brand-service-list .accordion {
+  background: transparent;
+  border: none;
+}
+
+.brand-service-list .accordion .accordion-item .accordion-header {
+  background: transparent;
+  color: #fff;
+  border: none !important;
+}
+
+.brand-service-list
+  .accordion
+  .accordion-item
+  .accordion-header
+  button.accordion-button.collapsed {
+  background: transparent;
+  color: #fff;
+  border: none !important;
+  box-shadow: none;
+    font-weight: 400;
+  font-size: 18px;
+}
+
+.brand-service-list
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.brand-service-list
+  .accordion
+  .accordion-item:first-of-type
+  > .accordion-header
+  .accordion-button {
+  background: transparent;
+  color: #161515;
+  border: none !important;
+}
+
+.brand-service-list
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button:not(.collapsed) {
+  color: #fff;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.brand-service-list .accordion .accordion-item .accordion-collapse.collapse.show {
+  border: none !important;
+}
+
+.brand-service-list .accordion .accordion-item .accordion-body {
+  border: none !important;
+  color: #fff;
+}
+
+.brand-service-list
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button::after {
+  background-image: url(./assets/images/services/brandstrategy/leftarrow.svg);
+  transform: rotate(0deg);
+}
+
+.brand-service-list
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button:not(.collapsed)::after {
+  background-image: url(./assets/images/services/brandstrategy/leftarrow.svg);
+  transform: rotate(90deg);
+}
+
+section.brand-strategy-process {
+    padding: 70px 0px;
+}
+
+.strategy-process-head {
+    text-align: center;
+    margin: 0px 0px 60px 0px;
+}
+
+.strategy-process-card h4 {
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin: 0px 0px 30px 0px;
+}
+
+.strategy-process-card h5 {
+    color: #440370;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0px 0px 12px 0px;
+}
+
+.strategy-process-card p {
+    color: #161515;
+}
+
+.strategy-choose-sec {
+  background: url(./assets/images/services/brandstrategy/choose-bg.webp) no-repeat top center;
+  background-size: cover;
+  padding: 100px 0px 130px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.strategy-choose-head {
+    text-align: center;
+    margin: 0px 0px 50px 0px;
+}
+
+.strategy-choose-head p {
+    color: #fff;
+}
+
+.strategy-client-card {
+    background: transparent linear-gradient(180deg, #026888 0%, #440370 100%) 0% 0% no-repeat padding-box;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.strategy-client-card img {
+    width: 35px;
+    margin: 0px 0px 10px 0px;
+}
+
+.strategy-client-card h4 {
+    font-size: 18px;
+    color: #fff;
+}
+
+.strategy-client-card p {
+    font-size: 14px;
+    color: #fff;
+    margin: 0px;
+}
+
+.brand-srategy-expertise {
+  background: url(./assets/images/services/brandstrategy/expertise-bg.webp) no-repeat top center;
+  background-size: cover;
+  padding: 130px 0px 100px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.strategy-expertise-head p {
+    color: #fff;
+}
+
+.strategy-expertise-head p {
+    color: #fff;
+}
+
+.strategy-expertise-box {
+    width: 300px;
+    height: 230px;
+    background: transparent linear-gradient(180deg, #026888 0%, #440370 100%) 0% 0% no-repeat padding-box;
+    border: 1px solid #FFFFFF;
+    border-radius: 16px;
+    padding: 20px;
+    margin: 0px 0px 20px 0px;
+    flex-shrink: 0;
+}
+
+.strategy-expertise-box h4 {
+    font-size: 22px;
+    color: #fff;
+    margin: 0px 0px 13px 0px;
+}
+
+.strategy-expertise-box h5 {
+    color: #fff;
+    margin: 0px 0px 10px 0px;
+    font-size: 18px;
+}
+
+.strategy-expertise-box p {
+    color: #fff;
+    font-size: 15px;
+}
+
+.marquee-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-content {
+  display: flex;
+  width: max-content;
+  gap: 20px;
+  animation: scrollLeft 18s linear infinite;
+}
+
+
+/* Smooth Infinite Loop Animation */
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.brand-quote-txt {
+    text-align: center;
+}
+
+.brand-quote-bg {
+    padding: 50px;
+    background: transparent linear-gradient(280deg, #2A3550 0%, #440370 100%) 0% 0% no-repeat padding-box;
+    border-radius: 20px;
+}
+
+.brand-quote-txt h4 {
+    color: #fff;
+    font-weight: normal;
+    margin: 0px 0px 20px 0px;
+    font-size: 28px;
+}
+
+.brand-quote-txt h5 {
+    color: #fff;
+}
+
+section.brand-voice-quote {
+    padding: 60px 0px;
+}
+
+/************* Brand Strategy Page CSS ENd *************/
+
+
+
+/************* Brand Voice Page CSS Start *************/
+
+
+.brandvoice-services-sec {
+  background: url(./assets/images/services/brandvoice/service-bg.webp) no-repeat top center;
+  background-size: cover;
+  padding: 100px 0px 100px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+
+.brandvoice-service-card {
+    background: transparent linear-gradient(180deg, #026888 0%, #440370 100%) 0% 0% no-repeat padding-box;
+    border-radius: 20px;
+    border: none;
+}
+
+
+.brandvoice-service-card {
+    background: transparent linear-gradient(180deg, #026888 0%, #440370 100%) 0% 0% no-repeat padding-box;
+    border-radius: 20px;
+    border: none;
+}
+
+section.brandvoice-sec {
+    padding: 60px 0px;
+}
+
+.voice-process-head {
+    text-align: center;
+    margin: 0px 0px 50px 0px;
+}
+
+.voice-process-card {
+    text-align: center;
+    margin: 0px 0px 50px 0px;
+}
+
+.voice-process-card h4 {
+    background: transparent linear-gradient(180deg, #026888 0%, #440370 100%) 0% 0% no-repeat padding-box;
+    display: inline-block;
+    color: #fff;
+    border-radius: 100%;
+    padding: 10px 10px;
+    font-size: 20px;
+    margin: 0px 0px 15px 0px;
+}
+
+.voice-process-card h5 {
+    color: #292F3A;
+    font-size: 18px;
+    margin: 0px 0px 15px 0px;
+}
+
+.voice-process-card p {
+    color: #292F3A;
+}
+
+.brandvoice-suppport-sec {
+  background: url(./assets/images/services/brandvoice/support-bg.webp) no-repeat top center;
+  background-size: cover;
+  padding: 100px 0px 100px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+
+/************* Brand Voice Page CSS End *************/
+
+
+.newproject-bg {
+  background: url(./assets/images/locationpages/ecommerce-development-buffalo/newproject-bg.webp) no-repeat top center;
+  background-size: cover;
+  padding: 90px 0px 97px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+
+.started-new-project {
+    padding: 50px 0px;
+}
+
+.newproject-starttxt p {
+    color: #fff;
+    padding: 15px 0px;
+}
+
+.ecommerce-buffalo-reimagine {
+    padding: 100px 0px 100px 0px;
+}
+
+
+/************* Domain registeration Location Page CSS Start *************/
+
+
+.location-expertise-sec {
+  background: url(./assets/images/locationpages/domain-registeration-buffalo/gooddesignbg.webp) no-repeat top center;
+  background-size: cover;
+  padding: 120px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.location-expertise-head {
+    text-align: center;
+    margin: 0px 0px 50px 0px;
+}
+
+.location-expertise-head p {
+    color: #fff;
+}
+
+.location-expertise-box {
+    background: #b3b3b329;
+    border: 1px solid #FFFFFF;
+    border-radius: 16px;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    padding: 20px;
+}
+
+.location-expertise-box img {
+    width: 50px;
+    margin: 0px 0px 20px 0px;
+}
+
+.location-expertise-box h4 {
+    color: #fff;
+    font-weight: normal;
+    font-size: 20px;
+    margin: 0px 0px 15px 0px;
+}
+
+.location-expertise-box p {
+    color: #fff;
+    font-size: 15px;
+}
+
+
+.local-specialist-sec {
+  background: url(./assets/images/locationpages/domain-registeration-buffalo/texasdomain-bg.webp) no-repeat top center;
+  background-size: cover;
+  padding: 120px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+
+.location-expertises .accordion .accordion-item {
+  margin: 0px 0px 20px 0px;
+  border-radius: 10px;
+  border: 1px solid #ffffff7a !important;
+  background: transparent linear-gradient(180deg, #026888 0%, #440370 100%) 0%
+    0% no-repeat padding-box;
+}
+
+.location-expertises .accordion {
+  background: transparent;
+  border: none;
+}
+
+.location-expertises .accordion .accordion-item .accordion-header {
+  background: transparent;
+  color: #fff;
+  border: none !important;
+}
+
+.location-expertises
+  .accordion
+  .accordion-item
+  .accordion-header
+  button.accordion-button.collapsed {
+  background: transparent linear-gradient(180deg, #026888 0%, #440370 100%) 0% 0% no-repeat padding-box;
+  color: #fff;
+  font-weight: 500;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 12px;
+}
+
+.location-expertises
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.location-expertises
+  .accordion
+  .accordion-item:first-of-type
+  > .accordion-header
+  .accordion-button {
+  background: transparent;
+  color: #161515;
+  border: none !important;
+}
+
+.location-expertises
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button:not(.collapsed) {
+  color: #fff;
+  background-color: transparent;
+  font-weight: 500;
+}
+
+.location-expertises .accordion .accordion-item .accordion-collapse.collapse.show {
+  border: none !important;
+}
+
+.location-expertises .accordion .accordion-item .accordion-body {
+  border: none !important;
+  color: #fff;
+}
+
+.location-expertises
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button::after {
+  background-image: url(./assets/images/locationpages/domain-registeration-buffalo/downarrow.svg);
+  transform: rotate(0deg);
+}
+
+.location-expertises
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button:not(.collapsed)::after {
+  background-image: url(./assets/images/locationpages/app-development-buffalo/uparrow.svg);
+}
+
+.location-expertises
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button:focus {
+  outline: none;
+  border: none !important;
+}
+
+
+.local-specialist-txt {
+    margin: 30px 0px 50px 0px;
+}
+
+.local-specialist-txt p {
+    color: #fff;
+}
+
+/************* Domain registeration Location Page CSS End *************/
+
+
 
 
 
@@ -3681,6 +4231,36 @@ section.ecommerce-portflio-sec {
     padding: 40px 0px 30px 0px;
 }
 
+.brand-strategy-head {
+    margin: 0px 0px 30px 0px;
+}
+
+.strategy-client-card {
+    margin: 0px 0px 20px 0px;
+}
+
+.strategy-choose-sec {
+    padding: 100px 0px 90px 0px;
+}
+
+
+.strategy-expertise-head {
+    margin: 0px 0px 50px 0px;
+}
+
+.brand-srategy-expertise {
+    padding: 80px 0px 60px 0px;
+}
+
+.location-expertise-box {
+    margin: 0px 0px 20px 0px;
+}
+
+.ecommerce-buffalo-reimagine {
+    padding: 190px 0px 100px 0px;
+}
+
+
 }
 
 @media (max-width: 767px) {
@@ -3996,6 +4576,40 @@ section.ecommerce-portflio-sec {
 
 .webapp-service-txt a {
     margin: 0 auto;
+}
+
+.strategy-client-card {
+    text-align: center;
+}
+
+.strategy-process-card {
+    text-align: center;
+}
+
+.grow-brand-btn {
+    align-items: center;
+}
+
+.grow-brand-txt {
+    text-align: center;
+}
+
+.grow-brand-txt h2 {
+    margin: 0px 0px 30px 0px;
+}
+
+    .app-florida-herobanner {
+        padding: 180px 0px 90px 0px;
+    }
+
+
+    .newproject-starttxt {
+    padding: 0px 30px;
+}
+
+.newproject-bg {
+    padding: 70px 0px 70px 0px;
+    border-radius: 20px;
 }
     
 

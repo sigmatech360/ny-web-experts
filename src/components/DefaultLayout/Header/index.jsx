@@ -273,6 +273,40 @@ const Header = () => {
                     </NavDropdown.Item>
                   </div>
                 </div>
+
+                  {/* Brand Identity & Inner Pages */}
+                <div className="nav-subdropdown-wrapper">
+                  <NavDropdown.Item
+                    as="button"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    Brand Identity
+                    <span className="submenu-icon d-none d-lg-inline">
+                      <FaCaretRight />
+                    </span>
+                    <span className="submenu-icon d-inline d-lg-none">
+                      <FaCaretDown />
+                    </span>
+                  </NavDropdown.Item>
+                  <div className="nav-subdropdown">
+                    <NavDropdown.Item
+                      as={Link}
+                      to={"/brand-strategy"}
+                      target="_blank"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      Brand Strategy
+                    </NavDropdown.Item>
+                    <NavDropdown.Item
+                      as={Link}
+                      to={"/brand-voice"}
+                      target="_blank"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      Brand Voice
+                    </NavDropdown.Item>
+                  </div>
+                </div>
               </Dropdown.Menu>
             </Dropdown>
 
@@ -324,6 +358,22 @@ const Header = () => {
                       onClick={(e) => e.stopPropagation()}
                     >
                       Reactjs Development
+                    </NavDropdown.Item>
+                    <NavDropdown.Item
+                      as={Link}
+                      to={"/ecommerce-development-buffalo"}
+                      target="_blank"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      Ecommerce Development
+                    </NavDropdown.Item>
+                    <NavDropdown.Item
+                      as={Link}
+                      to={"/domain-registeration-buffalo"}
+                      target="_blank"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      Domain Registeration
                     </NavDropdown.Item>
                   </div>
                 </div>

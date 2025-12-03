@@ -125,7 +125,12 @@ const DomainTransfer = () => {
 
         <DomainTransferSteps />
 
-        <TransferSupport />
+        <TransferSupport 
+          shortTopHead="Web & Domain Service"
+          mainHead="Protected by Experts in NY"
+          description="Your website doesn’t need to take breaks like you do. It doesn’t need lunch, nor anything, and we make sure it stays that way, without any downtime, always on, always ready to sell more and rank your business higher, protected by monthly backups, and a professional company in New York."
+          buttonText="Talk to Professionals"
+        />
 
         {/* <TabsPricing
           minihead="Pricing Plan"

@@ -35,6 +35,10 @@ import DomainRegisteration from "../screens/Services/DomainRegisteration";
 import DomainTransfer from "../screens/Services/DomainTransfer";
 import ReactDevelopmentBuffalo from "../screens/locationpages/ReactDevelopmentBuffalo";
 import WebAppDevelopment from "../screens/Services/WebAppDevelopment";
+import BrandStrategy from "../screens/Services/BrandStrategy";
+import BrandVoice from "../screens/Services/BrandVoice";
+import EcommerceDevelopmentBuffalo from "../screens/locationpages/EcommerceDevelopmentBuffalo";
+import DomainRegistrationBuffalo from "../screens/locationpages/DomainRegistrationBuffalo";
 
 const AppRouter = () => {
   return (
@@ -93,10 +97,19 @@ const AppRouter = () => {
         <Route path="/domain-transfer" element={<DomainTransfer />} />
 
 
+
+           {/* Brand Identity &  Inner Pages */}
+        <Route path="/brand-strategy" element={<BrandStrategy />} />
+        <Route path="/brand-voice" element={<BrandVoice />} />
+
+
+
         {/* Location Pages  */}
         <Route path="/app-development-buffalo" element={<AppDevelopmentBuffalo />} />
         <Route path="/wordpress-development-buffalo" element={<WordpressDevelopmentBuffalo />} />
         <Route path="/react-development-buffalo" element={<ReactDevelopmentBuffalo />} />
+        <Route path="/ecommerce-development-buffalo" element={<EcommerceDevelopmentBuffalo />} />
+        <Route path="/domain-registeration-buffalo" element={<DomainRegistrationBuffalo />} />
 
       </Routes>
     </Router>

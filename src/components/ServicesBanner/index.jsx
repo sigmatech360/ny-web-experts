@@ -81,6 +81,7 @@ const ServicesBanner = (props) => {
           <div className="row align-items-center flex-lg-row">
             <div className={props.leftColClass || `col-lg-6`}>
               <div className="services-banner__content">
+                {props.minihead && <h6>{props.minihead}</h6>}
                 <h1 dangerouslySetInnerHTML={{ __html: props.title }}></h1>
                 <p dangerouslySetInnerHTML={{ __html: props.description }}></p>
                 {props.descriptiontwo && <p>{props.descriptiontwo}</p>}
