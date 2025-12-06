@@ -3800,9 +3800,381 @@ section.brandvoice-sec {
     color: #fff;
 }
 
+
+.logodesign-about-sec .web-about-list {
+    display: block !important;
+    padding: 0px;
+}
+
+.logodesign-about-sec .web-about-list li {
+    list-style: none;
+    padding: 6px 0px 6px 0px;
+}
+
+.logodesign-about-sec .web-about-list li img {
+    padding: 0px 10px 0px 0px;
+    color: #161515;
+    width: 28px;
+}
+
 /************* Domain registeration Location Page CSS End *************/
 
 
+
+/************* New Logo Design Page CSS Start *************/
+
+
+.logodesign-service-img img {
+    width: 100%;
+}
+
+.logodesign-service-img {
+    padding: 50px 30px;
+}
+
+.logodesign-service-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.logodesign-service-sec {
+  padding: 130px 0px 130px 0px;
+  background: url(./assets/images/services/logodesign/service-bg.webp)
+    no-repeat top center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.logodesign-service-txt .ny-btn {
+    width: fit-content;
+}
+
+.logodesign-service-txt h4 {
+    color: #fff;
+    padding: 0px 0px 10px 0px;
+}
+
+.logodesign-service-txt p {
+    color: #fff;
+    padding: 0px 0px 10px 0px;
+}
+
+.logodesign-service-head p {
+    color: #fff;
+}
+
+.logodesign-service-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 0px 0px 20px 0px;
+}
+
+.logodesign-serivce-border {
+    border: 1px solid #fff;
+    border-left: none;
+    border-right: none;
+}
+
+
+
+.industry-slider-sec {
+  padding: 70px 0px;
+}
+
+.industry-slider-headbtn {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+  height: 100%;
+  padding: 0px 0px 40px 0px;
+}
+
+.industry-slider-card {
+  background: transparent linear-gradient(180deg, #026888 0%, #440370 100%) 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+}
+
+section.industry-slider-sec {
+  padding: 80px 0px 90px 0px;
+}
+
+.industry-slider-cardheader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 20px;
+  border-bottom: 1px solid #fff;
+  padding: 25px 0px 15px 0px;
+}
+
+.industry-slider-cardheader h4 {
+  color: #fff;
+  font-size: 20px;
+}
+
+.industry-slider-cardheader a {
+  background: transparent linear-gradient(180deg, #026888 0%, #440370 100%) 0% 0% no-repeat padding-box;
+  color: #fff;
+  padding: 0px 8px 7px 8px;
+  border-radius: 100%;
+  font-size: 26px;
+  line-height: normal;
+  transition: all 0.6s ease;
+}
+
+.industry-slider-card-bottom {
+  padding: 20px 20px 0px 20px;
+}
+
+.industry-slider-card-bottom img {
+  width: 100%;
+}
+
+.industry-slider-card-bottom p {
+  color: #fff;
+  font-size: 14px;
+  padding: 5px 0px 25px 0px;
+}
+
+.industry-marquee-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-top: 40px;
+}
+
+.industry-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marqueeScroll 30s linear infinite;
+}
+
+.industry-marquee-card {
+  flex: 0 0 400px;
+  margin-right: 25px;
+}
+
+
+@keyframes marqueeScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
+.logodesign-serivce-border {
+    border: 1px solid #fff;
+    border-left: none;
+    border-right: none;
+}
+
+.logodesign-service-head {
+  padding: 0px 0px 20px 0px;
+}
+
+
+.webdesign-industry-slider .frontendindustryhead {
+    justify-content: center;
+}
+
+.webdesign-industry-slider .frontendindustryhead .industry-slider-head {
+    text-align: center;
+}
+
+.industry-slider-head p {
+    color: #161515;
+}
+
+
+.marquee-logodesign {
+  overflow: hidden;
+  width: 100%;
+  padding: 10px 0;
+  position: relative;
+  white-space: nowrap;
+}
+
+.marquee-track {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.marquee-logodesign img {
+  width: 230px;
+  height: auto;
+  object-fit: contain;
+}
+
+.marquee-right .marquee-track {
+  animation: marqueeRight 25s linear infinite;
+}
+
+.marquee-left .marquee-track {
+  animation: marqueeLeft 25s linear infinite;
+}
+
+@keyframes marqueeRight {
+  0%   { transform: translateX(-50%); }
+  100% { transform: translateX(0%); }
+}
+
+@keyframes marqueeLeft {
+  0%   { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+
+.logodesign-portfolio-sec {
+    background: url(./assets/images/services/logodesign/portfolio-bg.webp)
+    no-repeat top center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding: 120px 0px 160px 0px;
+}
+
+
+.logodesign-portfolio-head {
+    margin: 0px 0px 50px 0px;
+}
+
+.logodesign-portfolio-head p {
+    color: #fff;
+}
+
+.logodesign-herobanner {
+    padding: 170px 0px 110px 0px;
+}
+
+.webdesign-services-sec {
+  background: url(./assets/images/services/webdesign/service-bg.webp)
+    no-repeat top center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding: 120px 0px 100px 0px;
+}
+
+.webdesign-service-head {
+    text-align: center;
+    margin: 0px 0px 50px 0px;
+}
+
+.webdesign-service-head p {
+    color: #fff;
+}
+
+
+
+.webdesign-service-card img {
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+}
+
+.webdesign-service-card h5 {
+    color: #fff;
+}
+
+.webdesign-service-card ul {padding: 0px 0px 0px 20px;}
+
+.webdesign-service-card ul li {
+    color: #fff;
+    font-weight: normal;
+    padding: 3px 0px;
+    font-size: 14px;
+}
+
+
+.webdesign-downcard {
+    margin: 70px 0px 0px 0px;
+}
+
+.webdesign-goodbanner {
+    padding: 100px 0px 80px 0px;
+}
+
+.webdesign-portfolio-img {
+    height: 600px;
+    margin: 0px 0px 30px 0px;
+    overflow: hidden;
+    transition: all .6s ease;
+}
+
+.webdesign-portfolio-img img {
+    width: 100%;
+}
+
+.webdesign-portfolio-img img {
+    transform: translate(0px, 0px);
+    transition: all .6s ease;
+}
+
+.webdesign-portfolio-img:hover img {
+    transform: translate(0px, -3100px);
+    transition: all .6s ease;
+}
+
+    .webdesign-portfolio-img {
+        height: 600px;
+        margin: 0px 0px 30px 0px;
+        overflow: hidden;
+        transition: all .6s ease;
+    }
+    
+    .webdesign-portfolio-img img {
+        width: 100%;
+    }
+    
+    .webdesign-portfolio-img img {
+        transform: translate(0px, 0px);
+        transition: all .6s ease;
+    }
+    
+    .webdesign-portfolio-img:hover img {
+        transform: translate(0px, -3100px);
+        transition: all .6s ease;
+    }
+
+section.webdesign-portfolio-sec {
+    padding: 70px 0px;
+}
+
+.webdesign-portfolio-head {
+    text-align: center;
+    margin: 0px 0px 60px 0px;
+}
+
+.webdesign-upimage:hover img {
+    transform: translate(0px, -2130px);
+}
+
+.webdesign-downimg {
+    margin: 200px 0px 30px 0px;
+}
+
+.webdesign-upimage {
+    margin: -200px 0px 0px 0px;
+}
+
+.webdesign-portfolio-fourth:hover img {
+    transform: translate(0px, -2680px);
+}
+
+
+
+/************* New Logo Design Page CSS End *************/
 
 
 
@@ -4260,6 +4632,26 @@ section.brandvoice-sec {
     padding: 190px 0px 100px 0px;
 }
 
+.logodesign-herobanner {
+    padding: 100px 0px 170px 0px;
+}
+
+.logodesign-service-txt {
+    margin: 20px 0px 20px 0px;
+}
+
+.webdesign-portfolio-img:hover img {
+    transform: translate(0px, -1360px);
+}
+
+.webdesign-upimage:hover img {
+    transform: translate(0px, -840px);
+}
+
+.webdesign-portfolio-fourth:hover img {
+    transform: translate(0px, -1130px);
+}
+
 
 }
 
@@ -4611,7 +5003,50 @@ section.brandvoice-sec {
     padding: 70px 0px 70px 0px;
     border-radius: 20px;
 }
-    
+
+
+.logodesign-service-txt {
+    text-align: center;
+}
+
+.logodesign-service-img {
+    padding: 0px;
+    margin: 0px 0px 30px 0px;
+}
+
+.logodesign-serivce-border {
+    border: none; 
+}
+
+
+    .webdesign-portfolio-img:hover img {
+        transform: translate(0px, -1450px);
+    }
+
+    .webdesign-downimg {
+    margin: 0px 0px 30px 0px;
+} 
+
+.webdesign-upimage {
+    margin: 0px 0px 30px 0px;
+}
+
+    .webdesign-portfolio-img:hover img {
+        transform: translate(0px, -910px);
+    }
+
+        .webdesign-portfolio-fourth:hover img {
+        transform: translate(0px, -1210px) ;
+    }
+
+    .webdesign-downcard {
+    margin: 0px 0px 40px 0px;
+}
+
+.webdesign-service-card {
+    margin: 0px 0px 40px 0px;
+}
+
 
 }
 

@@ -101,7 +101,11 @@ const WebAppDevelopment = () => {
         <WebAppProcess/>
 
 
-        <ExpertTalk/>
+        <ExpertTalk
+          mainHeading="Got a Broken Web App? Not on Our Watch!"
+          paragraph="We fix chaos fast and bring it back stronger."
+          buttonText="Talk to NY’s Experts"
+        />
 
 
         <WordpressPortfolio />

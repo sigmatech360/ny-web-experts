@@ -39,6 +39,8 @@ import BrandStrategy from "../screens/Services/BrandStrategy";
 import BrandVoice from "../screens/Services/BrandVoice";
 import EcommerceDevelopmentBuffalo from "../screens/locationpages/EcommerceDevelopmentBuffalo";
 import DomainRegistrationBuffalo from "../screens/locationpages/DomainRegistrationBuffalo";
+import NewLogoDesign from "../screens/Services/NewLogoDesign";
+import NewWebDesign from "../screens/Services/NewWebDesign";
 
 const AppRouter = () => {
   return (
@@ -54,8 +56,6 @@ const AppRouter = () => {
         <Route path="/digital-marketing" element={<DigitalMarketing />} />
         <Route path="/social-media-marketing" element={<SMM />} />
         <Route path="/search-engine-optimization" element={<SEO />} />
-
-        <Route path="/logo-design" element={<LogoDesign />} />
 
         {/* Services Pages */}
 
@@ -74,6 +74,13 @@ const AppRouter = () => {
         <Route path="/terms-and-conditions" element={<TermsConditions />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="*" element={<NotFound />} />
+
+
+
+        {/* <Route path="/logo-design" element={<LogoDesign />} /> */}
+        <Route path="/logo-design" element={<NewLogoDesign />} />
+        <Route path="/web-design" element={<NewWebDesign />} />
+
 
 
 

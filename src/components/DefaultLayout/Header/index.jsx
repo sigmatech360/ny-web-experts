@@ -76,21 +76,20 @@ const Header = () => {
               <Dropdown.Menu>
                 <NavDropdown.Item
                   as={Link}
-                  to={"/web-design-development"}
-                  target="_blank"
-                  onClick={(e) => e.stopPropagation()}
-                >
-                  Web Design & Development
-                </NavDropdown.Item>
-                <NavDropdown.Item
-                  as={Link}
                   to={"/logo-design"}
                   target="_blank"
                   onClick={(e) => e.stopPropagation()}
                 >
                   Logo Design
                 </NavDropdown.Item>
-
+                <NavDropdown.Item
+                  as={Link}
+                  to={"/web-design"}
+                  target="_blank"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  Web Design
+                </NavDropdown.Item>
                 {/* CMS Development & Inner Pages */}
                 <div className="nav-subdropdown-wrapper">
                   <NavDropdown.Item

@@ -5,6 +5,7 @@ import { SiTicktick } from "react-icons/si";
 import { FaCheckCircle, FaPhoneAlt, FaRegCheckCircle } from "react-icons/fa";
 import whychoose1 from "../../Assets/images/locationpages/app-development-buffalo/choosecheck.svg";
 import whychoose2 from "../../assets/images/services/backenddevelopment/doublecheck.svg";
+import checkimg from "../../assets/images/services/logodesign/check.svg"
 
 const WordPressPerformanceSection = (props) => {
   const isReversed = props.reverse;
@@ -91,6 +92,17 @@ const WordPressPerformanceSection = (props) => {
                     ))}
                   </ul>
                 )}
+
+                {props.AboutListItems && props.AboutListItems.length > 0 && (
+                  <ul className="web-about-list d-none">
+                    {props.AboutListItems.map((item, index) => (
+                      <li key={index}>
+                        <img src={checkimg} alt="check icon" className="justcheck" />{item}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+
                 <div className={props.anotherFlexClass}>
                   <div className={props.alllistdata}>
                     <ul

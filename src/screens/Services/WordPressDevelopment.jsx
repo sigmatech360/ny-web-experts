@@ -101,7 +101,6 @@ const WordPressDevelopment = () => {
         minihead="Services"
         mainhead="Our WordPress Development Options"
         mainpara="From idea to implementation, we provide a full range of WordPress services to help your brand grow online."
-
         serviceonemini="E-commerce Development:"
         serviceoneminipara="Showcase your brand to the world with our e-commerce WordPress development services in New York, built to be fast, responsive, and so good it converts everyone into customers!"
         serviceimg1={service1}

@@ -15,10 +15,10 @@ import ContactUsSec from "../../components/ContactUsSec";
 import BlogSec from "../../components/BlogSec";
 import GetStarted from "../../components/GetStarted";
 import ReactHelmet from "../../components/ReactHelmet";
-import custom from "../../assets/images/services/frontenddevelopment/custom.svg"
-import screens from "../../assets/images/services/frontenddevelopment/screens.svg"
-import uiux from "../../assets/images/services/frontenddevelopment/uiux.svg"
-import javascript from "../../assets/images/services/frontenddevelopment/javascript.svg"
+import custom from "../../assets/images/services/frontenddevelopment/custom.svg";
+import screens from "../../assets/images/services/frontenddevelopment/screens.svg";
+import uiux from "../../assets/images/services/frontenddevelopment/uiux.svg";
+import javascript from "../../assets/images/services/frontenddevelopment/javascript.svg";
 
 const FrontendDevelopment = () => {
   const frontendservices = [
@@ -43,6 +43,39 @@ const FrontendDevelopment = () => {
       para: "Simplicity meets sophistication. Our Wix front-end development services elevate drag-and-drop design into high-performance interfaces that look professional, load fast, and work beautifully across all devices.",
     },
   ];
+
+  const expertpoints = [
+            {
+              title: "Data-Driven Development",
+              description:
+                "Every pixel has a purpose. We use analytics and behavioral data to design interfaces that aren’t just visually appealing; they convert.",
+            },
+            {
+              title: "SEO & AEO Specialization",
+              description:
+                "From structured markup to semantic coding, we build for humans and algorithms. Be found on search, featured in voice, and optimized for local GEO reach.",
+            },
+            {
+              title: "Web Performance Optimization",
+              description:
+                "Speed is your first impression. Our engineers fine-tune code to achieve lightning-fast load times and smooth, uninterrupted browsing experiences.",
+            },
+            {
+              title: "Security-First Architecture",
+              description:
+                "Built with clean code, modern frameworks, and secure protocols to ensure your users’ trust stays unbreakable and your business is protected.",
+            },
+            {
+              title: "User Interface Design",
+              description:
+                "We design layouts that speak visually. Every component aligns with your brand tone, ensuring a look that’s sleek, consistent, and effortlessly usable.",
+            },
+            {
+              title: "Analytics Integration & Reporting",
+              description:
+                "Knowledge is power, but insight drives growth. We integrate data tracking tools that enable you to see how users interact, convert, and remain loyal.",
+            },
+          ]
 
   return (
     <>
@@ -157,7 +190,12 @@ const FrontendDevelopment = () => {
 
         <FrontendPortfolio />
 
-        <FrontendExpertise />
+        <FrontendExpertise
+          shortTopHead="What We Do, We Do Best"
+          mainHead="Frontend Development That Powers Industries"
+          mainPara="Your front end is more than just design; it’s your brand’s digital handshake. At NY Web Experts, we turn code into clarity and creativity into conversions. Our front-end web development in New York solutions are engineered to perform beautifully on every screen, under every condition."
+          points={expertpoints}
+        />
 
         {/* <TabsPricing
           minihead="Pricing Plan"
