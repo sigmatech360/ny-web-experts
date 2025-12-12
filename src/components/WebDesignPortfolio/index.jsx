@@ -6,6 +6,19 @@ import portfolio4 from "../../assets/images/services/webdesign/portfolio4.webp";
 
 
 const WebDesignPortfolio = () => {
+
+      const handleEnter = (e) => {
+    const img = e.currentTarget;
+    const scroll = img.scrollHeight - img.parentElement.clientHeight;
+    img.style.transform = `translateY(-${scroll}px)`;
+    };
+
+    const handleLeave = (e) => {
+    e.currentTarget.style.transform = "translateY(0)";
+    };
+    
+
+
   return (
     <section className='webdesign-portfolio-sec'>
         <div className="container">
@@ -21,22 +34,22 @@ const WebDesignPortfolio = () => {
             <div className="row">
                 <div className="col-lg-6 col-md-6">
                     <div className="webdesign-portfolio-img">
-                        <img src={portfolio1} alt="image" />
+                        <img src={portfolio1} onMouseEnter={handleEnter} onMouseLeave={handleLeave} alt="image" />
                     </div>
                 </div>
                 <div className="col-lg-6 col-md-6">
                     <div className="webdesign-portfolio-img webdesign-downimg">
-                        <img src={portfolio2} alt="image" />
+                        <img src={portfolio2} onMouseEnter={handleEnter} onMouseLeave={handleLeave} alt="image" />
                     </div>
                 </div>
                 <div className="col-lg-6 col-md-6">
                     <div className="webdesign-portfolio-img webdesign-upimage">
-                        <img src={portfolio3} alt="image" />
+                        <img src={portfolio3} onMouseEnter={handleEnter} onMouseLeave={handleLeave} alt="image" />
                     </div>
                 </div>
                 <div className="col-lg-6 col-md-6">
                     <div className="webdesign-portfolio-img webdesign-portfolio-fourth">
-                        <img src={portfolio4} alt="image" />
+                        <img src={portfolio4}  onMouseEnter={handleEnter} onMouseLeave={handleLeave} alt="image" />
                     </div>
                 </div>
             </div>

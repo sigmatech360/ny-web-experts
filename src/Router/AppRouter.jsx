@@ -41,6 +41,10 @@ import EcommerceDevelopmentBuffalo from "../screens/locationpages/EcommerceDevel
 import DomainRegistrationBuffalo from "../screens/locationpages/DomainRegistrationBuffalo";
 import NewLogoDesign from "../screens/Services/NewLogoDesign";
 import NewWebDesign from "../screens/Services/NewWebDesign";
+import AngularDevelopmentBuffalo from "../screens/locationpages/AngularDevelopmentBuffalo";
+import DomainTransferBuffalo from "../screens/locationpages/DomainTransferBuffalo";
+import WebsiteContent from "../screens/Services/WebsiteContent";
+import BlogWriting from "../screens/Services/BlogWriting";
 
 const AppRouter = () => {
   return (
@@ -110,6 +114,11 @@ const AppRouter = () => {
         <Route path="/brand-voice" element={<BrandVoice />} />
 
 
+           {/* Brand Identity &  Inner Pages */}
+        <Route path="/website-content" element={<WebsiteContent />} />
+        <Route path="/blog-writing" element={<BlogWriting />} />
+
+
 
         {/* Location Pages  */}
         <Route path="/app-development-buffalo" element={<AppDevelopmentBuffalo />} />
@@ -117,6 +126,8 @@ const AppRouter = () => {
         <Route path="/react-development-buffalo" element={<ReactDevelopmentBuffalo />} />
         <Route path="/ecommerce-development-buffalo" element={<EcommerceDevelopmentBuffalo />} />
         <Route path="/domain-registeration-buffalo" element={<DomainRegistrationBuffalo />} />
+        <Route path="/domain-transfer-buffalo" element={<DomainTransferBuffalo />} />
+        <Route path="/angular-development-buffalo" element={<AngularDevelopmentBuffalo />} />
 
       </Routes>
     </Router>

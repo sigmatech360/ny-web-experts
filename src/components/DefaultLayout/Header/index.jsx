@@ -306,6 +306,41 @@ const Header = () => {
                     </NavDropdown.Item>
                   </div>
                 </div>
+
+
+                {/* Content Writing & Inner Pages */}
+                <div className="nav-subdropdown-wrapper">
+                  <NavDropdown.Item
+                    as="button"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    Content Writing
+                    <span className="submenu-icon d-none d-lg-inline">
+                      <FaCaretRight />
+                    </span>
+                    <span className="submenu-icon d-inline d-lg-none">
+                      <FaCaretDown />
+                    </span>
+                  </NavDropdown.Item>
+                  <div className="nav-subdropdown">
+                    <NavDropdown.Item
+                      as={Link}
+                      to={"/website-content"}
+                      target="_blank"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      Website Content
+                    </NavDropdown.Item>
+                    <NavDropdown.Item
+                      as={Link}
+                      to={"/blog-writing"}
+                      target="_blank"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      Blog Writing
+                    </NavDropdown.Item>
+                  </div>
+                </div>
               </Dropdown.Menu>
             </Dropdown>
 
@@ -373,6 +408,22 @@ const Header = () => {
                       onClick={(e) => e.stopPropagation()}
                     >
                       Domain Registeration
+                    </NavDropdown.Item>
+                    <NavDropdown.Item
+                      as={Link}
+                      to={"/domain-transfer-buffalo"}
+                      target="_blank"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      Domain Transfer
+                    </NavDropdown.Item>
+                    <NavDropdown.Item
+                      as={Link}
+                      to={"/angular-development-buffalo"}
+                      target="_blank"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      Angular Development
                     </NavDropdown.Item>
                   </div>
                 </div>

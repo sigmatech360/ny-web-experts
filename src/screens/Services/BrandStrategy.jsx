@@ -16,11 +16,41 @@ import BlogSec from "../../components/BlogSec";
 import GetStarted from "../../components/GetStarted";
 import ReactHelmet from "../../components/ReactHelmet";
 
-
-
-
 const BrandStrategy = () => {
   const [showModal, setShowModal] = useState(false);
+
+  const expertiseBoxes = [
+    {
+      num: "01",
+      title: "Our Vision:",
+      desc: "To empower businesses with memorable brands that inspire trust, loyalty, and lasting impact globally.",
+    },
+    {
+      num: "02",
+      title: "Our Mission",
+      desc: "The mission of our brand strategy services in New York is to build creative brand strategies that connect audiences with purpose, personality, and clarity.",
+    },
+    {
+      num: "01",
+      title: "Our Vision:",
+      desc: "To empower businesses with memorable brands that inspire trust, loyalty, and lasting impact globally.",
+    },
+    {
+      num: "02",
+      title: "Our Mission",
+      desc: "The mission of our brand strategy services in New York is to build creative brand strategies that connect audiences with purpose, personality, and clarity.",
+    },
+  ];
+
+
+  const faqs = [
+  { header: "Brand Voice", content: "Helping you maintain a consistent brand voice across platforms" },
+  { header: "Brand Identity Design", content: "We build your identity from scratch, or give you a new one!" },
+  { header: "Merchandising", content: "We create your offline and online personality through thoughtful merchandising." },
+  { header: "Brand Positioning", content: "Increasing your brand credibility and positioning you as the leader in your niche." },
+  { header: "Website Design", content: "Intuitive website designs for your brand that are functional and beautiful!" },
+  { header: "Social Media Marketing", content: "Beyond websites, we ensure your digital presence remains flawless on social media too!" },
+];
 
   return (
     <>
@@ -33,7 +63,7 @@ const BrandStrategy = () => {
 
       <DefaultLayout>
         <ServicesBanner
-          secClass="location-hero-banner wordpress-banner frontend-herobanner-bg"
+          secClass="location-hero-banner wordpress-banner"
           formClass="service-form"
           bgImage={herobanner}
           title="Brand Strategies That Talk Smart, Look Good, And Get Heard"
@@ -84,13 +114,24 @@ const BrandStrategy = () => {
           <FormModal show={showModal} handleClose={() => setShowModal(false)} />
         </section>
 
-        <BrandStrategyService />
-
+          <BrandStrategyService
+            miniHead="360° Branding"
+            mainHead="Our Brand Building Services"
+            description="A Brand Strategy is built on a comprehensive plan that covers every detail of marketing and execution. Here’s what we include:"
+            buttonText="Consult A Strategist"
+            buttonLink="/contact-us"
+            faqs={faqs}
+          />
         <BrandStrategyProcess />
 
         <BrandStrategyChooseUs />
 
-        <BrandStrategyExpertise />
+        <BrandStrategyExpertise
+          heading="Our Expertise"
+          subheading="The Strategy Behind Successful Brands"
+          description="A brand strategy made by experts builds the foundation your business grows on. It shapes how people see you, remember you, and choose you among endless options. With a clear brand strategy, you step into industry leadership and create long-term value in your audience’s mind. This makes every marketing effort stronger, smarter, and more profitable."
+          boxes={expertiseBoxes}
+        />
 
         {/* <TabsPricing
           minihead="Pricing Plan"

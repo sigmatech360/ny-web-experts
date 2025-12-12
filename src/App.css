@@ -2412,9 +2412,14 @@ section.frontend-portfolio-sec {
     color: #fff;
 }
 
+.frontend-expert-pointsbox {
+    margin: 0px 0px 20px 0px;
+}
+
 .frontend-expertise-point h5 {
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
+    margin: 0px 0px 15px 0px;
 }
 
 .frontend-expertise-point p {
@@ -2423,6 +2428,25 @@ section.frontend-portfolio-sec {
 
 .frontend-herobanner-bg {
     padding: 320px 0px 190px 0px;
+}
+
+
+.frontend-expertise-point {
+    max-height: 450px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-right: 20px;
+    scroll-behavior: smooth;
+}
+
+.frontend-expertise-point::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.frontend-expertise-point::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 10px;
 }
 
 /************* Frontend Develoment Page CSS End *************/
@@ -4114,38 +4138,8 @@ section.industry-slider-sec {
 
 .webdesign-portfolio-img img {
     width: 100%;
+   transition: transform 4s ease;
 }
-
-.webdesign-portfolio-img img {
-    transform: translate(0px, 0px);
-    transition: all .6s ease;
-}
-
-.webdesign-portfolio-img:hover img {
-    transform: translate(0px, -3100px);
-    transition: all .6s ease;
-}
-
-    .webdesign-portfolio-img {
-        height: 600px;
-        margin: 0px 0px 30px 0px;
-        overflow: hidden;
-        transition: all .6s ease;
-    }
-    
-    .webdesign-portfolio-img img {
-        width: 100%;
-    }
-    
-    .webdesign-portfolio-img img {
-        transform: translate(0px, 0px);
-        transition: all .6s ease;
-    }
-    
-    .webdesign-portfolio-img:hover img {
-        transform: translate(0px, -3100px);
-        transition: all .6s ease;
-    }
 
 section.webdesign-portfolio-sec {
     padding: 70px 0px;
@@ -4173,8 +4167,352 @@ section.webdesign-portfolio-sec {
 }
 
 
+.webdesign-about-sec .web-choose-head {
+  display: none;
+}
+
 
 /************* New Logo Design Page CSS End *************/
+
+
+.angular-gooddesign-sec .contactForm {
+    display: none;
+}
+
+.angular-gooddesign-sec {
+    padding: 110px 0px 80px 0px;
+}
+
+.domaintransfer-location-herobanner {
+    padding: 130px 0px 110px 0px;
+}
+
+
+
+/************* Website Content Page CSS Start *************/
+
+
+.brandvoice-impact-sec {
+    padding: 60px 0px;
+}
+
+.bandvoice-impact-head {
+    text-align: center;
+    margin: 0px 0px 40px 0px;
+}
+
+
+.brandvoice-impact-card {
+    margin: 0px 0px 30px 0px;
+    background: #fff;
+    padding: 40px 30px 40px 30px;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 16px;
+}
+
+
+.brandvoice-impact-card h4 {
+    margin: 0px 0px 10px 0px;
+    color: #440370;
+    font-size: 22px;
+}
+
+.brandvoice-impact-card p{
+    color: #292F3A;
+}
+
+
+.impact-red {
+    background: transparent linear-gradient(180deg, #026888 0%, #440370 100%) 0% 0% no-repeat padding-box;
+    color: #fff;
+}
+
+.impact-red p {
+    color: #fff !important;
+}
+
+.impact-red h4 {
+  color: #fff;
+}
+
+.website-right-content {
+  background: url(./assets/images/services/websitecontent/rightcontentbg.webp)
+    no-repeat top center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding: 120px 0px 100px 0px;
+}
+
+.websiteright-content-txt p {
+    color: #fff;
+}
+
+.websiteright-content-txt ul li {
+    color: #fff;
+    padding: 5px 0px 5px 10px;
+    list-style: none;
+    position: relative;
+}
+
+.websiteright-content-txt ul {
+    padding: 0px 0px 0px 15px;
+}
+
+.websiteright-content-txt ul li::before {
+    position: absolute;
+    content: "";
+    background: #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    display: inline-block;
+    left: -10px;
+    top: 12px;
+}
+
+.another-right-content p {
+    color: #fff;
+    margin: 0px 0px 20px 0px;
+}
+
+.another-right-content ul li {
+    color: #fff;
+    list-style: none;
+    position: relative;
+    padding: 5px 0px 5px 10px;
+}
+
+.another-right-content ul li::before {
+    position: absolute;
+    content: "";
+    background: #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    display: inline-block;
+    left: -10px;
+    top: 12px;
+}
+
+
+.another-right-content ul {
+    padding: 0px 0px 0px 10px;
+}
+
+.websiteright-content-txt {
+    padding: 0px 50px 0px 0px;
+    border-right: 1px solid #fff;
+}
+
+
+.another-right-content {
+    padding: 0px 0px 0px 20px;
+}
+
+.webcontent-choose-sec ul.web-whypara-list {
+    display: block !important;
+    padding: 0px 0px 0px 18px;
+    margin: 0px 0px 30px 0px;
+}
+
+.webcontent-choose-sec ul.web-whypara-list li {
+    padding: 10px 0px 0px 5px;
+    list-style: none;
+    position: relative;
+}
+
+.webcontent-choose-sec ul.web-whypara-list li::before {
+    position: absolute;
+    content: "";
+    background: transparent linear-gradient(180deg, #026888 0%, #440370 100%) 0% 0% no-repeat padding-box;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    left: -15px;
+    top: 19px;
+}
+
+.webcontent-about-sec .abouttxt-data h4 {
+    display: block !important;
+    color: #440370;
+    font-size: 20px;
+    padding: 10px 0px;
+}
+
+.webcontent-herobanner-sec {
+    padding: 190px 0px 190px 0px;
+}   
+
+
+/************* Website Content Page CSS End *************/
+
+
+/************* Blog Writing Page CSS Start *************/
+
+
+.blogwriting-herobanner {
+    padding: 180px 0px 150px 0px;
+}
+
+
+.blogwriting-herobanner {
+    padding: 180px 0px 150px 0px;
+}
+
+.blogwriting-result-sec {
+    padding: 60px 0px;
+}
+
+.blogwriting-result-head {
+    margin: 0px 0px 30px 0px;
+    text-align: center;
+}
+
+.blogwriting-result-box {
+    padding: 30px;
+    background: transparent linear-gradient(180deg, #026888 0%, #440370 100%) 0% 0% no-repeat padding-box;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.blogwriting-result-box h2 {
+    color: #fff;
+    font-size: 38px;
+}
+
+.blogwriting-result-box h2 span {
+    display: block;
+}
+
+.blogwriting-result-box p {
+    color: #fff;
+    font-size: 16px;
+    margin: 0px;
+}
+
+section.blogwriting-process-sec {
+    padding: 60px 0px;
+}
+
+.blogwriting-process-head {
+    text-align: center;
+    margin: 0px 0px 30px 0px;
+}
+
+.blogwriting-process-box {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 0px 0px 30px 0px;
+    padding: 30px 0px;
+    border-bottom: 1px solid #707070;
+    justify-content: space-between;
+}
+
+.blogwriting-process-count h4 {
+    line-height: normal;
+    color: #fff;
+    font-size: 40px;
+}
+
+.blogwriting-process-count {
+  background: transparent linear-gradient(180deg, #026888 0%, #440370 100%) 0% 0% no-repeat padding-box;
+  padding: 32px 35px 23px 35px;
+  border-radius: 100%;
+}
+
+.blogwriting-process-boxtxt h5 {
+    color: #292F3A;
+    font-weight: 700;
+}
+
+.blogwriting-process-boxtxt p {
+    margin: 0px;
+    color: #161515;
+}
+
+.blogwriting-process-head p {
+    color: #161515;
+} 
+
+.blogwriting-steps-sec {
+  background: url(./assets/images/services/blogwriting/cassestudy-bg.webp)
+    no-repeat top center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding: 100px 0px 100px 0px;
+}
+
+.blogwriting-steps-sec .voice-process-head h6,
+.blogwriting-steps-sec .voice-process-head h2 {
+    color: #fff;
+}
+
+.blogwriting-steps-sec .voice-process-card h5,
+.blogwriting-steps-sec .voice-process-card p {
+    color: #fff;
+}
+
+.blogwriting-steps-sec .voice-process-card a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
+
+.blogwriting-steps-sec .voice-process-head h6 {
+    color: #fff;
+}
+
+.blogwriting-steps-sec .voice-process-card h5 {
+    color: #fff;
+}
+
+
+.blogwriting-scale-sec {
+    padding: 70px 0px;
+}
+
+.blogwriting-scale-head {
+    text-align: center;
+    margin: 0px 0px 50px 0px;
+}
+
+.blogwriting-scale-img img {
+    width: 100%;
+}
+
+.blogwriting-scale-img {
+    margin: 0px 0px 50px 0px;
+}
+
+.blogwriting-scale-box {
+    margin: 0px 0px 50px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.blogwriting-scale-box h5 {
+    font-size: 24px;
+    color: #292F3A;
+    margin: 0px 0px 15px 0px;
+}
+
+.blogwriting-scale-box p {
+    color: #161515;
+}
+
+
+
+/************* Blog Writing Page CSS End *************/
+
+
 
 
 
@@ -4640,16 +4978,37 @@ section.webdesign-portfolio-sec {
     margin: 20px 0px 20px 0px;
 }
 
-.webdesign-portfolio-img:hover img {
-    transform: translate(0px, -1360px);
+.another-right-content {
+    padding: 40px 0px 0px 0px;
 }
 
-.webdesign-upimage:hover img {
-    transform: translate(0px, -840px);
+.webcontent-choose-sec .abouttxt-data {
+    text-align: left;
 }
 
-.webdesign-portfolio-fourth:hover img {
-    transform: translate(0px, -1130px);
+
+.blogwriting-herobanner {
+    padding: 180px 0px 150px 0px;
+}
+
+.blogwriting-result-box {
+    margin: 0px 0px 20px 0px;
+}
+
+.blogwriting-process-box {
+    border-bottom: none;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.blogwriting-process-count {
+    display: none;
+}
+
+.blogwriting-scale-box {
+    text-align: center;
 }
 
 
@@ -5019,9 +5378,6 @@ section.webdesign-portfolio-sec {
 }
 
 
-    .webdesign-portfolio-img:hover img {
-        transform: translate(0px, -1450px);
-    }
 
     .webdesign-downimg {
     margin: 0px 0px 30px 0px;
@@ -5031,20 +5387,16 @@ section.webdesign-portfolio-sec {
     margin: 0px 0px 30px 0px;
 }
 
-    .webdesign-portfolio-img:hover img {
-        transform: translate(0px, -910px);
-    }
-
-        .webdesign-portfolio-fourth:hover img {
-        transform: translate(0px, -1210px) ;
-    }
-
     .webdesign-downcard {
     margin: 0px 0px 40px 0px;
 }
 
 .webdesign-service-card {
     margin: 0px 0px 40px 0px;
+}
+
+.brandvoice-impact-card {
+    text-align: center;
 }
 
 

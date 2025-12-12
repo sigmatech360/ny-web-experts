@@ -25,7 +25,7 @@ const WordPressPerformanceSection = (props) => {
         <div className={props.afterConainerClass}>
           <div className="row justify-content-center">
             <div className="col-lg-10">
-              <div className="choose-head">
+              <div className="choose-head web-choose-head">
                 <h6>{props.chooseminihead}</h6>
                 <h2>{props.choosemainhead}</h2>
                 <p>{props.choosemainpara}</p>

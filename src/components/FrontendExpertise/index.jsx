@@ -15,7 +15,7 @@ const FrontendExpertise = ({ shortTopHead, mainHead, mainPara, points }) => {
           <div className="col-lg-6">
             <div className="frontend-expertise-point">
               {points?.map((item, index) => (
-                <div key={index}>
+                <div key={index} className="frontend-expert-pointsbox">
                   <h5>{item.title}</h5>
                   <p>{item.description}</p>
                 </div>

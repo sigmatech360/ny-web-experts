@@ -44,6 +44,45 @@ const BrandVoice = () => {
     },
   ];
 
+  const steps = [
+  {
+    number: "01",
+    title: "Discovery & Research",
+    description:
+      "We immerse ourselves in your brand to understand your mission, values, audience, and personality. This is where we gather insights about your current tone, messaging gaps, and the emotions your voice should evoke. Our goal is a voice that feels authentic, strategic, and ready to resonate."
+  },
+  {
+    number: "02",
+    title: "Voice Personality Mapping",
+    description:
+      "We translate your brand identity into a distinct, human voice. This includes defining tone, vocabulary, sentence style, and emotional cues. By mapping out your voice personality, we make your brand instantly recognizable, relatable, and consistent across all channels and touchpoints."
+  },
+  {
+    number: "03",
+    title: "Audience Alignment",
+    description:
+      "We ensure your brand voice speaks directly to the people who matter most. By analyzing audience behaviors, language preferences, and motivations, we create messaging that feels personal, persuasive, and emotionally resonant, guiding your audience to engage, connect, and take action naturally."
+  },
+  {
+    number: "04",
+    title: "Voice Positioning",
+    description:
+      " We define how your voice should appear in your industry. This includes differentiating your brand, establishing authority, and finding the right balance between professional and personable. A well-positioned voice makes your brand memorable, trusted, and instantly recognizable among competitors."
+  },
+  {
+    number: "05",
+    title: "Voice Guidelines Creation",
+    description:
+      "Once your voice is defined, we create a detailed guide for implementation. This includes tone variations, writing style, word choice, and communication rules for social media, emails, and campaigns. It ensures every word reflects your brand consistently and authentically."
+  },
+  {
+    number: "06",
+    title: "Implementation Support",
+    description:
+      "We provide practical tools and coaching to embed your voice across all platforms. From content creation to team training, we ensure your brand speaks coherently everywhere. Every interaction, post, and campaign becomes a true reflection of your unique voice."
+  },
+];
+
   return (
     <>
       <ReactHelmet
@@ -109,7 +148,11 @@ const BrandVoice = () => {
           btnClass="d-none"
         />
 
-        <BrandVoiceProcess />
+        <BrandVoiceProcess
+          miniHead="Our Process"
+          mainHead="How Your Voice Evolves Through Our Creative Process"
+          steps={steps}
+        />
 
         <TransferSupport
           secClass="brandvoice-suppport-sec"

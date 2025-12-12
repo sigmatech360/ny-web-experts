@@ -99,10 +99,42 @@ const NewWebDesign = () => {
           cta1="Design My Website"
           cta2="hehe"
         />
+
+
+         <section className="clients-data-sec">
+          <div className="container">
+            <div className="row justify-content-center">
+              <div className="col-lg-10">
+                <div className="row justify-content-center">
+                  <div className="col-lg-3 col-md-6">
+                    <div className="client-data-txt">
+                      <p>150+ Web Experts </p>
+                    </div>
+                  </div>
+                  <div className="col-lg-3 col-md-6">
+                    <div className="client-data-txt">
+                      <p>300+ Website Designs</p>
+                    </div>
+                  </div>
+                  <div className="col-lg-3 col-md-6">
+                    <div className="client-data-txt">
+                      <p>95% Satisfied Clients</p>
+                    </div>
+                  </div>
+                  <div className="col-lg-3 col-md-6">
+                    <div className="client-data-txt">
+                      <p>5.0 Google Ratings</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         
         <WordPressPerformanceSection
           reverse
-          wordpresssecclass="WordPressPerformanceSection"
+          wordpresssecclass="WordPressPerformanceSection webdesign-about-sec"
           miniheadclass="shorttop-head"
           minihead="About Us"
           secTitle1="Website Designs Made to Connect"
