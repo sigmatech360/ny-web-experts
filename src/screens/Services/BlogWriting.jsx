@@ -98,23 +98,28 @@ const BlogWriting = () => {
 const expertiseBoxes = [
     {
       num: "01",
-      title: "Our Vision:",
-      desc: "To empower businesses with memorable brands that inspire trust, loyalty, and lasting impact globally.",
+      title: "Industry-Rooted Content Creation",
+      desc: "We write content for tech, fashion, wellness, finance, e-commerce, and more. Each piece is shaped around user intent and market behavior.",
     },
     {
       num: "02",
-      title: "Our Mission",
-      desc: "The mission of our brand strategy services in New York is to build creative brand strategies that connect audiences with purpose, personality, and clarity.",
+      title: "Trusted by Clients Worldwide",
+      desc: "Our content is structured for engagement and long-term performance, especially our SEO blog writing services in New York, which deliver measurable growth.",
     },
     {
-      num: "01",
-      title: "Our Vision:",
-      desc: "To empower businesses with memorable brands that inspire trust, loyalty, and lasting impact globally.",
+      num: "03",
+      title: "SEO-integrated Web Plans",
+      desc: "Every blog is optimized with intent-based keywords, semantic relevance, and search patterns that help your content outperform competitors and rank across New York markets.",
     },
     {
-      num: "02",
-      title: "Our Mission",
-      desc: "The mission of our brand strategy services in New York is to build creative brand strategies that connect audiences with purpose, personality, and clarity.",
+      num: "04",
+      title: "Story-Telling that attracts real humans",
+      desc: "Our writing connects emotionally while guiding readers toward meaningful action, shaping content that is both enjoyable to read and strategically aligned with your brand goals.",
+    },
+    {
+      num: "05",
+      title: "Research-Backed Insights",
+      desc: "Our team studies trends, audience behavior, and industry data before every blog is written. This ensures your content reflects expertise, authority, and accuracy.",
     },
   ];
 

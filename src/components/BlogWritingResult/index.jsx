@@ -14,25 +14,25 @@ const BlogWritingResult = () => {
             <div className="row">
                 <div className="col-lg-3 col-md-6">
                     <div className="blogwriting-result-box">
-                        <h2>1000+ </h2>
+                        <h3>1000+ </h3>
                         <p>Blogs Delivered</p>
                     </div>
                 </div>
                 <div className="col-lg-3 col-md-6">
                     <div className="blogwriting-result-box">
-                        <h2>20+</h2>
+                        <h3>20+</h3>
                         <p>Professional Writers</p>
                     </div>
                 </div>
                 <div className="col-lg-3 col-md-6">
                     <div className="blogwriting-result-box">
-                        <h2>300 </h2>
+                        <h3>300 </h3>
                         <p>Happy Clients</p>
                     </div>
                 </div>
                 <div className="col-lg-3 col-md-6">
                     <div className="blogwriting-result-box">
-                        <h2>100+ </h2>
+                        <h3>100+ </h3>
                         <p>Blogs Ranked at #1</p>
                     </div>
                 </div>
