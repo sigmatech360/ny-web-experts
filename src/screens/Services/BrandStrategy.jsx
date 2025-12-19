@@ -15,6 +15,10 @@ import ContactUsSec from "../../components/ContactUsSec";
 import BlogSec from "../../components/BlogSec";
 import GetStarted from "../../components/GetStarted";
 import ReactHelmet from "../../components/ReactHelmet";
+import detailapproach from "../../assets/images/services/brandstrategy/detailapproach.svg";
+import expertteam from "../../assets/images/services/brandstrategy/expertteam.svg";
+import datainformed from "../../assets/images/services/brandstrategy/datainformed.svg";
+import bulb from "../../assets/images/services/brandstrategy/bulb.svg";
 
 const BrandStrategy = () => {
   const [showModal, setShowModal] = useState(false);
@@ -42,16 +46,82 @@ const BrandStrategy = () => {
     },
   ];
 
-
   const faqs = [
-  { header: "Brand Voice", content: "Helping you maintain a consistent brand voice across platforms" },
-  { header: "Brand Identity Design", content: "We build your identity from scratch, or give you a new one!" },
-  { header: "Merchandising", content: "We create your offline and online personality through thoughtful merchandising." },
-  { header: "Brand Positioning", content: "Increasing your brand credibility and positioning you as the leader in your niche." },
-  { header: "Website Design", content: "Intuitive website designs for your brand that are functional and beautiful!" },
-  { header: "Social Media Marketing", content: "Beyond websites, we ensure your digital presence remains flawless on social media too!" },
-];
+    {
+      header: "Brand Voice",
+      content: "Helping you maintain a consistent brand voice across platforms",
+    },
+    {
+      header: "Brand Identity Design",
+      content: "We build your identity from scratch, or give you a new one!",
+    },
+    {
+      header: "Merchandising",
+      content:
+        "We create your offline and online personality through thoughtful merchandising.",
+    },
+    {
+      header: "Brand Positioning",
+      content:
+        "Increasing your brand credibility and positioning you as the leader in your niche.",
+    },
+    {
+      header: "Website Design",
+      content:
+        "Intuitive website designs for your brand that are functional and beautiful!",
+    },
+    {
+      header: "Social Media Marketing",
+      content:
+        "Beyond websites, we ensure your digital presence remains flawless on social media too!",
+    },
+  ];
 
+  const chooseitemlist = [
+    {
+      img: detailapproach,
+      title: "Detailed Approach:",
+      desc: "We integrate strategy, design, and marketing to ensure every touchpoint strengthens your brand voice and identity effectively.",
+    },
+    {
+      img: expertteam,
+      title: "Expert Team:",
+      desc: "Our creative strategists and designers combine insight with industry experience, delivering strategies that drive results, not just visuals.",
+    },
+    {
+      img: datainformed,
+      title: "Data-Informed Decisions:",
+      desc: "We blend creativity with analytics, ensuring messaging resonates and campaigns perform, giving measurable growth and engagement.",
+    },
+    {
+      img: bulb,
+      title: "Custom Solutions:",
+      desc: "Every brand is unique. We tailor strategies and visuals specifically to your audience, story, and long-term growth goals.",
+    },
+  ];
+
+  const processItems = [
+    {
+      step: "01",
+      title: "Discovery:",
+      desc: "We research your mission, audience, and competition to gather actionable insights that inform strategy and messaging.",
+    },
+    {
+      step: "02",
+      title: "Brand Mapping:",
+      desc: "We define tone, style, and personality to ensure every message feels human, relatable, and consistent.",
+    },
+    {
+      step: "03",
+      title: "Positioning:",
+      desc: "We carve your unique space in the market to stand out and attract the right audience.",
+    },
+    {
+      step: "04",
+      title: "Execution Planning:",
+      desc: "We create a roadmap for campaigns, visuals, and content to implement your brand strategy seamlessly.",
+    },
+  ];
   return (
     <>
       <ReactHelmet
@@ -114,17 +184,28 @@ const BrandStrategy = () => {
           <FormModal show={showModal} handleClose={() => setShowModal(false)} />
         </section>
 
-          <BrandStrategyService
-            miniHead="360° Branding"
-            mainHead="Our Brand Building Services"
-            description="A Brand Strategy is built on a comprehensive plan that covers every detail of marketing and execution. Here’s what we include:"
-            buttonText="Consult A Strategist"
-            buttonLink="/contact-us"
-            faqs={faqs}
-          />
-        <BrandStrategyProcess />
+        <BrandStrategyService
+          miniHead="360° Branding"
+          mainHead="Our Brand Building Services"
+          description="A Brand Strategy is built on a comprehensive plan that covers every detail of marketing and execution. Here’s what we include:"
+          buttonText="Consult A Strategist"
+          buttonLink="/contact-us"
+          faqs={faqs}
+        />
 
-        <BrandStrategyChooseUs />
+        <BrandStrategyProcess
+          shortTopHead="The Strategic Process"
+          mainHead="How We Take Your Voice From Blah To Bold"
+          description="Every brand comes to us with a different story to tell. Our goal? To make your unique story sell among and beyond your audience. And here’s how we do it."
+          processItems={processItems}
+        />
+
+        <BrandStrategyChooseUs
+          shortTopHead="Why Choose Us?"
+          mainHead="Experience, Creativity, And Strategy That Elevate Brands"
+          description="A well-thought-out strategy can only be made when it’s backed by the right team, the right approach, and the right solutions. As trusted experts, our brand strategy services in New York cover the following aspects:"
+          chooseItems={chooseitemlist}
+        />
 
         <BrandStrategyExpertise
           heading="Our Expertise"

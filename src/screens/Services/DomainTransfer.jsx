@@ -50,6 +50,21 @@ const DomainTransfer = () => {
     },
   ];
 
+  const transferwhysteps = [
+    {
+      value: "32%",
+      text: "of Websites in America Rely on Our Services",
+    },
+    {
+      value: "1300+",
+      text: "Successfully Transferred domains",
+    },
+    {
+      value: "98%",
+      text: "Client Retention Rate Across All Domain Transfer Projects",
+    },
+  ];
+
   return (
     <>
       <ReactHelmet
@@ -93,7 +108,7 @@ const DomainTransfer = () => {
           miniheadclass="shorttop-head"
           secTitle1="Smart Transfers Deserve Smarter Hands"
           description="We don’t just move your domain; we also protect it, both in terms of security and data. Every domain transfer is backed by precision, protection, and performance, the three things every business owner deserves."
-           chooseParaItems={[
+          chooseParaItems={[
             {
               text: "Fast, secure, and ICANN-compliant domain migration",
             },
@@ -106,7 +121,7 @@ const DomainTransfer = () => {
             {
               text: "Zero downtime, guaranteed continuity",
             },
-             {
+            {
               text: "24/7 dedicated support from real humans in New York",
             },
           ]}
@@ -121,11 +136,16 @@ const DomainTransfer = () => {
 
         {/* <DomainSearchPrice /> */}
 
-        <TransferWhyus />
+        <TransferWhyus
+          shortTopHead="The Best in Business"
+          mainHead="Trusted by New Yorkers. Driven by Results"
+          description="There are a number of things that can happen to your domain. It can get hacked if not secure, slow your website if not optimized, result in data loss if not backed up, and even get corrupted if not migrated properly. That’s why a professional domain transfer service in New York is essential. The best way to transfer your domain without incurring costs to your business is to work with a professional company in New York that has been doing it for years."
+          stats={transferwhysteps}
+        />
 
         <DomainTransferSteps />
 
-        <TransferSupport 
+        <TransferSupport
           shortTopHead="Web & Domain Service"
           mainHead="Protected by Experts in NY"
           description="Your website doesn’t need to take breaks like you do. It doesn’t need lunch, nor anything, and we make sure it stays that way, without any downtime, always on, always ready to sell more and rank your business higher, protected by monthly backups, and a professional company in New York."

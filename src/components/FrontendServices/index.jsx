@@ -6,7 +6,7 @@ const FrontendServices = ({ shortHead, mainHead, btnClass, description, secCardC
   return (
     <section className={ServiceSecClass || "frontend-services-sec"}>
       <div className="container">
-        <div className="row justify-content-center">
+        <div className="row justify-content-center frontend-services-headrow">
           <div className="col-lg-10">
             <div className="frontend-services-head">
               <h6 className="shorttop-head">{shortHead}</h6>
@@ -14,6 +14,22 @@ const FrontendServices = ({ shortHead, mainHead, btnClass, description, secCardC
               <p>{description}</p>
             </div>
           </div>
+        </div>
+
+        <div className="mobapp-anotherhead d-none">
+        <div className="row">
+          <div className="col-lg-6">
+                <div className="mobapp-service-head">
+                  <h6 className="shorttop-head text-white">Our Services</h6>
+                  <h2 className="mainhead text-white">Our Mobile App Development Services</h2>
+                </div>
+          </div>
+          <div className="col-lg-6">
+                <div className="mobapp-service-head">
+                  <p>From concept to launch, we offer end-to-end mobile app development services that cater to your unique business needs. Our team of skilled developers and designers work collaboratively to create user-friendly, high-performance mobile applications that drive engagement and deliver exceptional user experiences.</p>
+                </div>
+          </div>
+        </div>
         </div>
 
         <div className="row justify-content-center">

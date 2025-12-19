@@ -19,6 +19,7 @@ const BlogSec = ({ secTitle, blogminihead, itemsPerPage = 6, pagination }) => {
         setLoading(true);
         const response = await axios.get(`${wpBaseUrl}/posts?_embed`);
         setBlogs(response.data);
+        console.log("Fetched blogs:", response.data);
       } catch (error) {
         console.error("Failed to fetch blogs:", error);
       } finally {

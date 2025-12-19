@@ -45,6 +45,9 @@ import AngularDevelopmentBuffalo from "../screens/locationpages/AngularDevelopme
 import DomainTransferBuffalo from "../screens/locationpages/DomainTransferBuffalo";
 import WebsiteContent from "../screens/Services/WebsiteContent";
 import BlogWriting from "../screens/Services/BlogWriting";
+import NewMobAppDev from "../screens/Services/NewMobAppDev";
+import NewSMM from "../screens/Services/NewSMM";
+import NewSEO from "../screens/Services/NewSEO";
 
 const AppRouter = () => {
   return (
@@ -57,9 +60,6 @@ const AppRouter = () => {
 
         {/* Services Pages */}
         <Route path="/web-design-development" element={<Services />} />
-        <Route path="/digital-marketing" element={<DigitalMarketing />} />
-        <Route path="/social-media-marketing" element={<SMM />} />
-        <Route path="/search-engine-optimization" element={<SEO />} />
 
         {/* Services Pages */}
 
@@ -86,6 +86,12 @@ const AppRouter = () => {
         <Route path="/web-design" element={<NewWebDesign />} />
 
 
+          {/* Digital Markeing & Inner Pages */}
+        <Route path="/digital-marketing" element={<DigitalMarketing />} />
+        {/* <Route path="/social-media-marketing" element={<SMM />} /> */}
+        <Route path="/social-media-marketing" element={<NewSMM />} />
+        <Route path="/search-engine-optimization" element={<SEO /> } />
+        {/* <Route path="/search-engine-optimization" element={<NewSEO /> } /> */}
 
 
           {/* CMS Development & Inner Pages */}
@@ -99,7 +105,8 @@ const AppRouter = () => {
         <Route path="/backend-development" element={<BackendDevelopment />} />
 
           {/* App Development & Inner Pages */}        
-        <Route path="/mobile-app-development" element={<MobileAppDevelopment />} />
+        {/* <Route path="/mobile-app-development" element={<MobileAppDevelopment />} /> */}
+        <Route path="/mobile-app-development" element={<NewMobAppDev />} />
         <Route path="/web-app-development" element={<WebAppDevelopment />} />
 
 
