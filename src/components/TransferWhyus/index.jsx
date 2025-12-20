@@ -4,6 +4,7 @@ const TransferWhyus = ({
   shortTopHead,
   mainHead,
   description,
+  descriptiontwo,
   stats,
 }) => {
   return (
@@ -16,6 +17,7 @@ const TransferWhyus = ({
               <h6 className='shorttop-head text-white'>{shortTopHead}</h6>
               <h2 className='mainhead text-white'>{mainHead}</h2>
               <p>{description}</p>
+             {descriptiontwo && <p>{descriptiontwo}</p>}
             </div>
           </div>
 

@@ -85,8 +85,8 @@ const NewSMM = () => {
   return (
     <>
       <ReactHelmet
-        title="Brand Voice Services in New York"
-        description="Discover how New York Web Experts helps businesses create distinctive, memorable brand voices that resonate with audiences, strengthen recognition, and boost engagement across all channels."
+        title="Smart Social Media Marketing Services USA for Growth and Brand Visibility"
+        description="Experience strategic social media marketing in the USA that strengthens your brand, attracts engagement, and builds lasting visibility across major platforms."
         keywords="social media marketing new york, social media marketing agency new york, social media marketing services new york, social media marketing company new york, social media advertising new york, social media management companies new york"
         url="https://nywebexperts.com/social-media-marketing"
       />

@@ -90,8 +90,8 @@ const AppRouter = () => {
         <Route path="/digital-marketing" element={<DigitalMarketing />} />
         {/* <Route path="/social-media-marketing" element={<SMM />} /> */}
         <Route path="/social-media-marketing" element={<NewSMM />} />
-        <Route path="/search-engine-optimization" element={<SEO /> } />
-        {/* <Route path="/search-engine-optimization" element={<NewSEO /> } /> */}
+        {/* <Route path="/search-engine-optimization" element={<SEO /> } /> */}
+        <Route path="/search-engine-optimization" element={<NewSEO /> } />
 
 
           {/* CMS Development & Inner Pages */}
