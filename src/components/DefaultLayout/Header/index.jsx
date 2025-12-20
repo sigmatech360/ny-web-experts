@@ -425,6 +425,30 @@ const Header = () => {
                     >
                       Angular Development
                     </NavDropdown.Item>
+                    <NavDropdown.Item
+                      as={Link}
+                      to={"/shopify-development-buffalo"}
+                      target="_blank"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      Shopify Development
+                    </NavDropdown.Item>
+                    <NavDropdown.Item
+                      as={Link}
+                      to={"/laravel-development-buffalo"}
+                      target="_blank"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      Laravel Development
+                    </NavDropdown.Item>
+                    <NavDropdown.Item
+                      as={Link}
+                      to={"/webapp-development-buffalo"}
+                      target="_blank"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      Web App Development
+                    </NavDropdown.Item>
                   </div>
                 </div>
               </Dropdown.Menu>

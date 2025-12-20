@@ -48,6 +48,9 @@ import BlogWriting from "../screens/Services/BlogWriting";
 import NewMobAppDev from "../screens/Services/NewMobAppDev";
 import NewSMM from "../screens/Services/NewSMM";
 import NewSEO from "../screens/Services/NewSEO";
+import WebAppDevelopmentBuffalo from "../screens/locationpages/WebAppDevelopmentBuffalo";
+import LaravelDevelopmentBuffalo from "../screens/locationpages/LaravelDevelopmentBuffalo";
+import ShopifyDevelopmentBuffalo from "../screens/locationpages/ShopifyDevelopmentBuffalo";
 
 const AppRouter = () => {
   return (
@@ -134,7 +137,9 @@ const AppRouter = () => {
         <Route path="/ecommerce-development-buffalo" element={<EcommerceDevelopmentBuffalo />} />
         <Route path="/domain-registeration-buffalo" element={<DomainRegistrationBuffalo />} />
         <Route path="/domain-transfer-buffalo" element={<DomainTransferBuffalo />} />
-        <Route path="/angular-development-buffalo" element={<AngularDevelopmentBuffalo />} />
+        <Route path="/webapp-development-buffalo" element={<WebAppDevelopmentBuffalo />} />
+        <Route path="/shopify-development-buffalo" element={<ShopifyDevelopmentBuffalo />} />
+        <Route path="/laravel-development-buffalo" element={<LaravelDevelopmentBuffalo />} />
 
       </Routes>
     </Router>
