@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 import support1 from "../../assets/images/locationpages/app-development-buffalo/guarrantee.svg";
 import support2 from "../../assets/images/locationpages/app-development-buffalo/support.svg";
 import support3 from "../../assets/images/locationpages/app-development-buffalo/ownership.svg";
@@ -14,110 +14,110 @@ import pixleperfectimg3 from "../../assets/images/locationpages/webapp-developme
 import pixleperfectimg4 from "../../assets/images/locationpages/webapp-development-buffalo/portfolio-4.webp";
 import pixleperfectimg5 from "../../assets/images/locationpages/webapp-development-buffalo/portfolio-5.webp";
 import pixleperfectimg6 from "../../assets/images/locationpages/webapp-development-buffalo/portfolio-6.webp";
-import ReactHelmet from '../../components/ReactHelmet';
-import DefaultLayout from '../../components/DefaultLayout';
-import ServicesBanner from '../../components/ServicesBanner';
-import WordPressPerformanceSection from '../../components/WordPressPerformanceSection';
-import PixelPerfectSec from '../../components/PixelPerfectSec';
-import TabsPricing from '../../components/TabsPricing';
-import { dynamictabsData } from '../../data';
-import LocationSupport from '../../components/LocationSupport';
-import LocationContact from '../../components/LocationContact';
-import LocationFaqs from '../../components/LocationFaqs';
-import Lightbox from 'yet-another-react-lightbox';
-
+import ReactHelmet from "../../components/ReactHelmet";
+import DefaultLayout from "../../components/DefaultLayout";
+import ServicesBanner from "../../components/ServicesBanner";
+import WordPressPerformanceSection from "../../components/WordPressPerformanceSection";
+import PixelPerfectSec from "../../components/PixelPerfectSec";
+import TabsPricing from "../../components/TabsPricing";
+import { dynamictabsData } from "../../data";
+import LocationSupport from "../../components/LocationSupport";
+import LocationContact from "../../components/LocationContact";
+import LocationFaqs from "../../components/LocationFaqs";
+import Lightbox from "yet-another-react-lightbox";
+import FormModal from "../../components/FormModal";
 
 const WebAppDevelopmentBuffalo = () => {
+  const [showModal, setShowModal] = useState(false);
 
-      const webDesignPortfolioData = [
-            {
-              id: 1,
-              image: pixleperfectimg1,
-            },
-            {
-              id: 2,
-              image: pixleperfectimg2,
-            },
-            {
-              id: 3,
-              image: pixleperfectimg3,
-            },
-            {
-              id: 4,
-              image: pixleperfectimg4,
-            },
-            {
-              id: 5,
-              image: pixleperfectimg5,
-            },
-            {
-              id: 6,
-              image: pixleperfectimg6,
-            },
-          ];
-        
-          const faqsData = [
-            {
-              header: "What types of web applications do you build?",
-              content:
-                "Whatever you need. As a full-service development agency, we develop custom web apps, dashboards, and SaaS platforms to client portals and internal tools. ",
-            },
-            {
-              header: "Do you offer custom web app development services in Buffalo, NY?",
-              content:
-                "Yes, every web application we build is custom, designed, and developed based on your business goals.",
-            },
-            {
-              header: "Can you handle full-stack web app development in Buffalo, NY?",
-              content:
-                "Absolutely, our team manages frontend, backend, APIs, databases, and integrations under one roof.",
-            },
-            {
-              header: "Do you work with startups and established businesses?",
-              content:
-                "We work with both. Startups often come to us for MVP development, and established companies partner with us to modernize or scale their platforms.",
-            },
-            {
-              header: "Will my web app be scalable for future growth?",
-              content:
-                "Yes, that’s what web apps are for. Scalability is built into our architecture decisions from the beginning, so your application can grow without needing a rebuild.",
-            },
-          ];
-        
-          const supportCardsData = [
-            { image: support1, title: "Satisfaction Guaranteed, 100%" },
-            { image: support2, title: "Round-the-Clock Support" },
-            { image: support3, title: "Your Web, You Own It!" },
-            { image: support4, title: "54% Increase in Sales" },
-            { image: support5, title: "Build for Growth" },
-          ];
-        
-          const [isOpen, setIsOpen] = useState(false);
-          const [images, setImages] = useState([]);
-          const [currentIndex, setCurrentIndex] = useState(0);
-        
-          const handleImageClick = (index, imageArray) => {
-            const imageList = imageArray.map((item) => ({
-              src: item.image,
-            }));
-            setImages(imageList);
-            setCurrentIndex(index);
-            setIsOpen(true);
-          };
-    
+  const webDesignPortfolioData = [
+    {
+      id: 1,
+      image: pixleperfectimg1,
+    },
+    {
+      id: 2,
+      image: pixleperfectimg2,
+    },
+    {
+      id: 3,
+      image: pixleperfectimg3,
+    },
+    {
+      id: 4,
+      image: pixleperfectimg4,
+    },
+    {
+      id: 5,
+      image: pixleperfectimg5,
+    },
+    {
+      id: 6,
+      image: pixleperfectimg6,
+    },
+  ];
+
+  const faqsData = [
+    {
+      header: "What types of web applications do you build?",
+      content:
+        "Whatever you need. As a full-service development agency, we develop custom web apps, dashboards, and SaaS platforms to client portals and internal tools. ",
+    },
+    {
+      header:
+        "Do you offer custom web app development services in Buffalo, NY?",
+      content:
+        "Yes, every web application we build is custom, designed, and developed based on your business goals.",
+    },
+    {
+      header: "Can you handle full-stack web app development in Buffalo, NY?",
+      content:
+        "Absolutely, our team manages frontend, backend, APIs, databases, and integrations under one roof.",
+    },
+    {
+      header: "Do you work with startups and established businesses?",
+      content:
+        "We work with both. Startups often come to us for MVP development, and established companies partner with us to modernize or scale their platforms.",
+    },
+    {
+      header: "Will my web app be scalable for future growth?",
+      content:
+        "Yes, that’s what web apps are for. Scalability is built into our architecture decisions from the beginning, so your application can grow without needing a rebuild.",
+    },
+  ];
+
+  const supportCardsData = [
+    { image: support1, title: "Satisfaction Guaranteed, 100%" },
+    { image: support2, title: "Round-the-Clock Support" },
+    { image: support3, title: "Your Web, You Own It!" },
+    { image: support4, title: "54% Increase in Sales" },
+    { image: support5, title: "Build for Growth" },
+  ];
+
+  const [isOpen, setIsOpen] = useState(false);
+  const [images, setImages] = useState([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handleImageClick = (index, imageArray) => {
+    const imageList = imageArray.map((item) => ({
+      src: item.image,
+    }));
+    setImages(imageList);
+    setCurrentIndex(index);
+    setIsOpen(true);
+  };
 
   return (
-       <>
-        <ReactHelmet
+    <>
+      <ReactHelmet
         title="Web App Development in Buffalo, NY"
         description="Work with NY Web Experts, the leading web app development company in Buffalo, NY, powering businesses with solutions that offer functionalities that websites can’t offer."
         keywords="web app development services Buffalo NY, web app development company Buffalo NY, web app development agency Buffalo NY, custom web app development services Buffalo NY, web app development companies Buffalo NY, web and mobile app development company-Buffalo NY, Full stack web app development Buffalo NY"
         url="https://nywebexperts.com/webapp-development-buffalo"
       />
 
-       <DefaultLayout>
-
-         <ServicesBanner
+      <DefaultLayout>
+        <ServicesBanner
           secClass="location-hero-banner domaintransfer-location-herobanner"
           formClass="service-form"
           bgImage={bannerBG}
@@ -158,7 +158,6 @@ const WebAppDevelopmentBuffalo = () => {
           projectsData={webDesignPortfolioData}
           onImageClick={handleImageClick}
         />
-
 
         {/* <TabsPricing
           minihead="Pricing Plans"
@@ -205,8 +204,6 @@ const WebAppDevelopmentBuffalo = () => {
           faqs={faqsData}
         />
 
-
-
         {isOpen && images.length > 0 && (
           <Lightbox
             open={isOpen}
@@ -215,12 +212,36 @@ const WebAppDevelopmentBuffalo = () => {
             index={currentIndex}
           />
         )}
-        
-       </DefaultLayout>
 
-
+        <section className="webapp-locate-started">
+          <div className="container">
+            <div className="webapp-start-bg">
+              <div className="row">
+                <div className="col-lg-7">
+                  <div className="webapp-started-txt">
+                    <h2 className="mainhead text-white">
+                      Web Apps for Brands that are Proactive, Not Reactive
+                    </h2>
+                    <p>
+                      Let’s build a web app that responds instantly and keeps
+                      working as usage and expectations grow.
+                    </p>
+                    <button
+                      className="ny-btn"
+                      onClick={() => setShowModal(true)}
+                    >
+                      Start Here
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <FormModal show={showModal} handleClose={() => setShowModal(false)} />
+      </DefaultLayout>
     </>
-  )
-}
+  );
+};
 
-export default WebAppDevelopmentBuffalo
+export default WebAppDevelopmentBuffalo;

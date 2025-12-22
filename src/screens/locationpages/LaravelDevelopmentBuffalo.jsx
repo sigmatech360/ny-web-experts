@@ -25,8 +25,12 @@ import LocationSupport from '../../components/LocationSupport';
 import LocationContact from '../../components/LocationContact';
 import LocationFaqs from '../../components/LocationFaqs';
 import Lightbox from 'yet-another-react-lightbox';
+import FormModal from '../../components/FormModal';
 
 const LaravelDevelopmentBuffalo = () => {
+
+  const [showModal, setShowModal] = useState(false);
+
   const webDesignPortfolioData = [
         {
           id: 1,
@@ -205,6 +209,29 @@ const LaravelDevelopmentBuffalo = () => {
             index={currentIndex}
           />
         )}
+
+
+          <section className="shopify-locate-started">
+          <div className="container">
+            <div className="laravel-start-bg">
+              <div className="row justify-content-center">
+                <div className="col-lg-10">
+                  <div className="webapp-started-txt text-center">
+                    <h2 className="mainhead text-white">
+                      When the Backend Decides Everything, Build it Right!
+                    </h2>
+                    <p>Let’s design a Laravel backend that stays fast, flexible, and reliable as your product grows.</p>
+                    <button className="ny-btn"  onClick={() => setShowModal(true)}>Start Here</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+          <FormModal show={showModal} handleClose={() => setShowModal(false)} />
+
+
+
         
        </DefaultLayout>
 

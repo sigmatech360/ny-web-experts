@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 import support1 from "../../assets/images/locationpages/app-development-buffalo/guarrantee.svg";
 import support2 from "../../assets/images/locationpages/app-development-buffalo/support.svg";
 import support3 from "../../assets/images/locationpages/app-development-buffalo/ownership.svg";
@@ -14,116 +14,117 @@ import pixleperfectimg3 from "../../assets/images/locationpages/shopify-developm
 import pixleperfectimg4 from "../../assets/images/locationpages/shopify-development-buffalo/portfolio-4.webp";
 import pixleperfectimg5 from "../../assets/images/locationpages/shopify-development-buffalo/portfolio-5.webp";
 import pixleperfectimg6 from "../../assets/images/locationpages/shopify-development-buffalo/portfolio-6.webp";
-import DefaultLayout from '../../components/DefaultLayout';
-import ServicesBanner from '../../components/ServicesBanner';
-import WordPressPerformanceSection from '../../components/WordPressPerformanceSection';
-import PixelPerfectSec from '../../components/PixelPerfectSec';
-import TabsPricing from '../../components/TabsPricing';
-import { dynamictabsData } from '../../data';
-import LocationSupport from '../../components/LocationSupport';
-import LocationContact from '../../components/LocationContact';
-import LocationFaqs from '../../components/LocationFaqs';
-import Lightbox from 'yet-another-react-lightbox';
-import ReactHelmet from '../../components/ReactHelmet';
-
+import DefaultLayout from "../../components/DefaultLayout";
+import ServicesBanner from "../../components/ServicesBanner";
+import WordPressPerformanceSection from "../../components/WordPressPerformanceSection";
+import PixelPerfectSec from "../../components/PixelPerfectSec";
+import TabsPricing from "../../components/TabsPricing";
+import { dynamictabsData } from "../../data";
+import LocationSupport from "../../components/LocationSupport";
+import LocationContact from "../../components/LocationContact";
+import LocationFaqs from "../../components/LocationFaqs";
+import Lightbox from "yet-another-react-lightbox";
+import ReactHelmet from "../../components/ReactHelmet";
+import FormModal from "../../components/FormModal";
 
 const ShopifyDevelopmentBuffalo = () => {
 
-      const webDesignPortfolioData = [
-            {
-              id: 1,
-              image: pixleperfectimg1,
-            },
-            {
-              id: 2,
-              image: pixleperfectimg2,
-            },
-            {
-              id: 3,
-              image: pixleperfectimg3,
-            },
-            {
-              id: 4,
-              image: pixleperfectimg4,
-            },
-            {
-              id: 5,
-              image: pixleperfectimg5,
-            },
-            {
-              id: 6,
-              image: pixleperfectimg6,
-            },
-          ];
-        
-          const faqsData = [
-            {
-              header: "How does professional Shopify website development help grow online sales?",
-              content:
-                "Professional Shopify website development improves site speed, navigation, checkout flow, and product presentation. For businesses in Buffalo, New York, a well-developed Shopify website helps reduce cart abandonment, improve customer trust, and increase conversions by creating a smooth and reliable shopping experience.",
-            },
-            {
-              header: "Why should I choose Shopify for my ecommerce website?",
-              content:
-                "Shopify is a secure and user-friendly ecommerce platform that works well for small and growing businesses. It offers easy product management, built-in payment options, and mobile-friendly designs. Shopify website development in Buffalo, New York, allows businesses to launch and manage online stores without technical complexity.",
-            },
-            {
-              header: "How long does Shopify website development take?",
-              content:
-                "The timeline for Shopify website development depends on the size and features of the store. Most Shopify websites can be completed within a few weeks. Businesses in Buffalo, New York, can expect a clear development process that includes planning, design, setup, testing, and launch.",
-            },
-            {
-              header: "Do you offer custom Shopify website development in Buffalo, New York?",
-              content:
-                "Yes, we provide custom Shopify website development services in Buffalo, New York. This includes custom layouts, branding, feature setup, and performance optimization. Each Shopify store is built based on the business goals, products, and customer experience requirements of the client.",
-            },
-            {
-              header: "Can you redesign or improve an existing Shopify website?",
-              content:
-                "Yes, existing Shopify websites can be redesigned or improved at NY Web Experts. This includes updating the design, improving site speed, fixing navigation issues, and optimizing the store for better conversions. Our Shopify website development services in Buffalo, New York, help businesses improve performance without rebuilding everything from scratch.",
-            },
-            {
-              header: "Will my Shopify website be mobile-friendly and easy to manage?",
-              content:
-                "Yes, all Shopify websites made at NY Web Experts are built to be mobile-friendly and easy to manage. Store owners can update products, pricing, and content without technical knowledge. Our Shopify ecommerce website development in Buffalo, New York, ensures a smooth experience for both customers and business owners.",
-            },
-          ];
-        
-          const supportCardsData = [
-            { image: support1, title: "Satisfaction Guaranteed" },
-            { image: support2, title: "24/7 Customer Support" },
-            { image: support3, title: "Ownership Rights" },
-            { image: support4, title: "Money Back Guarantee" },
-            { image: support5, title: "Industry Specific-Expertise" },
-          ];
-        
-          const [isOpen, setIsOpen] = useState(false);
-          const [images, setImages] = useState([]);
-          const [currentIndex, setCurrentIndex] = useState(0);
-        
-          const handleImageClick = (index, imageArray) => {
-            const imageList = imageArray.map((item) => ({
-              src: item.image,
-            }));
-            setImages(imageList);
-            setCurrentIndex(index);
-            setIsOpen(true);
-          };
-    
+   const [showModal, setShowModal] = useState(false);
+
+  const webDesignPortfolioData = [
+    {
+      id: 1,
+      image: pixleperfectimg1,
+    },
+    {
+      id: 2,
+      image: pixleperfectimg2,
+    },
+    {
+      id: 3,
+      image: pixleperfectimg3,
+    },
+    {
+      id: 4,
+      image: pixleperfectimg4,
+    },
+    {
+      id: 5,
+      image: pixleperfectimg5,
+    },
+    {
+      id: 6,
+      image: pixleperfectimg6,
+    },
+  ];
+
+  const faqsData = [
+    {
+      header:
+        "How does professional Shopify website development help grow online sales?",
+      content:
+        "Professional Shopify website development improves site speed, navigation, checkout flow, and product presentation. For businesses in Buffalo, New York, a well-developed Shopify website helps reduce cart abandonment, improve customer trust, and increase conversions by creating a smooth and reliable shopping experience.",
+    },
+    {
+      header: "Why should I choose Shopify for my ecommerce website?",
+      content:
+        "Shopify is a secure and user-friendly ecommerce platform that works well for small and growing businesses. It offers easy product management, built-in payment options, and mobile-friendly designs. Shopify website development in Buffalo, New York, allows businesses to launch and manage online stores without technical complexity.",
+    },
+    {
+      header: "How long does Shopify website development take?",
+      content:
+        "The timeline for Shopify website development depends on the size and features of the store. Most Shopify websites can be completed within a few weeks. Businesses in Buffalo, New York, can expect a clear development process that includes planning, design, setup, testing, and launch.",
+    },
+    {
+      header:
+        "Do you offer custom Shopify website development in Buffalo, New York?",
+      content:
+        "Yes, we provide custom Shopify website development services in Buffalo, New York. This includes custom layouts, branding, feature setup, and performance optimization. Each Shopify store is built based on the business goals, products, and customer experience requirements of the client.",
+    },
+    {
+      header: "Can you redesign or improve an existing Shopify website?",
+      content:
+        "Yes, existing Shopify websites can be redesigned or improved at NY Web Experts. This includes updating the design, improving site speed, fixing navigation issues, and optimizing the store for better conversions. Our Shopify website development services in Buffalo, New York, help businesses improve performance without rebuilding everything from scratch.",
+    },
+    {
+      header: "Will my Shopify website be mobile-friendly and easy to manage?",
+      content:
+        "Yes, all Shopify websites made at NY Web Experts are built to be mobile-friendly and easy to manage. Store owners can update products, pricing, and content without technical knowledge. Our Shopify ecommerce website development in Buffalo, New York, ensures a smooth experience for both customers and business owners.",
+    },
+  ];
+
+  const supportCardsData = [
+    { image: support1, title: "Satisfaction Guaranteed" },
+    { image: support2, title: "24/7 Customer Support" },
+    { image: support3, title: "Ownership Rights" },
+    { image: support4, title: "Money Back Guarantee" },
+    { image: support5, title: "Industry Specific-Expertise" },
+  ];
+
+  const [isOpen, setIsOpen] = useState(false);
+  const [images, setImages] = useState([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handleImageClick = (index, imageArray) => {
+    const imageList = imageArray.map((item) => ({
+      src: item.image,
+    }));
+    setImages(imageList);
+    setCurrentIndex(index);
+    setIsOpen(true);
+  };
 
   return (
-       <>
-        <ReactHelmet
+    <>
+      <ReactHelmet
         title="Shopify Development Company in Buffalo NY"
         description="NY Web Experts is experienced in fast and secure Shopify website Development in Buffalo, New York. Our websites are designed to attract and engage visitors, while driving consistent sales for long-term impact."
         keywords="shopify website development buffalo, NY, shopify website development services buffalo, NY, shopify website development company buffalo, NY, shopify website development agency buffalo, NY, shopify ecommerce website development buffalo, NY"
         url="https://nywebexperts.com/shopify-development-buffalo"
       />
 
-       <DefaultLayout>
-
-
-         <ServicesBanner
+      <DefaultLayout>
+        <ServicesBanner
           secClass="location-hero-banner domaintransfer-location-herobanner"
           formClass="service-form"
           bgImage={bannerBG}
@@ -161,7 +162,6 @@ const ShopifyDevelopmentBuffalo = () => {
           projectsData={webDesignPortfolioData}
           onImageClick={handleImageClick}
         />
-
 
         {/* <TabsPricing
           minihead="Pricing Plans"
@@ -202,8 +202,6 @@ const ShopifyDevelopmentBuffalo = () => {
           faqs={faqsData}
         />
 
-
-
         {isOpen && images.length > 0 && (
           <Lightbox
             open={isOpen}
@@ -212,12 +210,28 @@ const ShopifyDevelopmentBuffalo = () => {
             index={currentIndex}
           />
         )}
-        
-       </DefaultLayout>
 
-
+        <section className="shopify-locate-started">
+          <div className="container">
+            <div className="shopify-start-bg">
+              <div className="row">
+                <div className="col-lg-7">
+                  <div className="webapp-started-txt">
+                    <h2 className="mainhead text-white">
+                      Become A Smart Seller with NY Web Experts
+                    </h2>
+                    <p>Your ecommerce success starts with the right Shopify website. Partner with NY Web Experts for professional Shopify website development in Buffalo, New York, and launch a store designed to convert, scale, and support your long-term business growth.</p>
+                    <button className="ny-btn"  onClick={() => setShowModal(true)}>Start Today</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+          <FormModal show={showModal} handleClose={() => setShowModal(false)} />
+      </DefaultLayout>
     </>
-  )
-}
+  );
+};
 
-export default ShopifyDevelopmentBuffalo
+export default ShopifyDevelopmentBuffalo;

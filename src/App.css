@@ -5155,6 +5155,45 @@ section.blogwriting-process-sec {
 
 /************* New SEO Page CSS End *************/
 
+.webapp-start-bg {
+    background: url(/src/assets/images/locationpages/webapp-development-buffalo/getstarted.webp) no-repeat top center;
+    background-size: cover;
+    padding: 117.5px 50px;
+    width: 100%;
+    height: 100%;
+}
+
+.webapp-started-txt p {
+    padding: 15px 0px;
+    color: #fff;
+}
+
+.webapp-locate-started {
+    padding: 50px 0px;
+}
+
+.shopify-start-bg {
+    background: url(/src/assets/images/locationpages/shopify-development-buffalo/shopifystarted.webp) no-repeat top center;
+    background-size: cover;
+    padding: 93.5px 50px;
+    width: 100%;
+    height: 100%;
+}
+
+
+.shopify-locate-started {
+    padding: 50px 0px;
+}
+
+
+.laravel-start-bg {
+    background: url(/src/assets/images/locationpages/laravel-development-buffalo/laravelstarted.webp) no-repeat top center;
+    background-size: cover;
+    padding: 117.5px 50px;
+    width: 100%;
+    height: 100%;
+}
+
 
 @media (max-width: 1399px) {
 
@@ -5740,6 +5779,22 @@ section.blogwriting-process-sec {
     top: 55px;
 }
 
+.laravel-start-bg {
+    padding: 85px 40px;
+    border-radius: 20px;
+}
+
+.shopify-start-bg {
+    padding: 85px 40px;
+    border-radius: 20px;
+}
+
+.webapp-start-bg {
+    padding: 85px 40px;
+    border-radius: 20px;
+}
+
+
 }
 
 @media (max-width: 767px) {
@@ -6193,6 +6248,23 @@ section.blogwriting-process-sec {
 .smm-process-txtfive::before {
   display: none;
 }
+
+.laravel-start-bg {
+    padding: 60px 40px;
+    border-radius: 20px;
+}
+
+
+    .webapp-start-bg {
+        padding: 55px 20px;
+        text-align: center;
+    }
+
+        .shopify-start-bg {
+        padding: 55px 30px;
+        text-align: center;
+    }
+
 
 }
 
